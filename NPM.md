@@ -2,9 +2,10 @@
 
 # NPM
 
-```
-本文对mac上npm开发的一些使用和配置分享，假定已经有一定shell基础和前端工作流的知识。
-```
+
+
+>本文对mac上npm开发的一些使用和配置分享，
+>假定阅读者已经有一定shell基础和前端工作流的知识。
 
 
 
@@ -31,6 +32,8 @@
 | `brew deps --installed --tree`     | 显示包的依赖树                                               |
 | `brew cleanup git ` `brew cleanup` | 删除程序，和upgrade一样，单个软件删除和所有程序老版删除。    |
 | `brew outdated`                    | 查看需要更新的已安装程序                                     |
+
+
 
 ### Node
 
@@ -63,11 +66,11 @@ source $(brew --prefix nvm)/nvm.sh
 
 ##### 打开一个新的终端并输入nvm查看配置是否成功。
 
+
+
 ### NVM
 
 [^nvm]:  node版本管理工具
-
-
 
 ##### 列出远程服务器上所有的可用版本
 
