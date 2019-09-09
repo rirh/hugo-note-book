@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>WEB DEVELOPMENT NOTBOOK · GitBook</title>
+        <title>SSH · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="NPM.html" />
     
+    <link rel="prev" href="Nginx.html" />
     
 
     </head>
@@ -87,7 +87,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -139,7 +139,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="SSH.html">
+        <li class="chapter active" data-level="1.5" data-path="SSH.html">
             
                 <a href="SSH.html">
             
@@ -182,7 +182,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >WEB DEVELOPMENT NOTBOOK</a>
+        <a href="." >SSH</a>
     </h1>
 </div>
 
@@ -197,18 +197,89 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="web-development-notbook">WEB DEVELOPMENT NOTBOOK</h1>
-<blockquote>
-<h4 id="&#x5F00;&#x53D1;&#x7B14;&#x8BB0;&#xFF0C;&#x8BB0;&#x5F55;&#x7ECF;&#x9A8C;&#x3002;">&#x5F00;&#x53D1;&#x7B14;&#x8BB0;&#xFF0C;&#x8BB0;&#x5F55;&#x7ECF;&#x9A8C;&#x3002;</h4>
-</blockquote>
-<p>&#x4F5C;&#x8005;&#xFF1A;<a href="http://weixin.qq.com/r/NDikvGPEtT7KrSff920m" target="_blank">&#x80E1;&#x5FD7;&#x8F89;</a></p>
-<p>&#x6765;&#x6E90;&#xFF1A;&#x5F00;&#x53D1;&#x7684;&#x65E5;&#x5E38;</p>
-<p>&#x8D5E;&#x52A9;&#x4F5C;&#x8005;&#xFF1A;<a href="https://paypal.me/huzhihui?locale.x=zh_XC" target="_blank">paypal</a></p>
-<h2 id="&#x9879;&#x76EE;&#x5730;&#x5740;">&#x9879;&#x76EE;&#x5730;&#x5740;</h2>
-<ul>
-<li>github&#x4ED3;&#x5E93;&#xFF1A;<a href="https://github.com/Ctleryes/NoteBook" target="_blank">https://github.com/Ctleryes/NoteBook</a></li>
-<li>gitbook&#x5728;&#x7EBF;&#x9605;&#x8BFB;&#x5730;&#x5740;&#xFF1A;<a href="https://tigerzh.gitbook.io/notebook/npm" target="_blank">https://tigerzh.gitbook.io/notebook</a></li>
-</ul>
+                                <h1 id="&#x672C;&#x5730;&#x94FE;&#x63A5;ssh">&#x672C;&#x5730;&#x94FE;&#x63A5;SSH</h1>
+<table>
+<thead>
+<tr>
+<th>&#x4EE3;&#x7801;</th>
+<th>&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ssh-keygen -t rsa -f</code>     <strong>NAME</strong></td>
+<td>&#x751F;&#x6210;&#x5BC6;&#x94A5;</td>
+</tr>
+<tr>
+<td><code>scp FILENAME root@101.201.234.154:.</code></td>
+<td>&#x62F7;&#x8D1D;&#x6587;&#x4EF6;&#x5230;&#x6307;&#x5B9A;&#x670D;&#x52A1;&#x5668;&#x9ED8;&#x8BA4;&#x8DEF;&#x5F84;</td>
+</tr>
+<tr>
+<td>cat FILE1 &gt;&gt; FILE2</td>
+<td>&#x5C06;&#x6587;&#x4EF6;&#x4E00;&#x7684;&#x5185;&#x5BB9;&#x8FFD;&#x52A0;&#x7684;&#x6587;&#x4EF6;&#x4E8C;&#x91CC;&#x9762;</td>
+</tr>
+<tr>
+<td><code>systemctl restart sshd</code></td>
+<td>&#x91CD;&#x542F;ssh&#x670D;&#x52A1;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x514D;&#x5BC6;&#x7801;&#x767B;&#x5F55;&#x670D;&#x52A1;&#x5668;&#x6B65;&#x9AA4;">&#x514D;&#x5BC6;&#x7801;&#x767B;&#x5F55;&#x670D;&#x52A1;&#x5668;&#x6B65;&#x9AA4;</h3>
+<ol>
+<li><p>&#x8FDB;&#x5165;<code>~/.ssh/</code>&#x6587;&#x4EF6;&#x5939;&#x751F;&#x5B58;&#x5BC6;&#x94A5;</p>
+<pre><code class="lang-shell">ssh-keygen -t rsa -f  NAME
+</code></pre>
+</li>
+<li><p>&#x62F7;&#x8D1D;&#x5171;&#x94A5;&#x5230;&#x670D;&#x52A1;&#x5668;&#x9ED8;&#x8BA4;&#x8DEF;&#x5F84;&#xFF08;&#x751F;&#x6210;&#x7684;pub&#x7ED3;&#x5C3E;&#x6587;&#x4EF6;&#xFF09;</p>
+<pre><code>scp FILENAME root@101.201.234.154:.
+</code></pre></li>
+<li><p>&#x767B;&#x5F55;&#x670D;&#x52A1;&#x5668;&#x5E76;&#x8FDB;&#x5165;&#x670D;&#x52A1;&#x5668;<code>~/.ssh/</code>&#x6587;&#x4EF6;&#x5939; </p>
+</li>
+<li><p>.ssh&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7684;authorized_keys&#x5C3E;&#x90E8;&#x8FFD;&#x52A0;&#x516C;&#x94A5;&#x6587;&#x4EF6;&#x5185;&#x5BB9;</p>
+<pre><code class="lang-shell">cat FILE1 &gt;&gt; FILE2
+</code></pre>
+</li>
+<li><p>&#x91CD;&#x542F;&#x670D;&#x52A1;&#x7AEF;ssh&#x670D;&#x52A1;</p>
+<pre><code>systemctl restart sshd
+</code></pre></li>
+</ol>
+<ol>
+<li><p>&#x56DE;&#x5230;&#x5BA2;&#x6237;&#x7AEF;&#x5728;<code>~/.ssh/</code>&#x4E0B;&#x65B0;&#x5EFA;config&#x6587;&#x4EF6;</p>
+<pre><code class="lang-shell">Host blog
+   HostName 101.201.234.154 //&#x670D;&#x52A1;&#x5668;ip
+   port 22                  //&#x9ED8;&#x8BA4;&#x7684;&#x7AEF;&#x53E3;
+   User root                //&#x7528;&#x6237;&#x540D;
+   IdentityFile ~/.ssh/blog //&#x79C1;&#x94A5;&#x6587;&#x4EF6;
+</code></pre>
+<pre><code>&#x6B64;&#x65F6;&#x4F7F;&#x7528; ssh blog &#x5C06;&#x76F4;&#x63A5;&#x767B;&#x5F55;&#x670D;&#x52A1;&#x5668; &#x5982;&#x679C;&#x6709;&#x9519;&#x8BEF;&#x53EF;&#x80FD;&#x662F;&#x9700;&#x8981;&#x5220;&#x9664;&#x539F;&#x6765;&#x751F;&#x6210;&#x7684;known_hosts&#x7684;&#x6587;&#x4EF6;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;
+</code></pre><h3 id="&#x4EE3;&#x7801;&#x6D41;&#x7A0B;">&#x4EE3;&#x7801;&#x6D41;&#x7A0B;</h3>
+<pre><code class="lang-shell">cd ~/.ssh/;
+ssh-keygen -t rsa -f blog;
+scp blog.pub root@101.201.234.154:.;
+ssh root@101.201.234.154 -p 22;
+cd ~/.ssh/;
+cat ~/blog.pub &gt;&gt; ~/.ssh/authorized_keys;
+systemctl restart sshd;
+exit;
+cd ~/.ssh/;
+touch config;
+
+*********************** config *********************
+
+Host blog
+   HostName 101.201.234.154 //&#x670D;&#x52A1;&#x5668;ip
+   port 22                  //&#x9ED8;&#x8BA4;&#x7684;&#x7AEF;&#x53E3;
+   User root                //&#x7528;&#x6237;&#x540D;
+   IdentityFile ~/.ssh/blog //&#x79C1;&#x94A5;&#x6587;&#x4EF6;
+
+*********************** config *********************
+
+vim known_hosts 
+&#x5220;&#x9664;&#x5185;&#x5BB9; dd&#x540E;esc &#x5192;&#x53F7;wq
+ssh blog
+</code></pre>
+</li>
+</ol>
 
                                 
                                 </section>
@@ -236,10 +307,10 @@
 
             
                 
-                
-                <a href="NPM.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 包管理工具">
-                    <i class="fa fa-angle-right"></i>
+                <a href="Nginx.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Nginx">
+                    <i class="fa fa-angle-left"></i>
                 </a>
+                
                 
             
         
@@ -248,7 +319,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"WEB DEVELOPMENT NOTBOOK","level":"1.1","depth":1,"next":{"title":"包管理工具","level":"1.2","depth":1,"path":"NPM.md","ref":"NPM.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2019-07-29T07:16:35.093Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-09T08:02:44.956Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"SSH","level":"1.5","depth":1,"previous":{"title":"Nginx","level":"1.4","depth":1,"path":"Nginx.md","ref":"Nginx.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"SSH.md","mtime":"2019-09-09T07:43:24.702Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-09T08:02:44.956Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
