@@ -1,10 +1,6 @@
 # WEB DEVELOPMENT NOTBOOK
 
-> #### 开发笔记，记录经验。
-
-
-
-
+> ### 开发笔记，记录经验。
 
 作者：[胡志辉](http://weixin.qq.com/r/NDikvGPEtT7KrSff920m)
 
@@ -12,12 +8,8 @@
 
 赞助作者：[paypal](https://paypal.me/huzhihui?locale.x=zh_XC)
 
-
-
-
-
 ## 项目地址
 
-- github仓库：[https://github.com/Ctleryes/NoteBook](https://github.com/Ctleryes/NoteBook)
-- gitbook在线阅读地址：[https://tigerzh.gitbook.io/notebook](https://tigerzh.gitbook.io/notebook/npm)
+* github仓库：[https://github.com/Ctleryes/NoteBook](https://github.com/Ctleryes/NoteBook)
+* gitbook在线阅读地址：[https://tigerzh.gitbook.io/notebook](https://tigerzh.gitbook.io/notebook/npm)
 
