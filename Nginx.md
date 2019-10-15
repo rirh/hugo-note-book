@@ -1,3 +1,6 @@
+{%  extends "blocks.md"  %}
+{%  block contain  %}
+
 # Nginx
 
 **web服务器**
@@ -160,3 +163,4 @@ http {
 
 ```
 
+{%  endblock  %}
