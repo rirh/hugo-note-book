@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const { exec } = require('shelljs');
 const git = require('simple-git')();
 const CFonts = require('cfonts');
