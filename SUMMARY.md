@@ -11,6 +11,7 @@
    * [Nginx](Nginx.md)
    * [SSH](SSH.md)
    * [GIT](git.md)
+* [隐私条款](private.md)
 
 
 

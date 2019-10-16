@@ -10,8 +10,7 @@
         align-items: center;
         flex-direction: column;
         transition: all .3ms;
-        height:${document.documentElement.clientHeight-50}px;
-        width:${document.documentElement.clientWith}px
+        height:${document.documentElement.clientHeight}px;
         `
         var dom = document.getElementById('header');
         dom.setAttribute('style',style)
@@ -32,6 +31,7 @@
         body.backgroundSize = 'cover';
         body.backgroundRepeat = 'no-repeat';
         body.backgroundImage = 'url('+ pub_img_current_image +')';
+        body.borderRadius="0px";
         // var span = document.getElementById('img_placer');
         // span.innerHTML = '<span style="background-image: url('+(pub_img_current_image=pub_img_url())+');width: 0px;height: 0px;display: inline;"></span>';
         }
