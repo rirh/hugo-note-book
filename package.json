@@ -11,6 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "cfonts": "^2.4.5",
+    "shelljs": "^0.8.3",
     "simple-git": "^1.126.0"
   }
 }
