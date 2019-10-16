@@ -31,8 +31,7 @@ git
         clg('push done!')
         console.log('push done');
         exec('say push done');
-        exec('ssh blog> /dev/null 2>&1 << eeooff');
-        exec('cd NoteBook/');
-        exec('git pull --no-edit;');
+        exec('ssh blog> /dev/null 2>&1 << eeooff&&cd NoteBook/&&git pull --no-edit;');
+      
 
     });
