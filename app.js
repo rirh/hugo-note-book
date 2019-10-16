@@ -19,14 +19,9 @@ const clg = (str) => {
 git
     .add('./*', () => {
         console.log('add done')
-        clg('add done!')
-        exec('say add done!');
-
     })
     .commit("await", () => {
         console.log('commit done')
-        clg('commit done!')
-        exec('say commit done!')
     })
     .push('origin', 'master', () => {
         clg('push done!')
@@ -35,7 +30,8 @@ git
         exec(`
         ssh blog> /dev/null 2>&1 << eeooff
         cd NoteBook/;
-        git pull --no-edit;`);
-      
-
+        git fetch --all;
+        git reset --hard origin/master;
+        git pull;
+        `);
     });
