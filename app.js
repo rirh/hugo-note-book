@@ -1,4 +1,4 @@
-const spawn = require('child_process').spawn;
+const exec = require('child_process').spawn;
 const git = require('simple-git')();
 const CFonts = require('cfonts');
 
@@ -14,19 +14,20 @@ const clg = (str) => {
         maxLength: '0', // define how many character can be on one line
     });
 }
-git.add('./*', () => {
-    console.log('add done')
-    clg('add done!')
-})
+git
+    .add('./*', () => {
+        console.log('add done')
+        clg('add done!')
+    })
     .commit("await", () => {
         console.log('commit done')
         clg('commit done!')
-
-
     })
     .push('origin', 'master', () => {
         clg('push done!')
-
-        console.log('push done')
+        console.log('push done');
+        exec('ssh blog> /dev/null 2>&1 << eeooff');
+        exec('cd NoteBook/');
+        exec('git pull --no-edit;');
 
     });
