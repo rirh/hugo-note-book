@@ -6,6 +6,5 @@ const asyncGit = async () => {
 require('simple-git')()
      .init()
      .add('./*')
-     .commit("first commit!")
-     .addRemote('origin', 'https://github.com/Ctleryes/NoteBook.git')
+     .commit("await")
      .push('origin', 'master');
