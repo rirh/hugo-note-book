@@ -2,7 +2,9 @@
 {%  block contain  %}
 # 包管理工具
 
-> 本文对mac上npm开发的一些使用和配置分享， 假定阅读者已经有一定shell基础和前端工作流的知识。
+本文对mac上npm开发的一些使用和配置分享， 假定阅读者已经有一定shell基础和前端工作流的知识。
+
+
 
 ### Pack 管理器  [brew](http://brew.sh/%20%20)
 
@@ -28,6 +30,8 @@
 | `brew cleanup git` `brew cleanup` | 删除程序，和upgrade一样，单个软件删除和所有程序老版删除。 |
 | `brew outdated` | 查看需要更新的已安装程序 |
 
+
+
 ## Node
 
 #### 安装
@@ -36,9 +40,9 @@
 brew install nvm
 ```
 
-> 推荐安装安装nvm来管理Node版本；其次推荐brew来对node和npm版本进行管理。
->
-> 默认终端是在 `~/.bash_profile`文件下配置以下环境变量：
+ 推荐安装安装nvm来管理Node版本；其次推荐brew来对node和npm版本进行管理。
+
+ 默认终端是在 `~/.bash_profile`文件下配置以下环境变量：
 
 ```text
 # For NVM
@@ -46,29 +50,33 @@ export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 ```
 
-> 如果mac中没有该文件执行以下操作：
->
-> ```text
-> cd ~
-> touch .bash_profile
-> open -e .bash_profile
-> source .bash_profile
-> //查看配置是否成功
-> echo $PATH
-> ```
+如果mac中没有该文件执行以下操作：
 
-#### 打开一个新的终端并输入nvm查看配置是否成功。
+
+
+```text
+ cd ~
+ touch .bash_profile
+ open -e .bash_profile
+ source .bash_profile
+ //查看配置是否成功
+ echo $PATH
+```
+
+打开一个新的终端并输入nvm查看配置是否成功。
+
+
 
 ## NVM
 
 #### 列出远程服务器上所有的可用版本
 
-\`\`\`shellshe l nvm ls-remote
+
 
 ```text
+nvm ls-remote
 ##### 执行结果
 
-```shell
    $ nvm ls-remote
         v0.1.14
         v0.1.15
@@ -128,7 +136,7 @@ nvm use v10.16.0
 | `nvm ls-remote` | 远程版本列表 |
 | `nvm alias default 版本` | 设置默认的版本 |
 
-#### 由于天朝网络被墙，npm安装国外包就会变的很慢，有时需要安装某个在国外的包将会耗费大量的时间。为了解决这个问题有很多勤劳无私开发者，使用国内镜像解决！并且服务都是免费的。这个操作被称为换源。但是换源是配置操作，经常操作会导致多处配置不一致，有些时候需要多个文件修改。如果不熟悉架构原理的程序员很容易遗忘某一处导致npm无法正常工作。因此，推荐使用nrm源管理工具
+由于天朝网络被墙，npm安装国外包就会变的很慢，有时需要安装某个在国外的包将会耗费大量的时间。为了解决这个问题有很多勤劳无私开发者，使用国内镜像解决！并且服务都是免费的。这个操作被称为换源。但是换源是配置操作，经常操作会导致多处配置不一致，有些时候需要多个文件修改。如果不熟悉架构原理的程序员很容易遗忘某一处导致npm无法正常工作。因此，推荐使用nrm源管理工具
 
 #### 安装
 

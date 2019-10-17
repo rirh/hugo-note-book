@@ -332,9 +332,7 @@
 
 
 <h1 id="&#x5305;&#x7BA1;&#x7406;&#x5DE5;&#x5177;">&#x5305;&#x7BA1;&#x7406;&#x5DE5;&#x5177;</h1>
-<blockquote>
 <p>&#x672C;&#x6587;&#x5BF9;mac&#x4E0A;npm&#x5F00;&#x53D1;&#x7684;&#x4E00;&#x4E9B;&#x4F7F;&#x7528;&#x548C;&#x914D;&#x7F6E;&#x5206;&#x4EAB;&#xFF0C; &#x5047;&#x5B9A;&#x9605;&#x8BFB;&#x8005;&#x5DF2;&#x7ECF;&#x6709;&#x4E00;&#x5B9A;shell&#x57FA;&#x7840;&#x548C;&#x524D;&#x7AEF;&#x5DE5;&#x4F5C;&#x6D41;&#x7684;&#x77E5;&#x8BC6;&#x3002;</p>
-</blockquote>
 <h3 id="pack-&#x7BA1;&#x7406;&#x5668;--brew">Pack &#x7BA1;&#x7406;&#x5668;  <a href="http://brew.sh/%20%20" target="_blank">brew</a></h3>
 <h4 id="&#x5B89;&#x88C5;&#xFF1A;">&#x5B89;&#x88C5;&#xFF1A;</h4>
 <pre><code class="lang-text">/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
@@ -405,31 +403,26 @@
 <h4 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h4>
 <pre><code class="lang-text">brew install nvm
 </code></pre>
-<blockquote>
-<p>&#x63A8;&#x8350;&#x5B89;&#x88C5;&#x5B89;&#x88C5;nvm&#x6765;&#x7BA1;&#x7406;Node&#x7248;&#x672C;&#xFF1B;&#x5176;&#x6B21;&#x63A8;&#x8350;brew&#x6765;&#x5BF9;node&#x548C;npm&#x7248;&#x672C;&#x8FDB;&#x884C;&#x7BA1;&#x7406;&#x3002;</p>
-<p>&#x9ED8;&#x8BA4;&#x7EC8;&#x7AEF;&#x662F;&#x5728; <code>~/.bash_profile</code>&#x6587;&#x4EF6;&#x4E0B;&#x914D;&#x7F6E;&#x4EE5;&#x4E0B;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF1A;</p>
-</blockquote>
+<p> &#x63A8;&#x8350;&#x5B89;&#x88C5;&#x5B89;&#x88C5;nvm&#x6765;&#x7BA1;&#x7406;Node&#x7248;&#x672C;&#xFF1B;&#x5176;&#x6B21;&#x63A8;&#x8350;brew&#x6765;&#x5BF9;node&#x548C;npm&#x7248;&#x672C;&#x8FDB;&#x884C;&#x7BA1;&#x7406;&#x3002;</p>
+<p> &#x9ED8;&#x8BA4;&#x7EC8;&#x7AEF;&#x662F;&#x5728; <code>~/.bash_profile</code>&#x6587;&#x4EF6;&#x4E0B;&#x914D;&#x7F6E;&#x4EE5;&#x4E0B;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF1A;</p>
 <pre><code class="lang-text"># For NVM
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 </code></pre>
-<blockquote>
 <p>&#x5982;&#x679C;mac&#x4E2D;&#x6CA1;&#x6709;&#x8BE5;&#x6587;&#x4EF6;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x64CD;&#x4F5C;&#xFF1A;</p>
-<pre><code class="lang-text">cd ~
-touch .bash_profile
-open -e .bash_profile
-source .bash_profile
-//&#x67E5;&#x770B;&#x914D;&#x7F6E;&#x662F;&#x5426;&#x6210;&#x529F;
-echo $PATH
+<pre><code class="lang-text"> cd ~
+ touch .bash_profile
+ open -e .bash_profile
+ source .bash_profile
+ //&#x67E5;&#x770B;&#x914D;&#x7F6E;&#x662F;&#x5426;&#x6210;&#x529F;
+ echo $PATH
 </code></pre>
-</blockquote>
-<h4 id="&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7EC8;&#x7AEF;&#x5E76;&#x8F93;&#x5165;nvm&#x67E5;&#x770B;&#x914D;&#x7F6E;&#x662F;&#x5426;&#x6210;&#x529F;&#x3002;">&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7EC8;&#x7AEF;&#x5E76;&#x8F93;&#x5165;nvm&#x67E5;&#x770B;&#x914D;&#x7F6E;&#x662F;&#x5426;&#x6210;&#x529F;&#x3002;</h4>
+<p>&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7EC8;&#x7AEF;&#x5E76;&#x8F93;&#x5165;nvm&#x67E5;&#x770B;&#x914D;&#x7F6E;&#x662F;&#x5426;&#x6210;&#x529F;&#x3002;</p>
 <h2 id="nvm">NVM</h2>
 <h4 id="&#x5217;&#x51FA;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x6240;&#x6709;&#x7684;&#x53EF;&#x7528;&#x7248;&#x672C;">&#x5217;&#x51FA;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x6240;&#x6709;&#x7684;&#x53EF;&#x7528;&#x7248;&#x672C;</h4>
-<p>```shellshe l nvm ls-remote</p>
-<pre><code class="lang-text">##### &#x6267;&#x884C;&#x7ED3;&#x679C;
+<pre><code class="lang-text">nvm ls-remote
+##### &#x6267;&#x884C;&#x7ED3;&#x679C;
 
-```shell
    $ nvm ls-remote
         v0.1.14
         v0.1.15
@@ -497,7 +490,7 @@ lts/dubnium -&gt; v10.16.0
 </tr>
 </tbody>
 </table>
-<h4 id="&#x7531;&#x4E8E;&#x5929;&#x671D;&#x7F51;&#x7EDC;&#x88AB;&#x5899;&#xFF0C;npm&#x5B89;&#x88C5;&#x56FD;&#x5916;&#x5305;&#x5C31;&#x4F1A;&#x53D8;&#x7684;&#x5F88;&#x6162;&#xFF0C;&#x6709;&#x65F6;&#x9700;&#x8981;&#x5B89;&#x88C5;&#x67D0;&#x4E2A;&#x5728;&#x56FD;&#x5916;&#x7684;&#x5305;&#x5C06;&#x4F1A;&#x8017;&#x8D39;&#x5927;&#x91CF;&#x7684;&#x65F6;&#x95F4;&#x3002;&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x6709;&#x5F88;&#x591A;&#x52E4;&#x52B3;&#x65E0;&#x79C1;&#x5F00;&#x53D1;&#x8005;&#xFF0C;&#x4F7F;&#x7528;&#x56FD;&#x5185;&#x955C;&#x50CF;&#x89E3;&#x51B3;&#xFF01;&#x5E76;&#x4E14;&#x670D;&#x52A1;&#x90FD;&#x662F;&#x514D;&#x8D39;&#x7684;&#x3002;&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x88AB;&#x79F0;&#x4E3A;&#x6362;&#x6E90;&#x3002;&#x4F46;&#x662F;&#x6362;&#x6E90;&#x662F;&#x914D;&#x7F6E;&#x64CD;&#x4F5C;&#xFF0C;&#x7ECF;&#x5E38;&#x64CD;&#x4F5C;&#x4F1A;&#x5BFC;&#x81F4;&#x591A;&#x5904;&#x914D;&#x7F6E;&#x4E0D;&#x4E00;&#x81F4;&#xFF0C;&#x6709;&#x4E9B;&#x65F6;&#x5019;&#x9700;&#x8981;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x4FEE;&#x6539;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x719F;&#x6089;&#x67B6;&#x6784;&#x539F;&#x7406;&#x7684;&#x7A0B;&#x5E8F;&#x5458;&#x5F88;&#x5BB9;&#x6613;&#x9057;&#x5FD8;&#x67D0;&#x4E00;&#x5904;&#x5BFC;&#x81F4;npm&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x63A8;&#x8350;&#x4F7F;&#x7528;nrm&#x6E90;&#x7BA1;&#x7406;&#x5DE5;&#x5177;">&#x7531;&#x4E8E;&#x5929;&#x671D;&#x7F51;&#x7EDC;&#x88AB;&#x5899;&#xFF0C;npm&#x5B89;&#x88C5;&#x56FD;&#x5916;&#x5305;&#x5C31;&#x4F1A;&#x53D8;&#x7684;&#x5F88;&#x6162;&#xFF0C;&#x6709;&#x65F6;&#x9700;&#x8981;&#x5B89;&#x88C5;&#x67D0;&#x4E2A;&#x5728;&#x56FD;&#x5916;&#x7684;&#x5305;&#x5C06;&#x4F1A;&#x8017;&#x8D39;&#x5927;&#x91CF;&#x7684;&#x65F6;&#x95F4;&#x3002;&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x6709;&#x5F88;&#x591A;&#x52E4;&#x52B3;&#x65E0;&#x79C1;&#x5F00;&#x53D1;&#x8005;&#xFF0C;&#x4F7F;&#x7528;&#x56FD;&#x5185;&#x955C;&#x50CF;&#x89E3;&#x51B3;&#xFF01;&#x5E76;&#x4E14;&#x670D;&#x52A1;&#x90FD;&#x662F;&#x514D;&#x8D39;&#x7684;&#x3002;&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x88AB;&#x79F0;&#x4E3A;&#x6362;&#x6E90;&#x3002;&#x4F46;&#x662F;&#x6362;&#x6E90;&#x662F;&#x914D;&#x7F6E;&#x64CD;&#x4F5C;&#xFF0C;&#x7ECF;&#x5E38;&#x64CD;&#x4F5C;&#x4F1A;&#x5BFC;&#x81F4;&#x591A;&#x5904;&#x914D;&#x7F6E;&#x4E0D;&#x4E00;&#x81F4;&#xFF0C;&#x6709;&#x4E9B;&#x65F6;&#x5019;&#x9700;&#x8981;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x4FEE;&#x6539;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x719F;&#x6089;&#x67B6;&#x6784;&#x539F;&#x7406;&#x7684;&#x7A0B;&#x5E8F;&#x5458;&#x5F88;&#x5BB9;&#x6613;&#x9057;&#x5FD8;&#x67D0;&#x4E00;&#x5904;&#x5BFC;&#x81F4;npm&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x63A8;&#x8350;&#x4F7F;&#x7528;nrm&#x6E90;&#x7BA1;&#x7406;&#x5DE5;&#x5177;</h4>
+<p>&#x7531;&#x4E8E;&#x5929;&#x671D;&#x7F51;&#x7EDC;&#x88AB;&#x5899;&#xFF0C;npm&#x5B89;&#x88C5;&#x56FD;&#x5916;&#x5305;&#x5C31;&#x4F1A;&#x53D8;&#x7684;&#x5F88;&#x6162;&#xFF0C;&#x6709;&#x65F6;&#x9700;&#x8981;&#x5B89;&#x88C5;&#x67D0;&#x4E2A;&#x5728;&#x56FD;&#x5916;&#x7684;&#x5305;&#x5C06;&#x4F1A;&#x8017;&#x8D39;&#x5927;&#x91CF;&#x7684;&#x65F6;&#x95F4;&#x3002;&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x6709;&#x5F88;&#x591A;&#x52E4;&#x52B3;&#x65E0;&#x79C1;&#x5F00;&#x53D1;&#x8005;&#xFF0C;&#x4F7F;&#x7528;&#x56FD;&#x5185;&#x955C;&#x50CF;&#x89E3;&#x51B3;&#xFF01;&#x5E76;&#x4E14;&#x670D;&#x52A1;&#x90FD;&#x662F;&#x514D;&#x8D39;&#x7684;&#x3002;&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x88AB;&#x79F0;&#x4E3A;&#x6362;&#x6E90;&#x3002;&#x4F46;&#x662F;&#x6362;&#x6E90;&#x662F;&#x914D;&#x7F6E;&#x64CD;&#x4F5C;&#xFF0C;&#x7ECF;&#x5E38;&#x64CD;&#x4F5C;&#x4F1A;&#x5BFC;&#x81F4;&#x591A;&#x5904;&#x914D;&#x7F6E;&#x4E0D;&#x4E00;&#x81F4;&#xFF0C;&#x6709;&#x4E9B;&#x65F6;&#x5019;&#x9700;&#x8981;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x4FEE;&#x6539;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x719F;&#x6089;&#x67B6;&#x6784;&#x539F;&#x7406;&#x7684;&#x7A0B;&#x5E8F;&#x5458;&#x5F88;&#x5BB9;&#x6613;&#x9057;&#x5FD8;&#x67D0;&#x4E00;&#x5904;&#x5BFC;&#x81F4;npm&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x63A8;&#x8350;&#x4F7F;&#x7528;nrm&#x6E90;&#x7BA1;&#x7406;&#x5DE5;&#x5177;</p>
 <h4 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h4>
 <pre><code class="lang-text">npm install -g nrm
 </code></pre>
@@ -622,7 +615,7 @@ $ npm ls -g
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Pack","level":"1.3.1","depth":2,"next":{"title":"PM2","level":"1.3.2","depth":2,"path":"roll2/pm2.md","ref":"roll2/pm2.md","articles":[]},"previous":{"title":"卷 II","level":"1.3","depth":1,"path":"roll2/index.md","ref":"roll2/index.md","articles":[{"title":"Pack","level":"1.3.1","depth":2,"path":"roll2/npm.md","ref":"roll2/npm.md","articles":[]},{"title":"PM2","level":"1.3.2","depth":2,"path":"roll2/pm2.md","ref":"roll2/pm2.md","articles":[]},{"title":"Nginx","level":"1.3.3","depth":2,"path":"roll2/nginx.md","ref":"roll2/nginx.md","articles":[]},{"title":"SSH","level":"1.3.4","depth":2,"path":"roll2/ssh.md","ref":"roll2/ssh.md","articles":[]},{"title":"GIT","level":"1.3.5","depth":2,"path":"roll2/git.md","ref":"roll2/git.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"hide-element":{"elements":[".gitbook-link"]},"favicon":{"shortcut":"assets/images/favicon.ico","bookmark":"assets/images/favicon.ico","appleTouch":"assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"assets/images/apple-touch-icon.png","180x180":"assets/images/apple-touch-icon.png"}},"back-to-top-button":{},"code":{"copyButtons":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll2/npm.md","mtime":"2019-10-17T06:39:05.744Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-17T06:52:29.978Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Pack","level":"1.3.1","depth":2,"next":{"title":"PM2","level":"1.3.2","depth":2,"path":"roll2/pm2.md","ref":"roll2/pm2.md","articles":[]},"previous":{"title":"卷 II","level":"1.3","depth":1,"path":"roll2/index.md","ref":"roll2/index.md","articles":[{"title":"Pack","level":"1.3.1","depth":2,"path":"roll2/npm.md","ref":"roll2/npm.md","articles":[]},{"title":"PM2","level":"1.3.2","depth":2,"path":"roll2/pm2.md","ref":"roll2/pm2.md","articles":[]},{"title":"Nginx","level":"1.3.3","depth":2,"path":"roll2/nginx.md","ref":"roll2/nginx.md","articles":[]},{"title":"SSH","level":"1.3.4","depth":2,"path":"roll2/ssh.md","ref":"roll2/ssh.md","articles":[]},{"title":"GIT","level":"1.3.5","depth":2,"path":"roll2/git.md","ref":"roll2/git.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"hide-element":{"elements":[".gitbook-link"]},"favicon":{"shortcut":"assets/images/favicon.ico","bookmark":"assets/images/favicon.ico","appleTouch":"assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"assets/images/apple-touch-icon.png","180x180":"assets/images/apple-touch-icon.png"}},"back-to-top-button":{},"code":{"copyButtons":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll2/npm.md","mtime":"2019-10-17T06:59:31.476Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-17T07:00:17.230Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
