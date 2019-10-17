@@ -35,10 +35,8 @@
         "-lunr",
         "-sharing",
         "-font-settings",
-        "hide-element",
         "back-to-top-button",
-        "code",
-        "favicon"
+        "code"
     ],
     "title": "TigerZH",
     "variables": {
