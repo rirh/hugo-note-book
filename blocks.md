@@ -49,5 +49,6 @@
    如果不定义默认值，则表示空字符串
 {%  endblock  %}
 {%  block footer  %}
-   {% include "./LICENSE" %}
+<hr style="height:1px;" />
+   {% include "foot.md" %}
 {%  endblock  %}

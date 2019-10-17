@@ -1,7 +1,7 @@
 html,
 body {
     background : transparent;
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
 }
 
 .card {
@@ -29,5 +29,5 @@ body {
 }
 
 .page-inner {
-    padding: 15px 15px 40px 15px!important;
+    padding: 15px 15px 40px 15px !important;
 }
