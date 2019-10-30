@@ -26,7 +26,7 @@ css语法很简单,包含两个部分:
 
 
 
-**`P{color:red}`**
+**`P{color:antiquewhite}`**
 
 ```
 上面例子
