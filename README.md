@@ -11,7 +11,7 @@
 
 赞助作者：[paypal](https://paypal.me/huzhihui?locale.x=zh_XC)
 
-来源：把自己以为知道的形成文字描述
+来源：把自己认为的形成文字描述
 
 
 
