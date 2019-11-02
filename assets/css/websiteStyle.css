@@ -36,11 +36,13 @@ body {
     display: none;
 
 }
-.gitbook-link{
-    display: none!important;
+
+.gitbook-link,
+.custom-link,
+.divider {
+    display: none !important;
 
 }
-
 
 
 .book-summary {
