@@ -5,7 +5,17 @@
 
 
 
-### **My Life Getting Better :)**
+### **My Life Getting Better  :)**
+
+
+
+
+
+> 世界上有10类人：一种是懂二进制的，一种是不懂的。
+
+
+
+
 
 作者：[胡志辉](http://weixin.qq.com/r/NDikvGPEtT7KrSff920m)
 
