@@ -1,3 +1,6 @@
+{%  extends "../blocks.md"  %}
+{%  block contain  %}
+
 # 前端技术深入学习方向
 
 **h5**
@@ -48,3 +51,4 @@ flutter是google高性能的框架
 
 ```
 
+{%  endblock  %}

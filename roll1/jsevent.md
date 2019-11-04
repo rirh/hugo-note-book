@@ -49,8 +49,6 @@
            console.log("main_fun");
            e.stopPropagation();
        }
-   
-   
    const con_dom = document.querySelector('.contant');
    con_dom.onclick = () => {
            console.log("con_dom");

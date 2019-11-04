@@ -5,7 +5,7 @@
     * [HTML](roll1/html.md)
     * [CLASS](roll1/Class.md)
     * [Plan](roll1/plan.md)
-    * [JS事件流简述](roll1/jjsevent.md)
+    * [JS事件流简述](roll1/jsevent.md)
     * [copy](roll1/copy.md)
     
 * [卷 II](roll2/index.md)
@@ -16,10 +16,10 @@
    * [SSH](roll2/ssh.md)
    * [GIT](roll2/git.md)
    
-* [卷 Ⅲ](/roll3/index.md)
-   
-* [emulator](roll2/emulator.md)
-   
+* [卷 III](roll3/index.md)
+
+   * [emulator](roll3/emulator.md)
+
 * [隐私条款](private.md)
 
    

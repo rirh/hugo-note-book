@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Nginx · TigerZH</title>
+        <title>emulator · TigerZH</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -53,10 +53,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="ssh.html" />
+    <link rel="next" href="../private.html" />
     
     
-    <link rel="prev" href="pm2.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -200,9 +200,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="./">
+        <li class="chapter " data-level="1.3" data-path="../roll2/">
             
-                <a href="./">
+                <a href="../roll2/">
             
                     
                     卷 II
@@ -214,9 +214,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="npm.html">
+        <li class="chapter " data-level="1.3.1" data-path="../roll2/npm.html">
             
-                <a href="npm.html">
+                <a href="../roll2/npm.html">
             
                     
                     Pack
@@ -227,9 +227,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="pm2.html">
+        <li class="chapter " data-level="1.3.2" data-path="../roll2/pm2.html">
             
-                <a href="pm2.html">
+                <a href="../roll2/pm2.html">
             
                     
                     PM2
@@ -240,9 +240,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.3" data-path="nginx.html">
+        <li class="chapter " data-level="1.3.3" data-path="../roll2/nginx.html">
             
-                <a href="nginx.html">
+                <a href="../roll2/nginx.html">
             
                     
                     Nginx
@@ -253,9 +253,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="ssh.html">
+        <li class="chapter " data-level="1.3.4" data-path="../roll2/ssh.html">
             
-                <a href="ssh.html">
+                <a href="../roll2/ssh.html">
             
                     
                     SSH
@@ -266,9 +266,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.5" data-path="git.html">
+        <li class="chapter " data-level="1.3.5" data-path="../roll2/git.html">
             
-                <a href="git.html">
+                <a href="../roll2/git.html">
             
                     
                     GIT
@@ -284,9 +284,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="../roll3/">
+        <li class="chapter " data-level="1.4" data-path="./">
             
-                <a href="../roll3/">
+                <a href="./">
             
                     
                     卷 III
@@ -298,9 +298,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="../roll3/emulator.html">
+        <li class="chapter active" data-level="1.4.1" data-path="emulator.html">
             
-                <a href="../roll3/emulator.html">
+                <a href="emulator.html">
             
                     
                     emulator
@@ -359,7 +359,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Nginx</a>
+        <a href=".." >emulator</a>
     </h1>
 </div>
 
@@ -409,190 +409,73 @@
     }())
   </script>
   <div class="card ">
-    <p class="blocks-title" id="blocks-title">Nginx</p>
+    <p class="blocks-title" id="blocks-title">emulator</p>
     <strong>My Life Getting Better !</strong>
   </div>
   </div>
 
 
 
-<h1 id="nginx">Nginx</h1>
-<p><strong>web&#x670D;&#x52A1;&#x5668;</strong></p>
-<p><strong>&#x73AF;&#x5883;:CentOS Linux release 7.5.1804 (Core)</strong>
-<strong>&#x963F;&#x91CC;&#x4E91; &#x670D;&#x52A1;&#x5668;</strong></p>
+<h1 id="emulator">emulator</h1>
+<p><strong>Android &#x6A21;&#x62DF;&#x5668;</strong></p>
 <table>
 <thead>
 <tr>
-<th>&#x4EE3;&#x7801;</th>
+<th>&#x547D;&#x4EE4;</th>
 <th>&#x6CE8;&#x91CA;</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>sudo yum install nginx</td>
-<td>&#x5B89;&#x88C5;nginx</td>
+<td>emulator -avd  &#x8BBE;&#x5907;&#x540D;&#x79F0;</td>
+<td>&#x542F;&#x52A8;android stduio &#x6A21;&#x62DF;&#x5668;</td>
 </tr>
 <tr>
-<td>sudo systemctl enable nginx</td>
-<td>&#x8BBE;&#x7F6E;&#x5F00;&#x673A;&#x542F;&#x52A8;</td>
+<td>adb install &#x6587;&#x4EF6;&#x8DEF;&#x5F84;</td>
+<td>&#x5B89;&#x88C5;apk</td>
 </tr>
 <tr>
-<td>sudo systemctl start nginx</td>
-<td>&#x542F;&#x52A8;&#x670D;&#x52A1;</td>
-</tr>
-<tr>
-<td>sudo systemctl stop nginx</td>
-<td>&#x505C;&#x6B62;&#x670D;&#x52A1;</td>
-</tr>
-<tr>
-<td>sudo systemctl restart nginx</td>
-<td>&#x91CD;&#x542F;&#x670D;&#x52A1;</td>
-</tr>
-<tr>
-<td>sudo systemctl reload nginx</td>
-<td>&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#xFF0C;&#x56E0;&#x4E3A;&#x4E00;&#x822C;&#x91CD;&#x65B0;&#x914D;&#x7F6E;&#x4E4B;&#x540E;&#xFF0C;&#x4E0D;&#x5E0C;&#x671B;&#x91CD;&#x542F;&#x670D;&#x52A1;&#xFF0C;&#x8FD9;&#x65F6;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x3002;</td>
+<td>emulator -list-avds</td>
+<td>&#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x5217;&#x8868;</td>
 </tr>
 </tbody>
 </table>
-<h3 id="&#x6211;&#x7684;&#x670D;&#x52A1;&#x5668;nginx&#x914D;&#x7F6E;&#x6587;&#x4EF6;">&#x6211;&#x7684;&#x670D;&#x52A1;&#x5668;nginx&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h3>
-<p><strong>&#x4E00;&#x4E2A;&#x57DF;&#x540D;&#x4F5C;&#x4E3A;&#x9ED8;&#x8BA4;&#x7F51;&#x5740;</strong> </p>
-<p><strong>&#x89E3;&#x6790;&#x7684;&#x4E00;&#x4E2A;&#x57DF;&#x540D;&#x4F5C;&#x4E3A;api&#x63A5;&#x53E3;</strong></p>
-<p><strong>&#x5206;&#x522B;&#x914D;&#x7F6E;&#x4E86;&#x63A5;&#x53E3;&#x8F6C;&#x53D1;&#x548C;https&#x4EE3;&#x7406;</strong></p>
-<pre><code># For more information on configuration, see:
-#   * Official English Documentation: http://nginx.org/en/docs/
-#   * Official Russian Documentation: http://nginx.org/ru/docs/
-
-user nginx;
-worker_processes auto;
-error_log /var/log/nginx/error.log;
-pid /run/nginx.pid;
-
-
-
-events {
-    worker_connections 1024;
-}
-
-
-http {
-    log_format  main  &apos;$remote_addr - $remote_user [$time_local] &quot;$request&quot; &apos;
-                      &apos;$status $body_bytes_sent &quot;$http_referer&quot; &apos;
-                      &apos;&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;&apos;;
-
-    access_log  /var/log/nginx/access.log  main;
-
-    sendfile            on;
-    tcp_nopush          on;
-    tcp_nodelay         on;
-    keepalive_timeout   65;
-    types_hash_max_size 2048;
-
-    include             /etc/nginx/mime.types;
-    default_type        application/octet-stream;
-
-
-
-    server {
-        listen       80 default_server;
-        server_name  www.huzhihui.org.cn;
-
-        location / {
-            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-            proxy_set_header Host $http_host;
-            proxy_set_header X-NginX-Proxy true;
-            proxy_http_version 1.1;
-            proxy_set_header Upgrade $http_upgrade;
-            proxy_set_header Connection &quot;upgrade&quot;;
-            proxy_max_temp_file_size 0;
-            proxy_pass http://127.0.0.1:3001/;
-            proxy_redirect off;
-            proxy_read_timeout 240s;
-        }
-
-        error_page 404 /404.html;
-            location = /40x.html {
-        }
-
-        error_page 500 502 503 504 /50x.html;
-            location = /50x.html {
-        }
-    }
-
-     server {
-        listen       80;
-        server_name  music.huzhihui.org.cn;
-
-        location / {
-            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-            proxy_set_header Host $http_host;
-            proxy_set_header X-NginX-Proxy true;
-            proxy_http_version 1.1;
-            proxy_set_header Upgrade $http_upgrade;
-            proxy_set_header Connection &quot;upgrade&quot;;
-            proxy_max_temp_file_size 0;
-            proxy_pass http://127.0.0.1:3002/;
-            proxy_redirect off;
-            proxy_read_timeout 240s;
-        }
-
-        error_page 404 /404.html;
-            location = /40x.html {
-        }
-
-        error_page 500 502 503 504 /50x.html;
-            location = /50x.html {
-        }
-    }
-
-    server {
-        listen 443;
-        server_name www.huzhihui.org.cn;
-        ssl on;
-        ssl_certificate  /root/web/Blog/cert/www.huzhihui.org.cn.pem;
-        ssl_certificate_key /root/web/Blog/cert/www.huzhihui.org.cn.key;
-        ssl_session_timeout 5m;
-        ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;
-        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-        ssl_prefer_server_ciphers on;
-        location / {
-           proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-            proxy_set_header Host $http_host;
-            proxy_set_header X-NginX-Proxy true;
-            proxy_http_version 1.1;
-            proxy_set_header Upgrade $http_upgrade;
-            proxy_set_header Connection &quot;upgrade&quot;;
-            proxy_max_temp_file_size 0;
-            proxy_pass http://127.0.0.1:3001/;
-            proxy_redirect off;
-            proxy_read_timeout 240s;
-        }
-      }
-
-       server {
-        listen 443;
-        server_name music.huzhihui.org.cn;
-        ssl on;
-        ssl_certificate  /root/web/NotesMusic/cert/music.huzhihui.org.cn_nginx/music.huzhihui.org.cn.pem;
-        ssl_certificate_key /root/web/NotesMusic/cert/music.huzhihui.org.cn_nginx/music.huzhihui.org.cn.key;
-        ssl_session_timeout 5m;
-        ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;
-        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-        ssl_prefer_server_ciphers on;
-        location / {
-           proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-            proxy_set_header Host $http_host;
-            proxy_set_header X-NginX-Proxy true;
-            proxy_http_version 1.1;
-            proxy_set_header Upgrade $http_upgrade;
-            proxy_set_header Connection &quot;upgrade&quot;;
-            proxy_max_temp_file_size 0;
-            proxy_pass http://127.0.0.1:3002/;
-            proxy_redirect off;
-            proxy_read_timeout 240s;
-        }
-      }
-}
-</code></pre><p><hr style="height:1px;">
+<p><strong>ios&#x6A21;&#x62DF;&#x5668;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x547D;&#x4EE4;</th>
+<th>&#x6CE8;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>open -a Simulator</td>
+<td>&#x6253;&#x5F00;ios&#x6A21;&#x62DF;&#x5668;</td>
+</tr>
+<tr>
+<td>xcrun simctl install booted &#x6587;&#x4EF6;&#x8DEF;&#x5F84;</td>
+<td>&#x5B89;&#x88C5;ipa&#x9700;&#x8981;&#x5148;&#x5C06;ipa&#x6587;&#x4EF6;&#x540E;&#x7F00;&#x6539;&#x4E3A;zip&#x7136;&#x540E;&#x89E3;&#x538B;zip&#x5F97;&#x5230;app&#x7ED3;&#x5C3E;&#x7684;&#x6587;&#x4EF6;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x547D;&#x4EE4;&#x5B89;&#x88C5;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>xcrun simctl list devices</td>
+<td>&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684;&#x6A21;&#x62DF;&#x5668;</td>
+</tr>
+<tr>
+<td>xcrun simctl openurl booted &quot;url&quot;</td>
+<td>&#x901A;&#x8FC7;&#x6A21;&#x62DF;&#x5668;&#x6253;&#x5F00;&#x7F51;&#x5740;</td>
+</tr>
+<tr>
+<td>xcrun simctl openurl booted &quot;com.netease.preciousMetal.dev&quot;</td>
+<td>&#x901A;&#x8FC7;urlscheme&#x6253;&#x5F00;app</td>
+</tr>
+<tr>
+<td>xcrun simctl shutdown booted</td>
+<td>&#x5173;&#x95ED;</td>
+</tr>
+</tbody>
+</table>
+<p><hr style="height:1px;">
    MIT License</p>
 <p>Copyright (c) 2019 TigerZH</p>
 
@@ -606,12 +489,12 @@ http {
 
             
                 
-                <a href="pm2.html" class="navigation navigation-prev " aria-label="Previous page: PM2">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 卷 III">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="ssh.html" class="navigation navigation-next " aria-label="Next page: SSH">
+                <a href="../private.html" class="navigation navigation-next " aria-label="Next page: 隐私条款">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -622,7 +505,7 @@ http {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Nginx","level":"1.3.3","depth":2,"next":{"title":"SSH","level":"1.3.4","depth":2,"path":"roll2/ssh.md","ref":"roll2/ssh.md","articles":[]},"previous":{"title":"PM2","level":"1.3.2","depth":2,"path":"roll2/pm2.md","ref":"roll2/pm2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"hide-element":{"elements":[".gitbook-link"]},"favicon":{"shortcut":"assets/images/favicon.ico","bookmark":"assets/images/favicon.ico","appleTouch":"assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"assets/images/apple-touch-icon.png","180x180":"assets/images/apple-touch-icon.png"}},"back-to-top-button":{},"code":{"copyButtons":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll2/nginx.md","mtime":"2019-10-17T06:39:05.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-04T04:25:13.684Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"emulator","level":"1.4.1","depth":2,"next":{"title":"隐私条款","level":"1.5","depth":1,"path":"private.md","ref":"private.md","articles":[]},"previous":{"title":"卷 III","level":"1.4","depth":1,"path":"roll3/index.md","ref":"roll3/index.md","articles":[{"title":"emulator","level":"1.4.1","depth":2,"path":"roll3/emulator.md","ref":"roll3/emulator.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"hide-element":{"elements":[".gitbook-link"]},"favicon":{"shortcut":"assets/images/favicon.ico","bookmark":"assets/images/favicon.ico","appleTouch":"assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"assets/images/apple-touch-icon.png","180x180":"assets/images/apple-touch-icon.png"}},"back-to-top-button":{},"code":{"copyButtons":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll3/emulator.md","mtime":"2019-11-04T04:23:52.592Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-04T04:25:13.684Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

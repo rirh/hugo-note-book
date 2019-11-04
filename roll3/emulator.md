@@ -1,3 +1,6 @@
+{%  extends "../blocks.md"  %}
+{%  block contain  %}
+
 # emulator
 
 **Android 模拟器**
@@ -21,3 +24,4 @@
 | xcrun simctl openurl booted "com.netease.preciousMetal.dev" | 通过urlscheme打开app                                         |
 | xcrun simctl shutdown booted                                | 关闭                                                         |
 
+{%  endblock  %}
