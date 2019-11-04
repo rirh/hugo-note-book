@@ -16,14 +16,11 @@
 
 
 
-
 作者：[胡志辉](http://weixin.qq.com/r/NDikvGPEtT7KrSff920m)
 
 赞助作者：[paypal](https://paypal.me/huzhihui?locale.x=zh_XC)
 
 来源：把自己认为的形成文字描述
-
-
 
 
 
