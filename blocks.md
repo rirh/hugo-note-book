@@ -32,7 +32,13 @@
         body.backgroundRepeat = 'no-repeat';
         body.backgroundImage = 'url('+ pub_img_current_image +')';
         body.borderRadius="0px";
-        // var span = document.getElementById('img_placer');
+        const url = 'https://api.huzhihui.org.cn/doc'
+        fetch(url)
+        .then(async e => {
+            const s = await e.text()
+            document.querySelector('.shiju').innerHTML = s;
+        })
+        // // var span = document.getElementById('img_placer');
         // span.innerHTML = '<span style="background-image: url('+(pub_img_current_image=pub_img_url())+');width: 0px;height: 0px;display: inline;"></span>';
         }
         backgroundImage();
@@ -40,7 +46,7 @@
   </script>
   <div class="card " >
     <p class="blocks-title" id="blocks-title">{{page.title}}</p>
-    <strong>My Life Getting Better !</strong>
+    <strong class="shiju">My Life Getting Better !</strong>
   </div>
   </div>
 {%  endblock  %}

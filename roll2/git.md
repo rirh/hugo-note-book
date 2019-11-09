@@ -15,6 +15,8 @@ git是世界上最先进的发布式版本控制系统
 | `git add .`                 | 添加所有改动           |
 | `git commit -m NAME`        | 提交本次添加并为其命名 |
 | `git push`                  | 提交到远程仓库         |
+| `git stash `                | 保存当前修改           |
+| `git stash pop`             | 拆包当前修改           |
 
 
 
