@@ -57,12 +57,12 @@
             ]
         },
         "favicon": {
-            "shortcut": "assets/images/favicon.ico",
-            "bookmark": "assets/images/favicon.ico",
-            "appleTouch": "assets/images/apple-touch-icon.png",
+            "shortcut": "/assets/images/favicon.ico",
+            "bookmark": "/assets/images/favicon.ico",
+            "appleTouch": "/assets/images/apple-touch-icon.png",
             "appleTouchMore": {
-                "120x120": "assets/images/apple-touch-icon.png",
-                "180x180": "assets/images/apple-touch-icon.png"
+                "120x120": "/assets/images/apple-touch-icon.png",
+                "180x180": "/assets/images/apple-touch-icon.png"
             }
         }
     }
