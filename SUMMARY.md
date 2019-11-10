@@ -7,6 +7,17 @@
     * [Plan](roll1/plan.md)
     * [JS事件流简述](roll1/jsevent.md)
     * [copy](roll1/copy.md)
+    * [阿里云添加ssl证书](/roll1/cert.md)
+    * [IPSec 共享密钥丢失](roll1/vpn.md)
+    * [监听js异步引入完成](roll1/jscomplate.md)
+    * [快速排序](roll1/quicksort.md)
+    * [思路与选择](roll1/choose.md)
+    * [unexpected end of file](roll1/error.md)
+    * [换行与回车](roll1/enter.md)
+    * [2018](roll1/2018.md)
+    * [命运与挑山工](roll1/builder.md)
+    * [熵](roll1/life.md)
+    * [随笔倾城](roll1/city.md)
     
 * [卷 II](roll2/index.md)
   

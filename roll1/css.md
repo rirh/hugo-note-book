@@ -112,4 +112,124 @@ antiquewhite：值
 
 
 
+## css简易简易
+
+> **对于页面来说,动画真是太有用了!**
+
+`开发页面的时候,总是会用上动画.使的网站的交互性更加的完善.很多时候会忘记使用的流程,本文作为开发笔记 方便使用.`
+
+## 1.Transition
+
+```css
+  .con {
+      font-size: 16px
+    }
+
+    .con:hover {
+      font-size: 40px
+    }     
+```
+
+```html
+  <span class="con">
+    anim
+  </span>
+```
+**上面是一个演示,当鼠标放在文字上,文字会迅速变大,上面是很简单的代码.**
+
+```css
+   .con {
+      font-size: 16px;
+      transition: 1s;
+    }
+```
+
+**transition的作用在于，指定状态变化(这里指的是时间)**
+
+***由于是简易教程 所有其他的属性不展开讲 展开那可能可以写一本书
+所有支持的属性请点击[链接](http://oli.jp/2010/css-animatable-properties/)
+这边有一些[示例](http://leaverou.github.io/animatable/)***
+
+
+    transition局限性
+
+
+ 1. 需要事件触发
+ 2. 事件是一次性的
+ 3. 无法定义中间状态
+ 4. 一条transition只能定义一个属性
+
+## Animation
+
+> 为了解决上述的问题 于是就有了强大的Animation
+> 可以下结论:Animation就是为了解决这些问题而存在的
+
+```css
+  .con {
+      font-size: 16px;
+      transition: 1s;
+    }
+
+    .con:hover {
+      /* font-size: 40px */
+      animation: 1s scla;
+    }
+
+    @keyframes scla {
+      from {
+        font-size: 16px;
+      }
+      to{
+        font-size: 40px
+      }
+    }
+```
+上面是最简单的例子
+
+ 1. 不需要事件触发
+
+```css
+  .con {
+      font-size: 16px;
+      animation: 1s sc;
+    }
+```
+
+ 2. 事件的循环次数可以自定义
+```css
+  .con {
+      font-size: 16px;
+      animation: 1s sc infinite;
+    }
+```
+**无限播放**
+ 3. 可以控制中间状态
+
+```css
+ .con {
+  font-size: 16px;
+  animation: 1s sc forwards;
+}
+```
+**保留最后的状态**
+
+ 4. 能定义多个属性
+```css
+  @keyframes sc {
+      from {
+        font-size: 16px;
+        background-color: #fff;
+      }
+      to{
+        font-size: 40px;
+        background-color: #000;
+        color: #fff
+
+      }
+    }
+```
+TODO...
+
+
+
 {%  endblock  %}
