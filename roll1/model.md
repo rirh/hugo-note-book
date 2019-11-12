@@ -1,5 +1,8 @@
 
 
+{%  extends "../blocks.md"  %}
+{%  block contain  %}
+
 # 数据绑定实例
 
 **由于Proxy的先进机制和兼容的发展，vue3.0放弃IE老版本的兼容，采用Proxy为核心机制**
@@ -98,3 +101,4 @@
 </html>
 ```
 
+{%  endblock   %}

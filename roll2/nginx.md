@@ -3,7 +3,15 @@
 
 # Nginx
 
-**web服务器**
+**简介**
+
+轻量、开源、HTTP服务器软件！可以和apache配合使用。
+
+nginx基于事件和异步操作，访问量很大的时候可以轻松处理；
+
+apache依赖于线程，访问量大会大量新增线程，很快耗尽内存。
+
+
 
 **环境:CentOS Linux release 7.5.1804 (Core)**
 **阿里云 服务器**
@@ -16,6 +24,24 @@
 | sudo systemctl stop nginx    | 停止服务                                                     |
 | sudo systemctl restart nginx | 重启服务                                                     |
 | sudo systemctl reload nginx  | 重新加载，因为一般重新配置之后，不希望重启服务，这时可以使用重新加载。 |
+| sudo nginx -t                | 验证配置文件是否有语法错误                                   |
+| sudo systemctl status nginx  | 查看 nginx 状态                                              |
+
+
+
+nginx 一般目录位置。
+
+- /var/log/nginx/ ：日志文件目录，通常包含`access.log`和`error.log`两个主日志文件，以及各个站点的日志。
+
+- /etc/nginx/：配置文件目录。
+
+- /etc/nginx/sites-available/：所有站点的配置文件目录。
+
+- /etc/nginx/sites-enabled/：生效站点的配置文件目录，通常是`/etc/nginx/sites-available/`对应文件的软连接。
+
+- /etc/nginx/nginx.conf：主配置文件。
+
+  
 
 ### 我的服务器nginx配置文件
 
