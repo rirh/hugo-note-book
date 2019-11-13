@@ -9,9 +9,8 @@
 
 
 
-<div>
+<div style="font-size:62.5%; margin:1em; background:#232425">
 <style>
-body { font-size:62.5%; margin:1em; background:#232425 }
 ul { list-style:none; margin:0; padding:0 }
 #watch { font-size:1em; position:relative }
 #watch .frame-face {
