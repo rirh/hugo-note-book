@@ -19,7 +19,7 @@
     * [熵](roll1/life.md)
     * [随笔倾城](roll1/city.md)
     * [手写双向数据绑定](roll1/model.md)
-    * [MAX定时任务](roll1/mac-launchctl-task.md)
+    * [MAC定时任务](roll1/mac-launchctl-task.md)
     * [一个故事](roll1/story.md)
     * [简单的群聊](roll1/websocket.md)
     * [MAC绑定邮箱](roll1/mac-bind-email.md)
