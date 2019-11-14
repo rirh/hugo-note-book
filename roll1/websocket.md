@@ -5,7 +5,7 @@
 
 # websocket
 
-![image-20191112122246655](/Users/zh/Documents/个人信息/gitbook/web/assets/images/image-20191112122246655.png)
+![image-20191112122246655](../assets/images/image-20191112122246655.png)
 
 
 

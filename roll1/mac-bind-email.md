@@ -16,7 +16,7 @@
 2.打开邮件选择邮箱类型绑定账户
 ```
 
-![image-20191114105443682](/Users/zh/Documents/个人信息/gitbook/web/assets/images/image-20191114105443682.png)
+![image-20191114105443682](../assets/images/image-20191114105443682.png)
 
 mac支持绑定多种类型的邮箱
 
@@ -25,11 +25,11 @@ mac支持绑定多种类型的邮箱
 3. 邮箱输入QQ邮箱
 4. 密码输入授权码
 
-![image-20191114110301185](/Users/zh/Documents/个人信息/gitbook/web/assets/images/image-20191114110301185.png)
+![image-20191114110301185](../assets/images/image-20191114110301185.png)
 
 
 
-![image-20191114114509794](/Users/zh/Documents/个人信息/gitbook/web/assets/images/image-20191114114509794.png)
+![image-20191114114509794](../assets/images/image-20191114114509794.png)
 
 获取授权码都需要的邮箱端开启服务验证用户才能获得
 
