@@ -22,6 +22,7 @@
     * [mac定时任务](roll1/mac-launchctl-task.md)
     * [一个故事](roll1/story.md)
     * [ws实现简单的群聊](roll1/websocket.md)
+    * [ mac绑定邮箱](roll1/mac-bind-email.md)
     
 * [卷 II](roll2/index.md)
   
