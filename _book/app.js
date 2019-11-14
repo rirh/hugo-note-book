@@ -24,9 +24,7 @@ git
         console.log('commit done')
     })
     .push('origin', 'master', () => {
-        clg('push done!')
-        console.log('push done');
-        exec('say push done');
+
         exec(`
         ssh blog> /dev/null 2>&1 << eeooff
         cd NoteBook/;
@@ -34,4 +32,7 @@ git
         git reset --hard origin/master;
         git pull;
         `);
+        clg('push done!')
+        console.log('push done');
+        exec('say push done');
     });
