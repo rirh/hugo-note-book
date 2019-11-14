@@ -571,9 +571,12 @@ antiquewhite：值
       }
     }
 ```
+**实例源码：**
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -581,22 +584,26 @@ antiquewhite：值
     <title>Document</title>
     <style>
         body {
+            /* 设置1em的单位大小 */
             font-size: 62.5%;
             margin: 1em;
         }
 
         ul {
+            /* 去除默认样式 */
             list-style: none;
             margin: 0;
             padding: 0
         }
 
         #watch {
+            /* 添加绝对定位 */
             font-size: 1em;
             position: relative
         }
 
         #watch .frame-face {
+            /* 使用渐变颜色作为背景并加上阴影 */
             position: relative;
             width: 30em;
             height: 30em;
@@ -609,6 +616,7 @@ antiquewhite：值
         }
 
         #watch .frame-face:before {
+            /* 外圈 */
             content: '';
             width: 29.4em;
             height: 29.4em;
@@ -628,6 +636,7 @@ antiquewhite：值
         }
 
         #watch .frame-face:after {
+            /* 内圈 */
             content: '';
             width: 28em;
             height: 28em;
@@ -642,7 +651,9 @@ antiquewhite：值
             background: linear-gradient(to bottom, #fff, #ccc);
         }
 
+        /* 刻度 */
         #watch .minute-marks li {
+
             display: block;
             width: .2em;
             height: .6em;
@@ -845,6 +856,7 @@ antiquewhite：值
             transform: rotate(354deg) translateY(-12.7em)
         }
 
+        /* 数字 */
         #watch .digits {
             width: 30em;
             height: 30em;
@@ -917,6 +929,8 @@ antiquewhite：值
             transform: translate(0, -8em)
         }
 
+        /* 中心圆 */
+        /* 外中心 */
         #watch .digits:before {
             content: '';
             width: 1.6em;
@@ -929,6 +943,7 @@ antiquewhite：值
             background: #121314;
         }
 
+        /* 内中心 */
         #watch .digits:after {
             content: '';
             width: 4em;
@@ -944,12 +959,14 @@ antiquewhite：值
             background: radial-gradient(ellipse at center, rgba(200, 200, 200, 0), rgba(190, 190, 190, 1) 90%, rgba(130, 130, 130, 1) 100%);
         }
 
+        /* 时钟动画 */
         @keyframes hours {
             to {
                 transform: rotate(335deg)
             }
         }
 
+        /* 时针 */
         #watch .hours-hand {
             width: .8em;
             height: 7em;
@@ -965,6 +982,7 @@ antiquewhite：值
             animation: hours 43200s linear 0s infinite;
         }
 
+        /* 连接处 */
         #watch .hours-hand:before {
             content: '';
             background: inherit;
@@ -977,6 +995,7 @@ antiquewhite：值
             left: -.5em;
         }
 
+        /* 头部 */
         #watch .hours-hand:after {
             content: '';
             width: 0;
@@ -990,12 +1009,14 @@ antiquewhite：值
             left: -.5em;
         }
 
+        /* 分钟动画 */
         @keyframes minutes {
             to {
                 transform: rotate(422deg)
             }
         }
 
+        /* 分钟dom */
         #watch .minutes-hand {
             width: .8em;
             height: 12.5em;
@@ -1011,12 +1032,14 @@ antiquewhite：值
             animation: minutes 3600s linear 0s infinite;
         }
 
+        /* 秒钟动画 */
         @keyframes seconds {
             to {
                 transform: rotate(480deg)
             }
         }
 
+        /* 秒钟dom */
         #watch .seconds-hand {
             width: .2em;
             height: 14em;
@@ -1032,6 +1055,7 @@ antiquewhite：值
             animation: seconds 60s steps(60, end) 0s infinite;
         }
 
+        /* 中心圆 */
         #watch .seconds-hand:after {
             content: '';
             width: 1.4em;
@@ -1043,6 +1067,7 @@ antiquewhite：值
             bottom: 1.35em;
         }
 
+        /* 尾部 */
         #watch .seconds-hand:before {
             content: '';
             width: .8em;
@@ -1055,6 +1080,7 @@ antiquewhite：值
             bottom: -3em;
         }
 
+        /* 电子表 */
         #watch .digital-wrap {
             width: 9em;
             height: 3em;
@@ -1095,6 +1121,7 @@ antiquewhite：值
             left: 1px;
         }
 
+        /* 电子表动画 */
         #watch .digit-minutes li {
             animation: dsm 3600s steps(60, end) 0s infinite;
         }
@@ -1113,9 +1140,11 @@ antiquewhite：值
 
 <body>
 
-
+    <!-- 钟表 -->
     <div id="watch">
+        <!-- 边框 -->
         <div class="frame-face"></div>
+        <!-- 刻度 -->
         <ul class="minute-marks">
             <li></li>
             <li></li>
@@ -1166,6 +1195,7 @@ antiquewhite：值
             <li></li>
             <li></li>
         </ul>
+        <!-- 电子表 -->
         <div class="digital-wrap">
             <ul class="digit-hours">
                 <li>23</li>
@@ -1318,6 +1348,7 @@ antiquewhite：值
                 <li>19</li>
             </ul>
         </div>
+        <!-- 小时 -->
         <ul class="digits">
             <li>1</li>
             <li>2</li>
@@ -1332,10 +1363,14 @@ antiquewhite：值
             <li>11</li>
             <li>12</li>
         </ul>
+        <!-- 时针 -->
         <div class="hours-hand"></div>
+        <!-- 分针  -->
         <div class="minutes-hand"></div>
+        <!-- 秒针 -->
         <div class="seconds-hand"></div>
 </body>
+
 </html>
 ```
 
