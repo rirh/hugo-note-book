@@ -47,12 +47,11 @@ const AR = {
                 const data = await this.axios();
                 const con = JSON.parse(data);
                 const do_con = con.data.content;
-                const is_alive = shiju.some(e => e === con);
+                const is_alive = shiju.some(e => e === do_con);
                 console.log(is_alive);
                 
                 if (!is_alive) {
                     shiju.push(do_con);
-                    console.log(con);
                     console.log(do_con);
                     console.log(total);
                 };
@@ -79,6 +78,6 @@ const AR = {
     }
 }
 AR.uniq();
-// AR.do_tou()
+AR.do_tou()
 
 
