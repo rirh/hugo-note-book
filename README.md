@@ -22,6 +22,10 @@
 
 
 
+我是一名普通的技术研发人员，19年偶然接触到加密货币，深深为这人类历史上最大的创新而着迷。写文章不仅仅是平时记录笔记，更多想表达自己对虚拟货币的分享和观察。如果能够帮助到其他人赚点钱那就更好了。如果你也在北京，可能会在soho遇见我，见时say hi啊！
+
+
+
 **项目地址**
 
 * github仓库：[https://github.com/Ctleryes/NoteBook](https://github.com/Ctleryes/NoteBook)

@@ -1,7 +1,7 @@
 {%  extends "../blocks.md"  %}
 {%  block contain  %}
 
-# 前端技术深入学习方向
+# 学习方向
 
 **h5**
 

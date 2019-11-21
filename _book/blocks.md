@@ -55,6 +55,7 @@
    如果不定义默认值，则表示空字符串
 {%  endblock  %}
 {%  block footer  %}
+
 <hr style="height:1px;" />
    {% include "foot.md" %}
 {%  endblock  %}
