@@ -17,7 +17,7 @@
 
 **mac设置定时任务的方法有两种**：
 
-1. crontab
+1. [crontab](https://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/crontab.html)
 2. launchctl
 
 官方推荐的为第二种方式，支持和友好性也更倾向于第二种。
