@@ -32,4 +32,4 @@
 
 
 
-![image-20191113230856649](/Users/tigerzh/Library/Application Support/typora-user-images/image-20191113230856649.png)
+![image-20191113230856649](../assets/images/image-20191113230856649.png)
