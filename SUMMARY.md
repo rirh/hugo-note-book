@@ -5,11 +5,11 @@
     
     * [HTML](roll1/html.md)
     
-    * [图片优化](roll/lazy.md)
-    
     * [CLASS](roll1/Class.md)
     
     * [PLAN](roll1/plan.md)
+    
+    * [图片优化](roll1/lazy.md)
     
     * [JS事件流](roll1/jsevent.md)
     

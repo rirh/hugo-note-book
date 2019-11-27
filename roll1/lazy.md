@@ -1,6 +1,5 @@
-{% extend "../block.md" %}
-
-{% block  contain  %}
+{%  extends "../blocks.md"  %}
+{%  block contain  %}
 
 ### 图片加载优化
 
@@ -179,4 +178,4 @@ export default class Avatars extends Vue {
 
 ![QQ20191127-122628-HD (../assets/images/QQ20191127-122628-HD.png)](/Users/zh/Downloads/QQ20191127-122628-HD (1).gif)
 
-{% endblock  %}
+{%  endblock   %}
