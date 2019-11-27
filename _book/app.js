@@ -24,7 +24,6 @@ git
         console.log('commit done')
     })
     .push('origin', 'master', () => {
-
         exec(`
         ssh blog> /dev/null 2>&1 << eeooff
         cd NoteBook/;

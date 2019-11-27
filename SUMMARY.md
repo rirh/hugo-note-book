@@ -5,6 +5,8 @@
     
     * [HTML](roll1/html.md)
     
+    * [图片优化](roll/lazy.md)
+    
     * [CLASS](roll1/Class.md)
     
     * [PLAN](roll1/plan.md)
@@ -46,8 +48,12 @@
     * [MAC绑定邮箱](roll1/mac-bind-email.md)
     
     * [钱](roll1/money.md)
-    
+
     * [金融知识](roll1/financial-license.md)
+    
+    * [无限美好](roll1/coin.md)
+    
+    * 
     
       
     
