@@ -176,6 +176,6 @@ export default class Avatars extends Vue {
 
 🎉 效果
 
-![效果](/Users/zh/Documents/个人信息/gitbook/web/assets/images/QQ20191127-122628-HD.png)
+![效果](/Users/zh/Documents/个人信息/gitbook/web/assets/images/QQ20191127-122628-HD.gif)
 
 {%  endblock   %}
