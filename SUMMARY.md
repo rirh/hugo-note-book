@@ -53,7 +53,7 @@
     
     * [无限美好](roll1/coin.md)
     
-    * 
+    * [k线介绍](roll1/discuss-kline.md)
     
       
     
