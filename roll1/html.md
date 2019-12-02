@@ -37,7 +37,7 @@ html大多数时候因为太简单而被忽略学习，其实简单的东西学�
 
 关系如下图
 
-![image-20191202154109922](/Users/zh/Library/Application Support/typora-user-images/image-20191202154109922.png)
+![image-20191202154109922](../assets/images/image-20191202154109922.png)
 
 #### Metadata（元数据元素）
 
