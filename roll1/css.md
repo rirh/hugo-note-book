@@ -457,13 +457,13 @@ antiquewhite：值
 
 
 
-## css动画
+### css动画
 
 > **对于页面来说,动画真是太有用了!**
 
 `开发页面的时候,总是会用上动画.使的网站的交互性更加的完善.很多时候会忘记使用的流程,本文作为开发笔记 方便使用.`
 
-## 1.Transition
+### 1.Transition
 
 ```css
   .con {
@@ -502,7 +502,7 @@ antiquewhite：值
  3. 无法定义中间状态
  4. 一条transition只能定义一个属性
 
-## Animation
+### Animation
 
 > 为了解决上述的问题 于是就有了强大的Animation
 > 可以下结论:Animation就是为了解决这些问题而存在的
