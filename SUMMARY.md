@@ -10,8 +10,10 @@
 
     * [理解this](roll1/this.md)
 
-    * [js异步](roll1/jscomplate.md)
+    * [理解类型](roll1/change-type.md)
 
+    * [js异步](roll1/jscomplate.md)
+    
     * [JS事件流](roll1/jsevent.md)
     
     * [PLAN](roll1/plan.md)
@@ -19,9 +21,9 @@
     * [图片优化](roll1/lazy.md)
     
     * [copy](roll1/copy.md)
-    
-    * [添加ssl证书](/roll1/cert.md)
    
+    * [添加ssl证书](/roll1/cert.md)
+    
     * [IPSec](roll1/vpn.md)
       
     * [快速排序](roll1/quicksort.md)
@@ -47,9 +49,9 @@
     * [一个故事](roll1/story.md)
     
     * [简单的群聊](roll1/websocket.md)
-    
-    * [MAC绑定邮箱](roll1/mac-bind-email.md)
 
+    * [MAC绑定邮箱](roll1/mac-bind-email.md)
+    
     * [钱](roll1/money.md)
     
     * [金融知识](roll1/financial-license.md)
