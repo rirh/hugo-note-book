@@ -6,12 +6,14 @@
     * [HTML](roll1/html.md)
     
     * [CLASS](roll1/Class.md)
-    
+
+    * [js异步](roll1/jscomplate.md)
+
+    * [JS事件流](roll1/jsevent.md)
+
     * [PLAN](roll1/plan.md)
     
     * [图片优化](roll1/lazy.md)
-    
-    * [JS事件流](roll1/jsevent.md)
     
     * [copy](roll1/copy.md)
     
@@ -19,7 +21,6 @@
     
     * [IPSec](roll1/vpn.md)
     
-    * [js异步](roll1/jscomplate.md)
     
     * [快速排序](roll1/quicksort.md)
     

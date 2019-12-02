@@ -36,7 +36,9 @@
         "-sharing",
         "-font-settings",
         "back-to-top-button",
-        "code"
+        "code",
+        "livereload",
+        "chapter-fold"
     ],
     "title": "TigerZH",
     "variables": {
