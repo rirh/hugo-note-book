@@ -53,7 +53,93 @@ js按类型分为基本类型和引用类型
                   }
           }
       }
+```
 
+##### 手写一个深拷贝函数
 
+```javascript
+/**
+ * 数组的深拷贝函数
+ * @param {Array} src
+ * @param {Array} target
+ */
+function cloneArr(src, target) {
+  for (let item of src) {
+    if (Array.isArray(item)) {
+      target.push(cloneArr(item, []));
+    } else if (typeof item === "object") {
+      target.push(deepClone(item, {}));
+    } else {
+      target.push(item);
+    }
+  }
+  return target;
+}
+
+/**
+ * 对象的深拷贝实现
+ * @param {Object} src
+ * @param {Object} target
+ * @return {Object}
+ */
+function deepClone(src, target) {
+  const keys = Reflect.ownKeys(src);
+  let value = null;
+
+  for (let key of keys) {
+    value = src[key];
+
+    if (Array.isArray(value)) {
+      target[key] = cloneArr(value, []);
+    } else if (typeof value === "object") {
+      // 如果是对象而且不是数组, 那么递归调用深拷贝
+      target[key] = deepClone(value, {});
+    } else {
+      target[key] = value;
+    }
+  }
+
+  return target;
+}
+
+// 这个对象a是一个囊括以上所有情况的对象
+let a = {
+  age: 19,
+  jobs: {
+    first: "EF"
+  },
+  schools: [
+    {
+      name: "candy"
+    },
+    {
+      name: "tom"
+    }
+  ],
+  arr: [
+    [
+      {
+        value: "foo"
+      }
+    ],
+    [
+      {
+        value: "boo"
+      }
+    ]
+  ]
+};
+
+let b = {};
+deepClone(a, b);
+
+a.jobs.first = "native";
+a.schools[0].name = "SZU";
+a.arr[0][0].value = "100";
+
+console.log(a.jobs.first, b.jobs.first); // output: native EF
+console.log(a.schools[0], b.schools[0]); // output: { name: 'SZU' } { name: 'tom' }
+console.log(a.arr[0][0].value, b.arr[0][0].value); // output: 100 foo
+console.log(Array.isArray(a.arr[0])); // output: true
 ```
 
