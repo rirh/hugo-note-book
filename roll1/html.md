@@ -21,7 +21,7 @@ html大多数时候因为太简单而被忽略学习，其实简单的东西学�
 
 这样写div中的文字并不能如愿的变成红色，打开调试发现编译成这样了
 
-![image-20191202153405887](/Users/zh/Library/Application Support/typora-user-images/image-20191202153405887.png)
+![image-20191202153405887](../assets/images/image-20191202153405887.png)
 
 原因是块元素可以包含内联元素或某些块元素，但内联元素却不能包含块元素
 
