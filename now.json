@@ -1,4 +1,5 @@
 {
     "version": 2,
-    "builds": [{ "src": "", "use": "" }]
+    "name": "notebook",
+    "builds": [{ "src": "index.html", "use": "@now/static" }]
   }
