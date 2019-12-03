@@ -45,8 +45,8 @@
     }())
   </script>
   <div class="card " >
-    <p class="blocks-title" id="blocks-title">{{page.title}}</p>
-    <strong class="shiju">My Life Getting Better !</strong>
+    <p class="blocks-title " id="blocks-title">{{page.title}}</p>
+    <strong class="shiju ">My Life Getting Better !</strong>
   </div>
   </div>
 {%  endblock  %}
