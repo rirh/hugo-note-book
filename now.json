@@ -1,5 +1,10 @@
 {
     "version": 2,
     "name": "notebook",
-    "builds": [{ "src": "index.html", "use": "@now/static" }]
-  }
+    "builds": [
+        {
+            "src": "*",
+            "use": "@now/static"
+        }
+    ]
+}

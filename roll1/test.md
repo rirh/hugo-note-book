@@ -1,12 +1,9 @@
 - 手动实现`call`/`apply`/`bind`
-- 实现深拷贝函数
 - 基于`ES5`/`ES6`实现双向绑定
 - `instanceof`原理与实现
 - 实现支持绑定、解绑和派发的事件类
 
-## 手动撸个 call/apply/bind
-
-> 感谢 [@purain](https://github.com/purain) 的指正，`call` 和 `apply` 更完美的实现要借助 `Symbol`。具体请看[Issue](https://github.com/dongyuanxin/blog/issues/57)
+## 手写 call/apply/bind
 
 ### 实现 call
 
@@ -28,19 +25,7 @@ run.call(
 );
 ```
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
+
 
 好了，开始手动实现我们的`call2`。在实现的过程有个关键：
 
@@ -197,108 +182,6 @@ test2(2); // 参数 2
 ```
 
 
-
-## 实现深拷贝函数
-
-实现一个对象的深拷贝函数，需要考虑对象的元素类型以及对应的解决方案：
-
-- 基础类型：这种最简单，直接赋值即可
-- 对象类型：递归调用拷贝函数
-- 数组类型：这种最难，因为数组中的元素可能是基础类型、对象还可能数组，因此要专门做一个函数来处理数组的深拷贝
-
-```javascript
-/**
- * 数组的深拷贝函数
- * @param {Array} src
- * @param {Array} target
- */
-function cloneArr(src, target) {
-  for (let item of src) {
-    if (Array.isArray(item)) {
-      target.push(cloneArr(item, []));
-    } else if (typeof item === "object") {
-      target.push(deepClone(item, {}));
-    } else {
-      target.push(item);
-    }
-  }
-  return target;
-}
-
-/**
- * 对象的深拷贝实现
- * @param {Object} src
- * @param {Object} target
- * @return {Object}
- */
-function deepClone(src, target) {
-  const keys = Reflect.ownKeys(src);
-  let value = null;
-
-  for (let key of keys) {
-    value = src[key];
-
-    if (Array.isArray(value)) {
-      target[key] = cloneArr(value, []);
-    } else if (typeof value === "object") {
-      // 如果是对象而且不是数组, 那么递归调用深拷贝
-      target[key] = deepClone(value, {});
-    } else {
-      target[key] = value;
-    }
-  }
-
-  return target;
-}
-```
-
-这段代码是不是比网上看到的多了很多？因为考虑很周全，请看下面的测试用例：
-
-```javascript
-// 这个对象a是一个囊括以上所有情况的对象
-let a = {
-  age: 1,
-  jobs: {
-    first: "FE"
-  },
-  schools: [
-    {
-      name: "shenda"
-    },
-    {
-      name: "shiyan"
-    }
-  ],
-  arr: [
-    [
-      {
-        value: "1"
-      }
-    ],
-    [
-      {
-        value: "2"
-      }
-    ]
-  ]
-};
-
-let b = {};
-deepClone(a, b);
-
-a.jobs.first = "native";
-a.schools[0].name = "SZU";
-a.arr[0][0].value = "100";
-
-console.log(a.jobs.first, b.jobs.first); // output: native FE
-console.log(a.schools[0], b.schools[0]); // output: { name: 'SZU' } { name: 'shenda' }
-console.log(a.arr[0][0].value, b.arr[0][0].value); // output: 100 1
-console.log(Array.isArray(a.arr[0])); // output: true
-```
-
-看到测试用例，应该会有人奇怪为什么最后要输出`Array.isArray(a.arr[0])`。这主要是因为网上很多实现方法没有针对 array 做处理，直接将其当成 object，**这样拷贝后虽然值没问题，但是 array 的元素会被转化为 object**。这显然是错误的做法。
-
-而上面所说的深拷贝函数就解决了这个问题。
 
 ## 基于 ES5/ES6 实现“双向绑定”
 

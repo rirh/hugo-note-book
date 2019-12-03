@@ -16,12 +16,14 @@
     
     * [JS事件流](roll1/jsevent.md)
     
+    * [读后感](roll1/read-book-note.md)
+    
     * [PLAN](roll1/plan.md)
     
     * [图片优化](roll1/lazy.md)
-    
-    * [copy](roll1/copy.md)
    
+    * [copy](roll1/copy.md)
+      
     * [添加ssl证书](/roll1/cert.md)
     
     * [IPSec](roll1/vpn.md)
@@ -47,9 +49,9 @@
     * [MAC定时任务](roll1/mac-launchctl-task.md)
     
     * [一个故事](roll1/story.md)
-    
-    * [简单的群聊](roll1/websocket.md)
 
+    * [简单的群聊](roll1/websocket.md)
+    
     * [MAC绑定邮箱](roll1/mac-bind-email.md)
     
     * [钱](roll1/money.md)
