@@ -36,7 +36,7 @@
         fetch(url)
         .then(async e => {
             const s = await e.text()
-            document.querySelector('.shiju').innerHTML = s;
+            document.querySelector('.verse').innerHTML = s;
         })
         // // var span = document.getElementById('img_placer');
         // span.innerHTML = '<span style="background-image: url('+(pub_img_current_image=pub_img_url())+');width: 0px;height: 0px;display: inline;"></span>';
@@ -46,7 +46,7 @@
   </script>
   <div class="card " >
     <p class="blocks-title " id="blocks-title">{{page.title}}</p>
-    <strong class="shiju ">My Life Getting Better !</strong>
+    <strong class="verse">My Life Getting Better !</strong>
   </div>
   </div>
 {%  endblock  %}

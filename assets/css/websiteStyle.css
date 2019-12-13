@@ -57,6 +57,12 @@ body {
     font         : 3em 'Italiana', sans-serif;
     font-weight  : bold;
     margin-bottom: 0 !important;
+    /* text-shadow  : 0 2px 0 rgba(255, 255, 255, 0.3), 0 -2px 0 rgba(0, 0, 0, 0.7); */
+}
+
+.verse {
+    /* text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3), 0 -1px 0 rgba(0, 0, 0, 0.7); */
+
 }
 
 
