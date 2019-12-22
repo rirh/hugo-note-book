@@ -23,7 +23,8 @@
 html,
 body {
     background : transparent;
-    font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    /* font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif; */
+    font-family: "STXihei", "Hiragino Sans", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", Helvetica, Tahoma, Arial, sans-serif !important
 }
 
 
