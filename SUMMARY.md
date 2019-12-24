@@ -40,8 +40,7 @@
    * [手写数据绑定](roll2/model.md)
    * [一个故事](roll2/story.md)
    * [简单的群聊](roll2/websocket.md)
-* [electron 通信](roll2/electron-message.md)
-   
+   * [electron 通信](roll2/electron-message.md)
 * [卷 III](roll3/index.md)
 
    * [emulator](roll3/emulator.md)
