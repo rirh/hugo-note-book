@@ -15,7 +15,6 @@
    * [2018](roll1/2018.md)
    * [熵](roll1/life.md)
 
-    
 * [卷 II](roll2/index.md)
    * [CSS](roll2/css.md)
    * [HTML](roll2/html.md)
@@ -41,7 +40,7 @@
    * [手写数据绑定](roll2/model.md)
    * [一个故事](roll2/story.md)
    * [简单的群聊](roll2/websocket.md)
-
+* [electron 通信](roll2/electron-message.md)
    
 * [卷 III](roll3/index.md)
 
