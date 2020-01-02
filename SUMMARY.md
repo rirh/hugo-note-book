@@ -2,6 +2,7 @@
 
 * [卷 I](roll1/index.md)
 
+   * [安全合法性](roll1/cryptocurrency-legitimacy.md)
    * [无限美好](roll1/coinnow.md)
    * [k线介绍](roll1/discuss-kline.md)
    * [钱](roll1/money.md)
@@ -41,6 +42,7 @@
    * [一个故事](roll2/story.md)
    * [简单的群聊](roll2/websocket.md)
    * [electron 通信](roll2/electron-message.md)
+   
 * [卷 III](roll3/index.md)
 
    * [emulator](roll3/emulator.md)
