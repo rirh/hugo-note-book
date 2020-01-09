@@ -15,8 +15,10 @@
    * [思路与选择](roll1/choose.md)
    * [2018](roll1/2018.md)
    * [熵](roll1/life.md)
+   * [随笔](roll1/freestyle.md)
 
 * [卷 II](roll2/index.md)
+   
    * [CSS](roll2/css.md)
    * [HTML](roll2/html.md)
    * [CLASS](roll2/Class.md)
