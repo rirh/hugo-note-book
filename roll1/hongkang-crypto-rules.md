@@ -5,7 +5,7 @@
 
 虚拟货币在香港是合法的。
 
-![image-20200119115030713](/Users/zh/Documents/个人信息/gitbook/web/assets/images/image-20200119115030713.png)
+![image-20200119115030713](../assets/images/image-20200119115030713.png)
 
 **监管会为什么要监管？**
 
@@ -25,9 +25,9 @@
 
 ##### 探索的方法：沙盘模式
 
-![image-20200119120820810](/Users/zh/Documents/个人信息/gitbook/web/assets/images/image-20200119120820810.png)
+![image-20200119120820810](../assets/images/image-20200119120820810.png)
 
-![image-20200119120840730](/Users/zh/Documents/个人信息/gitbook/web/assets/images/image-20200119120840730.png)
+![image-20200119120840730](../assets/images/image-20200119120840730.png)
 
 最后这段文字翻译为普通话：
 
