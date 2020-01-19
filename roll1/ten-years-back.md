@@ -7,11 +7,11 @@
 
 
 
-![img](/Users/zh/Documents/个人信息/gitbook/web/assets/images/tenyearsback.png)
+![img](../assets/images/tenyearsback.png)
 
-![img](/Users/zh/Documents/个人信息/gitbook/web/assets/images/tenyearsback2.png)
+![img](../assets/images/tenyearsback2.png)
 
-![img](/Users/zh/Documents/个人信息/gitbook/web/assets/images/tenyearsback3.png)
+![img](../assets/images/tenyearsback3.png)
 
 
 
@@ -19,7 +19,7 @@
 
 
 
-![image-20200119111039488](/Users/zh/Documents/个人信息/gitbook/web/assets/images/image-20200119111039488.png)
+![image-20200119111039488](../assets/images/image-20200119111039488.png)
 
 
 
@@ -27,7 +27,7 @@
 
 
 
-![image-20200119113034766](/Users/zh/Documents/个人信息/gitbook/web/assets/images/image-20200119113034766.png)
+![image-20200119113034766](../assets/images/image-20200119113034766.png)
 
 
 
@@ -37,7 +37,7 @@
 
 
 
-![image-20200119112351542](/Users/zh/Documents/个人信息/gitbook/web/assets/images/image-20200119112351542.png)
+![image-20200119112351542](../assets/images/image-20200119112351542.png)
 
 
 
