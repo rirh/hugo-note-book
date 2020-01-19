@@ -1,8 +1,6 @@
 # 笔记
 
-# 
 
-# 
 
 **🎉🎉My Life Getting Better     :)**
 

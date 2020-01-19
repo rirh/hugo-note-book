@@ -3,9 +3,7 @@
 {%  extends "blocks.md"  %}
 {%  block contain  %}
 
-# 
 
-# 
 
 **🎉🎉My Life Getting Better     :)**
 
