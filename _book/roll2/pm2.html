@@ -841,9 +841,134 @@
   </div>
 
 
-<h1 id="pm2">PM2</h1>
-<blockquote>
-</blockquote>
+
+<h5 id="pm2">PM2</h5>
+<p><a href="https://pm2.keymetrics.io/" target="_blank">Pm2</a> &#x662F;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x8FD0;&#x884C;&#x7684;&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;&#x5668;</p>
+<ul>
+<li>&#x7BA1;&#x7406;&#x8FDB;&#x7A0B;</li>
+<li>&#x76D1;&#x542C;&#x6587;&#x4EF6;&#x81EA;&#x52A8;&#x91CD;&#x542F;&#x9879;&#x76EE;</li>
+<li>&#x6027;&#x80FD;&#x76D1;&#x63A7;</li>
+<li>&#x8D1F;&#x8F7D;&#x5747;&#x8861;</li>
+<li>&#x81EA;&#x52A8;&#x5316;&#x90E8;&#x7F72;</li>
+</ul>
+<p><strong>&#x5B89;&#x88C5;</strong></p>
+<pre><code class="lang-shell">$ npm install pm2@latest -g
+# or
+$ yarn global add pm2
+</code></pre>
+<p><strong>&#x8FD0;&#x884C;</strong></p>
+<pre><code class="lang-shell"># run node 
+$ pm2 start app.js
+# run shell
+$ pm2 start bashscript.sh
+# run python --watch mean if project anywhere changed project restart
+$ pm2 start python-app.py --watch
+# run file and --port set port 
+$ pm2 start binary-file -- --port 1520
+</code></pre>
+<p><strong>&#x5E38;&#x7528;&#x53C2;&#x6570;</strong></p>
+<pre><code class="lang-sh"><span class="hljs-comment"># Specify an app name</span>
+--name &lt;app_name&gt;
+
+<span class="hljs-comment"># Watch and Restart app when files change</span>
+--watch
+
+<span class="hljs-comment"># Set memory threshold for app reload</span>
+--max-memory-restart &lt;200MB&gt;
+
+<span class="hljs-comment"># Specify log file</span>
+--log &lt;<span class="hljs-built_in">log</span>_path&gt;
+
+<span class="hljs-comment"># Pass extra arguments to the script</span>
+-- arg1 arg2 arg3
+
+<span class="hljs-comment"># Delay between automatic restarts</span>
+--restart-delay &lt;delay <span class="hljs-keyword">in</span> ms&gt;
+
+<span class="hljs-comment"># Prefix logs with time</span>
+--time
+
+<span class="hljs-comment"># Do not auto restart app</span>
+--no-autorestart
+
+<span class="hljs-comment"># Specify cron for forced restart</span>
+--cron &lt;cron_pattern&gt;
+
+<span class="hljs-comment"># Attach to application log</span>
+--no-daemon
+</code></pre>
+<p><strong>&#x9879;&#x76EE;&#x7BA1;&#x7406;&#x547D;&#x4EE4;</strong></p>
+<pre><code class="lang-shell">$ pm2 restart app_name
+$ pm2 reload app_name
+$ pm2 stop app_name
+$ pm2 delete app_name
+</code></pre>
+<p><strong>&#x67E5;&#x770B;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684;&#x9879;&#x76EE;&#x548C;&#x72B6;&#x6001;</strong></p>
+<pre><code class="lang-shell">$ pm2 [list|ls|status]
+# &#x67E5;&#x770B;&#x65E5;&#x5FD7;
+$ pm2 logs
+# &#x67E5;&#x770B;&#x6700;&#x540E;&#x4E24;&#x767E;&#x884C;&#x65E5;&#x5FD7;
+$ pm2 logs --lines 200
+</code></pre>
+<pre><code class="lang-shell"> # &#x67E5;&#x770B;&#x67D0;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x8BE6;&#x60C5;
+ $ pm2 describe app
+</code></pre>
+<p><img src="../assets/images/image-20200120104004429.png" alt="image-20200120104004429"></p>
+<p><strong>&#x67E5;&#x770B;&#x8FDB;&#x7A0B;&#x6D88;&#x8017;&#x60C5;&#x51B5;</strong></p>
+<pre><code class="lang-shell"> $ pm2 monit
+</code></pre>
+<p><img src="../assets/images/image-20200120104246139.png" alt="image-20200120104246139"></p>
+<p><strong>&#x8BBE;&#x7F6E;pm2&#x5F00;&#x673A;&#x81EA;&#x542F;</strong></p>
+<p>&#x5F00;&#x542F;&#x542F;&#x52A8;&#x8BBE;&#x7F6E;&#xFF0C;&#x6B64;&#x5904;&#x662F;CentOS&#x7CFB;&#x7EDF;&#xFF0C;&#x5176;&#x4ED6;&#x7CFB;&#x7EDF;&#x66FF;&#x6362;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x9009;&#x9879;&#xFF08;&#x53EF;&#x9009;&#x9879;&#xFF1A;ubuntu, centos, redhat, gentoo, systemd, darwin, amazon&#xFF09;</p>
+<pre><code class="lang-shell">$ pm2 startup centos
+</code></pre>
+<p>&#x7136;&#x540E;&#x6309;&#x7167;&#x63D0;&#x793A;&#x9700;&#x8981;&#x8F93;&#x5165;&#x7684;&#x547D;&#x4EE4;&#x8FDB;&#x884C;&#x8F93;&#x5165;</p>
+<p>&#x6700;&#x540E;&#x4FDD;&#x5B58;&#x8BBE;&#x7F6E;</p>
+<pre><code class="lang-shell">$ pm2 save
+</code></pre>
+<p><strong>Pm2 &#x6709;&#x80FD;&#x81EA;&#x52A8;&#x5316;&#x90E8;&#x7F72;&#x9879;&#x76EE;</strong></p>
+<pre><code class="lang-shell"># &#x751F;&#x6210;&#x8FD0;&#x884C;&#x811A;&#x672C;
+$ pm2 ecosystem
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// ecosystem.config.js</span>
+<span class="hljs-built_in">module</span>.exports = {
+  apps : [{
+    name: <span class="hljs-string">&apos;wchatAPI&apos;</span>,  <span class="hljs-comment">//&#x9879;&#x76EE;&#x540D;&#x79F0;</span>
+    script: <span class="hljs-string">&apos;app.js&apos;</span>,  <span class="hljs-comment">//&#x542F;&#x52A8;&#x5165;&#x53E3;&#x6587;&#x4EF6;</span>
+    <span class="hljs-comment">// Options reference: https://pm2.keymetrics.io/docs/usage/application-declaration/</span>
+    args: <span class="hljs-string">&apos;one two&apos;</span>,   <span class="hljs-comment">// &#x53C2;&#x6570;</span>
+    instances: <span class="hljs-number">1</span>,       
+    autorestart: <span class="hljs-literal">true</span>, 
+    watch: <span class="hljs-literal">false</span>, 
+    max_memory_restart: <span class="hljs-string">&apos;1G&apos;</span>,
+    env: {
+      NODE_ENV: <span class="hljs-string">&apos;development&apos;</span>
+    },
+    env_production: {
+      NODE_ENV: <span class="hljs-string">&apos;production&apos;</span>
+    }
+  }],
+
+  deploy : {
+    production : {
+      user : <span class="hljs-string">&apos;root&apos;</span>, <span class="hljs-comment">//&#x670D;&#x52A1;&#x5668;&#x7528;&#x6237;&#x540D;</span>
+      host : <span class="hljs-string">&apos;XXX.XXX.XXX.XXX&apos;</span>, <span class="hljs-comment">// &#x670D;&#x52A1;&#x5668;ip&#x5730;&#x5740;</span>
+      ref  : <span class="hljs-string">&apos;origin/master&apos;</span>, <span class="hljs-comment">// git&#x5206;&#x652F;</span>
+      repo : <span class="hljs-string">&apos;https://github.com/Ctleryes/wchatAPI.git&apos;</span>, <span class="hljs-comment">// git&#x5730;&#x5740;</span>
+      path : <span class="hljs-string">&apos;/root/wchatAPI&apos;</span>,  <span class="hljs-comment">// &#x670D;&#x52A1;&#x5668;&#x8981;&#x62C9;&#x53D6;&#x7684;&#x8DEF;&#x5F84;</span>
+      <span class="hljs-string">&apos;pre-deploy&apos;</span>: <span class="hljs-string">&apos;git fetch --all&apos;</span>,  <span class="hljs-comment">//&#x90E8;&#x7F72;&#x524D;&#x6267;&#x884C;&#x7684;&#x4EE3;&#x7801;</span>
+      <span class="hljs-string">&apos;post-deploy&apos;</span> : <span class="hljs-string">&apos;npm install &amp;&amp; pm2 reload ecosystem.config.js --env production&apos;</span>
+    }
+  }
+};
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x53EA;&#x662F;&#x57FA;&#x672C;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x8BE6;&#x7EC6;&#x7684;&#x914D;&#x7F6E;&#x8BBF;&#x95EE; <a href="https://pm2.keymetrics.io/docs/usage/application-declaration/" target="_blank">PM2&#x914D;&#x7F6E;</a></p>
+<p>&#x90E8;&#x7F72;</p>
+<pre><code class="lang-shell"># &#x9996;&#x6B21;&#x90E8;&#x7F72;
+$ pm2 deploy ecosystem.config.js production setup
+# &#x66F4;&#x65B0;
+$ pm2 deploy ecosystem.config.js production update
+</code></pre>
 <p><hr style="height:1px;">
    MIT License</p>
 <p>Copyright (c) 2019 TigerZH</p>
@@ -874,7 +999,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"PM2","level":"1.4.6","depth":2,"next":{"title":"Nginx","level":"1.4.7","depth":2,"path":"roll2/nginx.md","ref":"roll2/nginx.md","articles":[]},"previous":{"title":"Pack","level":"1.4.5","depth":2,"path":"roll2/npm.md","ref":"roll2/npm.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"/assets/images/favicon.ico","bookmark":"/assets/images/favicon.ico","appleTouch":"/assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"/assets/images/apple-touch-icon.png","180x180":"/assets/images/apple-touch-icon.png"}},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll2/pm2.md","mtime":"2019-10-17T06:39:05.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-19T09:17:14.993Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"PM2","level":"1.4.6","depth":2,"next":{"title":"Nginx","level":"1.4.7","depth":2,"path":"roll2/nginx.md","ref":"roll2/nginx.md","articles":[]},"previous":{"title":"Pack","level":"1.4.5","depth":2,"path":"roll2/npm.md","ref":"roll2/npm.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"/assets/images/favicon.ico","bookmark":"/assets/images/favicon.ico","appleTouch":"/assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"/assets/images/apple-touch-icon.png","180x180":"/assets/images/apple-touch-icon.png"}},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll2/pm2.md","mtime":"2020-01-20T03:03:54.002Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-20T03:04:06.696Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
