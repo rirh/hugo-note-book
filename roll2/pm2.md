@@ -3,7 +3,7 @@
 
 ##### PM2
 
-[Pm2](https://pm2.keymetrics.io/) 是一个项目运行的进程管理器
+[Pm2](https://pm2.keymetrics.io/) 是一个项目运行的进程管理器用起来还是很nice的
 
 - 管理进程
 - 监听文件自动重启项目
