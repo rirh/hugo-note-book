@@ -1,7 +1,7 @@
 {%  extends "../blocks.md"  %}
 {%  block contain  %}
 
-### k线的基本知识 
+### 本文为k线的基本知识 
 
 一天中的价格在市场中是如何运行的？
 

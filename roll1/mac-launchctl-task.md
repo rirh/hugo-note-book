@@ -1,7 +1,7 @@
 {%  extends "../blocks.md"  %}
 {%  block contain  %}
 
-# Mac 如何优雅的使用定时任务
+# Mac 定时任务
 
 **用途**
 

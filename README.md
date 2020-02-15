@@ -1,11 +1,6 @@
 # 笔记
 
-{%  extends "blocks.md"  %}
-{%  block contain  %}
 
-# 
-
-# 
 
 **🎉🎉My Life Getting Better     :)**
 
@@ -30,7 +25,7 @@
 * github仓库：[https://github.com/Ctleryes/NoteBook](https://github.com/Ctleryes/NoteBook)
 * 在线地址：[https://www.huzhihui.org.cn](https://www.huzhihui.org.cn)
 
-{%  endblock  %}
+
 
 
 
