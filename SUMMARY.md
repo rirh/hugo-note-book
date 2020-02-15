@@ -47,7 +47,7 @@
    * [一个故事](roll2/story.md)
    * [简单的群聊](roll2/websocket.md)
    * [electron 通信](roll2/electron-message.md)
-   * [思考React](roll2-thinking-in-react.md)
+   * [思考React](roll2/thinking-in-react.md)
    
 * [卷 III](roll3/index.md)
 
