@@ -12,7 +12,7 @@
    * [金融知识](roll1/financial-license.md) 
    * [MAC绑定邮箱](roll1/mac-bind-email.md)
    * [MAC定时任务](roll1/mac-launchctl-task.md)
-   * [随笔倾城](roll1/city.md)
+   <!-- * [随笔倾城](roll1/city.md) -->
    * [命运与挑山工](roll1/builder.md)
    * [思路与选择](roll1/choose.md)
    * [2018](roll1/2018.md)
