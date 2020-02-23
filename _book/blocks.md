@@ -56,6 +56,5 @@
 {%  endblock  %}
 {%  block footer  %}
 
-<hr style="height:1px;" />
    {% include "foot.md" %}
 {%  endblock  %}
