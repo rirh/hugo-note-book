@@ -1,3 +1,3 @@
 MIT License
 
-Copyright (c) 2019 TigerZH
+Copyright (c) 2019 TigerZH ❤️
