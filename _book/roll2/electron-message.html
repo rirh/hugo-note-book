@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Pack · TigerZH</title>
+        <title>electron 通信 · TigerZH</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="pm2.html" />
+    <link rel="next" href="thinking-in-ract.html" />
     
     
-    <link rel="prev" href="read-book-note.html" />
+    <link rel="prev" href="websocket.html" />
     
 
     </head>
@@ -433,7 +433,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.1.5" data-path="npm.html">
+        <li class="chapter " data-level="2.1.5" data-path="npm.html">
             
                 <a href="npm.html">
             
@@ -693,7 +693,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.25" data-path="electron-message.html">
+        <li class="chapter active" data-level="2.1.25" data-path="electron-message.html">
             
                 <a href="electron-message.html">
             
@@ -838,7 +838,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Pack</a>
+        <a href=".." >electron 通信</a>
     </h1>
 </div>
 
@@ -894,266 +894,127 @@
     }())
   </script>
   <div class="card ">
-    <p class="blocks-title " id="blocks-title">Pack</p>
+    <p class="blocks-title " id="blocks-title">electron &#x901A;&#x4FE1;</p>
     <strong class="verse">My Life Getting Better !</strong>
   </div>
   </div>
 
 
-<h1 id="&#x5305;&#x7BA1;&#x7406;&#x5DE5;&#x5177;">&#x5305;&#x7BA1;&#x7406;&#x5DE5;&#x5177;</h1>
-<p>&#x672C;&#x6587;&#x5BF9;mac&#x4E0A;npm&#x5F00;&#x53D1;&#x7684;&#x4E00;&#x4E9B;&#x4F7F;&#x7528;&#x548C;&#x914D;&#x7F6E;&#x5206;&#x4EAB;&#xFF0C; &#x5047;&#x5B9A;&#x9605;&#x8BFB;&#x8005;&#x5DF2;&#x7ECF;&#x6709;&#x4E00;&#x5B9A;shell&#x57FA;&#x7840;&#x548C;&#x524D;&#x7AEF;&#x5DE5;&#x4F5C;&#x6D41;&#x7684;&#x77E5;&#x8BC6;&#x3002;</p>
-<h3 id="pack-&#x7BA1;&#x7406;&#x5668;--brew">Pack &#x7BA1;&#x7406;&#x5668;  <a href="http://brew.sh/%20%20" target="_blank">brew</a></h3>
-<h4 id="&#x5B89;&#x88C5;&#xFF1A;">&#x5B89;&#x88C5;&#xFF1A;</h4>
-<pre><code class="lang-text">/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+
+<h4 id="electron-&#x901A;&#x4FE1;">Electron &#x901A;&#x4FE1;</h4>
+<p>&#x4E3B;&#x8FDB;&#x7A0B;&#xFF08;IPCMain&#xFF09;&#x3001;&#x5B50;&#x8FDB;&#x7A0B;&#xFF08;IPCRenderer&#xFF09;&#x3001;&#x9875;&#x9762;&#x4E4B;&#x95F4;&#x7684;&#x901A;&#x4FE1;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x5E38;&#x89C1;&#x573A;&#x666F;</p>
+<ol>
+<li>IPCRenderer&#x53D1;&#x9001;&#x6D88;&#x606F;&#x81F3;IPCMain</li>
+<li>IPCMain&#x56DE;&#x590D;IPCRenderer&#x5DF2;&#x6210;&#x529F;&#x6536;&#x5230;&#x6D88;&#x606F;</li>
+<li>IPCMain&#x53D1;&#x9001;&#x6D88;&#x606F;&#x81F3;IPCRenderer</li>
+<li>IPCRenderer&#x56DE;&#x590D;IPCMain&#x5DF2;&#x6210;&#x529F;&#x6536;&#x5230;&#x6D88;&#x606F;</li>
+<li>&#x4E24;&#x4E2A;&#x6E32;&#x67D3;&#x9875;&#x9762;&#x4E4B;&#x95F4;&#x7684;&#x901A;&#x4FE1;</li>
+</ol>
+<p><strong>1.IPCRenderer&#x53D1;&#x9001;&#x6D88;&#x606F;&#x81F3;IPCMain</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// IPCRenderer</span>
+<span class="hljs-keyword">import</span> { ipcRenderer } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;electron&apos;</span>;
+ipcRenderer.send(<span class="hljs-string">&apos;ipc-to-main&apos;</span>, <span class="hljs-string">&apos;TigerZH&apos;</span>);
+
+
+
+<span class="hljs-comment">// IPCMain</span>
+<span class="hljs-keyword">import</span> { ipcMain } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;electron&apos;</span>;
+ipcMain.on(<span class="hljs-string">&apos;ipc-to-main&apos;</span>, (event, data) =&gt; {
+    <span class="hljs-built_in">console</span>.log(data) <span class="hljs-comment">//TigerZH</span>
+})
 </code></pre>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">&#x547D;&#x4EE4;</th>
-<th style="text-align:left">&#x6CE8;&#x91CA;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><code>brew &#x2013;help</code></td>
-<td style="text-align:left">&#x67E5;&#x770B;brew&#x7684;&#x5E2E;&#x52A9;</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>brew install git</code></td>
-<td style="text-align:left">&#x5B89;&#x88C5;&#x8F6F;&#x4EF6;</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>brew uninstall git</code></td>
-<td style="text-align:left">&#x5378;&#x8F7D;&#x8F6F;&#x4EF6;</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>brew search git</code></td>
-<td style="text-align:left">&#x641C;&#x7D22;&#x8F6F;&#x4EF6;</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>brew list</code></td>
-<td style="text-align:left">&#x663E;&#x793A;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x8F6F;&#x4EF6;&#x5217;&#x8868;</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>brew update</code></td>
-<td style="text-align:left">&#x66F4;&#x65B0;&#x8F6F;&#x4EF6;&#xFF0C;&#x628A;&#x6240;&#x6709;&#x7684;Formula&#x76EE;&#x5F55;&#x66F4;&#x65B0;&#xFF0C;&#x5E76;&#x4E14;&#x4F1A;&#x5BF9;&#x672C;&#x673A;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x5E76;&#x6709;&#x66F4;&#x65B0;&#x7684;&#x8F6F;&#x4EF6;&#x7528;*&#x6807;&#x660E;&#x3002;</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>brew upgrade git</code></td>
-<td style="text-align:left">&#x66F4;&#x65B0;&#x67D0;&#x5177;&#x4F53;&#x8F6F;&#x4EF6;</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>brew info git</code></td>
-<td style="text-align:left">&#x663E;&#x793A;&#x8F6F;&#x4EF6;&#x5185;&#x5BB9;&#x4FE1;&#x606F;</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>brew home</code></td>
-<td style="text-align:left">&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x6253;&#x5F00;&#x7F51;&#x7AD9;</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>brew deps</code></td>
-<td style="text-align:left">&#x663E;&#x793A;&#x5305;&#x4F9D;&#x8D56;</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>brew deps --installed --tree</code></td>
-<td style="text-align:left">&#x663E;&#x793A;&#x5305;&#x7684;&#x4F9D;&#x8D56;&#x6811;</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>brew cleanup git</code> <code>brew cleanup</code></td>
-<td style="text-align:left">&#x5220;&#x9664;&#x7A0B;&#x5E8F;&#xFF0C;&#x548C;upgrade&#x4E00;&#x6837;&#xFF0C;&#x5355;&#x4E2A;&#x8F6F;&#x4EF6;&#x5220;&#x9664;&#x548C;&#x6240;&#x6709;&#x7A0B;&#x5E8F;&#x8001;&#x7248;&#x5220;&#x9664;&#x3002;</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>brew outdated</code></td>
-<td style="text-align:left">&#x67E5;&#x770B;&#x9700;&#x8981;&#x66F4;&#x65B0;&#x7684;&#x5DF2;&#x5B89;&#x88C5;&#x7A0B;&#x5E8F;</td>
-</tr>
-</tbody>
-</table>
-<h2 id="node">Node</h2>
-<h4 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h4>
-<pre><code class="lang-text">brew install nvm
+<p><strong>2.IPCMain&#x56DE;&#x590D;IPCRenderer&#x5DF2;&#x6210;&#x529F;&#x6536;&#x5230;&#x6D88;&#x606F;</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// IPCRenderer</span>
+<span class="hljs-keyword">import</span> { ipcRenderer } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;electron&apos;</span>;
+<span class="hljs-comment">//&#x65B9;&#x6CD5;&#x4E00;</span>
+ipcRenderer.send(<span class="hljs-string">&apos;ipc-to-main&apos;</span>, <span class="hljs-string">&apos;TigerZH&apos;</span>);
+ipcRenderer.on(<span class="hljs-string">&apos;main-reply-ipc&apos;</span>,(event, data)=&gt;{
+      <span class="hljs-built_in">console</span>.log(data) <span class="hljs-comment">//done</span>
+})
+<span class="hljs-comment">//&#x65B9;&#x6CD5;&#x4E8C;</span>
+<span class="hljs-keyword">const</span> returnValue=ipcRenderer.sendSync(<span class="hljs-string">&apos;ipc-to-main&apos;</span>, <span class="hljs-string">&apos;TigerZH&apos;</span>);
+<span class="hljs-built_in">console</span>.log(returnValue) <span class="hljs-comment">//done</span>
+
+
+
+<span class="hljs-comment">// IPCMain</span>
+<span class="hljs-keyword">import</span> { ipcMain } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;electron&apos;</span>;
+<span class="hljs-comment">//&#x65B9;&#x6CD5;&#x4E00;</span>
+ipcMain.on(<span class="hljs-string">&apos;ipc-to-main&apos;</span>, (event, data) =&gt; {
+    <span class="hljs-built_in">console</span>.log(data) <span class="hljs-comment">//TigerZH</span>
+    event.sender.send(<span class="hljs-string">&apos;main-reply-ipc&apos;</span>, <span class="hljs-string">&apos;done&apos;</span>);
+})
+
+<span class="hljs-comment">//&#x65B9;&#x6CD5;&#x4E8C;</span>
+ipcMain.on(<span class="hljs-string">&apos;ipc-to-main&apos;</span>, (event, data) =&gt; {
+    <span class="hljs-built_in">console</span>.log(data) <span class="hljs-comment">//TigerZH</span>
+    event.returnValue = <span class="hljs-string">&apos;done&apos;</span>;
+})
 </code></pre>
-<p> &#x63A8;&#x8350;&#x5B89;&#x88C5;&#x5B89;&#x88C5;nvm&#x6765;&#x7BA1;&#x7406;Node&#x7248;&#x672C;&#xFF1B;&#x5176;&#x6B21;&#x63A8;&#x8350;brew&#x6765;&#x5BF9;node&#x548C;npm&#x7248;&#x672C;&#x8FDB;&#x884C;&#x7BA1;&#x7406;&#x3002;</p>
-<p> &#x9ED8;&#x8BA4;&#x7EC8;&#x7AEF;&#x662F;&#x5728; <code>~/.bash_profile</code>&#x6587;&#x4EF6;&#x4E0B;&#x914D;&#x7F6E;&#x4EE5;&#x4E0B;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF1A;</p>
-<pre><code class="lang-text"># For NVM
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+<p><strong>3.IPCMain&#x53D1;&#x9001;&#x6D88;&#x606F;&#x81F3;IPCRenderer</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">//IPCMain&#x53D1;&#x9001;&#x6D88;&#x606F;&#x81F3;IPCRenderer &#x662F;&#x901A;&#x8FC7;&#x83B7;&#x53D6;IPCRenderer&#x7684;&#x5B9E;&#x4F8B; &#x8FDB;&#x884C;&#x53D1;&#x9001;&#x6D88;&#x606F;</span>
+
+<span class="hljs-comment">// IPCMain </span>
+<span class="hljs-comment">// &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7684;IPCRenderer &#x4E00;&#x822C;&#x6765;&#x8BF4;&#x5F80;&#x5F80;&#x90FD;&#x662F;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x7ED9;&#x5F53;&#x524D;&#x7684;&#x7A97;&#x53E3;</span>
+<span class="hljs-keyword">import</span> { remote } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;electron&apos;</span>;
+
+<span class="hljs-keyword">const</span> win = remote.getCurrentWindow();
+<span class="hljs-comment">//&#x5982;&#x679C;&#x9700;&#x8981;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x7ED9;&#x6307;&#x5B9A;&#x7A97;&#x53E3;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;id&#x83B7;&#x53D6;</span>
+<span class="hljs-comment">// const win = remote.BrowserWindow.fromId(&apos;IPCRenderer&#x7A97;&#x53E3;ID&apos;);</span>
+win.webContents.send(<span class="hljs-string">&apos;main-to-ipc&apos;</span>, <span class="hljs-string">&apos;TigerZH&apos;</span>);
+
+<span class="hljs-comment">// IPCRenderer</span>
+<span class="hljs-keyword">import</span> { ipcRenderer } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;electron&apos;</span>;
+
+ipcRenderer.on(<span class="hljs-string">&apos;main-to-ipc&apos;</span>, (event,data)=&gt;{
+   <span class="hljs-built_in">console</span>.log(data) <span class="hljs-comment">//TigerZH</span>
+});
 </code></pre>
-<p>&#x5982;&#x679C;mac&#x4E2D;&#x6CA1;&#x6709;&#x8BE5;&#x6587;&#x4EF6;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x64CD;&#x4F5C;&#xFF1A;</p>
-<pre><code class="lang-text"> cd ~
- touch .bash_profile
- open -e .bash_profile
- source .bash_profile
- //&#x67E5;&#x770B;&#x914D;&#x7F6E;&#x662F;&#x5426;&#x6210;&#x529F;
- echo $PATH
-</code></pre>
-<p>&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7EC8;&#x7AEF;&#x5E76;&#x8F93;&#x5165;nvm&#x67E5;&#x770B;&#x914D;&#x7F6E;&#x662F;&#x5426;&#x6210;&#x529F;&#x3002;</p>
-<h2 id="nvm">NVM</h2>
-<h4 id="&#x5217;&#x51FA;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x6240;&#x6709;&#x7684;&#x53EF;&#x7528;&#x7248;&#x672C;">&#x5217;&#x51FA;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x6240;&#x6709;&#x7684;&#x53EF;&#x7528;&#x7248;&#x672C;</h4>
-<pre><code class="lang-text">nvm ls-remote
-##### &#x6267;&#x884C;&#x7ED3;&#x679C;
+<p><strong>4.IPCRenderer&#x56DE;&#x590D;IPCMain&#x5DF2;&#x6210;&#x529F;&#x6536;&#x5230;&#x6D88;&#x606F;</strong></p>
+<p>&#x7C7B;&#x4F3C;&#x7B2C;&#x4E8C;&#x79CD;&#x5904;&#x7406;</p>
+<p><strong>5.&#x4E24;&#x4E2A;&#x6E32;&#x67D3;&#x9875;&#x9762;&#x4E4B;&#x95F4;&#x7684;&#x901A;&#x4FE1;</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// A&#x9875;&#x9762;</span>
+<span class="hljs-keyword">import</span> { ipcRenderer,remote } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;electron&apos;</span>;
+<span class="hljs-keyword">const</span> data = { name:<span class="hljs-string">&apos;TigerZH&apos;</span> };
+data.id = remote.getCurrentWindow().id;
+ipcRenderer.send(<span class="hljs-string">&apos;a-to-main&apos;</span>, data );
 
-   $ nvm ls-remote
-        v0.1.14
-        v0.1.15
-        v0.1.16
-        v0.1.17
-        v0.1.18
-        v0.1.19
-    ...
-        v12.6.0
-        v12.7.0
-</code></pre>
-<h4 id="&#x5B89;&#x88C5;&#x5BF9;&#x5E94;&#x7684;&#x7248;&#x672C;">&#x5B89;&#x88C5;&#x5BF9;&#x5E94;&#x7684;&#x7248;&#x672C;</h4>
-<pre><code class="lang-text">nvm install x.x.x
-</code></pre>
-<h4 id="&#x67E5;&#x770B;&#x5DF2;&#x5B89;&#x88C5;&#x7684;&#x5217;&#x8868;">&#x67E5;&#x770B;&#x5DF2;&#x5B89;&#x88C5;&#x7684;&#x5217;&#x8868;</h4>
-<pre><code class="lang-text">//&#x663E;&#x793A;&#x5DF2;&#x5B89;&#x88C5;&#x7684;&#x7248;&#x672C;&#x5217;&#x8868;
-nvm list;
-</code></pre>
-<h4 id="&#x6267;&#x884C;&#x7ED3;&#x679C;">&#x6267;&#x884C;&#x7ED3;&#x679C;</h4>
-<pre><code class="lang-text"> $ nvm list
--&gt;       v4.1.0
-       v10.16.0
-default -&gt; v10.16.0
-node -&gt; stable (-&gt; v10.16.0) (default)
-stable -&gt; 10.16 (-&gt; v10.16.0) (default)
-iojs -&gt; N/A (default)
-unstable -&gt; N/A (default)
-lts/* -&gt; lts/dubnium (-&gt; v10.16.0)
-lts/argon -&gt; v4.9.1 (-&gt; N/A)
-lts/boron -&gt; v6.17.1 (-&gt; N/A)
-lts/carbon -&gt; v8.16.0 (-&gt; N/A)
-lts/dubnium -&gt; v10.16.0
-</code></pre>
-<h4 id="&#x5207;&#x6362;node&#x7248;&#x672C;">&#x5207;&#x6362;node&#x7248;&#x672C;</h4>
-<pre><code class="lang-text">nvm use v10.16.0
-</code></pre>
-<h4 id="nvm&#x5E38;&#x7528;&#x547D;&#x4EE4;">nvm&#x5E38;&#x7528;&#x547D;&#x4EE4;</h4>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">&#x547D;&#x4EE4;</th>
-<th style="text-align:left">&#x6CE8;&#x91CA;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><code>nvm install</code></td>
-<td style="text-align:left">&#x4E0B;&#x8F7D;</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>nvm use &#x7248;&#x672C;&#x53F7;</code></td>
-<td style="text-align:left">&#x5207;&#x6362;&#x7248;&#x672C;</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>nvm ls</code></td>
-<td style="text-align:left">&#x5DF2;&#x4E0B;&#x8F7D;&#x7684;&#x7248;&#x672C;</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>nvm ls-remote</code></td>
-<td style="text-align:left">&#x8FDC;&#x7A0B;&#x7248;&#x672C;&#x5217;&#x8868;</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>nvm alias default &#x7248;&#x672C;</code></td>
-<td style="text-align:left">&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x7684;&#x7248;&#x672C;</td>
-</tr>
-</tbody>
-</table>
-<p>&#x7531;&#x4E8E;&#x5929;&#x671D;&#x7F51;&#x7EDC;&#x88AB;&#x5899;&#xFF0C;npm&#x5B89;&#x88C5;&#x56FD;&#x5916;&#x5305;&#x5C31;&#x4F1A;&#x53D8;&#x7684;&#x5F88;&#x6162;&#xFF0C;&#x6709;&#x65F6;&#x9700;&#x8981;&#x5B89;&#x88C5;&#x67D0;&#x4E2A;&#x5728;&#x56FD;&#x5916;&#x7684;&#x5305;&#x5C06;&#x4F1A;&#x8017;&#x8D39;&#x5927;&#x91CF;&#x7684;&#x65F6;&#x95F4;&#x3002;&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x6709;&#x5F88;&#x591A;&#x52E4;&#x52B3;&#x65E0;&#x79C1;&#x5F00;&#x53D1;&#x8005;&#xFF0C;&#x4F7F;&#x7528;&#x56FD;&#x5185;&#x955C;&#x50CF;&#x89E3;&#x51B3;&#xFF01;&#x5E76;&#x4E14;&#x670D;&#x52A1;&#x90FD;&#x662F;&#x514D;&#x8D39;&#x7684;&#x3002;&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x88AB;&#x79F0;&#x4E3A;&#x6362;&#x6E90;&#x3002;&#x4F46;&#x662F;&#x6362;&#x6E90;&#x662F;&#x914D;&#x7F6E;&#x64CD;&#x4F5C;&#xFF0C;&#x7ECF;&#x5E38;&#x64CD;&#x4F5C;&#x4F1A;&#x5BFC;&#x81F4;&#x591A;&#x5904;&#x914D;&#x7F6E;&#x4E0D;&#x4E00;&#x81F4;&#xFF0C;&#x6709;&#x4E9B;&#x65F6;&#x5019;&#x9700;&#x8981;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x4FEE;&#x6539;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x719F;&#x6089;&#x67B6;&#x6784;&#x539F;&#x7406;&#x7684;&#x7A0B;&#x5E8F;&#x5458;&#x5F88;&#x5BB9;&#x6613;&#x9057;&#x5FD8;&#x67D0;&#x4E00;&#x5904;&#x5BFC;&#x81F4;npm&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x63A8;&#x8350;&#x4F7F;&#x7528;nrm&#x6E90;&#x7BA1;&#x7406;&#x5DE5;&#x5177;</p>
-<h4 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h4>
-<pre><code class="lang-text">npm install -g nrm
-</code></pre>
-<h4 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h4>
-<pre><code class="lang-text">//&#x5217;&#x51FA;&#x53EF;&#x9009;&#x7684;&#x6E90;
-nrm ls                                                                                                                                    
+ipcRenderer.on(<span class="hljs-string">&apos;main-to-b&apos;</span>, (event, arg) =&gt; {
+    <span class="hljs-built_in">console</span>.log(arg) <span class="hljs-comment">// { state:&apos;done&apos;, id_a:xxx,id_b:xxx }</span>
+})
 
-* npm ---- https://registry.npmjs.org/
-  cnpm --- http://r.cnpmjs.org/
-  taobao - http://registry.npm.taobao.org/
-  eu ----- http://registry.npmjs.eu/
-  au ----- http://registry.npmjs.org.au/
-  sl ----- http://npm.strongloop.com/
-  nj ----- https://registry.nodejitsu.com/
-//&#x5E26; * &#x7684;&#x662F;&#x5F53;&#x524D;&#x4F7F;&#x7528;&#x7684;&#x6E90;&#xFF0C;&#x4E0A;&#x9762;&#x7684;&#x8F93;&#x51FA;&#x8868;&#x660E;&#x5F53;&#x524D;&#x6E90;&#x662F;&#x5B98;&#x65B9;&#x6E90;&#x3002;
+<span class="hljs-comment">//IPCMain</span>
+<span class="hljs-keyword">import</span> { ipcMain } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;electron&apos;</span>;
 
-//&#x5207;&#x6362;
-nrm use taobao 
-
-//&#x4F60;&#x53EF;&#x4EE5;&#x589E;&#x52A0;&#x5B9A;&#x5236;&#x7684;&#x6E90;&#xFF0C;&#x7279;&#x522B;&#x9002;&#x7528;&#x4E8E;&#x6DFB;&#x52A0;&#x4F01;&#x4E1A;&#x5185;&#x90E8;&#x7684;&#x79C1;&#x6709;&#x6E90;&#x3002;&#x79C1;&#x6709;&#x6E90;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;cnpmjs&#x67B6;&#x8BBE;&#x3002;
-nrm add  &lt;registry&gt; &lt;url&gt; [home]
-
-//&#x5220;&#x9664;&#x6E90;
-nrm del &lt;registry&gt;
-
-//&#x6D4B;&#x8BD5;&#x6E90;&#x7684;&#x54CD;&#x5E94;&#x65F6;&#x95F4;
-//&#x6D4B;&#x8BD5;&#x5355;&#x4E2A;
-nrm test npm 
-//&#x6D4B;&#x8BD5;&#x6240;&#x6709;
-nrm test   
-//&#x6CE8;&#x610F;&#xFF0C;&#x4E3A;&#x4E86;&#x53D6;&#x5F97;&#x8F83;&#x51C6;&#x786E;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x591A;&#x6B21;&#x6D4B;&#x8BD5;&#x53D6;&#x5E73;&#x5747;&#x503C;&#x3002;
-</code></pre>
-<h4 id="npm-&#x5E38;&#x7528;&#x547D;&#x4EE4;">npm &#x5E38;&#x7528;&#x547D;&#x4EE4;</h4>
-<pre><code class="lang-text">//1.&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B; &#x4E00;&#x8DEF;enter
- $ npm init
-
- //2.&#x5168;&#x90E8;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;
- $npm init --yes
- //&#x5168;&#x5C40;&#x5B89;&#x88C5;
-$ npm install &#x6A21;&#x5757;&#x540D; -g
-//&#x672C;&#x5730;&#x5B89;&#x88C5;
-$ npm install &#x6A21;&#x5757;&#x540D;
-//&#x4E00;&#x6B21;&#x6027;&#x5B89;&#x88C5;&#x591A;&#x4E2A;
-$ npm install &#x6A21;&#x5757;1 &#x6A21;&#x5757;2 &#x6A21;&#x5757;n --save
-
-//&#x5B89;&#x88C5;&#x8FD0;&#x884C;&#x65F6;&#x4F9D;&#x8D56;&#x5305;
-$ npm install &#x6A21;&#x5757;&#x540D; --save
-//&#x5B89;&#x88C5;&#x5F00;&#x53D1;&#x65F6;&#x4F9D;&#x8D56;&#x5305;
-$ npm install &#x6A21;&#x5757;&#x540D; --save-dev
-//&#x67E5;&#x770B;&#x672C;&#x5730;&#x5B89;&#x88C5;&#x7684;&#x76EE;&#x5F55;
-$ npm root
-
-//&#x67E5;&#x770B;&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x7684;&#x76EE;&#x5F55;
-$ npm root -g
-//&#x5378;&#x8F7D;&#x672C;&#x5730;&#x6A21;&#x5757;
-$ npm uninstall &#x6A21;&#x5757;&#x540D;
-
-//&#x5378;&#x8F7D;&#x5168;&#x5C40;&#x6A21;&#x5757;
-$ npm uninstall -g &#x6A21;&#x5757;&#x540D;
-
-$ npm update &#x6A21;&#x5757;&#x540D;
-
-$ npm update &#x6A21;&#x5757;&#x540D; -g
-$ npm ls
-
-$ npm ls -g
-</code></pre>
-<pre><code class="lang-text">package.json&#x6587;&#x4EF6;&#x7684;&#x914D;&#x7F6E;&#x8BF4;&#x660E;&#xFF1A;
-{
-  &quot;name&quot;: &quot;blog&quot;,  //&#x9879;&#x76EE;&#x540D;&#x79F0;
-  &quot;version&quot;: &quot;0.0.0&quot;,   //&#x7248;&#x672C;
-  &quot;description&quot;: &quot;&quot;,   //&#x9879;&#x76EE;&#x63CF;&#x8FF0;
-  &quot;private&quot;: true,  
-  &quot;main&quot;: &quot;index.js&quot;,  //&#x5165;&#x53E3;&#x6587;&#x4EF6;
-  &quot;scripts&quot;: {   //&#x914D;&#x7F6E;&#x4E00;&#x4E9B;&#x901A;&#x7528;&#x7684;&#x547D;&#x4EE4;&#x811A;&#x672C;
-    &quot;start&quot;: &quot;node ./bin/www&quot;
-  },
-  &quot;keywords&quot;: [],  //&#x9879;&#x76EE;&#x7684;&#x5173;&#x952E;&#x5B57;
-  &quot;author&quot;: &quot;&quot;,  //&#x4F5C;&#x8005;
-  &quot;dependencies&quot;: {   //&#x5F00;&#x53D1;&#x65F6;&#x7684;&#x4F9D;&#x8D56;
-    &quot;body-parser&quot;: &quot;~1.16.0&quot;,
-    &quot;cookie-parser&quot;: &quot;~1.4.3&quot;,
-    &quot;debug&quot;: &quot;~2.6.0&quot;,
-    &quot;ejs&quot;: &quot;~2.5.5&quot;,
-    &quot;express&quot;: &quot;~4.14.1&quot;,
-    &quot;morgan&quot;: &quot;~1.7.0&quot;,
-    &quot;serve-favicon&quot;: &quot;~2.3.2&quot;
-  },
-  &quot;devDependencies&quot;: {   //&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x4F9D;&#x8D56;
-    &quot;express-session&quot;: &quot;^1.15.1&quot;
+<span class="hljs-keyword">let</span> BipcRenderer;
+ipcMain.on(<span class="hljs-string">&apos;a-to-main&apos;</span>, ( event , data ) =&gt; {
+  <span class="hljs-keyword">if</span>(BipcRenderer){
+    BipcRenderer.webContents.send(<span class="hljs-string">&apos;main-to-b&apos;</span>, data);
+  }<span class="hljs-keyword">else</span>{
+    <span class="hljs-comment">//&#x521B;&#x5EFA;B&#x9875;&#x9762; &#x7136;&#x540E;&#x53D1;&#x9001;&#x6D88;&#x606F;</span>
+    <span class="hljs-comment">//TODO</span>
   }
-}
+})&#xFF1B;
+ipcMain.on(<span class="hljs-string">&apos;b-to-main&apos;</span>, ( event , data ) =&gt; {
+     <span class="hljs-keyword">const</span> a = remote.BrowserWindow.fromId(data.id_a);
+     a.webContents.send(<span class="hljs-string">&apos;main-to-a&apos;</span>, data);
+
+})&#xFF1B;
+
+<span class="hljs-comment">//B&#x9875;&#x9762;</span>
+<span class="hljs-keyword">import</span> { ipcRenderer, remote, BrowserWindow } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;electron&apos;</span>;
+
+ipcRenderer.on(<span class="hljs-string">&apos;main-to-b&apos;</span>, (event, arg) =&gt; {
+  <span class="hljs-built_in">console</span>.log(arg) <span class="hljs-comment">// { name:&apos;TigerZH&apos;, id:xxx }</span>
+  <span class="hljs-keyword">const</span> data = { state:<span class="hljs-string">&apos;done&apos;</span> };
+  data.id_a=arg.id;
+  data.id_b = remote.getCurrentWindow().id;
+  ipcRenderer.send(<span class="hljs-string">&apos;b-to-main&apos;</span>,data)
+ })
+<span class="hljs-comment">//&#x8FD9;&#x662F;A&#x9875;&#x9762;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x7ED9;B&#x9875;&#x9762; &#x5982;&#x679C;&#x9700;&#x8981;B&#x9875;&#x9762;&#x56DE;&#x6D88;&#x606F;&#x7ED9;A&#x9875;&#x9762; &#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;</span>
+<span class="hljs-comment">//A&#x9875;&#x9762;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x65F6;&#x901A;&#x8FC7; remote.getCurrentWindow().id &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x9875;&#x9762;&#x7684;ID&#x4F20;&#x5165;&#x643A;&#x5E26;&#x7684;&#x53C2;&#x6570;&#x4E2D;</span>
+<span class="hljs-comment">//B&#x9875;&#x9762;&#x53D1;&#x9001;</span>
 </code></pre>
-<p><a href="http://www.ruanyifeng.com/blog/2016/01/npm-install.html" target="_blank">&#x5173;&#x4E8E;npm&#x7684;&#x5B89;&#x88C5;&#x673A;&#x5236;</a></p>
 <p>   MIT License</p>
 <p>Copyright (c) 2019 TigerZH &#x2764;&#xFE0F;</p>
 
@@ -1167,12 +1028,12 @@ $ npm ls -g
 
             
                 
-                <a href="read-book-note.html" class="navigation navigation-prev " aria-label="Previous page: 读后感">
+                <a href="websocket.html" class="navigation navigation-prev " aria-label="Previous page: 简单的群聊">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="pm2.html" class="navigation navigation-next " aria-label="Next page: PM2">
+                <a href="thinking-in-ract.html" class="navigation navigation-next " aria-label="Next page: 思考React">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1183,7 +1044,7 @@ $ npm ls -g
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Pack","level":"2.1.5","depth":2,"next":{"title":"PM2","level":"2.1.6","depth":2,"path":"roll2/pm2.md","ref":"roll2/pm2.md","articles":[]},"previous":{"title":"读后感","level":"2.1.4","depth":2,"path":"roll2/read-book-note.md","ref":"roll2/read-book-note.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"/assets/images/favicon.ico","bookmark":"/assets/images/favicon.ico","appleTouch":"/assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"/assets/images/apple-touch-icon.png","180x180":"/assets/images/apple-touch-icon.png"}},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll2/npm.md","mtime":"2020-03-05T08:36:09.988Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-10T02:27:39.991Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"electron 通信","level":"2.1.25","depth":2,"next":{"title":"思考React","level":"2.1.26","depth":2,"path":"roll2/thinking-in-ract.md","ref":"roll2/thinking-in-ract.md","articles":[]},"previous":{"title":"简单的群聊","level":"2.1.24","depth":2,"path":"roll2/websocket.md","ref":"roll2/websocket.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"/assets/images/favicon.ico","bookmark":"/assets/images/favicon.ico","appleTouch":"/assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"/assets/images/apple-touch-icon.png","180x180":"/assets/images/apple-touch-icon.png"}},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll2/electron-message.md","mtime":"2020-03-05T08:36:09.987Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-10T02:27:39.991Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
