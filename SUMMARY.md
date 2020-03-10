@@ -68,6 +68,8 @@
    * [electron 通信](roll2/electron-message.md)
    * [思考React](roll2/thinking-in-ract.md)
    * [便利蜂面试](roll2/test-for-bianlifeng.md)
+   * [优雅指南](roll2/to-short-code.md)
+   * [不优雅指南](roll2/error-code-introduction.md)
    
 * [卷 III](roll3/index.md)
 
