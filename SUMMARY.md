@@ -37,7 +37,7 @@
 
    * [减半之路](roll1/2020-reduce-function.md)
 
-   * [高维智慧](roll1/math-world.md)
+   * [高维智慧总结](roll1/math-world.md)
 
      
 
