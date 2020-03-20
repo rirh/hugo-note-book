@@ -3,7 +3,7 @@
 {%  block contain  %}
 ##### React思考
 
-​       整个react库的设计十分的精细，每一个功能模块经得起细细品味，通读官方文档的react哲学[官方文档](https://zh-hans.reactjs.org/docs/thinking-in-react.html)，油然而生一种amazing的惊叹。
+​       整个react库的设计十分的精细，每一个功能模块经得起细细品味，通读官方文档的react哲学[官方文档](https://zh-hans.reactjs.org/docs/thinking-in-react.html)，油然而生amazing的惊叹。
 
 ​        react把整个页面组件化，再把组件的数据和页面的表现分离开来开发者不仅要学习简单的积木搭建，更多的是对积木设计切割的思考和研究。不得不提的是，由于数据（`state`）和页面分离开来，数据就变得灵活起来，数据的合理管理是一件复杂的事情，更多的是考验开发功底能力。
 
