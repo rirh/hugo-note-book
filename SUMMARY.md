@@ -52,6 +52,7 @@
    * [Nginx](roll2/nginx.md)
    * [SSH](roll2/ssh.md)
    * [GIT](roll2/git.md)
+   * [PYTHON](roll2/python.md)
    * [理解this](roll2/this.md)
    * [理解类型](roll2/change-type.md)
    * [js异步](roll2/jscomplate.md)
@@ -72,6 +73,7 @@
    * [便利蜂面试](roll2/test-for-bianlifeng.md)
    * [优雅指南](roll2/to-short-code.md)
    * [不优雅指南](roll2/error-code-introduction.md)
+   * [部署](roll2/deplory-page.md)
    
 * [卷 III](roll3/index.md)
 
