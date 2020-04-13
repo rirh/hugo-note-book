@@ -73,7 +73,7 @@
    * [便利蜂面试](roll2/test-for-bianlifeng.md)
    * [优雅指南](roll2/to-short-code.md)
    * [不优雅指南](roll2/error-code-introduction.md)
-   * [部署](roll2/deplory-page.md)
+   * [部署](roll2/deploy-page.md)
    
 * [卷 III](roll3/index.md)
 
