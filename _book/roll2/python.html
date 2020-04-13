@@ -1147,136 +1147,154 @@ print(<span class="hljs-string">&apos;Done&apos;</span>)
 </code></pre>
 </li>
 <li><p>&#x51FD;&#x6570;</p>
-<p>```python
-def foo():</p>
-<pre><code># &#x8BE5;&#x5757;&#x5C5E;&#x4E8E;&#x8FD9;&#x4E00;&#x51FD;&#x6570;
-print(&apos;hello world&apos;)
-</code></pre><h1 id="&#x51FD;&#x6570;&#x7ED3;&#x675F;">&#x51FD;&#x6570;&#x7ED3;&#x675F;</h1>
-<p>foo()  # &#x8C03;&#x7528;&#x51FD;&#x6570;
-foo()  # &#x518D;&#x6B21;&#x8C03;&#x7528;&#x51FD;&#x6570;</p>
-<h1 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h1>
-<p>def print_max(a, b):</p>
-<pre><code>if a &gt; b:
-    print(a, &apos;is maximum&apos;)
-elif a == b:
-    print(a, &apos;is equal to&apos;, b)
-else:
-    print(b, &apos;is maximum&apos;)
-</code></pre><h1 id="&#x76F4;&#x63A5;&#x4F20;&#x9012;&#x5B57;&#x9762;&#x503C;">&#x76F4;&#x63A5;&#x4F20;&#x9012;&#x5B57;&#x9762;&#x503C;</h1>
-<p>print_max(3, 4)</p>
-<p>x = 5
-y = 7</p>
-<h1 id="&#x4EE5;&#x53C2;&#x6570;&#x7684;&#x5F62;&#x5F0F;&#x4F20;&#x9012;&#x53D8;&#x91CF;">&#x4EE5;&#x53C2;&#x6570;&#x7684;&#x5F62;&#x5F0F;&#x4F20;&#x9012;&#x53D8;&#x91CF;</h1>
-<p>print_max(x, y)</p>
-<h1 id="&#x5C40;&#x90E8;&#x53D8;&#x91CF;">&#x5C40;&#x90E8;&#x53D8;&#x91CF;</h1>
-<p>x = 50
-def func(x):</p>
-<pre><code>print(&apos;x is&apos;, x)
-x = 2
-print(&apos;Changed local x to&apos;, x)
-</code></pre><p>func(x)
-print(&apos;x is still&apos;, x)</p>
-<h1 id="python-functionlocalpy">python function_local.py</h1>
-<h1 id="3x-is-50">3x is 50</h1>
-<h1 id="changed-local-x-to-2">Changed local x to 2</h1>
-<h1 id="x-is-still-50">x is still 50</h1>
-<p>global &#x8BED;&#x53E5;
-x = 50
-def func():</p>
-<pre><code>global x
-
-print(&apos;x is&apos;, x)
-x = 2
-print(&apos;Changed global x to&apos;, x)
-</code></pre><p>func()
-print(&apos;Value of x is&apos;, x)</p>
-<h1 id="python-functionglobalpy">python function_global.py</h1>
-<h1 id="x-is-50">x is 50</h1>
-<h1 id="changed-global-x-to-2">Changed global x to 2</h1>
-<h1 id="value-of-x-is-2">Value of x is 2</h1>
-<h1 id="global-&#x8BED;&#x53E5;&#x7528;&#x4EE5;&#x58F0;&#x660E;-x-&#x662F;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x2014;&#x2014;&#x56E0;&#x6B64;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x5728;&#x51FD;&#x6570;&#x4E2D;&#x4E3A;-x-&#x8FDB;&#x884C;&#x8D4B;&#x503C;&#x65F6;&#xFF0C;&#x8FD9;&#x4E00;&#x6539;&#x52A8;&#x5C06;&#x5F71;&#x54CD;&#x5230;&#x6211;&#x4EEC;&#x5728;&#x4E3B;&#x4EE3;--&#x7801;&#x5757;&#x4E2D;&#x4F7F;&#x7528;&#x7684;-x-&#x7684;&#x503C;">global &#x8BED;&#x53E5;&#x7528;&#x4EE5;&#x58F0;&#x660E; x &#x662F;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x2014;&#x2014;&#x56E0;&#x6B64;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x5728;&#x51FD;&#x6570;&#x4E2D;&#x4E3A; x &#x8FDB;&#x884C;&#x8D4B;&#x503C;&#x65F6;&#xFF0C;&#x8FD9;&#x4E00;&#x6539;&#x52A8;&#x5C06;&#x5F71;&#x54CD;&#x5230;&#x6211;&#x4EEC;&#x5728;&#x4E3B;&#x4EE3;# # &#x7801;&#x5757;&#x4E2D;&#x4F7F;&#x7528;&#x7684; x &#x7684;&#x503C;</h1>
 </li>
 </ul>
-<h1 id="&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#x503C;">&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#x503C;</h1>
-<p>  def say(message, times=1):
-      print(message * times)</p>
-<p>  say(&apos;Hello&apos;)
-  say(&apos;World&apos;, 5)</p>
-<h1 id="python-functiondefaultpy">python function_default.py</h1>
-<h1 id="hello">Hello</h1>
-<h1 id="worldworldworldworldworld">WorldWorldWorldWorldWorld</h1>
-<h1 id="&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;">&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;</h1>
-<p>  def func(a, b=5, c=10):
-      print(&apos;a is&apos;, a, &apos;and b is&apos;, b, &apos;and c is&apos;, c)</p>
-<p>  func(3, 7)
-  func(25, c=24)
-  func(c=50, a=100)</p>
-<h1 id="a-is-3-and-b-is-7-and-c-is-10">a is 3 and b is 7 and c is 10</h1>
-<h1 id="a-is-25-and-b-is-5-and-c-is-24">a is 25 and b is 5 and c is 24</h1>
-<h1 id="a-is-100-and-b-is-5-and-c-is-50">a is 100 and b is 5 and c is 50</h1>
-<h1 id="&#x8FD9;&#x4E2A;&#x4F20;&#x503C;&#x65B9;&#x5F0F;&#x5F88;&#x795E;&#x5947;&#x662F;&#x6211;&#x5F88;&#x559C;&#x6B22;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;">&#x8FD9;&#x4E2A;&#x4F20;&#x503C;&#x65B9;&#x5F0F;&#x5F88;&#x795E;&#x5947;&#x662F;&#x6211;&#x5F88;&#x559C;&#x6B22;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;</h1>
-<p>  def total(a=5, <em>numbers, *</em>phonebook):
-      print(&apos;a&apos;, a)</p>
-<pre><code>  #&#x904D;&#x5386;&#x5143;&#x7EC4;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x9879;&#x76EE;
-  for single_item in numbers:
-      print(&apos;single_item&apos;, single_item)
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">foo</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-comment"># &#x8BE5;&#x5757;&#x5C5E;&#x4E8E;&#x8FD9;&#x4E00;&#x51FD;&#x6570;</span>
+    print(<span class="hljs-string">&apos;hello world&apos;</span>)
+<span class="hljs-comment"># &#x51FD;&#x6570;&#x7ED3;&#x675F;</span>
 
-  #&#x904D;&#x5386;&#x5B57;&#x5178;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x9879;&#x76EE;
-  for first_part, second_part in phonebook.items():
-      print(first_part,second_part)
-</code></pre><p>  print(total(10,1,2,3,Jack=1123,John=2231,Inge=1560))</p>
-<h1 id="python-functionvarargspy">python function_varargs.py</h1>
-<h1 id="a-10">a 10</h1>
-<h1 id="singleitem-1">single_item 1</h1>
-<h1 id="singleitem-2">single_item 2</h1>
-<h1 id="singleitem-3">single_item 3</h1>
-<h1 id="inge-1560">Inge 1560</h1>
-<h1 id="john-2231">John 2231</h1>
-<h1 id="jack-1123">Jack 1123</h1>
-<h1 id="none">None</h1>
-<p>  def maximum(x, y):
-      if x &gt; y:
-          return x
-      elif x == y:
-          return &apos;The numbers are equal&apos;
-      else:
-          return y</p>
-<p>  print(maximum(2, 3))</p>
-<pre><code>
-- &#x6A21;&#x5757;
+foo()  <span class="hljs-comment"># &#x8C03;&#x7528;&#x51FD;&#x6570;</span>
+foo()  <span class="hljs-comment"># &#x518D;&#x6B21;&#x8C03;&#x7528;&#x51FD;&#x6570;</span>
 
-  ```python
-  import sys
+<span class="hljs-comment"># &#x53C2;&#x6570;</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_max</span><span class="hljs-params">(a, b)</span>:</span>
+    <span class="hljs-keyword">if</span> a &gt; b:
+        print(a, <span class="hljs-string">&apos;is maximum&apos;</span>)
+    <span class="hljs-keyword">elif</span> a == b:
+        print(a, <span class="hljs-string">&apos;is equal to&apos;</span>, b)
+    <span class="hljs-keyword">else</span>:
+        print(b, <span class="hljs-string">&apos;is maximum&apos;</span>)
 
-  print(&apos;The command line arguments are:&apos;)
-  for i in sys.argv:
-      print(i)
+<span class="hljs-comment"># &#x76F4;&#x63A5;&#x4F20;&#x9012;&#x5B57;&#x9762;&#x503C;</span>
+print_max(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>)
 
-  print(&apos;\n\nThe PYTHONPATH is&apos;, sys.path, &apos;\n&apos;)
+x = <span class="hljs-number">5</span>
+y = <span class="hljs-number">7</span>
 
-  # python module_using_sys.py we are arguments
-  # The command line arguments are:
-  # we
-  # are
-  # arguments
-  from..import &#x8BED;&#x53E5;
-  &#x5982;&#x679C;&#x4F60;&#x5E0C;&#x671B;&#x76F4;&#x63A5;&#x5C06; argv &#x53D8;&#x91CF;&#x5BFC;&#x5165;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#xFF08;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x6BCF;&#x6B21;&#x90FD;&#x8981;&#x8F93;&#x5165; sys.&#xFF09;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F7F;&#x7528; from sys import argv &#x8BED;&#x53E5;&#x6765;&#x5B9E;&#x73B0;&#x8FD9;&#x4E00;&#x70B9;&#x3002;
-  if __name__ == &apos;__main__&apos;:
-      print(&apos;This program is being run by itself&apos;)
-  else:
-      print(&apos;I am being imported from another module&apos;)
+<span class="hljs-comment"># &#x4EE5;&#x53C2;&#x6570;&#x7684;&#x5F62;&#x5F0F;&#x4F20;&#x9012;&#x53D8;&#x91CF;</span>
+print_max(x, y)
+<span class="hljs-comment"># &#x5C40;&#x90E8;&#x53D8;&#x91CF;</span>
+x = <span class="hljs-number">50</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">func</span><span class="hljs-params">(x)</span>:</span>
+    print(<span class="hljs-string">&apos;x is&apos;</span>, x)
+    x = <span class="hljs-number">2</span>
+    print(<span class="hljs-string">&apos;Changed local x to&apos;</span>, x)
+func(x)
+print(<span class="hljs-string">&apos;x is still&apos;</span>, x)
+<span class="hljs-comment"># python function_local.py</span>
+<span class="hljs-comment"># 3x is 50</span>
+<span class="hljs-comment"># Changed local x to 2</span>
+<span class="hljs-comment"># x is still 50</span>
 
-  def say_hi():
-      print(&apos;Hi, this is mymodule speaking.&apos;)
+<span class="hljs-keyword">global</span> &#x8BED;&#x53E5;
+x = <span class="hljs-number">50</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">func</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">global</span> x
 
-  __version__ = &apos;0.1&apos;
-  import mymodule
+    print(<span class="hljs-string">&apos;x is&apos;</span>, x)
+    x = <span class="hljs-number">2</span>
+    print(<span class="hljs-string">&apos;Changed global x to&apos;</span>, x)
+func()
+print(<span class="hljs-string">&apos;Value of x is&apos;</span>, x)
 
-  mymodule.say_hi()
-  print(&apos;Version&apos;, mymodule.__version__)
-  __init__ __main__
-  # &#x51FD;&#x6570;&#x662F;&#x7A0B;&#x5E8F;&#x4E2D;&#x7684;&#x53EF;&#x91CD;&#x7528;&#x90E8;&#x5206;&#x90A3;&#x822C;&#xFF0C;&#x6A21;&#x5757;&#x662F;&#x4E00;&#x79CD;&#x53EF;&#x91CD;&#x7528;&#x7684;&#x7A0B;&#x5E8F;&#x3002;&#x5305;&#x662F;&#x7528;&#x4EE5;&#x7EC4;&#x7EC7;&#x6A21;&#x5757;&#x7684;&#x53E6;&#x4E00;&#x79CD;&#x5C42;&#x6B21;&#x7ED3;&#x6784;
-</code></pre><p>   MIT License</p>
+<span class="hljs-comment"># python function_global.py</span>
+<span class="hljs-comment"># x is 50</span>
+<span class="hljs-comment"># Changed global x to 2</span>
+<span class="hljs-comment"># Value of x is 2</span>
+<span class="hljs-comment"># global &#x8BED;&#x53E5;&#x7528;&#x4EE5;&#x58F0;&#x660E; x &#x662F;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x2014;&#x2014;&#x56E0;&#x6B64;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x5728;&#x51FD;&#x6570;&#x4E2D;&#x4E3A; x &#x8FDB;&#x884C;&#x8D4B;&#x503C;&#x65F6;&#xFF0C;&#x8FD9;&#x4E00;&#x6539;&#x52A8;&#x5C06;&#x5F71;&#x54CD;&#x5230;&#x6211;&#x4EEC;&#x5728;&#x4E3B;&#x4EE3;# # &#x7801;&#x5757;&#x4E2D;&#x4F7F;&#x7528;&#x7684; x &#x7684;&#x503C;</span>
+
+
+<span class="hljs-comment"># &#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#x503C;</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">say</span><span class="hljs-params">(message, times=<span class="hljs-number">1</span>)</span>:</span>
+    print(message * times)
+say(<span class="hljs-string">&apos;Hello&apos;</span>)
+say(<span class="hljs-string">&apos;World&apos;</span>, <span class="hljs-number">5</span>)
+<span class="hljs-comment"># python function_default.py</span>
+<span class="hljs-comment"># Hello</span>
+<span class="hljs-comment"># WorldWorldWorldWorldWorld</span>
+
+<span class="hljs-comment"># &#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">func</span><span class="hljs-params">(a, b=<span class="hljs-number">5</span>, c=<span class="hljs-number">10</span>)</span>:</span>
+    print(<span class="hljs-string">&apos;a is&apos;</span>, a, <span class="hljs-string">&apos;and b is&apos;</span>, b, <span class="hljs-string">&apos;and c is&apos;</span>, c)
+
+func(<span class="hljs-number">3</span>, <span class="hljs-number">7</span>)
+func(<span class="hljs-number">25</span>, c=<span class="hljs-number">24</span>)
+func(c=<span class="hljs-number">50</span>, a=<span class="hljs-number">100</span>)
+
+<span class="hljs-comment"># a is 3 and b is 7 and c is 10</span>
+<span class="hljs-comment"># a is 25 and b is 5 and c is 24</span>
+<span class="hljs-comment"># a is 100 and b is 5 and c is 50</span>
+<span class="hljs-comment"># &#x8FD9;&#x4E2A;&#x4F20;&#x503C;&#x65B9;&#x5F0F;&#x5F88;&#x795E;&#x5947;&#x662F;&#x6211;&#x5F88;&#x559C;&#x6B22;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">total</span><span class="hljs-params">(a=<span class="hljs-number">5</span>, *numbers, **phonebook)</span>:</span>
+    print(<span class="hljs-string">&apos;a&apos;</span>, a)
+
+    <span class="hljs-comment">#&#x904D;&#x5386;&#x5143;&#x7EC4;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x9879;&#x76EE;</span>
+    <span class="hljs-keyword">for</span> single_item <span class="hljs-keyword">in</span> numbers:
+        print(<span class="hljs-string">&apos;single_item&apos;</span>, single_item)
+
+    <span class="hljs-comment">#&#x904D;&#x5386;&#x5B57;&#x5178;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x9879;&#x76EE;</span>
+    <span class="hljs-keyword">for</span> first_part, second_part <span class="hljs-keyword">in</span> phonebook.items():
+        print(first_part,second_part)
+
+print(total(<span class="hljs-number">10</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,Jack=<span class="hljs-number">1123</span>,John=<span class="hljs-number">2231</span>,Inge=<span class="hljs-number">1560</span>))
+<span class="hljs-comment"># python function_varargs.py</span>
+<span class="hljs-comment"># a 10</span>
+<span class="hljs-comment"># single_item 1</span>
+<span class="hljs-comment"># single_item 2</span>
+<span class="hljs-comment"># single_item 3</span>
+<span class="hljs-comment"># Inge 1560</span>
+<span class="hljs-comment"># John 2231</span>
+<span class="hljs-comment"># Jack 1123</span>
+<span class="hljs-comment"># None</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">maximum</span><span class="hljs-params">(x, y)</span>:</span>
+    <span class="hljs-keyword">if</span> x &gt; y:
+        <span class="hljs-keyword">return</span> x
+    <span class="hljs-keyword">elif</span> x == y:
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;The numbers are equal&apos;</span>
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">return</span> y
+
+print(maximum(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>))
+</code></pre>
+<ul>
+<li><p>&#x6A21;&#x5757;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> sys
+
+print(<span class="hljs-string">&apos;The command line arguments are:&apos;</span>)
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> sys.argv:
+    print(i)
+
+print(<span class="hljs-string">&apos;\n\nThe PYTHONPATH is&apos;</span>, sys.path, <span class="hljs-string">&apos;\n&apos;</span>)
+
+<span class="hljs-comment"># python module_using_sys.py we are arguments</span>
+<span class="hljs-comment"># The command line arguments are:</span>
+<span class="hljs-comment"># we</span>
+<span class="hljs-comment"># are</span>
+<span class="hljs-comment"># arguments</span>
+<span class="hljs-keyword">from</span>..<span class="hljs-keyword">import</span> &#x8BED;&#x53E5;
+&#x5982;&#x679C;&#x4F60;&#x5E0C;&#x671B;&#x76F4;&#x63A5;&#x5C06; argv &#x53D8;&#x91CF;&#x5BFC;&#x5165;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#xFF08;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x6BCF;&#x6B21;&#x90FD;&#x8981;&#x8F93;&#x5165; sys.&#xFF09;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F7F;&#x7528; <span class="hljs-keyword">from</span> sys <span class="hljs-keyword">import</span> argv &#x8BED;&#x53E5;&#x6765;&#x5B9E;&#x73B0;&#x8FD9;&#x4E00;&#x70B9;&#x3002;
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>:
+    print(<span class="hljs-string">&apos;This program is being run by itself&apos;</span>)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">&apos;I am being imported from another module&apos;</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">say_hi</span><span class="hljs-params">()</span>:</span>
+    print(<span class="hljs-string">&apos;Hi, this is mymodule speaking.&apos;</span>)
+
+__version__ = <span class="hljs-string">&apos;0.1&apos;</span>
+<span class="hljs-keyword">import</span> mymodule
+
+mymodule.say_hi()
+print(<span class="hljs-string">&apos;Version&apos;</span>, mymodule.__version__)
+__init__ __main__
+<span class="hljs-comment"># &#x51FD;&#x6570;&#x662F;&#x7A0B;&#x5E8F;&#x4E2D;&#x7684;&#x53EF;&#x91CD;&#x7528;&#x90E8;&#x5206;&#x90A3;&#x822C;&#xFF0C;&#x6A21;&#x5757;&#x662F;&#x4E00;&#x79CD;&#x53EF;&#x91CD;&#x7528;&#x7684;&#x7A0B;&#x5E8F;&#x3002;&#x5305;&#x662F;&#x7528;&#x4EE5;&#x7EC4;&#x7EC7;&#x6A21;&#x5757;&#x7684;&#x53E6;&#x4E00;&#x79CD;&#x5C42;&#x6B21;&#x7ED3;&#x6784;</span>
+</code></pre>
+</li>
+</ul>
+<p>   MIT License</p>
 <p>Copyright (c) 2019 TigerZH &#x2764;&#xFE0F;</p>
 
                                 
@@ -1305,7 +1323,7 @@ print(&apos;Value of x is&apos;, x)</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"PYTHON","level":"2.1.10","depth":2,"next":{"title":"理解this","level":"2.1.11","depth":2,"path":"roll2/this.md","ref":"roll2/this.md","articles":[]},"previous":{"title":"GIT","level":"2.1.9","depth":2,"path":"roll2/git.md","ref":"roll2/git.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"/assets/images/favicon.ico","bookmark":"/assets/images/favicon.ico","appleTouch":"/assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"/assets/images/apple-touch-icon.png","180x180":"/assets/images/apple-touch-icon.png"}},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll2/python.md","mtime":"2020-04-13T11:03:20.687Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-13T11:03:26.617Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"PYTHON","level":"2.1.10","depth":2,"next":{"title":"理解this","level":"2.1.11","depth":2,"path":"roll2/this.md","ref":"roll2/this.md","articles":[]},"previous":{"title":"GIT","level":"2.1.9","depth":2,"path":"roll2/git.md","ref":"roll2/git.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"/assets/images/favicon.ico","bookmark":"/assets/images/favicon.ico","appleTouch":"/assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"/assets/images/apple-touch-icon.png","180x180":"/assets/images/apple-touch-icon.png"}},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll2/python.md","mtime":"2020-04-13T11:06:28.386Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-13T11:07:06.697Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

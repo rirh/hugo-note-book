@@ -224,118 +224,119 @@
 
 - 函数
 
-  ```python
-  def foo():
-      # 该块属于这一函数
-      print('hello world')
-  # 函数结束
-  
-  foo()  # 调用函数
-  foo()  # 再次调用函数
-  
-  # 参数
-  def print_max(a, b):
-      if a > b:
-          print(a, 'is maximum')
-      elif a == b:
-          print(a, 'is equal to', b)
-      else:
-          print(b, 'is maximum')
-  
-  # 直接传递字面值
-  print_max(3, 4)
-  
-  x = 5
-  y = 7
-  
-  # 以参数的形式传递变量
-  print_max(x, y)
-  # 局部变量
-  x = 50
-  def func(x):
-      print('x is', x)
-      x = 2
-      print('Changed local x to', x)
-  func(x)
-  print('x is still', x)
-  # python function_local.py
-  # 3x is 50
-  # Changed local x to 2
-  # x is still 50
-  
-  global 语句
-  x = 50
-  def func():
-      global x
-  
-      print('x is', x)
-      x = 2
-      print('Changed global x to', x)
-  func()
-  print('Value of x is', x)
-  
-  # python function_global.py
-  # x is 50
-  # Changed global x to 2
-  # Value of x is 2
-  # global 语句用以声明 x 是一个全局变量——因此，当我们在函数中为 x 进行赋值时，这一改动将影响到我们在主代# # 码块中使用的 x 的值
-  
-  
-  # 默认参数值
-  def say(message, times=1):
-      print(message * times)
-  
-  say('Hello')
-  say('World', 5)
-  # python function_default.py
-  # Hello
-  # WorldWorldWorldWorldWorld
-  
-  # 关键字参数
-  def func(a, b=5, c=10):
-      print('a is', a, 'and b is', b, 'and c is', c)
-  
-  func(3, 7)
-  func(25, c=24)
-  func(c=50, a=100)
-  
-  # a is 3 and b is 7 and c is 10
-  # a is 25 and b is 5 and c is 24
-  # a is 100 and b is 5 and c is 50
-  # 这个传值方式很神奇是我很喜欢的一种方式
-  
-  def total(a=5, *numbers, **phonebook):
-      print('a', a)
-  
-      #遍历元组中的所有项目
-      for single_item in numbers:
-          print('single_item', single_item)
-  
-      #遍历字典中的所有项目
-      for first_part, second_part in phonebook.items():
-          print(first_part,second_part)
-  
-  print(total(10,1,2,3,Jack=1123,John=2231,Inge=1560))
-  # python function_varargs.py
-  # a 10
-  # single_item 1
-  # single_item 2
-  # single_item 3
-  # Inge 1560
-  # John 2231
-  # Jack 1123
-  # None
-  
-  def maximum(x, y):
-      if x > y:
-          return x
-      elif x == y:
-          return 'The numbers are equal'
-      else:
-          return y
-  
-  print(maximum(2, 3))
-  ```
+```python
+def foo():
+    # 该块属于这一函数
+    print('hello world')
+# 函数结束
+
+foo()  # 调用函数
+foo()  # 再次调用函数
+
+# 参数
+def print_max(a, b):
+    if a > b:
+        print(a, 'is maximum')
+    elif a == b:
+        print(a, 'is equal to', b)
+    else:
+        print(b, 'is maximum')
+
+# 直接传递字面值
+print_max(3, 4)
+
+x = 5
+y = 7
+
+# 以参数的形式传递变量
+print_max(x, y)
+# 局部变量
+x = 50
+def func(x):
+    print('x is', x)
+    x = 2
+    print('Changed local x to', x)
+func(x)
+print('x is still', x)
+# python function_local.py
+# 3x is 50
+# Changed local x to 2
+# x is still 50
+
+global 语句
+x = 50
+def func():
+    global x
+
+    print('x is', x)
+    x = 2
+    print('Changed global x to', x)
+func()
+print('Value of x is', x)
+
+# python function_global.py
+# x is 50
+# Changed global x to 2
+# Value of x is 2
+# global 语句用以声明 x 是一个全局变量——因此，当我们在函数中为 x 进行赋值时，这一改动将影响到我们在主代# # 码块中使用的 x 的值
+
+
+# 默认参数值
+def say(message, times=1):
+    print(message * times)
+say('Hello')
+say('World', 5)
+# python function_default.py
+# Hello
+# WorldWorldWorldWorldWorld
+
+# 关键字参数
+def func(a, b=5, c=10):
+    print('a is', a, 'and b is', b, 'and c is', c)
+
+func(3, 7)
+func(25, c=24)
+func(c=50, a=100)
+
+# a is 3 and b is 7 and c is 10
+# a is 25 and b is 5 and c is 24
+# a is 100 and b is 5 and c is 50
+# 这个传值方式很神奇是我很喜欢的一种方式
+
+def total(a=5, *numbers, **phonebook):
+    print('a', a)
+
+    #遍历元组中的所有项目
+    for single_item in numbers:
+        print('single_item', single_item)
+
+    #遍历字典中的所有项目
+    for first_part, second_part in phonebook.items():
+        print(first_part,second_part)
+
+print(total(10,1,2,3,Jack=1123,John=2231,Inge=1560))
+# python function_varargs.py
+# a 10
+# single_item 1
+# single_item 2
+# single_item 3
+# Inge 1560
+# John 2231
+# Jack 1123
+# None
+
+def maximum(x, y):
+    if x > y:
+        return x
+    elif x == y:
+        return 'The numbers are equal'
+    else:
+        return y
+
+print(maximum(2, 3))
+```
+
+
 
 - 模块
 
