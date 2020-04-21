@@ -339,8 +339,10 @@ print(maximum(2, 3))
 
 
 - 模块
-
+模块的概念是非常核心的，如果想对python了如指掌，运筹帷幄。信手捏来。模块的思维和掌握必不可少。
+  
   ```python
+  # 系统自带的模块导入
   import sys
   
   print('The command line arguments are:')
@@ -356,6 +358,7 @@ print(maximum(2, 3))
   # arguments
   from..import 语句
   如果你希望直接将 argv 变量导入你的程序（为了避免每次都要输入 sys.），那么你可以通过使用 from sys import argv 语句来实现这一点。
+  
   if __name__ == '__main__':
       print('This program is being run by itself')
   else:
@@ -369,10 +372,10 @@ print(maximum(2, 3))
   
   mymodule.say_hi()
   print('Version', mymodule.__version__)
-  __init__ __main__
+__init__ __main__
   # 函数是程序中的可重用部分那般，模块是一种可重用的程序。包是用以组织模块的另一种层次结构
   ```
-
+  
   
 
 

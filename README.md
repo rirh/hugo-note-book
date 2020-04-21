@@ -22,7 +22,7 @@
 
 **项目地址**
 
-* github仓库：[https://github.com/Ctleryes/NoteBook](https://github.com/Ctleryes/NoteBook)
+* github仓库：[https://github.com/wchat/NoteBook](https://github.com/wchat/NoteBook)
 * 在线地址：[https://www.huzhihui.org.cn](https://www.huzhihui.org.cn)
 
 
