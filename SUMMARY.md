@@ -39,6 +39,8 @@
 
    * [高维智慧总结](roll1/math-world.md)
 
+   * [Django简易教程](roll2/django.md)
+
      
 
 * [卷 II](roll2/index.md)
