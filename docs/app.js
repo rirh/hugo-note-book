@@ -15,23 +15,34 @@ const clg = (str) => {
         maxLength: '0', // define how many character can be on one line
     });
 }
-
-git
-    .add('./*', () => {
-        console.log('add done')
-    })
-    .commit("await", () => {
-        console.log('commit done')
-    })
-    .push('origin', 'master', () => {
-        exec(`
+const start = () => {
+    return new Promise((reslove, reject) => {
+        git
+            .add('./*', () => {
+                console.log('add done')
+            })
+            .commit("await", () => {
+                console.log('commit done')
+            })
+            .push('origin', 'master', () => {
+                exec(`
         ssh blog> /dev/null 2>&1 << eeooff
         cd NoteBook/;
         git fetch --all;
         git reset --hard origin/master;
         git pull;
         `);
-        clg('push done!')
-        console.log('push done');
-        exec('say push done');
-    });
+                clg('push done!')
+                console.log('push done');
+                reslove()
+
+            });
+    })
+
+}
+
+exec('mv blocks.copy.md blocks.md&&gitbook build')
+start().then(() => {
+    exec('mv blocks.md blocks.copy.md&&gitbook build . ./docs')
+
+})
