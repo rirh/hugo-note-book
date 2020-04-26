@@ -2,7 +2,7 @@
   "name": "web",
   "scripts": {
     "start": "gitbook serve",
-    "build": "gitbook build&&gitbook build  . ./docs&&node app.js"
+    "build": "node app.js"
   },
   "version": "1.0.0",
   "main": "index.js",
