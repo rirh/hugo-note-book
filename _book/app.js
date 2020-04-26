@@ -54,7 +54,6 @@ start().then(() => {
         .push('origin', 'master', () => {
             clg('push done!')
             console.log('push done');
-            reslove()
         });
 
 })
