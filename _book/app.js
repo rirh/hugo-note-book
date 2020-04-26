@@ -44,4 +44,17 @@ const start = () => {
 exec('mv blocks.md blocks.1.md&&mv blocks.copy.md blocks.md&&gitbook build')
 start().then(() => {
     exec('mv blocks.md blocks.copy.md&&mv blocks.1.md blocks.md&&gitbook build . ./docs')
+    git
+        .add('./*', () => {
+            console.log('add done')
+        })
+        .commit("await", () => {
+            console.log('commit done')
+        })
+        .push('origin', 'master', () => {
+            clg('push done!')
+            console.log('push done');
+            reslove()
+        });
+
 })
