@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "name": "notebook",
+    "builds": [
+        {
+            "src": "*",
+            "use": "@now/static"
+        }
+    ]
+}
