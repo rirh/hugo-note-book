@@ -1,5 +1,4 @@
-{%  extends "../blocks.md"  %}
-{%  block contain  %}
+
 
 ##### 部署文件的原理
 
@@ -29,6 +28,5 @@ cat nc.txt | nc -l 8888
 
 打开浏览器输入`http://localhost:8888`访问
 
-{%  endblock   %}
 
-# 
+

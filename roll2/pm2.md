@@ -1,5 +1,4 @@
-{%  extends "../blocks.md"  %}
-{%  block contain  %}
+
 
 ##### PM2
 
@@ -184,4 +183,3 @@ $ pm2 deploy ecosystem.config.js production update
 
 
 
-{%  endblock  %}

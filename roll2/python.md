@@ -1,5 +1,4 @@
-{%  extends "../blocks.md"  %}
-{%  block contain  %}
+
 
 ##### python
 
@@ -628,5 +627,5 @@ __init__ __main__
 
 
 
-{%  endblock   %}
+
 

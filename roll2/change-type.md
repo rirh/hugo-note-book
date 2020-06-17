@@ -1,5 +1,4 @@
-{%  extends "../blocks.md"  %}
-{%  block contain  %}
+
 
 ### 类型的验证
 
@@ -149,5 +148,3 @@ const isfoo = foo === "false";
 ```
 
 
-
-{%  endblock   %}

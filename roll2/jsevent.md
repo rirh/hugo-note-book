@@ -1,5 +1,4 @@
-{%  extends "../blocks.md"  %}
-{%  block contain  %}
+
 
 # JS事件流简述
 
@@ -142,5 +141,5 @@
 </html>
 ```
 
-{%  endblock  %}
+
 

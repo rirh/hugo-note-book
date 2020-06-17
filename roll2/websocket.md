@@ -1,7 +1,6 @@
 
 
-{%  extends "../blocks.md"  %}
-{%  block contain  %}
+
 
 # websocket
 
@@ -135,4 +134,3 @@ wss.on("connection", function connection(ws, req) {
 </html>
 ```
 
-{%  endblock   %}

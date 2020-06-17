@@ -1,5 +1,4 @@
-{%  extends "../blocks.md"  %}
-{%  block contain  %}
+
 
 
 
@@ -41,5 +40,5 @@
 
 ![image-20191113230856649](../assets/images/image-20191113230856649.png)
 
-{%  endblock   %}
+
 

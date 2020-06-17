@@ -1,5 +1,4 @@
-{%  extends "../blocks.md"  %}
-{%  block contain  %}
+
 # 金融基本架构
 
 *也许没有在国贸呆过，但是那种西装商业氛围让你感觉到压抑。*
@@ -115,4 +114,3 @@
 
 [本文引用知乎](https://www.zhihu.com/question/20026985) 
 
-{%  endblock   %}

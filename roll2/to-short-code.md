@@ -1,5 +1,4 @@
-{%  extends "../blocks.md"  %}
-{%  block contain  %}
+
 
 #### 前端提升幸福指数编程指南
 
@@ -725,5 +724,5 @@ const love = JSON.parse(localStorage.getItem("love"));
 localStorage.setItem("love", JSON.stringify("I Love You"));
 ```
 
-{%  endblock   %}
+
 

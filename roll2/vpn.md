@@ -1,5 +1,4 @@
-{%  extends "../blocks.md"  %}
-{%  block contain  %}
+
 
 # 正文
 
@@ -51,5 +50,5 @@ l2tpnoipsec
 
  重新链接一下就可以使用了
 
-{%  endblock  %}
+
 

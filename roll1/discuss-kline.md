@@ -1,5 +1,4 @@
-{%  extends "../blocks.md"  %}
-{%  block contain  %}
+
 
 ### 本文为k线的基本知识 
 
@@ -105,4 +104,3 @@ t字线
 
 
 
-{%  endblock   %}

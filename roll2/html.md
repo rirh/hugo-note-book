@@ -2,8 +2,7 @@
 
 
 
-{%  extends "../blocks.md"  %}
-{%  block contain  %}
+
 
 # HTML
 
@@ -128,5 +127,5 @@ a, ins, del, map
 
 
 
-{%  endblock  %}
+
 

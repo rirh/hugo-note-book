@@ -1,5 +1,4 @@
-{%  extends "../blocks.md"  %}
-{%  block contain  %}
+
 
 # css
 **css：指层叠样式表 (Cascading Style Sheets)**
@@ -1376,4 +1375,3 @@ antiquewhite：值
 
 
 
-{%  endblock  %}

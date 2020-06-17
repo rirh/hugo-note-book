@@ -1,10 +1,5 @@
 
 
-{%  extends "../blocks.md"  %}
-{%  block contain  %}
-
-
-
 ## 序言
 
 **环境: CentOS Linux release 7.5.1804 (Core)**
@@ -122,5 +117,5 @@
 
 
 
-{%  endblock  %}
+
 

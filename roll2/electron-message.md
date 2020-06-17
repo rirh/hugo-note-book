@@ -1,5 +1,4 @@
-{%  extends "../blocks.md"  %}
-{%  block contain  %}
+
 
 #### Electron 通信
 
@@ -133,4 +132,3 @@ ipcRenderer.on('main-to-b', (event, arg) => {
 //B页面发送
 ```
 
-{%  endblock  %}

@@ -1,7 +1,6 @@
 
 
-{%  extends "../blocks.md"  %}
-{%  block contain  %}
+
 
 ### javascript高级程序设计笔记
 
@@ -470,4 +469,3 @@ history.length: 保存历史记录的数量
 
 
 
-{%  endblock   %}
