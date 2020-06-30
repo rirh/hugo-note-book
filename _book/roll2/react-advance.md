@@ -1,5 +1,4 @@
-{%  extends "../blocks.md"  %}
-{%  block contain  %}
+
 
 ##### React高级指引
 
@@ -28,4 +27,3 @@
 
 
 
-{%  endblock   %}

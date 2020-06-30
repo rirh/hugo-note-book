@@ -1,5 +1,4 @@
-{%  extends "../blocks.md"  %}
-{%  block contain  %}
+
 
 # COMPOSE
 
@@ -23,8 +22,6 @@ function subtraction(x){
 ```
 
 
-
-![image-20191029160223283](/Users/zh/Library/Application Support/typora-user-images/image-20191029160223283.png)
 
 **如果一个值要经过多个转化为另外一个形态，那可以把中间多个函数合并成一个函数，这个过程叫做函数的合并**
 
@@ -71,8 +68,6 @@ addX(2)(1) // 3
 **理解了这些基础，就具备了了解目前流行的包工具运行原理的基础。**
 
 
-
-{%  endblock  %}
 
 
 
