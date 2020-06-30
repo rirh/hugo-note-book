@@ -1,4 +1,3 @@
-{% extends "../blocks.md" %} {% block contain %}
 
 
 # Mac 绑定邮箱
@@ -43,5 +42,3 @@ mac支持绑定多种类型的邮箱
 
 
 
-
-{% endblock %}

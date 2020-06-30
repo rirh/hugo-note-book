@@ -1,4 +1,3 @@
-{% extends "../blocks.md" %} {% block contain %}
 
 # 本地链接SSH
 
@@ -87,5 +86,3 @@
 
    
 
-
-{% endblock %}

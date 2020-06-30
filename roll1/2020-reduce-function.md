@@ -1,4 +1,3 @@
-{% extends "../blocks.md" %} {% block contain %}
 
 
 #### 2020减半之路
@@ -37,5 +36,3 @@
 
 
 
-
-{% endblock %}
