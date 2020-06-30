@@ -108,7 +108,7 @@ const AR = {
         console.log('build docs done!');
         this.build_server();
         exec(`gitbook build . ./_book`);
-        console.log('build done!');
+        console.log('build _book done!');
         this.build_server();
         git
             .add('./*', () => {
