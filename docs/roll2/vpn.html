@@ -902,59 +902,7 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                  <div id="header">
-  <script>
-    (function(){
-        const style = `
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        transition: all .3ms;
-        height:${document.documentElement.clientHeight}px;
-        `
-        var dom = document.getElementById('header');
-        dom.setAttribute('style',style)
-        // var tit=document.title.split('·')[0];
-        // if(tit){
-        //   var tdom = document.getElementById('blocks-title');
-        //   var len = tit.lenght;
-        //   tdom.setAttribute('style',`font-size:${len}em`)
-        // } 
-        var pub_img_current_image;
-        function backgroundImage(){
-        var pub_img_path='https://api.huzhihui.org.cn/images_pub/';
-        var pub_img_num = 711;
-        var pub_img_current_no=function(){return Math.floor(Math.random()*pub_img_num+1);};
-        var pub_img_url=function(){return pub_img_path+'pub_'+pub_img_current_no()+'.jpg';};
-        if (pub_img_current_image === undefined ) pub_img_current_image = pub_img_url();
-        var body = dom.style;
-        body.backgroundSize = 'cover';
-        body.backgroundRepeat = 'no-repeat';
-        body.backgroundImage = 'url('+ pub_img_current_image +')';
-        body.borderRadius="0px";
-        const url = 'https://api.huzhihui.org.cn/doc'
-        fetch(url)
-        .then(async e => {
-            const s = await e.text()
-            document.querySelector('.verse').innerHTML = s;
-        })
-        // // var span = document.getElementById('img_placer');
-        // span.innerHTML = '<span style="background-image: url('+(pub_img_current_image=pub_img_url())+');width: 0px;height: 0px;display: inline;"></span>';
-        }
-        backgroundImage();
-    }())
-  </script>
-  <div class="card ">
-    <p class="blocks-title " id="blocks-title">IPSec</p>
-    <strong class="verse">My Life Getting Better !</strong>
-  </div>
-  </div>
-
-
-
-
-<h1 id="&#x6B63;&#x6587;">&#x6B63;&#x6587;</h1>
+                                <h1 id="&#x6B63;&#x6587;">&#x6B63;&#x6587;</h1>
 <h2 id="1&#x6253;&#x5F00;mac&#x504F;&#x597D;&#x8BBE;&#x7F6E;--&#x7F51;&#x7EDC;">1.&#x6253;&#x5F00;Mac&#x504F;&#x597D;&#x8BBE;&#x7F6E; &gt; &#x7F51;&#x7EDC;</h2>
 <p><img src="../assets/images/20190214142801606.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2g3NzQxNDA5MTM=,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
 <h2 id="2&#x70B9;&#x51FB;&#x53F3;&#x4E0B;&#x89D2;&#x6DFB;&#x52A0;&#x6309;&#x94AE;&#x5E76;&#x9009;&#x62E9;vpn"><strong>2.&#x70B9;&#x51FB;&#x53F3;&#x4E0B;&#x89D2;&#x6DFB;&#x52A0;&#x6309;&#x94AE;,&#x5E76;&#x9009;&#x62E9;vpn</strong></h2>
@@ -992,8 +940,6 @@ l2tpnoipsec
 <strong>1.&#x9009;&#x62E9;&#x4F60;&#x6240;&#x7528;&#x7684;vpn&#x8FDB;&#x5165;&#x9AD8;&#x7EA7;&#x9009;&#x9879;</strong>
  <strong>2.&#x9009;&#x62E9;DNS&#x6DFB;&#x52A0;&#x4E24;&#x6761;ip <code>8.8.4.4</code> &#x548C; <code>208.67.222.222</code></strong><br> <strong>3.&#x6253;&#x5F00;&#x7EC8;&#x7AEF;&#x8F93;&#x5165;&#x547D;&#x4EE4;<code>dscacheutil -flushcache</code></strong> </p>
 <p> &#x91CD;&#x65B0;&#x94FE;&#x63A5;&#x4E00;&#x4E0B;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E86;</p>
-<p>   MIT License</p>
-<p>Copyright (c) 2019 TigerZH &#x2764;&#xFE0F;</p>
 
                                 
                                 </section>
@@ -1021,7 +967,7 @@ l2tpnoipsec
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"IPSec","level":"2.1.19","depth":2,"next":{"title":"快速排序","level":"2.1.20","depth":2,"path":"roll2/quicksort.md","ref":"roll2/quicksort.md","articles":[]},"previous":{"title":"添加ssl证书","level":"2.1.18","depth":2,"path":"roll2/cert.md","ref":"roll2/cert.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"/assets/images/favicon.ico","bookmark":"/assets/images/favicon.ico","appleTouch":"/assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"/assets/images/apple-touch-icon.png","180x180":"/assets/images/apple-touch-icon.png"}},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll2/vpn.md","mtime":"2020-06-30T09:58:31.910Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-30T09:59:11.181Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"IPSec","level":"2.1.19","depth":2,"next":{"title":"快速排序","level":"2.1.20","depth":2,"path":"roll2/quicksort.md","ref":"roll2/quicksort.md","articles":[]},"previous":{"title":"添加ssl证书","level":"2.1.18","depth":2,"path":"roll2/cert.md","ref":"roll2/cert.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"/assets/images/favicon.ico","bookmark":"/assets/images/favicon.ico","appleTouch":"/assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"/assets/images/apple-touch-icon.png","180x180":"/assets/images/apple-touch-icon.png"}},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll2/vpn.md","mtime":"2020-06-30T09:59:16.537Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-30T10:06:11.480Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

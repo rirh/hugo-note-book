@@ -1,4 +1,3 @@
-{% extends "../blocks.md" %} {% block contain %}
 - 手动实现`call`/`apply`/`bind`
 - 基于`ES5`/`ES6`实现双向绑定
 - `instanceof`原理与实现
@@ -376,4 +375,3 @@ event
   })
   .trigger("test", "hello");
 ```
-{% endblock %}
