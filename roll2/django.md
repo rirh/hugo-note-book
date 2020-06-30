@@ -1,4 +1,3 @@
-{% extends "../blocks.md" %} {% block contain %}
 ##### Django 简易教程
 
 ##### 介绍
@@ -47,5 +46,3 @@ from django.urls import path
 
 ```
 
-
-{% endblock %}

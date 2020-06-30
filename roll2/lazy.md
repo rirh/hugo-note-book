@@ -1,4 +1,3 @@
-{% extends "../blocks.md" %} {% block contain %}
 
 
 ### 图片加载优化
@@ -179,5 +178,3 @@ export default class Avatars extends Vue {
 
 
 
-
-{% endblock %}

@@ -1,4 +1,3 @@
-{% extends "../blocks.md" %} {% block contain %}
 
 
 ##### 部署文件的原理
@@ -31,5 +30,3 @@ cat nc.txt | nc -l 8888
 
 
 
-
-{% endblock %}

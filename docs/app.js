@@ -109,13 +109,13 @@ const AR = {
         if (this.iserve) {
             exec(`gitbook build . ./docs`);
             console.log('build docs done!');
-            exec(`gitbook build . ./_book`);
-            console.log('build _book done!');
-
-        } else {
             this.build_server();
             exec(`gitbook build . ./_book`);
             console.log('build _book done!');
+        } else {
+            exec(`gitbook build . ./_book`);
+            console.log('build _book done!');
+            this.build_server();
             exec(`gitbook build . ./docs`);
             console.log('build docs done!');
         }
