@@ -51,6 +51,7 @@ const start = () => {
 const AR = {
     // 常量
     includefile: 'roll',
+    iserve: false,
     console: {
         font: 'block', // define the font face
         align: 'left', // define text alignment
@@ -68,7 +69,6 @@ const AR = {
     inster_template(rollpath) {
         let data = fs.readFileSync(rollpath, 'utf8').split('\n')
         const isServer = Boolean(~data[0].indexOf('extends'));
-        console.log('istemplate:', isServer);
         if (isServer) {
             data = data.filter((e, i) => {
                 return (i !== 0 && i !== (data.length - 1))
@@ -84,6 +84,7 @@ const AR = {
             if (err) return err;
             dir.forEach(file => {
                 const isincludefile = Boolean(~file.indexOf(this.includefile));
+                this.iserve = isincludefile;
                 if (isincludefile) {
                     const fileurl = path.join(dirpath, file);
                     const filter_file = (rerr, rolls) => {
@@ -105,12 +106,19 @@ const AR = {
     },
 
     start() {
-        exec(`gitbook build . ./docs`);
-        console.log('build docs done!');
-        this.build_server();
-        exec(`gitbook build . ./_book`);
-        console.log('build _book done!');
-        this.build_server();
+        if (this.iserve) {
+            exec(`gitbook build . ./docs`);
+            console.log('build docs done!');
+            exec(`gitbook build . ./_book`);
+            console.log('build _book done!');
+
+        } else {
+            this.build_server();
+            exec(`gitbook build . ./_book`);
+            console.log('build _book done!');
+            exec(`gitbook build . ./docs`);
+            console.log('build docs done!');
+        }
         git
             .add('./*', () => {
                 console.log('add done')

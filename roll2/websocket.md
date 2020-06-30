@@ -1,3 +1,4 @@
+{% extends "../blocks.md" %} {% block contain %}
 
 
 
@@ -134,3 +135,5 @@ wss.on("connection", function connection(ws, req) {
 </html>
 ```
 
+
+{% endblock %}
