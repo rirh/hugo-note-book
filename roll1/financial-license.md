@@ -1,3 +1,4 @@
+{% extends "../blocks.md" %} {% block contain %}
 
 # 金融基本架构
 
@@ -114,3 +115,5 @@
 
 [本文引用知乎](https://www.zhihu.com/question/20026985) 
 
+
+{% endblock %}

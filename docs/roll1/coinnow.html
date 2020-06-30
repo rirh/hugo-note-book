@@ -902,7 +902,59 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="&#x65E0;&#x9650;&#x7F8E;&#x597D;&#xFF1F;&#x4E00;&#x5730;&#x9E21;&#x6BDB;&#xFF1F;">&#x65E0;&#x9650;&#x7F8E;&#x597D;&#xFF1F;&#x4E00;&#x5730;&#x9E21;&#x6BDB;&#xFF1F;</h3>
+                                  <div id="header">
+  <script>
+    (function(){
+        const style = `
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: all .3ms;
+        height:${document.documentElement.clientHeight}px;
+        `
+        var dom = document.getElementById('header');
+        dom.setAttribute('style',style)
+        // var tit=document.title.split('·')[0];
+        // if(tit){
+        //   var tdom = document.getElementById('blocks-title');
+        //   var len = tit.lenght;
+        //   tdom.setAttribute('style',`font-size:${len}em`)
+        // } 
+        var pub_img_current_image;
+        function backgroundImage(){
+        var pub_img_path='https://api.huzhihui.org.cn/images_pub/';
+        var pub_img_num = 711;
+        var pub_img_current_no=function(){return Math.floor(Math.random()*pub_img_num+1);};
+        var pub_img_url=function(){return pub_img_path+'pub_'+pub_img_current_no()+'.jpg';};
+        if (pub_img_current_image === undefined ) pub_img_current_image = pub_img_url();
+        var body = dom.style;
+        body.backgroundSize = 'cover';
+        body.backgroundRepeat = 'no-repeat';
+        body.backgroundImage = 'url('+ pub_img_current_image +')';
+        body.borderRadius="0px";
+        const url = 'https://api.huzhihui.org.cn/doc'
+        fetch(url)
+        .then(async e => {
+            const s = await e.text()
+            document.querySelector('.verse').innerHTML = s;
+        })
+        // // var span = document.getElementById('img_placer');
+        // span.innerHTML = '<span style="background-image: url('+(pub_img_current_image=pub_img_url())+');width: 0px;height: 0px;display: inline;"></span>';
+        }
+        backgroundImage();
+    }())
+  </script>
+  <div class="card ">
+    <p class="blocks-title " id="blocks-title">&#x65E0;&#x9650;&#x7F8E;&#x597D;</p>
+    <strong class="verse">My Life Getting Better !</strong>
+  </div>
+  </div>
+
+
+
+
+<h3 id="&#x65E0;&#x9650;&#x7F8E;&#x597D;&#xFF1F;&#x4E00;&#x5730;&#x9E21;&#x6BDB;&#xFF1F;">&#x65E0;&#x9650;&#x7F8E;&#x597D;&#xFF1F;&#x4E00;&#x5730;&#x9E21;&#x6BDB;&#xFF1F;</h3>
 <p><strong>&#x5E01;&#x5708;&#x4E00;&#x5929;&#xFF0C;&#x80A1;&#x5E02;&#x4E00;&#x5E74;</strong></p>
 <p>&#x524D;&#x6BB5;&#x65F6;&#x95F4;&#x5F88;&#x6D41;&#x884C;&#x7684;&#x7F51;&#x7EDC;&#x7528;&#x8BED;&#xFF0C;&#x4E00;&#x65B9;&#x9762;&#x7CBE;&#x70BC;&#x7684;&#x63CF;&#x8FF0;&#x4E86;&#x52A0;&#x5BC6;&#x8D27;&#x5E01;&#x4EF7;&#x683C;&#x53D8;&#x5316;&#x60C5;&#x51B5;&#xFF0C;&#x4E00;&#x65B9;&#x9762;&#x7A81;&#x663E;&#x548C;&#x80A1;&#x5E02;&#x7B49;&#x7EA7;&#x533A;&#x522B;&#x3002;</p>
 <p>2013&#x5E74;11&#x6708;&#x6BD4;&#x7279;&#x5E01;&#x6DA8;&#x5230;1163&#x5200;&#x89C1;&#x9876;&#xFF0C;&#x5728;&#x63A5;&#x4E0B;&#x6765;&#x957F;&#x8FBE;&#x4E00;&#x5E74;&#x591A;&#x7684;&#x65F6;&#x95F4;&#x91CC;&#xFF0C;&#x6BD4;&#x7279;&#x5E01;&#x4E00;&#x76F4;&#x6CA1;&#x6709;&#x8DCC;&#x7834;320&#x5200;&#xFF0C;&#x5927;&#x5BB6;&#x90FD;&#x4EE5;&#x4E3A;&#x8FD9;&#x662F;&#x94C1;&#x5E95;&#x4E86;&#x3002;</p>
@@ -940,6 +992,8 @@
 <p>&#x6709;&#x4E2A;&#x53EB;&#x745E;&#x6CE2;&#x7684;&#xFF0C;&#x4ECE;0.055&#x5200;&#x5230;0.0029&#x5200;&#xFF0C;&#x56DE;&#x8C03;94.7%</p>
 <p>&#x6709;&#x4E2A;&#x53EB;&#x95E8;&#x7F57;&#x5E01;&#x7684;&#xFF0C;&#x4ECE;4.96&#x5200;&#x5230;0.23&#x5200;&#xFF0C;&#x56DE;&#x8C03;95.4%</p>
 <p><strong>&#x5F53;&#x7136;&#xFF0C;&#x66F4;&#x591A;&#x7684;&#x662F;&#x6CA1;&#x542C;&#x8BF4;&#x8FC7;&#x7684;&#xFF0C;&#x5DF2;&#x7ECF;&#x5F52;&#x96F6;&#x4E86;&#x7684;&#x3002;</strong></p>
+<p>   MIT License</p>
+<p>Copyright (c) 2019 TigerZH &#x2764;&#xFE0F;</p>
 
                                 
                                 </section>
@@ -967,7 +1021,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"无限美好","level":"1.3.3","depth":2,"next":{"title":"k线介绍","level":"1.3.4","depth":2,"path":"roll1/discuss-kline.md","ref":"roll1/discuss-kline.md","articles":[]},"previous":{"title":"比特币十年回顾","level":"1.3.2","depth":2,"path":"roll1/ten-years-back.md","ref":"roll1/ten-years-back.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"/assets/images/favicon.ico","bookmark":"/assets/images/favicon.ico","appleTouch":"/assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"/assets/images/apple-touch-icon.png","180x180":"/assets/images/apple-touch-icon.png"}},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll1/coinnow.md","mtime":"2020-06-30T09:39:22.603Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-30T09:43:48.044Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"无限美好","level":"1.3.3","depth":2,"next":{"title":"k线介绍","level":"1.3.4","depth":2,"path":"roll1/discuss-kline.md","ref":"roll1/discuss-kline.md","articles":[]},"previous":{"title":"比特币十年回顾","level":"1.3.2","depth":2,"path":"roll1/ten-years-back.md","ref":"roll1/ten-years-back.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"/assets/images/favicon.ico","bookmark":"/assets/images/favicon.ico","appleTouch":"/assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"/assets/images/apple-touch-icon.png","180x180":"/assets/images/apple-touch-icon.png"}},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll1/coinnow.md","mtime":"2020-06-30T09:45:09.814Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-30T09:49:31.033Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

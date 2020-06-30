@@ -1,3 +1,4 @@
+{% extends "../blocks.md" %} {% block contain %}
 ##### 一次完整的APP发布版本
 
 2020人生中第一次在职跳槽。
@@ -155,3 +156,5 @@
 
 
 
+
+{% endblock %}

@@ -1,5 +1,3 @@
-
-
 {%  block header  %}
   <div id="header">
   <script>
