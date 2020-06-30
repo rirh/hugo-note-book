@@ -1,4 +1,3 @@
-{% extends "../blocks.md" %} {% block contain %}
 
 
 **随笔**
@@ -31,5 +30,3 @@
 
 
 
-
-{% endblock %}

@@ -1,4 +1,3 @@
-{% extends "../blocks.md" %} {% block contain %}
 
 
 # Nginx
@@ -189,5 +188,3 @@ http {
 
 ```
 
-
-{% endblock %}

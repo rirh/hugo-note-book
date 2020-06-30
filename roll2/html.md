@@ -1,4 +1,3 @@
-{% extends "../blocks.md" %} {% block contain %}
 
 
 
@@ -130,5 +129,3 @@ a, ins, del, map
 
 
 
-
-{% endblock %}

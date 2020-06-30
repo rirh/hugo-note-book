@@ -75,9 +75,7 @@ const AR = {
         } else {
             data.unshift('{% extends "../blocks.md" %} {% block contain %}')
             data.splice(data.length, 0, '{% endblock %}')
-        }
-        console.log(data);
-        
+        }        
         fs.writeFileSync(rollpath, data.join('\n'), 'utf8')
     },
     find_file(dirpath) {

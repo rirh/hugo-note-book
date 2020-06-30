@@ -1,4 +1,3 @@
-{% extends "../blocks.md" %} {% block contain %}
 
 ##### 高维智慧总结
 
@@ -24,5 +23,3 @@
 
 
 
-
-{% endblock %}
