@@ -68,6 +68,7 @@ const AR = {
     inster_template(rollpath) {
         let data = fs.readFileSync(rollpath, 'utf8').split('\n')
         const isServer = Boolean(~data[0].indexOf('extends'));
+        console.log('istemplate:', isServer);
         if (isServer) {
             data = data.filter((e, i) => {
                 return (i !== 0 && i !== (data.length - 1))
@@ -75,7 +76,7 @@ const AR = {
         } else {
             data.unshift('{% extends "../blocks.md" %} {% block contain %}')
             data.splice(data.length, 0, '{% endblock %}')
-        }        
+        }
         fs.writeFileSync(rollpath, data.join('\n'), 'utf8')
     },
     find_file(dirpath) {
