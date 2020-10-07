@@ -2,15 +2,16 @@
   "name": "web",
   "scripts": {
     "start": "gitbook serve",
-    "build": "node app.js"
+    "build": "gitbook build"
   },
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/Ctleryes/NoteBook.git",
+  "repository": "https://github.com/wchat/NoteBook.git",
   "author": "TigerZH <only_tigerhu@163.com>",
   "license": "GPL-3.0",
   "dependencies": {
     "cfonts": "^2.8.0",
+    "inquirer": "^7.3.3",
     "shelljs": "^0.8.3",
     "simple-git": "^1.131.0"
   },
