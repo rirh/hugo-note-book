@@ -847,7 +847,39 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3" data-path="../private.md">
+        <li class="chapter " data-level="2.3" data-path="../roll4/">
+            
+                <a href="../roll4/">
+            
+                    
+                    卷  Ⅳ
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../roll4/1.0.5-love.html">
+            
+                <a href="../roll4/1.0.5-love.html">
+            
+                    
+                    1.0.5-love
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../private.md">
             
                 <span>
             
@@ -902,7 +934,59 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                <h5 id="&#x90E8;&#x7F72;&#x6587;&#x4EF6;&#x7684;&#x539F;&#x7406;">&#x90E8;&#x7F72;&#x6587;&#x4EF6;&#x7684;&#x539F;&#x7406;</h5>
+                                  <div id="header">
+  <script>
+    (function(){
+        const style = `
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: all .3ms;
+        height:${document.documentElement.clientHeight}px;
+        `
+        var dom = document.getElementById('header');
+        dom.setAttribute('style',style)
+        // var tit=document.title.split('·')[0];
+        // if(tit){
+        //   var tdom = document.getElementById('blocks-title');
+        //   var len = tit.lenght;
+        //   tdom.setAttribute('style',`font-size:${len}em`)
+        // } 
+        var pub_img_current_image;
+        function backgroundImage(){
+        var pub_img_path='https://api.huzhihui.org.cn/images_pub/';
+        var pub_img_num = 711;
+        var pub_img_current_no=function(){return Math.floor(Math.random()*pub_img_num+1);};
+        var pub_img_url=function(){return pub_img_path+'pub_'+pub_img_current_no()+'.jpg';};
+        if (pub_img_current_image === undefined ) pub_img_current_image = pub_img_url();
+        var body = dom.style;
+        body.backgroundSize = 'cover';
+        body.backgroundRepeat = 'no-repeat';
+        body.backgroundImage = 'url('+ pub_img_current_image +')';
+        body.borderRadius="0px";
+        const url = 'https://api.huzhihui.org.cn/doc'
+        fetch(url)
+        .then(async e => {
+            const s = await e.text()
+            document.querySelector('.verse').innerHTML = s;
+        })
+        // // var span = document.getElementById('img_placer');
+        // span.innerHTML = '<span style="background-image: url('+(pub_img_current_image=pub_img_url())+');width: 0px;height: 0px;display: inline;"></span>';
+        }
+        backgroundImage();
+    }())
+  </script>
+  <div class="card ">
+    <p class="blocks-title " id="blocks-title">&#x90E8;&#x7F72;</p>
+    <strong class="verse">My Life Getting Better !</strong>
+  </div>
+  </div>
+
+
+
+
+<h5 id="&#x90E8;&#x7F72;&#x6587;&#x4EF6;&#x7684;&#x539F;&#x7406;">&#x90E8;&#x7F72;&#x6587;&#x4EF6;&#x7684;&#x539F;&#x7406;</h5>
 <p>&#x5728;&#x672C;&#x5730;&#x521B;&#x5EFA;&#x6587;&#x4EF6;<code>nc.txt</code></p>
 <pre><code class="lang-html">HTTP/1.1 200 OK
 Content-Type: text/html
@@ -922,6 +1006,8 @@ Server: linuxtime
 <pre><code class="lang-shell">cat nc.txt | nc -l 8888
 </code></pre>
 <p>&#x6253;&#x5F00;&#x6D4F;&#x89C8;&#x5668;&#x8F93;&#x5165;<code>http://localhost:8888</code>&#x8BBF;&#x95EE;</p>
+<p>   MIT License</p>
+<p>Copyright (c) 2019 TigerZH &#x2764;&#xFE0F;</p>
 
                                 
                                 </section>
@@ -949,7 +1035,7 @@ Server: linuxtime
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"部署","level":"2.1.31","depth":2,"next":{"title":"卷 III","level":"2.2","depth":1,"path":"roll3/index.md","ref":"roll3/index.md","articles":[{"title":"emulator","level":"2.2.1","depth":2,"path":"roll3/emulator.md","ref":"roll3/emulator.md","articles":[]}]},"previous":{"title":"不优雅指南","level":"2.1.30","depth":2,"path":"roll2/error-code-introduction.md","ref":"roll2/error-code-introduction.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"/assets/images/favicon.ico","bookmark":"/assets/images/favicon.ico","appleTouch":"/assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"/assets/images/apple-touch-icon.png","180x180":"/assets/images/apple-touch-icon.png"}},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll2/deploy-page.md","mtime":"2020-10-07T14:54:25.055Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-07T16:52:23.177Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"部署","level":"2.1.31","depth":2,"next":{"title":"卷 III","level":"2.2","depth":1,"path":"roll3/index.md","ref":"roll3/index.md","articles":[{"title":"emulator","level":"2.2.1","depth":2,"path":"roll3/emulator.md","ref":"roll3/emulator.md","articles":[]}]},"previous":{"title":"不优雅指南","level":"2.1.30","depth":2,"path":"roll2/error-code-introduction.md","ref":"roll2/error-code-introduction.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"/assets/images/favicon.ico","bookmark":"/assets/images/favicon.ico","appleTouch":"/assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"/assets/images/apple-touch-icon.png","180x180":"/assets/images/apple-touch-icon.png"}},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll2/deploy-page.md","mtime":"2020-10-07T16:52:33.802Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-07T16:56:04.167Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

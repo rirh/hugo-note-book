@@ -81,6 +81,10 @@
 
    * [emulator](roll3/emulator.md)
 
+* [卷  Ⅳ](roll4/index.md)
+
+   * [1.0.5-love](roll4/1.0.5-love.md)
+
 * [隐私条款](private.md)
 
    
