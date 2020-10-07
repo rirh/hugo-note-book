@@ -27,6 +27,21 @@ body {
     font-family: "STXihei", "Hiragino Sans", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", Helvetica, Tahoma, Arial, sans-serif !important
 }
 
+/* dark mode */
+/* normal/light css */
+@media (prefers-color-scheme: dark) {
+    /* dark css here */
+    html,
+    img,
+    picture,
+    video {
+        filter: invert(1) hue-rotate(180deg);
+    }
+
+    .invert {
+        filter: invert(1) hue-rotate(180deg);
+    }
+}
 
 .card {
     display             : flex;
