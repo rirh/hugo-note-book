@@ -1,3 +1,4 @@
+{% extends "../blocks.md" %} {% block contain %}
 # 拷贝
 
 **示例**
@@ -143,3 +144,5 @@ console.log(a.arr[0][0].value, b.arr[0][0].value); // output: 100 foo
 console.log(Array.isArray(a.arr[0])); // output: true
 ```
 
+
+{% endblock %}

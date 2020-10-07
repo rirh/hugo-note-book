@@ -1,3 +1,4 @@
+{% extends "../blocks.md" %} {% block contain %}
 
 
 ### 理解 this 
@@ -81,3 +82,5 @@ run.bind({ a: 2 }).bind({ a: 1 })(); // output: 2
 
 
 
+
+{% endblock %}

@@ -1,3 +1,4 @@
+{% extends "../blocks.md" %} {% block contain %}
 
 
 # 正文
@@ -136,3 +137,5 @@
 
 
 
+
+{% endblock %}
