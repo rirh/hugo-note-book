@@ -1,4 +1,3 @@
-{% extends "../blocks.md" %} {% block contain %}
 
 # 本地链接SSH
 
@@ -10,6 +9,7 @@
 | `scp blog.pub root@101.201.234.154:.` | 拷贝文件到指定服务器默认路径   |
 | cat FILE1 >> FILE2                    | 将文件一的内容追加的文件二里面 |
 | `systemctl restart sshd`              | 重启ssh服务                    |
+| `ssh-keygen -t rsa -C`     **EMAIL**  | 生成git ssh key                |
 
 ### 免密码登录服务器步骤
 
@@ -87,5 +87,3 @@
 
    
 
-
-{% endblock %}
