@@ -1,4 +1,3 @@
-{% extends "../blocks.md" %} {% block contain %}
 
 # JavaScript中的class
 
@@ -129,5 +128,3 @@ console.log(p.age);
 console.log(p.skin);
 ```
 
-
-{% endblock %}

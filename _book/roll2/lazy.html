@@ -934,7 +934,59 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="&#x56FE;&#x7247;&#x52A0;&#x8F7D;&#x4F18;&#x5316;">&#x56FE;&#x7247;&#x52A0;&#x8F7D;&#x4F18;&#x5316;</h3>
+                                  <div id="header">
+  <script>
+    (function(){
+        const style = `
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: all .3ms;
+        height:${document.documentElement.clientHeight}px;
+        `
+        var dom = document.getElementById('header');
+        dom.setAttribute('style',style)
+        // var tit=document.title.split('·')[0];
+        // if(tit){
+        //   var tdom = document.getElementById('blocks-title');
+        //   var len = tit.lenght;
+        //   tdom.setAttribute('style',`font-size:${len}em`)
+        // } 
+        var pub_img_current_image;
+        function backgroundImage(){
+        var pub_img_path='https://api.huzhihui.org.cn/images_pub/';
+        var pub_img_num = 711;
+        var pub_img_current_no=function(){return Math.floor(Math.random()*pub_img_num+1);};
+        var pub_img_url=function(){return pub_img_path+'pub_'+pub_img_current_no()+'.jpg';};
+        if (pub_img_current_image === undefined ) pub_img_current_image = pub_img_url();
+        var body = dom.style;
+        body.backgroundSize = 'cover';
+        body.backgroundRepeat = 'no-repeat';
+        body.backgroundImage = 'url('+ pub_img_current_image +')';
+        body.borderRadius="0px";
+        const url = 'https://api.huzhihui.org.cn/doc'
+        fetch(url)
+        .then(async e => {
+            const s = await e.text()
+            document.querySelector('.verse').innerHTML = s;
+        })
+        // // var span = document.getElementById('img_placer');
+        // span.innerHTML = '<span style="background-image: url('+(pub_img_current_image=pub_img_url())+');width: 0px;height: 0px;display: inline;"></span>';
+        }
+        backgroundImage();
+    }())
+  </script>
+  <div class="card ">
+    <p class="blocks-title " id="blocks-title">&#x56FE;&#x7247;&#x4F18;&#x5316;</p>
+    <strong class="verse">My Life Getting Better !</strong>
+  </div>
+  </div>
+
+
+
+
+<h3 id="&#x56FE;&#x7247;&#x52A0;&#x8F7D;&#x4F18;&#x5316;">&#x56FE;&#x7247;&#x52A0;&#x8F7D;&#x4F18;&#x5316;</h3>
 <p>&#x9875;&#x9762;&#x4E2D;&#x4F7F;&#x7528;&#x56FE;&#x7247;&#x662F;&#x5F88;&#x5E38;&#x89C1;&#x7684;&#xFF0C;&#x5F53;&#x9875;&#x9762;&#x52A0;&#x8F7D;&#x56FE;&#x7247;&#x7684;&#x6570;&#x91CF;&#x53D8;&#x5927;&#x65F6;&#xFF0C;&#x968F;&#x4E4B;&#x800C;&#x6765;&#x7684;&#x662F;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#x7684;&#x589E;&#x52A0;&#xFF0C;&#x9875;&#x9762;&#x53D8;&#x7684;&#x5361;&#x987F;&#xFF0C;&#x5BF9;&#x4E8E;&#x7528;&#x6237;&#x6765;&#x8BF4;&#x5F71;&#x54CD;&#x4F53;&#x9A8C;&#xFF0C;&#x5BF9;&#x4E8E;&#x5F00;&#x53D1;&#x6765;&#x8BF4;&#xFF0C;&#x4E00;&#x5F20;&#x5F88;&#x5927;&#x7684;&#x9875;&#x9762;&#x6240;&#x6709;&#x7684;&#x56FE;&#x7247;&#x4E00;&#x6B21;&#x6027;&#x5168;&#x90E8;&#x52A0;&#x8F7D;&#x4E0D;&#x505A;&#x4EFB;&#x4F55;&#x5904;&#x7406;&#xFF0C;&#x663E;&#x5F97;&#x4E0D;&#x662F;&#x90A3;&#x4E48;&#x4E13;&#x4E1A;&#x3002;</p>
 <p><strong>&#x95EE;&#x9898;&#xFF1A;</strong></p>
 <p>&#x9879;&#x76EE;&#x4F7F;&#x7528;ant-design-vue&#x6846;&#x67B6;&#xFF0C;&#x9996;&#x9875;&#x6709;&#x5927;&#x91CF;&#x56FE;&#x7247;&#x4F7F;&#x7528;Avatar&#x7EC4;&#x4EF6;&#x8FDB;&#x884C;&#x5C55;&#x793A;&#xFF0C;&#x9875;&#x9762;&#x56FE;&#x7247;&#x8FC7;&#x591A;&#x5BFC;&#x81F4;&#x52A0;&#x8F7D;&#x901F;&#x5EA6;&#x8FC7;&#x6162; </p>
@@ -1075,6 +1127,12 @@ export default class Avatars extends Vue {
 
 
 
+
+
+
+
+<p>   MIT License</p>
+<p>Copyright (c) 2019 TigerZH &#x2764;&#xFE0F;</p>
 </image>
                                 
                                 </section>
@@ -1102,7 +1160,7 @@ export default class Avatars extends Vue {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"图片优化","level":"2.1.16","depth":2,"next":{"title":"copy","level":"2.1.17","depth":2,"path":"roll2/copy.md","ref":"roll2/copy.md","articles":[]},"previous":{"title":"PLAN","level":"2.1.15","depth":2,"path":"roll2/plan.md","ref":"roll2/plan.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"assets/images/favicon.ico","back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll2/lazy.md","mtime":"2021-02-24T06:31:14.525Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-24T06:31:56.881Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"图片优化","level":"2.1.16","depth":2,"next":{"title":"copy","level":"2.1.17","depth":2,"path":"roll2/copy.md","ref":"roll2/copy.md","articles":[]},"previous":{"title":"PLAN","level":"2.1.15","depth":2,"path":"roll2/plan.md","ref":"roll2/plan.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"assets/images/favicon.ico","back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll2/lazy.md","mtime":"2021-02-24T06:32:03.170Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-24T06:35:19.030Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

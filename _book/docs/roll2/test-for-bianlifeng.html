@@ -934,12 +934,64 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                <h4 id="&#x4FBF;&#x5229;&#x8702;&#x524D;&#x7AEF;&#x9762;&#x8BD5;">&#x4FBF;&#x5229;&#x8702;&#x524D;&#x7AEF;&#x9762;&#x8BD5;</h4>
+                                  <div id="header">
+  <script>
+    (function(){
+        const style = `
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: all .3ms;
+        height:${document.documentElement.clientHeight}px;
+        `
+        var dom = document.getElementById('header');
+        dom.setAttribute('style',style)
+        // var tit=document.title.split('·')[0];
+        // if(tit){
+        //   var tdom = document.getElementById('blocks-title');
+        //   var len = tit.lenght;
+        //   tdom.setAttribute('style',`font-size:${len}em`)
+        // } 
+        var pub_img_current_image;
+        function backgroundImage(){
+        var pub_img_path='https://api.huzhihui.org.cn/images_pub/';
+        var pub_img_num = 711;
+        var pub_img_current_no=function(){return Math.floor(Math.random()*pub_img_num+1);};
+        var pub_img_url=function(){return pub_img_path+'pub_'+pub_img_current_no()+'.jpg';};
+        if (pub_img_current_image === undefined ) pub_img_current_image = pub_img_url();
+        var body = dom.style;
+        body.backgroundSize = 'cover';
+        body.backgroundRepeat = 'no-repeat';
+        body.backgroundImage = 'url('+ pub_img_current_image +')';
+        body.borderRadius="0px";
+        const url = 'https://api.huzhihui.org.cn/doc'
+        fetch(url)
+        .then(async e => {
+            const s = await e.text()
+            document.querySelector('.verse').innerHTML = s;
+        })
+        // // var span = document.getElementById('img_placer');
+        // span.innerHTML = '<span style="background-image: url('+(pub_img_current_image=pub_img_url())+');width: 0px;height: 0px;display: inline;"></span>';
+        }
+        backgroundImage();
+    }())
+  </script>
+  <div class="card ">
+    <p class="blocks-title " id="blocks-title">&#x4FBF;&#x5229;&#x8702;&#x9762;&#x8BD5;</p>
+    <strong class="verse">My Life Getting Better !</strong>
+  </div>
+  </div>
+
+
+<h4 id="&#x4FBF;&#x5229;&#x8702;&#x524D;&#x7AEF;&#x9762;&#x8BD5;">&#x4FBF;&#x5229;&#x8702;&#x524D;&#x7AEF;&#x9762;&#x8BD5;</h4>
 <p>&#x6BCF;&#x5E74;&#x6709;&#x51E0;&#x4E2A;&#x6708;&#x603B;&#x662F;&#x8DF3;&#x69FD;&#x7684;&#x597D;&#x65F6;&#x673A;&#xFF0C;&#x671F;&#x76FC;&#x548C;&#x5E0C;&#x671B;&#x5728;&#x8FD9;&#x65F6;&#x5F00;&#x59CB;&#x8822;&#x8822;&#x6B32;&#x52A8;&#x3002;</p>
 <p>&#x8FD9;&#x6B21;&#x9762;&#x8BD5;&#x516C;&#x53F8;&#x662F;&#x5728;&#x5546;&#x52A1;&#x56ED;&#x91CC;&#x9762;&#xFF0C;&#x51AC;&#x5929;&#x5546;&#x52A1;&#x56ED;&#x91CC;&#x6E29;&#x5EA6;&#x663E;&#x5F97;&#x6BD4;&#x5916;&#x9762;&#x8981;&#x4F4E;&#xFF0C;&#x4E00;&#x5EA7;&#x5EA7;&#x65B9;&#x65B9;&#x6B63;&#x6B63;&#x7684;&#x623F;&#x5B50;&#x6392;&#x5217;&#x6574;&#x9F50;&#xFF0C;&#x91CC;&#x9762;&#x5F88;&#x51B7;&#x5F88;&#x5E72;&#x51C0;&#x3002;&#x5F77;&#x4F5B;&#x662F;&#x4E00;&#x7247;&#x6811;&#x53F6;&#x6389;&#x5728;&#x5730;&#x4E0A;&#x90FD;&#x80FD;&#x542C;&#x89C1;&#x7684;&#x516C;&#x56ED;&#x3002;&#x51AC;&#x5929;&#x4E00;&#x65C1;&#x8DEF;&#x4EBA;&#x90FD;&#x8D70;&#x7684;&#x5F88;&#x5FEB;&#xFF0C;&#x547C;&#x547C;&#x7684;&#x5598;&#x6C14;&#x58F0;&#x663E;&#x5F97;&#x683C;&#x5916;&#x7684;&#x523A;&#x8033;&#x3002;</p>
 <p>&#x4F17;&#x6240;&#x5468;&#x77E5;&#xFF0C;&#x4FBF;&#x5229;&#x8702;&#x5728;&#x5317;&#x4EAC;&#x52A0;&#x73ED;&#x6392;&#x540D;TOP3&#xFF0C;&#x516C;&#x53F8;&#x91C7;&#x7528;&#x5956;&#x7F5A;&#x673A;&#x5236;&#xFF08;&#x6BCF;&#x5E74;&#x6DD8;&#x6C70;&#x6392;&#x540D;&#x9760;&#x540E;&#x7684;&#x5458;&#x5DE5;&#xFF0C;&#x5BF9;&#x4E8E;&#x8D21;&#x732E;&#x5353;&#x8D8A;&#x5458;&#x5DE5;&#x8FDB;&#x884C;&#x671F;&#x6743;&#x5206;&#x7EA2;&#x5956;&#x52B1;&#xFF09;&#xFF0C;&#x975E;&#x5E38;&#x6B8B;&#x9177;&#xFF0C;&#x4E5F;&#x662F;&#x73B0;&#x5728;&#x72FC;&#x6027;&#x516C;&#x53F8;&#x7EF4;&#x6301;&#x65B0;&#x9C9C;&#x8840;&#x6DB2;&#x7684;&#x5E38;&#x89C1;&#x5148;&#x8FDB;&#x505A;&#x6CD5;&#x3002;</p>
 <p>&#x8FDB;&#x53BB;&#x63A5;&#x5F85;&#x6211;&#x7684;&#x662F;&#x524D;&#x53F0;&#xFF0C;&#x770B;&#x8D77;&#x6765;&#x662F;&#x5E74;&#x7EAA;&#x548C;&#x6211;&#x5DEE;&#x4E0D;&#x591A;&#x4E8C;&#x5341;&#x521A;&#x51FA;&#x5934;&#x7684;&#x5C0F;&#x59D1;&#x5A18;&#xFF0C;&#x8054;&#x7CFB;&#x5230;&#x548C;&#x6211;&#x78B0;&#x9762;&#x7684;&#x4EBA;&#x4E8B;&#x4EE5;&#x540E;&#xFF0C;&#x4EC0;&#x4E48;&#x4E5F;&#x6CA1;&#x6709;&#x95EE;&#x3002;&#x5F00;&#x59CB;&#x8FDB;&#x884C;leetcode&#xFF1A;&#x63D0;&#x4F9B;&#x4E94;&#x9053;&#x7B97;&#x6CD5;&#x9898;&#xFF0C;&#x9009;&#x62E9;&#x5176;&#x4E2D;&#x4E24;&#x9053;&#x3002;&#x6BCF;&#x9053;&#x9898;&#x76EE;&#x7ED9;&#x51FA;&#x5927;&#x62B5;&#x4F1A;&#x6709;&#x7EA6;&#x5B9A;&#x597D;&#x7684;10&#x79CD;&#x7684;test&#x65B9;&#x6848;&#xFF0C;&#x5982;&#x679C;&#x901A;&#x8FC7;&#x7387;&#x8FBE;&#x5230;100%&#x90A3;&#x4E48;&#x5C31;&#x7B97;&#x901A;&#x8FC7;&#x7B2C;&#x4E00;&#x8F6E;&#x9762;&#x8BD5;&#x3002;&#x4E00;&#x9762;&#x7EDF;&#x5171;&#x662F;&#x4E00;&#x4E2A;&#x534A;&#x5C0F;&#x65F6;&#x3002;&#x5BF9;&#x4E8E;&#x719F;&#x7EC3;&#x7684;&#x5DE5;&#x5320;&#x6765;&#x8BF4;&#x65F6;&#x95F4;&#x5BCC;&#x88D5;&#xFF0C;&#x5982;&#x679C;&#x4F1A;&#x505A;&#x7684;&#x5DE5;&#x5320;&#x5E94;&#x8BE5;&#x8DB3;&#x4E5F;&#x7B97;&#x5C06;&#x5C06;&#x597D;&#x3002;&#x4E00;&#x8F6E;&#x9762;&#x8BD5;&#x8FC7;&#x4E86;&#x4EE5;&#x540E;&#x4E8C;&#x8F6E;&#x9762;&#x8BD5;&#x4E0D;&#x518D;&#x662F;&#x51B7;&#x51B0;&#x51B0;&#x7684;&#x8003;&#x8BD5;&#xFF0C;&#x4F1A;&#x7ED9;&#x4EBA;&#x4E00;&#x79CD;&#x9A6C;&#x4E0A;&#x5C31;&#x8981;&#x5165;&#x804C;&#x7684;&#x9519;&#x89C9;&#x3002;&#x5982;&#x679C;&#x653E;&#x677E;&#x8B66;&#x60D5;&#xFF0C;&#x7B2C;&#x4E09;&#x8F6E;&#x66F4;&#x6DF1;&#x5165;&#x7684;&#x9AD8;&#x7EA7;&#x77E5;&#x8BC6;&#x7684;&#x9762;&#x8C08;&#x53EF;&#x80FD;&#x5C31;&#x4F1A;&#x8D25;&#x5317;&#x3002;&#x8FD9;&#x4E00;&#x5173;&#x5F88;&#x96BE;&#x4E5F;&#x5F88;&#x5201;&#x94BB;&#xFF0C;&#x4E00;&#x76F4;&#x95EE;&#x5230;&#x54D1;&#x53E3;&#x65E0;&#x8A00;&#x4E3A;&#x6B62;&#xFF0C;&#x662F;&#x60C5;&#x5546;&#x548C;&#x77E5;&#x8BC6;&#x91CF;&#x7684;&#x8003;&#x91CF;&#x3002;&#x5982;&#x679C;&#x8FD9;&#x4E00;&#x5173;&#x8FC7;&#x4E86;&#x3002;&#x4EBA;&#x4E8B;&#x65B9;&#x9762;&#x6CA1;&#x6709;&#x592A;&#x5927;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5927;&#x62B5;&#x57FA;&#x672C;&#x5C31;&#x7B97;&#x662F;offer&#x5230;&#x624B;&#x4E86;&#x3002;</p>
 <p>&#x9762;&#x8BD5;&#x50CF;&#x662F;&#x5355;&#x5143;&#x6027;&#x7684;&#x6D4B;&#x8BD5;&#xFF0C;&#x6BCF;&#x4E2A;&#x6D4B;&#x8BD5;&#x540E;&#x591A;&#x591A;&#x5C11;&#x5C11;&#x80FD;&#x77E5;&#x9053;&#x81EA;&#x5DF1;&#x7684;&#x4E0D;&#x8DB3;&#x548C;&#x5F3A;&#x9879;&#xFF0C;&#x626C;&#x957F;&#x907F;&#x77ED;&#x3002;&#x603B;&#x4E0D;&#x5931;&#x4E3A;&#x53D1;&#x5C55;&#x7684;&#x597D;&#x529E;&#x6CD5;&#x3002;&#x6211;&#x603B;&#x662F;&#x559C;&#x6B22;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x5BF9;&#x81EA;&#x5DF1;&#x8FDB;&#x884C;&#x68C0;&#x6D4B;&#x3002;</p>
+<p>   MIT License</p>
+<p>Copyright (c) 2019 TigerZH &#x2764;&#xFE0F;</p>
 
                                 
                                 </section>
@@ -967,7 +1019,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"便利蜂面试","level":"2.1.28","depth":2,"next":{"title":"优雅指南","level":"2.1.29","depth":2,"path":"roll2/to-short-code.md","ref":"roll2/to-short-code.md","articles":[]},"previous":{"title":"思考React","level":"2.1.27","depth":2,"path":"roll2/thinking-in-ract.md","ref":"roll2/thinking-in-ract.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"assets/images/favicon.ico","back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll2/test-for-bianlifeng.md","mtime":"2021-02-24T06:31:14.533Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-24T06:31:47.967Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"便利蜂面试","level":"2.1.28","depth":2,"next":{"title":"优雅指南","level":"2.1.29","depth":2,"path":"roll2/to-short-code.md","ref":"roll2/to-short-code.md","articles":[]},"previous":{"title":"思考React","level":"2.1.27","depth":2,"path":"roll2/thinking-in-ract.md","ref":"roll2/thinking-in-ract.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"assets/images/favicon.ico","back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll2/test-for-bianlifeng.md","mtime":"2021-02-24T06:32:03.176Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-24T06:35:11.373Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

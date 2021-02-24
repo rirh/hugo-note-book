@@ -1,3 +1,4 @@
+{% extends "../blocks.md" %} {% block contain %}
 
 
 ### 无限美好？一地鸡毛？
@@ -80,3 +81,5 @@
 
 
 
+
+{% endblock %}

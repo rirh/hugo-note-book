@@ -1,4 +1,3 @@
-{% extends "../blocks.md" %} {% block contain %}
 
 
 # 数据绑定实例
@@ -99,5 +98,3 @@
 </html>
 ```
 
-
-{% endblock %}
