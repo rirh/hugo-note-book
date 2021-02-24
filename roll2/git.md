@@ -1,3 +1,4 @@
+{% extends "../blocks.md" %} {% block contain %}
 
 
 # Git
@@ -303,3 +304,5 @@ git push命令要加上force参数，因为rebase以后，分支历史改变了�
 
 
 
+
+{% endblock %}

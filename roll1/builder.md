@@ -1,4 +1,3 @@
-{% extends "../blocks.md" %} {% block contain %}
 
 
 ## 挑山工
@@ -35,5 +34,3 @@
 
 
 
-
-{% endblock %}
