@@ -1,3 +1,4 @@
+{% extends "../blocks.md" %} {% block contain %}
 
 
 ## 引子
@@ -22,3 +23,5 @@ npm install --no-shrinkwrap --update-binary
 
 ```
 
+
+{% endblock %}

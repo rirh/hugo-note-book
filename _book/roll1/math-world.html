@@ -934,7 +934,58 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                <h5 id="&#x9AD8;&#x7EF4;&#x667A;&#x6167;&#x603B;&#x7ED3;">&#x9AD8;&#x7EF4;&#x667A;&#x6167;&#x603B;&#x7ED3;</h5>
+                                  <div id="header">
+  <script>
+    (function(){
+        const style = `
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: all .3ms;
+        height:${document.documentElement.clientHeight}px;
+        `
+        var dom = document.getElementById('header');
+        dom.setAttribute('style',style)
+        // var tit=document.title.split('·')[0];
+        // if(tit){
+        //   var tdom = document.getElementById('blocks-title');
+        //   var len = tit.lenght;
+        //   tdom.setAttribute('style',`font-size:${len}em`)
+        // } 
+        var pub_img_current_image;
+        function backgroundImage(){
+        var pub_img_path='https://api.huzhihui.org.cn/images_pub/';
+        var pub_img_num = 711;
+        var pub_img_current_no=function(){return Math.floor(Math.random()*pub_img_num+1);};
+        var pub_img_url=function(){return pub_img_path+'pub_'+pub_img_current_no()+'.jpg';};
+        if (pub_img_current_image === undefined ) pub_img_current_image = pub_img_url();
+        var body = dom.style;
+        body.backgroundSize = 'cover';
+        body.backgroundRepeat = 'no-repeat';
+        body.backgroundImage = 'url('+ pub_img_current_image +')';
+        body.borderRadius="0px";
+        const url = 'https://api.huzhihui.org.cn/doc'
+        fetch(url)
+        .then(async e => {
+            const s = await e.text()
+            document.querySelector('.verse').innerHTML = s;
+        })
+        // // var span = document.getElementById('img_placer');
+        // span.innerHTML = '<span style="background-image: url('+(pub_img_current_image=pub_img_url())+');width: 0px;height: 0px;display: inline;"></span>';
+        }
+        backgroundImage();
+    }())
+  </script>
+  <div class="card ">
+    <p class="blocks-title " id="blocks-title">&#x9AD8;&#x7EF4;&#x667A;&#x6167;&#x603B;&#x7ED3;</p>
+    <strong class="verse">My Life Getting Better !</strong>
+  </div>
+  </div>
+
+
+
+<h5 id="&#x9AD8;&#x7EF4;&#x667A;&#x6167;&#x603B;&#x7ED3;">&#x9AD8;&#x7EF4;&#x667A;&#x6167;&#x603B;&#x7ED3;</h5>
 <p>&#x200B;        &#x6211;&#x4EEC;&#x751F;&#x6D3B;&#x5728;&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;&#x91CC;&#xFF0C;&#x5F53;&#x4E0B;&#x65F6;&#x7A7A;&#x7684;&#x5448;&#x73B0;&#x662F;&#x7531;&#x4E16;&#x754C;&#x5BF9;&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;&#x7684;&#x63A2;&#x7D22;&#x6316;&#x6398;&#xFF01;</p>
 <p>&#x200B;        &#x8FD9;&#x4E2A;&#x5B87;&#x5B99;&#x5B58;&#x5728;&#x7684;&#x552F;&#x4E00;&#x539F;&#x56E0;&#x662F;&#x80FD;&#x91CF;&#x6CE2;&#x7684;&#x540C;&#x9891;&#x5171;&#x632F;&#x3002;</p>
 <p>&#x200B;        &#x521D;&#x4E2D;&#x7684;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x90FD;&#x5B66;&#x8FC7;&#x7EBF;&#x6027;&#x51E0;&#x4F55;<code>Linear Algebra Done Right</code>&#xFF0C;&#x8FD8;&#x8BB0;&#x5F97;&#x7EBF;&#x6027;&#x51E0;&#x4F55;&#x4E2D;&#x7A7A;&#x95F4;&#x7684;&#x5B9A;&#x4E49;&#x662F;&#x7531;0&#x7EF4;&#x5230;N&#x7EF4;&#x7EC4;&#x6210;&#xFF0C;N&#x8D8B;&#x5411;&#x4E8E;&#x65E0;&#x7A77;&#x5927;&#x3002;&#x6BCF;&#x4E2A;&#x4EBA;&#x751F;&#x4E0B;&#x6765;&#x90FD;&#x6709;&#x9886;&#x609F;&#x9053;&#x7406;&#x7684;&#x77E5;&#x8BC6;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x5F53;&#x67D0;&#x4E00;&#x5929;&#x7A81;&#x7136;&#x987F;&#x609F;&#x4E86;&#x67D0;&#x4E2A;&#x9053;&#x7406;&#xFF0C;&#x6211;&#x4EEC;&#x5047;&#x8BBE;&#x90A3;&#x662F;&#x77E5;&#x8BC6;&#x89E6;&#x52A8;&#x4F60;&#x7684;&#x610F;&#x8BC6;&#x5F62;&#x6001;&#x7684;&#x540C;&#x9891;&#x5171;&#x632F;&#xFF0C;&#x4ECE;&#x800C;&#x4FC3;&#x4F7F;&#x77ED;&#x6682;&#x8FDB;&#x5165;&#x4E09;&#x7EF4;&#x4EE5;&#x4E0A;&#x7684;&#x7A7A;&#x95F4;&#xFF0C;&#x8FDB;&#x800C;&#x81EA;&#x8EAB;&#x610F;&#x8BC6;&#x5F62;&#x6001;&#x5F97;&#x5230;&#x63D0;&#x5347;&#x3002;</p>
@@ -943,6 +994,8 @@
 <p>&#x200B;       &#x70B9;&#x3001;&#x7EBF;&#x3001;&#x9762;&#xFF0C;&#x6784;&#x6210;&#x4E09;&#x7EF4;&#x4E16;&#x754C;&#xFF0C;&#x4ED6;&#x4EEC;&#x7684;&#x5173;&#x7CFB;&#x662F;&#x70B9;&#x662F;&#x6620;&#x5C04;&#xFF0C;&#x70B9;&#x662F;&#x7EBF;&#x7684;&#x6620;&#x5C04;&#xFF0C;&#x7EBF;&#x662F;&#x9762;&#x7684;&#x6620;&#x5C04;&#xFF0C;&#x9762;&#x662F;&#x4F53;&#x7684;&#x6620;&#x5C04;&#x3002;&#x53EF;&#x4EE5;&#x63D0;&#x51FA;&#x5047;&#x8BBE;&#x96F6;&#x7EF4;&#x7A7A;&#x95F4;&#x662F;&#x4E00;&#x7EAC;&#x7A7A;&#x95F4;&#x7684;&#x6620;&#x5C04;&#xFF0C;&#x4E00;&#x7EF4;&#x7A7A;&#x95F4;&#x662F;&#x4E8C;&#x7EF4;&#x7A7A;&#x95F4;&#x7684;&#x6620;&#x5C04;&#xFF0C;&#x4E8C;&#x7EF4;&#x7A7A;&#x95F4;&#x662F;&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;&#x7684;&#x6620;&#x5C04;&#xFF0C;N&#x7EF4;&#x7A7A;&#x95F4;&#x662F;N+1&#x7EF4;&#x7A7A;&#x95F4;&#x7684;&#x6620;&#x5C04;&#x3002;&#x6211;&#x4EEC;&#x751F;&#x6D3B;&#x5728;&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;&#xFF0C;&#x4EBA;&#x7C7B;&#x667A;&#x6167;&#x7684;&#x7ED3;&#x6676;&#x7535;&#x8111;&#x80FD;&#x591F;&#x901A;&#x8FC7;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6E90;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#x3002;&#x4EBA;&#x7684;&#x601D;&#x7EF4;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x4E2A;&#x4F53;&#xFF0C;&#x6309;&#x7167;&#x81EA;&#x5DF1;&#x7684;&#x601D;&#x7EF4;&#x8FDB;&#x884C;&#x601D;&#x8003;&#xFF0C;&#x7EC6;&#x81F4;&#x770B;&#x6765;&#xFF0C;&#x8F93;&#x5165;&#x6E90;&#x662F;&#x773C;&#xFF0C;&#x8033;&#xFF0C;&#x611F;&#x5B98;&#x3002;&#x8F93;&#x51FA;&#x6E90;&#x662F;&#x884C;&#x4E3A;&#x3002;&#x601D;&#x7EF4;&#x4E0E;&#x601D;&#x7EF4;&#x4E4B;&#x95F4;&#x53EF;&#x4EE5;&#x4E92;&#x76F8;&#x5E72;&#x6270;&#x3002;&#x5047;&#x8BBE;&#x667A;&#x6167;&#x5C31;&#x662F;&#x4E09;&#x7EF4;&#x4EE5;&#x4E0A;&#x7684;&#x67D0;&#x7EF4;&#x5EA6;&#x7A7A;&#x95F4;&#xFF0C;&#x667A;&#x6167;&#x662F;&#x81EA;&#x5DF1;&#x6709;&#x4E00;&#x5B9A;&#x77E5;&#x8BC6;&#x7D2F;&#x8BA1;&#x57FA;&#x7840;&#x4E0B;&#x603B;&#x7ED3;&#x63D0;&#x70BC;&#x51FA;&#x6765;&#x7684;&#x5E94;&#x5BF9;&#x540C;&#x9891;&#x5171;&#x632F;&#x7684;&#x65B9;&#x6CD5;&#x548C;&#x884C;&#x4E3A;&#x3002;&#x770B;&#x770B;&#x667A;&#x6167;&#x7684;&#x7279;&#x6027;&#xFF1A;&#x53E3;&#x53E3;&#x76F8;&#x4F20;&#x7684;&#x667A;&#x6167;&#x7684;&#x5B58;&#x5728;&#x6027;&#x5F53;&#x7136;&#x4E0D;&#x53EF;&#x5426;&#x8BA4;&#xFF1B;&#x67D0;&#x53E5;&#x8BDD;&#x8BF4;&#x5F97;&#x597D;&#x662F;&#x667A;&#x6167;&#xFF0C;&#x67D0;&#x4E2A;&#x884C;&#x4E3A;&#x505A;&#x7684;&#x597D;&#x662F;&#x667A;&#x6167;&#x3002;&#x6CA1;&#x6709;&#x56FA;&#x5B9A;&#x7684;&#x5F62;&#x6001;&#xFF0C;&#x5177;&#x6709;&#x65E0;&#x9650;&#x6027;&#x548C;&#x590D;&#x6742;&#x6027;&#x3002;&#x4E5F;&#x7B26;&#x5408;&#x6620;&#x5C04;&#x51FA;&#x884C;&#x4E3A;&#x7684;&#x5C5E;&#x6027;&#x3002;&#x6240;&#x4EE5;&#x601D;&#x7EF4;&#x667A;&#x6167;&#x4FBF;&#x662F;&#x66F4;&#x9AD8;&#x7EF4;&#x5EA6;&#x7684;&#x7A7A;&#x95F4;&#x3002;&#x65E2;&#x7136;&#x6709;&#x4E86;&#x9AD8;&#x7EAC;&#x5EA6;&#x7684;&#x7A7A;&#x95F4;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x63D0;&#x5347;&#x81EA;&#x5DF1;&#xFF0C;&#x8FDB;&#x5165;&#x66F4;&#x9AD8;&#x7EF4;&#x5EA6;&#x7684;&#x7A7A;&#x95F4;&#x3002;&#x5F53;&#x6211;&#x4EEC;&#x4E60;&#x60EF;&#x9AD8;&#x7EAC;&#x7A7A;&#x95F4;&#x601D;&#x8003;&#x95EE;&#x9898;&#xFF0C;&#x770B;&#x5C71;&#x662F;&#x5C71;&#xFF0C;&#x770B;&#x6C34;&#x662F;&#x6C34;&#xFF1B;&#x770B;&#x5C71;&#x4E0D;&#x662F;&#x5C71;&#xFF0C;&#x770B;&#x6C34;&#x4E0D;&#x662F;&#x6C34;&#xFF1B;&#x518D;&#x5230;&#x770B;&#x5C71;&#x662F;&#x5C71;&#xFF0C;&#x770B;&#x6C34;&#x662F;&#x6C34;&#xFF01;&#x751F;&#x6D3B;&#x4E2D;&#xFF0C;&#x6E38;&#x5203;&#x6709;&#x4F59;&#x3002;&#x4FBF;&#x80FD;&#x4F53;&#x4F1A; &#x201C;&#x6B64;&#x65F6;&#x77BB;&#x767D;&#x5154;&#xFF0C;&#x76F4;&#x6B32;&#x6570;&#x79CB;&#x6BEB;&#x201D; &#x7684;&#x611F;&#x53D7;&#x3002;</p>
 <p>&#x200B;     &#x6BCF;&#x4E2A;&#x4EBA;&#x7684;&#x5FEB;&#x4E50;&#x7684;&#x5171;&#x540C;&#x70B9;&#x4FBF;&#x662F;&#x98A0;&#x8986;&#x548C;&#x8D85;&#x8D8A;&#x81EA;&#x5DF1;&#x7684;&#x6709;&#x9650;&#x8BA4;&#x77E5;&#x3002;</p>
 <p>&#x200B;    </p>
+<p>   MIT License</p>
+<p>Copyright (c) 2019 TigerZH &#x2764;&#xFE0F;</p>
 
                                 
                                 </section>
@@ -970,7 +1023,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"高维智慧总结","level":"1.3.18","depth":2,"next":{"title":"Django简易教程","level":"1.3.19","depth":2,"path":"roll2/django.md","ref":"roll2/django.md","articles":[]},"previous":{"title":"减半之路","level":"1.3.17","depth":2,"path":"roll1/2020-reduce-function.md","ref":"roll1/2020-reduce-function.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"assets/images/favicon.ico","back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll1/math-world.md","mtime":"2021-02-24T06:32:03.147Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-24T06:35:19.030Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"高维智慧总结","level":"1.3.18","depth":2,"next":{"title":"Django简易教程","level":"1.3.19","depth":2,"path":"roll2/django.md","ref":"roll2/django.md","articles":[]},"previous":{"title":"减半之路","level":"1.3.17","depth":2,"path":"roll1/2020-reduce-function.md","ref":"roll1/2020-reduce-function.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"assets/images/favicon.ico","back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll1/math-world.md","mtime":"2021-02-24T06:35:26.276Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-24T06:36:16.910Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

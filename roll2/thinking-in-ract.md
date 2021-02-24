@@ -1,3 +1,4 @@
+{% extends "../blocks.md" %} {% block contain %}
 
 
 ##### React思考
@@ -47,3 +48,5 @@
 
 
 
+
+{% endblock %}

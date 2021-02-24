@@ -934,7 +934,61 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x52A0;&#x5BC6;&#x8D27;&#x5E01;">&#x52A0;&#x5BC6;&#x8D27;&#x5E01;</h1>
+                                  <div id="header">
+  <script>
+    (function(){
+        const style = `
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: all .3ms;
+        height:${document.documentElement.clientHeight}px;
+        `
+        var dom = document.getElementById('header');
+        dom.setAttribute('style',style)
+        // var tit=document.title.split('·')[0];
+        // if(tit){
+        //   var tdom = document.getElementById('blocks-title');
+        //   var len = tit.lenght;
+        //   tdom.setAttribute('style',`font-size:${len}em`)
+        // } 
+        var pub_img_current_image;
+        function backgroundImage(){
+        var pub_img_path='https://api.huzhihui.org.cn/images_pub/';
+        var pub_img_num = 711;
+        var pub_img_current_no=function(){return Math.floor(Math.random()*pub_img_num+1);};
+        var pub_img_url=function(){return pub_img_path+'pub_'+pub_img_current_no()+'.jpg';};
+        if (pub_img_current_image === undefined ) pub_img_current_image = pub_img_url();
+        var body = dom.style;
+        body.backgroundSize = 'cover';
+        body.backgroundRepeat = 'no-repeat';
+        body.backgroundImage = 'url('+ pub_img_current_image +')';
+        body.borderRadius="0px";
+        const url = 'https://api.huzhihui.org.cn/doc'
+        fetch(url)
+        .then(async e => {
+            const s = await e.text()
+            document.querySelector('.verse').innerHTML = s;
+        })
+        // // var span = document.getElementById('img_placer');
+        // span.innerHTML = '<span style="background-image: url('+(pub_img_current_image=pub_img_url())+');width: 0px;height: 0px;display: inline;"></span>';
+        }
+        backgroundImage();
+    }())
+  </script>
+  <div class="card ">
+    <p class="blocks-title " id="blocks-title">&#x65E0;&#x9650;&#x7F8E;&#x597D;</p>
+    <strong class="verse">My Life Getting Better !</strong>
+  </div>
+  </div>
+
+
+
+
+
+
+<h1 id="&#x52A0;&#x5BC6;&#x8D27;&#x5E01;">&#x52A0;&#x5BC6;&#x8D27;&#x5E01;</h1>
 <p><strong>&#x5BC6;&#x7801;&#x8D27;&#x5E01;</strong>&#xFF08;&#x82F1;&#x6587;&#xFF1A;Cryptocurrency&#xFF0C;&#x53C8;&#x8BD1;<strong>&#x5BC6;&#x7801;&#x5B66;&#x8D27;&#x5E01;</strong>&#x3001;<strong>&#x52A0;&#x5BC6;&#x8D27;&#x5E01;</strong>&#xFF09;&#x662F;&#x4E00;&#x79CD;&#x4F7F;&#x7528;<a href="https://zh.wikipedia.org/wiki/&#x5BC6;&#x78BC;&#x5B78;" target="_blank">&#x5BC6;&#x7801;&#x5B66;</a>&#x539F;&#x7406;&#x6765;&#x786E;&#x4FDD;&#x4EA4;&#x6613;&#x5B89;&#x5168;&#x53CA;&#x63A7;&#x5236;&#x4EA4;&#x6613;&#x5355;&#x4F4D;&#x521B;&#x9020;&#x7684;<a href="https://zh.wikipedia.org/wiki/&#x4EA4;&#x6613;&#x5A92;&#x4ECB;" target="_blank">&#x4EA4;&#x6613;&#x4ECB;&#x8D28;</a>&#x3002;</p>
 <p>&#x8DDF;&#x5E73;&#x5E38;&#x4F7F;&#x7528;&#x7684;&#x7EB8;&#x5E01;&#x9700;&#x8981;&#x9632;&#x4F2A;&#x8BBE;&#x8BA1;&#x4E00;&#x6837;&#xFF0C;&#x52A0;&#x5BC6;&#x8D27;&#x5E01;&#x7684;&#x9632;&#x4F2A;&#x662F;&#x5229;&#x7528;&#x6570;&#x5B57;&#x8D27;&#x5E01;&#x548C;&#x865A;&#x62DF;&#x8D27;&#x5E01;&#x4F7F;&#x7528;&#x5BC6;&#x7801;&#x5B66;&#x53CA;&#x6570;&#x5B57;&#x6563;&#x5217;&#x800C;&#x6210;&#x5E76;&#x4E0E;&#x667A;&#x80FD;&#x5408;&#x7EA6;&#x7684;&#x7ED1;&#x5B9A;&#x4E4B;&#x4E0B;&#x7684;&#x65B0;&#x578B;&#x901A;&#x8BC1;&#x3002;<a href="https://zh.wikipedia.org/wiki/&#x6BD4;&#x7279;&#x5E01;" target="_blank">&#x6BD4;&#x7279;&#x5E01;</a>&#x5728;2009&#x5E74;&#x6210;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;<a href="https://zh.wikipedia.org/wiki/&#x53BB;&#x4E2D;&#x5FC3;&#x5316;" target="_blank">&#x53BB;&#x4E2D;&#x5FC3;&#x5316;</a>&#x7684;&#x52A0;&#x5BC6;&#x8D27;&#x5E01;&#xFF0C;&#x8FD9;&#x4E4B;&#x540E;&#x52A0;&#x5BC6;&#x8D27;&#x5E01;&#x4E00;&#x8BCD;&#x591A;&#x6307;&#x6B64;&#x7C7B;&#x8BBE;&#x8BA1;&#x3002;&#x81EA;&#x6B64;&#x4E4B;&#x540E;&#x6570;&#x79CD;&#x7C7B;&#x4F3C;&#x7684;&#x52A0;&#x5BC6;&#x8D27;&#x5E01;&#x88AB;&#x521B;&#x9020;&#xFF0C;&#x5B83;&#x4EEC;&#x901A;&#x5E38;&#x88AB;&#x79F0;&#x4F5C;altcoins&#x3002;&#x52A0;&#x5BC6;&#x8D27;&#x5E01;&#x57FA;&#x4E8E;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x7684;&#x5171;&#x8BC6;&#x673A;&#x5236;&#xFF0C;&#x4E0E;&#x4F9D;&#x8D56;&#x4E2D;&#x5FC3;&#x5316;&#x76D1;&#x7BA1;&#x4F53;&#x7CFB;&#x7684;&#x94F6;&#x884C;&#x91D1;&#x878D;&#x7CFB;&#x7EDF;&#x76F8;&#x5BF9;&#x3002;</p>
 <p>&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x7684;&#x6027;&#x8D28;&#x6E90;&#x81EA;&#x4E8E;&#x4F7F;&#x7528;<a href="https://zh.wikipedia.org/wiki/&#x5206;&#x6563;&#x5F0F;&#x8CEC;&#x672C;" target="_blank">&#x5206;&#x5E03;&#x5F0F;&#x8D26;&#x672C;</a>&#x7684;<a href="https://zh.wikipedia.org/wiki/&#x533A;&#x5757;&#x94FE;" target="_blank">&#x533A;&#x5757;&#x94FE;</a>&#xFF08;Blockchain&#xFF09;&#x6280;&#x672F;&#x3002;</p>
@@ -955,6 +1009,8 @@
 <p>&#x52A0;&#x5BC6;&#x8D27;&#x5E01;&#x548C;&#x7EDF;&#x6CBB;&#x9636;&#x7EA7;&#x7684;&#x5229;&#x76CA;&#x662F;&#x76F8;&#x6096;&#x7684;&#xFF0C;&#x4F7F;&#x7528;&#x7684;&#x95E8;&#x69DB;&#x76F8;&#x5BF9;&#x8F83;&#x9AD8;&#xFF0C;&#x4FE1;&#x7528;&#x95EE;&#x9898;&#x5F97;&#x4E0D;&#x5230;&#x4FDD;&#x969C;&#x3002;&#x4F46;&#x4E5F;&#x662F;&#x65F6;&#x4EE3;&#x53D1;&#x5C55;&#x7684;&#x5FC5;&#x7136;&#xFF01;</p>
 <p>&#x52A0;&#x5BC6;&#x8D27;&#x5E01;&#x53EA;&#x7528;&#x51E0;&#x5E74;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x5B8C;&#x6210;&#x4E86;&#x9EC4;&#x91D1;&#x51E0;&#x767E;&#x5E74;&#x4ECE;&#x7A00;&#x6709;&#x91D1;&#x5C5E;&#x5230;&#x8D27;&#x5E01;&#x7684;&#x5468;&#x671F;&#x3002;&#x672A;&#x6765;&#x52A0;&#x5BC6;&#x8D27;&#x5E01;&#x662F;&#x4E3B;&#x6D41;&#x53D1;&#x5C55;&#x6F5C;&#x529B;</p>
 <p><img src="../assets/images/image-20191113230856649.png" alt="image-20191113230856649"></p>
+<p>   MIT License</p>
+<p>Copyright (c) 2019 TigerZH &#x2764;&#xFE0F;</p>
 
                                 
                                 </section>
@@ -982,7 +1038,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"无限美好","level":"1.3.7","depth":2,"next":{"title":"金融知识","level":"1.3.8","depth":2,"path":"roll1/financial-license.md","ref":"roll1/financial-license.md","articles":[]},"previous":{"title":"钱","level":"1.3.6","depth":2,"path":"roll1/money.md","ref":"roll1/money.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"assets/images/favicon.ico","back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll1/coin.md","mtime":"2021-02-24T06:32:03.137Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-24T06:35:19.030Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"无限美好","level":"1.3.7","depth":2,"next":{"title":"金融知识","level":"1.3.8","depth":2,"path":"roll1/financial-license.md","ref":"roll1/financial-license.md","articles":[]},"previous":{"title":"钱","level":"1.3.6","depth":2,"path":"roll1/money.md","ref":"roll1/money.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"assets/images/favicon.ico","back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll1/coin.md","mtime":"2021-02-24T06:35:26.273Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-24T06:36:16.910Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
