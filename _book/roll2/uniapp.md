@@ -1,3 +1,4 @@
+{% extends "../blocks.md" %} {% block contain %}
 # uniapp 
 
 **数字天堂**
@@ -36,3 +37,5 @@ Dcloud封装了40万+的原声api！
 
 
 
+
+{% endblock %}

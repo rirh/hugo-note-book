@@ -1,3 +1,4 @@
+{% extends "../blocks.md" %} {% block contain %}
 
 
 # COMPOSE
@@ -71,3 +72,5 @@ addX(2)(1) // 3
 
 
 
+
+{% endblock %}
