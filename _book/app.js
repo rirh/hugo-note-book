@@ -114,26 +114,12 @@ inquirer.prompt([
     }
 ]).then(({ value }) => {
     if (value) {
-        AR.iserve = true;
+        // AR.iserve = true;
         AR.start();
     } else {
-        AR.iserve = true;
+        // AR.iserve = true;
         AR.start();
     }
 })
 
-// AR.start();
-// AR.find_file(__dirname)
-// const rollpath = path.join(__dirname, 'test.md');
-// let data = fs.readFileSync(rollpath, 'utf8').split('\n')
-// const isServer = Boolean(~data[0].indexOf('第一行'));
-// if (isServer) {
-//     data = data.filter((e, i) => {
-//         return (i !== 0 && i !== (data.length - 1))
-//     })
-// } else {
-//     data.unshift('第一行插入文件测试')
-//     data.splice(data.length, 0, '最后一行插入内容测试')
-// }
-// fs.writeFileSync(rollpath, data.join('\n'), 'utf8')
 
