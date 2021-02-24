@@ -1,3 +1,4 @@
+{% extends "../blocks.md" %} {% block contain %}
 ## 回车和换行
 
 "回车"（carriage return）
@@ -22,3 +23,5 @@
 
 Unix系统里，每行结尾只有"<换行>"，即"\n"；Windows系统里面，每行结尾是"<回车><换行>"，即"\r\n"；Mac系统里，每行结尾是"<回车>"。一个直接后果是，Unix/Mac系统下的文件在Windows里打开的话，所有文字会变成一行；而Windows里的文件在Unix/Mac下打开的话，在每行的结尾可能会多出一个^M符号。
 
+
+{% endblock %}

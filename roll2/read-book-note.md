@@ -1,3 +1,4 @@
+{% extends "../blocks.md" %} {% block contain %}
 
 
 
@@ -469,3 +470,5 @@ history.length: 保存历史记录的数量
 
 
 
+
+{% endblock %}

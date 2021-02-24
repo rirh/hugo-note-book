@@ -934,59 +934,7 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                  <div id="header">
-  <script>
-    (function(){
-        const style = `
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        transition: all .3ms;
-        height:${document.documentElement.clientHeight}px;
-        `
-        var dom = document.getElementById('header');
-        dom.setAttribute('style',style)
-        // var tit=document.title.split('·')[0];
-        // if(tit){
-        //   var tdom = document.getElementById('blocks-title');
-        //   var len = tit.lenght;
-        //   tdom.setAttribute('style',`font-size:${len}em`)
-        // } 
-        var pub_img_current_image;
-        function backgroundImage(){
-        var pub_img_path='https://api.huzhihui.org.cn/images_pub/';
-        var pub_img_num = 711;
-        var pub_img_current_no=function(){return Math.floor(Math.random()*pub_img_num+1);};
-        var pub_img_url=function(){return pub_img_path+'pub_'+pub_img_current_no()+'.jpg';};
-        if (pub_img_current_image === undefined ) pub_img_current_image = pub_img_url();
-        var body = dom.style;
-        body.backgroundSize = 'cover';
-        body.backgroundRepeat = 'no-repeat';
-        body.backgroundImage = 'url('+ pub_img_current_image +')';
-        body.borderRadius="0px";
-        const url = 'https://api.huzhihui.org.cn/doc'
-        fetch(url)
-        .then(async e => {
-            const s = await e.text()
-            document.querySelector('.verse').innerHTML = s;
-        })
-        // // var span = document.getElementById('img_placer');
-        // span.innerHTML = '<span style="background-image: url('+(pub_img_current_image=pub_img_url())+');width: 0px;height: 0px;display: inline;"></span>';
-        }
-        backgroundImage();
-    }())
-  </script>
-  <div class="card ">
-    <p class="blocks-title " id="blocks-title">&#x7406;&#x89E3;this</p>
-    <strong class="verse">My Life Getting Better !</strong>
-  </div>
-  </div>
-
-
-
-
-<h3 id="&#x7406;&#x89E3;-this">&#x7406;&#x89E3; this</h3>
+                                <h3 id="&#x7406;&#x89E3;-this">&#x7406;&#x89E3; this</h3>
 <p>&#x4E00;&#x9053;&#x5F88;&#x7ECF;&#x5178;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fn</span>(<span class="hljs-params"></span>) </span>{
   <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>); <span class="hljs-comment">// 1. {a: 100}</span>
@@ -1040,8 +988,6 @@ run.bind({ a: <span class="hljs-number">1</span> })(); <span class="hljs-comment
 run.bind({ a: <span class="hljs-number">2</span> }).bind({ a: <span class="hljs-number">1</span> })(); <span class="hljs-comment">// output: 2</span>
 </code></pre>
 <p>&#x51E0;&#x79CD;&#x65B9;&#x6CD5;&#x7684;&#x4F18;&#x5148;&#x7EA7;&#xFF1A;new &gt; bind &gt; &#x5BF9;&#x8C61;&#x8C03;&#x7528; &gt; &#x76F4;&#x63A5;&#x8C03;&#x7528;</p>
-<p>   MIT License</p>
-<p>Copyright (c) 2019 TigerZH &#x2764;&#xFE0F;</p>
 
                                 
                                 </section>
@@ -1069,7 +1015,7 @@ run.bind({ a: <span class="hljs-number">2</span> }).bind({ a: <span class="hljs-
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"理解this","level":"2.1.11","depth":2,"next":{"title":"理解类型","level":"2.1.12","depth":2,"path":"roll2/change-type.md","ref":"roll2/change-type.md","articles":[]},"previous":{"title":"PYTHON","level":"2.1.10","depth":2,"path":"roll2/python.md","ref":"roll2/python.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"assets/images/favicon.ico","back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll2/this.md","mtime":"2021-02-24T03:53:54.513Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-24T06:31:02.594Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"理解this","level":"2.1.11","depth":2,"next":{"title":"理解类型","level":"2.1.12","depth":2,"path":"roll2/change-type.md","ref":"roll2/change-type.md","articles":[]},"previous":{"title":"PYTHON","level":"2.1.10","depth":2,"path":"roll2/python.md","ref":"roll2/python.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"assets/images/favicon.ico","back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll2/this.md","mtime":"2021-02-24T06:31:14.534Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-24T06:31:56.881Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

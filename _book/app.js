@@ -15,7 +15,7 @@ const inquirer = require("inquirer");
 const AR = {
     // 常量
     includefile: 'roll',
-    iserve: false,
+    iserve: true,
     console: {
         font: 'block', // define the font face
         align: 'left', // define text alignment

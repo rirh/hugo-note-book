@@ -934,7 +934,59 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                <blockquote>
+                                  <div id="header">
+  <script>
+    (function(){
+        const style = `
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: all .3ms;
+        height:${document.documentElement.clientHeight}px;
+        `
+        var dom = document.getElementById('header');
+        dom.setAttribute('style',style)
+        // var tit=document.title.split('·')[0];
+        // if(tit){
+        //   var tdom = document.getElementById('blocks-title');
+        //   var len = tit.lenght;
+        //   tdom.setAttribute('style',`font-size:${len}em`)
+        // } 
+        var pub_img_current_image;
+        function backgroundImage(){
+        var pub_img_path='https://api.huzhihui.org.cn/images_pub/';
+        var pub_img_num = 711;
+        var pub_img_current_no=function(){return Math.floor(Math.random()*pub_img_num+1);};
+        var pub_img_url=function(){return pub_img_path+'pub_'+pub_img_current_no()+'.jpg';};
+        if (pub_img_current_image === undefined ) pub_img_current_image = pub_img_url();
+        var body = dom.style;
+        body.backgroundSize = 'cover';
+        body.backgroundRepeat = 'no-repeat';
+        body.backgroundImage = 'url('+ pub_img_current_image +')';
+        body.borderRadius="0px";
+        const url = 'https://api.huzhihui.org.cn/doc'
+        fetch(url)
+        .then(async e => {
+            const s = await e.text()
+            document.querySelector('.verse').innerHTML = s;
+        })
+        // // var span = document.getElementById('img_placer');
+        // span.innerHTML = '<span style="background-image: url('+(pub_img_current_image=pub_img_url())+');width: 0px;height: 0px;display: inline;"></span>';
+        }
+        backgroundImage();
+    }())
+  </script>
+  <div class="card ">
+    <p class="blocks-title " id="blocks-title">2018</p>
+    <strong class="verse">My Life Getting Better !</strong>
+  </div>
+  </div>
+
+
+
+
+<blockquote>
 <p>2018&#x5E74;&#x53C8;&#x5230;&#x5C3E;&#x58F0;&#x4E86;&#xFF0C;&#x6BCF;&#x5E74;&#x5927;&#x6982;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x90FD;&#x4E60;&#x60EF;&#x603B;&#x7ED3;&#x81EA;&#x5DF1;&#x7684;&#x8FD9;&#x4E00;&#x5E74;&#xFF01;</p>
 </blockquote>
 <p><strong>&#x56DE;&#x987E;&#x6211;&#x7684;&#x8FD9;&#x4E00;&#x5E74;&#xFF0C;&#x6211;&#x7684;&#x5FC3;&#x60C5;&#x975E;&#x5E38;&#x4E4B;&#x4E00;&#x7247;&#x832B;&#x7136;</strong></p>
@@ -945,6 +997,8 @@
 <p>&#x5199;&#x4E1C;&#x897F;&#x6216;&#x8005;&#x4F20;&#x64AD;&#x4E1C;&#x897F;&#x662F;&#x6709;&#x76EE;&#x7684;&#x7684;&#xFF0C;&#x6211;&#x60F3;&#x6210;&#x4E3A;&#x793A;&#x8303;&#x4E2D;&#x7684;&#x4E00;&#x5458;&#xFF0C;&#x72EC;&#x7ACB;&#x601D;&#x8003;&#x662F;&#x53EF;&#x4EE5;&#x505A;&#x5230;&#x7684;&#xFF0C;&#x800C;&#x4E14;&#x4E00;&#x70B9;&#x90FD;&#x4E0D;&#x96BE;&#x3002;&#x6211;&#x4E0D;&#x5728;&#x4E4E;&#x522B;&#x4EBA;&#x8BA4;&#x4E3A;&#x6211;&#x8BF4;&#x7684;&#x662F;&#x5BF9;&#x662F;&#x9519;&#xFF0C;&#x6211;&#x53EA;&#x5E0C;&#x671B;&#x4F60;&#x770B;&#x4E86;&#x6211;&#x7684;&#x6587;&#x7AE0;&#x4EE5;&#x540E;&#xFF0C;&#x81EA;&#x5DF1;&#x4E5F;&#x5F00;&#x59CB;&#x72EC;&#x7ACB;&#x601D;&#x8003;&#xFF0C;&#x5F00;&#x59CB;&#x7528;&#x7406;&#x6027;&#x6279;&#x5224;&#x7684;&#x7CBE;&#x795E;&#x8FDB;&#x884C;&#x6000;&#x7591;&#x3002;&#x56E0;&#x4E3A;&#x6000;&#x7591;&#x73B0;&#x884C;&#x7684;&#x79E9;&#x5E8F;&#xFF0C;&#x8FD9;&#x6B63;&#x662F;&#x901A;&#x5F80;&#x6C11;&#x4E3B;&#x4E0E;&#x79D1;&#x5B66;&#x7684;&#x552F;&#x4E00;&#x9053;&#x8DEF;&#x3002;
 &#x6211;&#x59CB;&#x7EC8;&#x8BA4;&#x4E3A;&#xFF0C;&#x4E2D;&#x56FD;&#x4EBA;&#x6700;&#x843D;&#x540E;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x5C31;&#x662F;&#x601D;&#x60F3;&#x592A;&#x843D;&#x540E;&#x3002;&#x5927;&#x591A;&#x6570;&#x4E2D;&#x56FD;&#x4EBA;&#x7684;&#x601D;&#x60F3;&#x5883;&#x754C;&#xFF0C;&#x8FD8;&#x505C;&#x7559;&#x5728;&#x5C01;&#x5EFA;&#x65F6;&#x4EE3;&#x3002;&#x5982;&#x679C;&#x601D;&#x60F3;&#x6CA1;&#x6709;&#x5B9E;&#x73B0;&#x73B0;&#x4EE3;&#x5316;&#xFF0C;&#x4E13;&#x5236;&#x548C;&#x611A;&#x6627;&#x5C31;&#x6C38;&#x8FDC;&#x5728;&#x8FD9;&#x5757;&#x571F;&#x5730;&#x4E0A;&#x6709;&#x5E02;&#x573A;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x8981;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x6C11;&#x4E3B;&#x548C;&#x79D1;&#x5B66;&#x7684;&#x65B0;&#x4E2D;&#x56FD;&#xFF0C;&#x90A3;&#x4E48;&#x7B2C;&#x4E00;&#x6B65;&#x5C31;&#x662F;&#x8981;&#x6539;&#x9020;&#x4EBA;&#x4EEC;&#x7684;&#x601D;&#x60F3;&#x3002;&#x800C;&#x6539;&#x9020;&#x601D;&#x60F3;&#x7684;&#x7B2C;&#x4E00;&#x6B65;&#xFF0C;&#x5C31;&#x662F;&#x4F20;&#x64AD;&#x6000;&#x7591;&#x3002;
 &#x5982;&#x679C;&#x5927;&#x591A;&#x6570;&#x4EBA;&#x4E0D;&#x76F8;&#x4FE1;&#x522B;&#x4EBA;&#x544A;&#x8BC9;&#x4ED6;&#x4EEC;&#x7684;&#x8BDD;&#xFF0C;&#x5B66;&#x4F1A;&#x7528;&#x81EA;&#x5DF1;&#x7684;&#x5927;&#x8111;&#xFF0C;&#x5224;&#x65AD;&#x773C;&#x524D;&#x53D1;&#x751F;&#x7684;&#x4E00;&#x5207;&#x3002;&#x51E1;&#x4E8B;&#x5148;&#x60F3;&#x4E00;&#x60F3;&#x4E3A;&#x4EC0;&#x4E48;&#xFF0C;&#x5B66;&#x4F1A;&#x7528;&#x4E0D;&#x540C;&#x6765;&#x6E90;&#x7684;&#x4FE1;&#x606F;&#x6BD4;&#x5BF9;&#x771F;&#x4F2A;&#xFF0C;&#x5B66;&#x4F1A;&#x7528;&#x903B;&#x8F91;&#x7684;&#x6CD5;&#x5219;&#x5224;&#x65AD;&#x4E0D;&#x540C;&#x4E3B;&#x5F20;&#x7684;&#x5408;&#x7406;&#x6027;&#x3002;&#x90A3;&#x4E48;&#xFF0C;&#x8C0E;&#x8A00;&#x5C31;&#x4F1A;&#x65E0;&#x6CD5;&#x751F;&#x5B58;&#x3002;</p>
+<p>   MIT License</p>
+<p>Copyright (c) 2019 TigerZH &#x2764;&#xFE0F;</p>
 
                                 
                                 </section>
@@ -972,7 +1026,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2018","level":"1.3.13","depth":2,"next":{"title":"熵","level":"1.3.14","depth":2,"path":"roll1/life.md","ref":"roll1/life.md","articles":[]},"previous":{"title":"思路与选择","level":"1.3.12","depth":2,"path":"roll1/choose.md","ref":"roll1/choose.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"assets/images/favicon.ico","back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll1/2018.md","mtime":"2021-02-24T03:53:54.478Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-24T06:31:02.594Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2018","level":"1.3.13","depth":2,"next":{"title":"熵","level":"1.3.14","depth":2,"path":"roll1/life.md","ref":"roll1/life.md","articles":[]},"previous":{"title":"思路与选择","level":"1.3.12","depth":2,"path":"roll1/choose.md","ref":"roll1/choose.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","-font-settings","back-to-top-button","code","livereload","chapter-fold"],"styles":{"website":"assets/css/websiteStyle.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"assets/images/favicon.ico","back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"TigerZH","engines":{"gitbook":">=3.2.2"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"TigerZH","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"🔱":"https://api.huzhihui.org.cn"}},"gitbook":"*","description":"My life getting better!","theme-default":{"showLevel":false},"extension":null},"file":{"path":"roll1/2018.md","mtime":"2021-02-24T06:31:14.510Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-24T06:31:56.881Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

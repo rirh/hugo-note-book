@@ -1,3 +1,4 @@
+{% extends "../blocks.md" %} {% block contain %}
 
 # 包管理工具
 
@@ -243,3 +244,5 @@ package.json文件的配置说明：
 
 [关于npm的安装机制](http://www.ruanyifeng.com/blog/2016/01/npm-install.html)
 
+
+{% endblock %}

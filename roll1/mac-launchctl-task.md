@@ -1,4 +1,3 @@
-{% extends "../blocks.md" %} {% block contain %}
 
 
 # Mac 定时任务
@@ -94,5 +93,3 @@ launchctl unload xxx.plist
 
 
 
-
-{% endblock %}

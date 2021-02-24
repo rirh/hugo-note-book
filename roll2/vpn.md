@@ -1,3 +1,4 @@
+{% extends "../blocks.md" %} {% block contain %}
 
 
 # 正文
@@ -52,3 +53,5 @@ l2tpnoipsec
 
 
 
+
+{% endblock %}
