@@ -43,8 +43,8 @@
         backgroundImage();
     }())
   </script>
-  <div class="card " >
-    <p class="blocks-title " id="blocks-title">{{page.title}}</p>
+  <div class="card" >
+    <p class="blocks-title" id="blocks-title">{{page.title}}</p>
     <strong class="verse">My Life Getting Better !</strong>
   </div>
   </div>

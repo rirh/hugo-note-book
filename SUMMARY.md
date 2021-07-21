@@ -1,52 +1,27 @@
-* [序](index.md)
-
+<!-- * [序](index.md) -->
 * [卷 I ](roll1/index.md)
-
    * [安全合法性](roll1/cryptocurrency-legitimacy.md)
-
    * [比特币十年回顾](roll1/ten-years-back.md)
-
    * [无限美好](roll1/coinnow.md)
-
    * [k线介绍](roll1/discuss-kline.md)
-
    * [香港虚拟资产规定](roll1/hongkang-crypto-rules.md)
-
    * [钱](roll1/money.md)
-
    * [无限美好](roll1/coin.md)
-
    * [金融知识](roll1/financial-license.md) 
-
    * [MAC绑定邮箱](roll1/mac-bind-email.md)
-
    * [MAC定时任务](roll1/mac-launchctl-task.md)
      <!-- * [随笔倾城](roll1/city.md) -->
-
    * [命运与挑山工](roll1/builder.md)
-
    * [思路与选择](roll1/choose.md)
-
    * [2018](roll1/2018.md)
-
    * [熵](roll1/life.md)
-
    * [随笔](roll1/freestyle.md)
-
    * [价值千万的炒币经验阅读](roll1/sell-buy-express.md)
-
    * [减半之路](roll1/2020-reduce-function.md)
-
    * [高维智慧总结](roll1/math-world.md)
-
-   * [Django简易教程](roll2/django.md)
-
-   * [ 奶一口](roll1/milk.md)
-
-     
+   * [奶一口](roll1/milk.md)
 
 * [卷 II ](roll2/index.md)
-  
    * [CSS](roll2/css.md)
    * [HTML](roll2/html.md)
    * [CLASS](roll2/Class.md)
@@ -79,15 +54,11 @@
    * [不优雅指南](roll2/error-code-introduction.md)
    * [部署](roll2/deploy-page.md)
    * [面试题](roll2/pass.md)
-   
+   * [Django简易教程](roll2/django.md)
 * [卷 III ](roll3/index.md)
-
    * [emulator](roll3/emulator.md)
-
 * [卷  Ⅳ ](roll4/index.md)
-
    * [1.0.5-love](roll4/1.0.5-love.md)
-
 * [隐私条款](private.md)
 
    

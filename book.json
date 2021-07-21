@@ -1,5 +1,5 @@
 {
-  "author": "TigerZH",
+  "author": "TigerZH<only_tigerhu@163.com>",
   "description": "My life getting better!",
   "extension": null,
   "generator": "site",
@@ -38,7 +38,8 @@
     "back-to-top-button",
     "code",
     "livereload",
-    "chapter-fold"
+    "chapter-fold",
+    "favicon-absolute"
   ],
   "title": "TigerZH",
   "variables": {},
@@ -52,7 +53,10 @@
     "showLevel": false
   },
   "pluginsConfig": {
-    "favicon": "assets/images/favicon.ico",
+    "favicon-absolute":{
+      "favicon": "https://6372-crypto2server-576164-1302901174.tcb.qcloud.la/z-org-logos/16x16.png",
+      "appleTouchIconPrecomposed152": "https://6372-crypto2server-576164-1302901174.tcb.qcloud.la/z-org-logos/256x256.png"
+    },
     "hide-element": {
       "elements": [".gitbook-link"]
     }
