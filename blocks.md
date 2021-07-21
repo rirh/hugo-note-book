@@ -33,8 +33,9 @@
         const url = 'https://42541d62-1eb3-4f4a-b656-cc98d4542086.bspapp.com/http/epic'
         fetch(url)
         .then(async e => {
-            const s = await e.text()
-            document.querySelector('.verse').innerHTML = s;
+            const s = await e.json()
+            const [epic] = s.data
+            document.querySelector('.verse').innerHTML = epic.contant||'';
         })
         // // var span = document.getElementById('img_placer');
         // span.innerHTML = '<span style="background-image: url('+(pub_img_current_image=pub_img_url())+');width: 0px;height: 0px;display: inline;"></span>';
