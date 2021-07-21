@@ -1,3 +1,4 @@
+{% extends "../blocks.md" %} {% block contain %}
 
 
 ##### 回顾比特币十年(2008-2018)
@@ -40,3 +41,5 @@
 
 
 
+
+{% endblock %}

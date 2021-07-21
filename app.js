@@ -108,21 +108,4 @@ const AR = {
   },
 };
 
-inquirer
-  .prompt([
-    {
-      type: "confirm",
-      name: "value",
-      message: "部署到服务器？",
-      default: true,
-    },
-  ])
-  .then(({ value }) => {
-    if (value) {
-      AR.iserve = true;
-      AR.start();
-    } else {
-      AR.iserve = false;
-      AR.start();
-    }
-  });
+AR.inster_template()

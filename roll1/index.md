@@ -1,3 +1,4 @@
+{% extends "../blocks.md" %} {% block contain %}
 
 # 卷 I
 
@@ -6,6 +7,4 @@
 **感知未来 加密世界**
 
 
-
-
-
+{% endblock %}
