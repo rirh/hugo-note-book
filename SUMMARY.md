@@ -55,9 +55,14 @@
    * [部署](roll2/deploy-page.md)
    * [面试题](roll2/pass.md)
    * [Django简易教程](roll2/django.md)
+
 * [卷 III ](roll3/index.md)
    * [emulator](roll3/emulator.md)
+   * [ ZORG logo素材](/roll3/z-org-rescr.md)
+   * [点餐小程序更新日志](roll3/z-org-bbq-daliy.md)
+   * [西筹数据平台更新日志](roll3/西筹数据平台.md)
 * [卷  Ⅳ ](roll4/index.md)
+  
    * [1.0.5-love](roll4/1.0.5-love.md)
 * [隐私条款](private.md)
 
