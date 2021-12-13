@@ -1,8 +1,5 @@
 {% extends "../blocks.md" %} {% block contain %}
 
-
-
-
 # 加密货币
 
 **密码货币**（英文：Cryptocurrency，又译**密码学货币**、**加密货币**）是一种使用[密码学](https://zh.wikipedia.org/wiki/密碼學)原理来确保交易安全及控制交易单位创造的[交易介质](https://zh.wikipedia.org/wiki/交易媒介)。
@@ -37,11 +34,6 @@
 
 加密货币只用几年的时间，完成了黄金几百年从稀有金属到货币的周期。未来加密货币是主流发展潜力
 
-
-
 ![image-20191113230856649](../assets/images/image-20191113230856649.png)
-
-
-
 
 {% endblock %}
