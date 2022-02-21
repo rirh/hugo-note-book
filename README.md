@@ -1,31 +1,212 @@
-# 笔记
+
+
+<div id="top"></div>
+
+[![MIT License][license-shield]][license-url]
 
 
 
-**🎉🎉My Life Getting Better     :)**
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/AliMales/NoteBook">
+    <img src="https://6372-crypto2server-576164-1302901174.tcb.qcloud.la/z-org-logos/128x128.png" alt="Logo" width="80" height="80">
+  </a>
 
-`世界上有10类人：一种是懂二进制的，一种是不懂的。`
+  <h3 align="center">📓 </h3>
 
-
-作者：[胡志辉](http://weixin.qq.com/r/NDikvGPEtT7KrSff920m)
-
-赞助作者：[paypal](https://paypal.me/huzhihui?locale.x=zh_XC)
-
-
-
-来源：把自己认为的形成文字描述
-
-
-我是一名技术研发，19年偶然接触到加密货币，深深为这人类历史上最大的创新而着迷。写文章不仅仅是平时记录笔记，更多想表达自己对虚拟货币的分享和观察。如果能够帮助到其他人赚点钱那就更好了！如果你也在北京，可能会在soho遇见我，见时say hi啊。如果你也对加密货币的未来深信不疑，那就让我们一起见证历史吧！！！
-
-
-
-**项目地址**
-
-* github仓库：[https://github.com/wchat/NoteBook](https://github.com/wchat/NoteBook)
-* 在线地址：[https://www.huzhihui.org.cn](https://www.huzhihui.org.cn)
-
-
+  <p align="center">
+    TigerZH 开发笔记
+    <br />
+    <a href="https://doc.tigerzh.com"><strong>探索文档 »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/AliMales/NoteBook">查看 Demo</a>
+    ·
+    <a href="https://github.com/AliMales/NoteBook/issues">反馈bug</a>
+    ·
+    <a href="https://github.com/AliMales/NoteBook/issues">提交需求</a>
+  </p>
+</div>
 
 
 
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>目录</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">关于项目</a>
+      <ul>
+        <li><a href="#built-with">打包框架</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">快速开始</a>
+      <ul>
+        <li><a href="#prerequisites">环境</a></li>
+        <li><a href="#installation">安装</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">使用</a></li>
+    <li><a href="#roadmap">看板</a></li>
+    <li><a href="#contributing">贡献</a></li>
+    <li><a href="#license">证书</a></li>
+    <li><a href="#contact">联系人</a></li>
+    <li><a href="#acknowledgments">鸣谢</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## 关于项目
+
+
+
+
+![Product Name Screen Shot][product-screenshot]
+
+首页截图.
+
+<p align="right">(<a href="#top">返回顶部</a>)</p>
+
+
+
+### 打包框架
+
+* [Vue.js](https://vuejs.org/)
+* [Vitejs](https://vitejs.dev/)
+
+<p align="right">(<a href="#top">返回顶部</a>)</p>
+
+
+
+<!-- GETTING STARTED -->
+## 快速开始
+
+安装node环境和包管理工具
+
+### 环境
+ 
+* 
+  ```sh
+  npm install npm@latest -g
+  ```
+* node>=12.0.0
+* npm>=6.0.0
+
+### 安装
+
+
+1. clone 当前仓库
+2. pnpm i  
+3. pnpm dev 
+
+
+<p align="right">(<a href="#top">返回顶部</a>)</p>
+
+
+
+<!-- USAGE EXAMPLES -->
+## 使用
+
+## Vue 3 + Typescript + Vite
+
+This template should help get you started developing with Vue 3 and Typescript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+
+## Recommended IDE Setup
+
+- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+
+## Type Support For `.vue` Imports in TS
+
+Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+
+<p align="right">(<a href="#top">返回顶部</a>)</p>
+
+
+
+<!-- ROADMAP -->
+## 看板
+
+- [x] 修改日志 
+- [x] 返回顶部按钮
+- [ ] 多语言
+    - [ ] 英文
+
+查看 [open issues](https://github.com/AliMales/NoteBook/issues) 完整的issues列表
+
+<p align="right">(<a href="#top">返回顶部</a>)</p>
+
+
+
+<!-- CONTRIBUTING -->
+## 贡献
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#top">返回顶部</a>)</p>
+
+
+
+<!-- LICENSE -->
+## License
+
+ MIT License.
+
+<p align="right">(<a href="#top">返回顶部</a>)</p>
+
+
+
+<!-- CONTACT -->
+## 联系人
+
+only_tigerhu@163.com
+
+Project Link: [https://github.com/AliMales/NoteBook](https://github.com/AliMales/NoteBook)
+
+<p align="right">(<a href="#top">返回顶部</a>)</p>
+
+
+
+<!-- ACKNOWLEDGMENTS -->
+## 鸣谢
+
+
+<p align="right">(<a href="#top">返回顶部</a>)</p>
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/AliMales/NoteBook/blob/master/README.md
+[product-screenshot]: ./src/assets/images/banner.png
+
+# vuejs.org
+
+## Contributing
+
+This site is built with [VitePress](https://github.com/AliMales/NoteBookvitepress) and depends on [@vue/theme](https://github.com/AliMales/NoteBookvue-theme). Site content is written in Markdown format located in `src`. For simple edits, you can directly edit the file on GitHub and generate a Pull Request.
+
+For local development, [pnpm](https://pnpm.io/) is preferred as package manager:
+
+```bash
+pnpm i
+pnpm run dev
+```
+
+## Working on the content
+
+- See VitePress docs on supported [Markdown Extensions](https://vitepress.vuejs.org/guide/markdown.html) and the ability to [use Vue syntax inside markdown](https://vitepress.vuejs.org/guide/using-vue.html).
+
+- See the [Writing Guide](https://github.com/AliMales/NoteBookdocs/blob/main/.github/contributing/writing-guide.md) for our rules and recommendations on writing and maintaining documentation content.
+
+## Working on the theme
+
+If changes need to made for the theme, check out the [instructions for developing the theme alongside the docs](https://github.com/AliMales/NoteBookvue-theme#developing-with-real-content).

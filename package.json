@@ -1,12 +1,35 @@
 {
-  "name": "web",
   "scripts": {
-    "start": "gitbook serve",
-    "build": "gitbook build"
+    "dev": "vitepress",
+    "build": "vitepress build",
+    "serve": "vitepress serve",
+    "preinstall": "npx only-allow pnpm"
   },
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/wchat/NoteBook.git",
-  "author": "TigerZH <only_tigerhu@163.com>",
-  "license": "GPL-3.0"
+  "dependencies": {
+    "@docsearch/css": "3.0.0-alpha.50",
+    "@docsearch/js": "3.0.0-alpha.50",
+    "@vue/repl": "^1.0.0",
+    "@vueuse/core": "^7.6.2",
+    "body-scroll-lock": "4.0.0-beta.0",
+    "dynamics.js": "^1.1.5",
+    "gsap": "^3.9.0",
+    "normalize.css": "^8.0.1",
+    "shiki": "^0.10.1",
+    "vitepress": "^0.22.2",
+    "vue": "^3.2.26"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^12.2.3",
+    "@types/node": "^16.9.1"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search",
+        "react",
+        "react-dom",
+        "@types/react"
+      ]
+    }
+  }
 }
