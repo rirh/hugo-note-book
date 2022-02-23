@@ -9,13 +9,11 @@ const nav = [
 
   {
     text: '卷集',
-    activeMatch: `^/(guide|style-guide|cookbook|examples)/`,
+    activeMatch: `^/(guide|style-guide|cookbook|examples|cryptocurrency)/`,
     items: [
-      { text: 'Guide', link: '/guide/introduction' },
-      { text: 'Tutorial', link: '/tutorial/' },
-      { text: 'Examples', link: '/examples/' },
-      { text: 'Quick Start', link: '/guide/quick-start' },
-      { text: 'Style Guide', link: '/style-guide/' },
+      { text: '加密货币', link: '/cryptocurrency/money' },
+      { text: '工具使用', link: '/examples/' },
+      { text: '有感而发', link: '/guide/quick-start' },
     ]
   },
   {
@@ -25,15 +23,14 @@ const nav = [
   },
   {
     text: '作品集',
-    activeMatch: `^/ecosystem/`,
+    activeMatch: `^/products/`,
     items: [
       {
         text: '代表作',
         items: [
-          { text: 'Gettr', link: '/ecosystem/partners' },
-          { text: '叮铃医生', link: '/ecosystem/themes' },
-          { text: 'Open Alpha', link: 'https://vuejobs.com/?ref=vuejs' },
-          { text: '净值预估', link: 'https://vue.threadless.com/' }
+          { text: 'Gettr', link: '/products/gettr' },
+          { text: '叮铃医生', link: '/products/doctor' },
+
         ]
       },
       {
@@ -41,12 +38,15 @@ const nav = [
         items: [
           {
             text: 'Fas基金研究平台',
-            link: 'https://www.vuemastery.com/courses/'
+            link: '/products/fas'
           },
+          { text: '币傲交易所', link: '/products/btcalory' },
           {
-            text: '基金大V入驻小程序',
-            link: 'https://vueschool.io/?friend=vuejs&utm_source=Vuejs.org&utm_medium=Link&utm_content=Navbar%20Dropdown'
-          }
+            text: 'Open Alpha ',
+            link: '/products/openalpha'
+          },
+          { text: '基金大V入驻小程序', link: '/products/bigv' },
+          { text: '净值预估', link: '/products/valuation' }
         ]
       },
       {
@@ -54,11 +54,10 @@ const nav = [
         items: [
           {
             text: 'Wall Paper',
-            link: 'https://discord.com/invite/HBherRA'
+            link: '/products/wallpaper'
           },
-          { text: 'Note Music', link: 'https://forum.vuejs.org/' },
-          { text: '优惠券小程序', link: 'https://forum.vuejs.org/' },
-          { text: '币傲交易所', link: 'https://forum.vuejs.org/' },
+          { text: 'Note Music', link: '/products/notemusic' },
+          { text: '优惠券小程序', link: '/products/coupon' },
         ]
       },
     ]
@@ -84,6 +83,26 @@ const nav = [
 ]
 
 export const sidebar = {
+  '/cryptocurrency/': [{
+    text: '基础',
+    items: [
+      { text: '钱', link: '/cryptocurrency/money' },
+      {
+        text: '比特币十年回顾',
+        link: '/cryptocurrency/bitcoin-ten-years'
+      }
+    ]
+  },
+  {
+    text: '杂谈',
+    items: [
+      { text: '价值千万的炒币经验', link: '/cryptocurrency/sell-buy-express' },
+      {
+        text: '奶的底层逻辑就是奶',
+        link: '/cryptocurrency/up'
+      }
+    ]
+  }],
   '/guide/': [
     {
       text: 'Getting Started',
@@ -301,52 +320,8 @@ export const sidebar = {
         }
       ]
     },
-    {
-      text: 'Composition API',
-      items: [
-        { text: 'setup()', link: '/api/composition-api-setup' },
-        {
-          text: 'Reactivity: Core',
-          link: '/api/reactivity-core'
-        },
-        {
-          text: 'Reactivity: Utilities',
-          link: '/api/reactivity-utilities'
-        },
-        {
-          text: 'Reactivity: Advanced',
-          link: '/api/reactivity-advanced'
-        },
-        {
-          text: 'Lifecycle Hooks',
-          link: '/api/composition-api-lifecycle'
-        },
-        {
-          text: 'Dependency Injection',
-          link: '/api/composition-api-dependency-injection'
-        }
-      ]
-    },
-    {
-      text: 'Options API',
-      items: [
-        { text: 'Options: State', link: '/api/options-state' },
-        { text: 'Options: Rendering', link: '/api/options-rendering' },
-        {
-          text: 'Options: Lifecycle',
-          link: '/api/options-lifecycle'
-        },
-        {
-          text: 'Options: Composition',
-          link: '/api/options-composition'
-        },
-        { text: 'Options: Misc', link: '/api/options-misc' },
-        {
-          text: 'Component Instance',
-          link: '/api/component-instance'
-        }
-      ]
-    },
+
+
     {
       text: 'Built-ins',
       items: [
@@ -529,9 +504,9 @@ export default defineConfigWithTheme<ThemeConfig>({
     sidebar,
 
     algolia: {
-      indexName: 'vuejs',
-      appId: 'ML0LEBN7FQ',
-      apiKey: 'f49cbd92a74532cc55cfbffa5e5a7d01',
+      indexName: 'Notebook',
+      appId: '3II0BF621L',
+      apiKey: 'f0f82443dd1e3bb2738c4e904221fc97',
       searchParameters: {
         facetFilters: ['version:v3']
       }
