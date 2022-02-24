@@ -1,5 +1,8 @@
 module.exports = {
-  extends: ['@commitlint/config-conventional'],
+  extends: [
+    '@commitlint/config-conventional',
+    './node_modules/cz-conventional-changelog'
+  ],
   rules: {
     'type-enum': [
       2,

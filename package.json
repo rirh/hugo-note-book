@@ -3,7 +3,10 @@
     "dev": "vitepress",
     "build": "vitepress build",
     "serve": "vitepress serve",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "log": "conventional-changelog -p vue -i CHANGELOG.md -s -r 0",
+    "cz": "npm run log && git add .",
+    "release": "npm run build && gh-pages -d .vitepress/dist"
   },
   "dependencies": {
     "@docsearch/css": "3.0.0-alpha.50",
@@ -13,6 +16,7 @@
     "animate.css": "^4.1.1",
     "axios": "^0.26.0",
     "body-scroll-lock": "4.0.0-beta.0",
+    "conventional-changelog": "^3.1.25",
     "dynamics.js": "^1.1.5",
     "gsap": "^3.9.0",
     "husky": "^7.0.4",
@@ -20,6 +24,11 @@
     "shiki": "^0.10.1",
     "vitepress": "^0.22.2",
     "vue": "^3.2.26"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/vue-cli-plugin-commitlint/lib/cz"
+    }
   },
   "husky": {
     "hooks": {
@@ -30,7 +39,11 @@
     "@commitlint/cli": "^16.2.1",
     "@commitlint/config-conventional": "^16.2.1",
     "@types/markdown-it": "^12.2.3",
-    "@types/node": "^16.9.1"
+    "@types/node": "^16.9.1",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "gh-pages": "^3.2.3",
+    "release-it": "^14.12.5"
   },
   "pnpm": {
     "peerDependencyRules": {

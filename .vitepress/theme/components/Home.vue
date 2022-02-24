@@ -24,7 +24,9 @@ const fetchepic = async () => {
 }
 let interval = setInterval(fetchepic, 15000)
 onMounted(() => {
-  fetchepic()
+  setTimeout(() => {
+    fetchepic()
+  }, 5000)
   window.addEventListener('storage', (e) => {
     appearance.value = `${localStorage.getItem(storageKey)}`
   })

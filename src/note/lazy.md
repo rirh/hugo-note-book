@@ -175,7 +175,7 @@ export default class Avatars extends Vue {
 ```
 
 🎉 效果
-<image src="../public/images/20191127-122628-HD.gif" alt="gif">
+![image-20191127120129214](../public/images/20191127-122628-HD.gif)
 
 
 
