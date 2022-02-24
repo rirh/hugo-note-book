@@ -13,7 +13,7 @@ import { VTLink } from '../lib/core'
           id="revue-form"
           name="revue-form"
           method="post"
-          action="https://www.getrevue.co/profile/vuenewsletter/add_subscriber"
+          action="https://www.tigerzh.com/"
           rel="noopener"
           target="_blank"
         >

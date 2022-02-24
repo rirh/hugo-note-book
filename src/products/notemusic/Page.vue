@@ -10,13 +10,11 @@ import PageDetail from './PageDetail.vue'
       <template #logo
         ><img
           style="height: 64px"
-          src="../../public/images/wallpaper-logo.png"
+          src="https://6372-crypto2server-576164-1302901174.tcb.qcloud.la/z-org-logos/64x64.png"
           alt=""
       /></template>
-      <template #title>WALL PAPER</template>
-      <template #lead>
-        超清无水印壁纸 美好事物尽收眼底
-      </template>
+      <template #title>Note Music</template>
+      <template #lead> 音乐播放器 </template>
     </PageHero>
     <PageDetail />
   </div>

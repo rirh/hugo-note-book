@@ -1,38 +1,61 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
+
+import axios from 'axios'
+import 'animate.css'
+
 import NewsLetter from './NewsLetter.vue'
 import SponsorsGroup from './SponsorsGroup.vue'
-const epic = ref(' 世界上有10类人：一类是懂计算机的，一类是不懂的。')
 
 const url =
   'https://42541d62-1eb3-4f4a-b656-cc98d4542086.bspapp.com/http/epic'
+const storageKey = 'vue-theme-appearance'
+let userPreference = localStorage.getItem(storageKey) || 'auto'
+const epic = ref(' 世界上有10类人：一类是懂计算机的，一类是不懂的。')
+const appearance = ref(userPreference)
 
 const fetchepic = async () => {
-  const response = await fetch(url)
-  const res = await response.json()
-  const [_epic] = res.data
-  epic.value = _epic.contant
+  const response = await axios.get(url)
+  const [_epic] = response.data.data
+  epic.value = ''
+  setTimeout(() => {
+    epic.value = _epic.contant
+  }, 700)
 }
-const interval = setInterval(fetchepic, 10000)
+let interval = setInterval(fetchepic, 15000)
+onMounted(() => {
+  fetchepic()
+  window.addEventListener('storage', (e) => {
+    appearance.value = `${localStorage.getItem(storageKey)}`
+  })
+})
+
 onUnmounted(() => {
   clearInterval(interval)
+  window.removeEventListener('storage', () => {})
 })
 </script>
 
 <template>
   <div>
-    <Sence />
     <section id="hero">
       <h1 class="tagline">
         My
         <span class="accent">Life</span>
-        <br />Getting Better ☀️
+        <br />Getting Better
+        {{ appearance === 'auto' ? '☀️' : '🌙' }}
       </h1>
-      <p class="description">
-        {{ epic }}
-      </p>
+      <transition
+        enter-active-class="animate__animated animate__lightSpeedInLeft"
+        leave-active-class="animate__animated animate__lightSpeedOutRight"
+      >
+        <p class="description" v-if="epic">
+          {{ epic }}
+        </p>
+      </transition>
+
       <p class="actions">
-        <a class="get-started" href="/guide/introduction.html">
+        <a class="get-started" href="/cryptocurrency/money.html">
           立即探索
           <svg
             class="icon"
@@ -46,7 +69,7 @@ onUnmounted(() => {
             />
           </svg>
         </a>
-        <a class="setup" href="/guide/quick-start.html">开始阅读 ✍️</a>
+        <a class="setup" href="/note/cert.html">开始阅读 ✍️</a>
       </p>
     </section>
 
@@ -147,7 +170,10 @@ html:not(.dark) .accent,
   padding: 8px 18px;
   font-weight: 500;
   border-radius: 8px;
-  transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s, scale 0.5s;
+}
+.actions a:active {
+  transform: scale(0.96);
 }
 
 .actions .get-started {

@@ -11,17 +11,11 @@ const props = defineProps({
     <div class="container">
       <div class="content">
         <h1 class="title">项目简介</h1>
-        <p class="description">
-          WALL PAPER是一款PC端壁纸软件,目前支持MacOS、Windows。
-          在平时开发的时候家里和公司的电脑交替工作，壁纸是默认的非常单调。
-          在逛B站或者知乎的时候看到好看的图片设置为壁纸，于是想着开发一款款平台，定时切换壁纸的软件。
-        </p>
-        <p class="description">
-          独立开发项目，使用Electron打包。项目使用VUEJS开发。
-        </p>
+        <p class="description">🎷 &nbsp; music regardless of country</p>
+        <p class="description">项目基于Vite+typescript+vue3开发</p>
         <br />
         <h1 class="title">周期</h1>
-        <p class="description">2020-06 ～ 2020-06</p>
+        <p class="description">2020-07 ～ 至今</p>
 
         <section class="data">
           <ul class="data-list">
@@ -33,61 +27,20 @@ const props = defineProps({
 
               <VTLink
                 class="data-link proficiency-item"
-                href="https://paper.tigerzh.com/"
+                href="https://music.tigerzh.com/"
                 no-icon
               >
                 线上地址
               </VTLink>
-              <VTLink
-                class="data-link proficiency-item"
-                href="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f794c6c4-6af8-4d74-b405-d93ed7968c0f/8fc4e89f-c72e-4ab2-b462-f6217a3cbca3.dmg"
-                no-icon
-              >
-                MAC 下载地址
-              </VTLink>
-              <VTLink
-                class="data-link proficiency-item"
-                href="https://6372-crypto2server-576164-1302901174.tcb.qcloud.la/will-paper-app/WillPaper%20Setup%201.0.5.exe"
-                no-icon
-              >
-                WIN 下载地址
-              </VTLink>
             </li>
             <br />
             <h1 class="title">项目截图</h1>
-            <h1 class="title">MacOS</h1>
-            <div class="screenshot">
-              <img
-                style="width: 400px"
-                src="../../public/images/paper-1.png"
-                alt=""
-              />
-              <img
-                style="width: 400px"
-                src="../../public/images/paper-2.png"
-                alt=""
-              />
-            </div>
-            <h1 class="title">Windows</h1>
-            <div class="screenshot">
-              <img
-                style="width: 400px"
-                src="../../public/images/paper-4.jpg"
-                alt=""
-              />
-              <img
-                style="width: 400px"
-                src="../../public/images/paper-3.jpg"
-                alt=""
-              />
-            </div>
-
+            <img src="../../public/images/notemusic-1.jpg" alt="" />
             <br />
-            <img
-              style="width: 100%"
-              src="../../public/images/paper-5.jpg"
-              alt=""
-            />
+            <img src="../../public/images/notemusic-2.png" alt="" />
+            <br />
+            <img src="../../public/images/notemusic-3.png" alt="" />
+            <br />
           </ul>
         </section>
       </div>

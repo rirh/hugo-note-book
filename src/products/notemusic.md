@@ -3,7 +3,7 @@ page: true
 ---
 
 <script setup>
-import Doctor from './doctor/DoctorPage.vue'
+import Page from './notemusic/Page.vue'
 </script>
 
-<Doctor />
+<Page />
