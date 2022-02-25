@@ -20,6 +20,8 @@
     "dynamics.js": "^1.1.5",
     "gsap": "^3.9.0",
     "husky": "^7.0.4",
+    "localStorage": "^1.0.4",
+    "localforage": "^1.10.0",
     "normalize.css": "^8.0.1",
     "shiki": "^0.10.1",
     "vitepress": "^0.22.2",

@@ -12,8 +12,8 @@ const nav = [
     activeMatch: `^/(guide|style-guide|cookbook|examples|cryptocurrency)/`,
     items: [
       { text: '加密货币', link: '/cryptocurrency/money' },
-      { text: '工具使用', link: '/examples/' },
-      { text: '有感而发', link: '/guide/quick-start' },
+      { text: '工具使用', link: '/tools/emulator' },
+      // { text: '有感而发', link: '/guide/quick-start' },
     ]
   },
   {
@@ -103,6 +103,13 @@ export const sidebar = {
       }
     ]
   }],
+  '/tools/': [{
+    text: 'Phone',
+    items: [
+      { text: 'emulator', link: '/tools/emulator' },
+    ]
+  },
+  ],
   '/note/': [
     {
       text: '📚 使用指南',
@@ -119,9 +126,9 @@ export const sidebar = {
       text: '📚 代码规范',
       items: [
         { text: 'JS不优雅教程', link: '/note/low-code' },
-        { text: 'MacOS 自带VPN链接公司网络', link: '/note/vpn' },
-        { text: 'MacOS 邮箱教程', link: '/note/mac-bind-email' },
-        { text: 'MacOS 定时任务指南', link: '/note/mac-launchctl-task' },
+        // { text: 'MacOS 自带VPN链接公司网络', link: '/note/vpn' },
+        // { text: 'MacOS 邮箱教程', link: '/note/mac-bind-email' },
+        // { text: 'MacOS 定时任务指南', link: '/note/mac-launchctl-task' },
       ]
     }],
 }

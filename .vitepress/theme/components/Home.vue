@@ -1,39 +1,40 @@
 <script setup lang="ts">
+import 'animate.css'
+
 import { ref, onMounted, onUnmounted } from 'vue'
 
 import axios from 'axios'
-import 'animate.css'
 
 import NewsLetter from './NewsLetter.vue'
 import SponsorsGroup from './SponsorsGroup.vue'
 
 const url =
   'https://42541d62-1eb3-4f4a-b656-cc98d4542086.bspapp.com/http/epic'
-const storageKey = 'vue-theme-appearance'
-let userPreference = localStorage.getItem(storageKey) || 'auto'
+const storageKey = 'theme-appearance'
+let userPreference = 'auto'
 const epic = ref(' 世界上有10类人：一类是懂计算机的，一类是不懂的。')
 const appearance = ref(userPreference)
 
-const fetchepic = async () => {
-  const response = await axios.get(url)
-  const [_epic] = response.data.data
-  epic.value = ''
-  setTimeout(() => {
-    epic.value = _epic.contant
-  }, 700)
-}
-let interval = setInterval(fetchepic, 15000)
-onMounted(() => {
-  setTimeout(() => {
+const fetchepic = () => {
+  setTimeout(async () => {
+    const response = await axios.get(url)
+    const [_epic] = response.data.data
+    epic.value = ''
+    setTimeout(() => {
+      epic.value = _epic.contant
+    }, 700)
     fetchepic()
-  }, 5000)
+  }, 12000)
+}
+onMounted(() => {
+  appearance.value = localStorage.getItem(storageKey) || 'auto'
+  fetchepic()
   window.addEventListener('storage', (e) => {
     appearance.value = `${localStorage.getItem(storageKey)}`
   })
 })
 
 onUnmounted(() => {
-  clearInterval(interval)
   window.removeEventListener('storage', () => {})
 })
 </script>
@@ -150,7 +151,7 @@ section {
 
 html:not(.dark) .accent,
 .dark .tagline {
-  background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
+  background: -webkit-linear-gradient(315deg, #61dafb 25%, #647eff);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

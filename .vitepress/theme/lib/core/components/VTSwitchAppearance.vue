@@ -3,7 +3,7 @@ import VTSwitch from './VTSwitch.vue'
 import VTIconSun from './icons/VTIconSun.vue'
 import VTIconMoon from './icons/VTIconMoon.vue'
 
-const storageKey = 'vue-theme-appearance'
+const storageKey = 'theme-appearance'
 const toggle =
   typeof localStorage !== 'undefined' ? useAppearance() : () => {}
 
