@@ -24,6 +24,7 @@
     "localforage": "^1.10.0",
     "normalize.css": "^8.0.1",
     "shiki": "^0.10.1",
+    "three": "^0.138.0",
     "vitepress": "^0.22.2",
     "vue": "^3.2.26"
   },

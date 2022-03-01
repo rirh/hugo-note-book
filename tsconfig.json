@@ -9,7 +9,8 @@
     "strict": true,
     "baseUrl": ".",
     "paths": {
-      "/@theme/*": [".vitepress/theme/*"]
+      "/@theme/*": [".vitepress/theme/*"],
+      "/@/*": ["src/*"]
     }
   },
   "include": ["env.d.ts", "src/**/*", ".vitepress/**/*"]

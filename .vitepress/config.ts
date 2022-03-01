@@ -13,7 +13,7 @@ const nav = [
     items: [
       { text: '加密货币', link: '/cryptocurrency/money' },
       { text: '工具使用', link: '/tools/emulator' },
-      // { text: '有感而发', link: '/guide/quick-start' },
+      { text: '编码日志', link: '/log/敏捷项目管理' },
     ]
   },
   {
@@ -83,6 +83,12 @@ const nav = [
 ]
 
 export const sidebar = {
+  '/log/': [{
+    text: 'PMP',
+    items: [
+      { text: '敏捷项目管理', link: '/log/敏捷项目管理' },
+    ]
+  }],
   '/cryptocurrency/': [{
     text: '基础',
     items: [

@@ -7,6 +7,7 @@ import axios from 'axios'
 
 import NewsLetter from './NewsLetter.vue'
 import SponsorsGroup from './SponsorsGroup.vue'
+import Sence from './Sence.vue'
 
 const url =
   'https://42541d62-1eb3-4f4a-b656-cc98d4542086.bspapp.com/http/epic'
@@ -41,6 +42,7 @@ onUnmounted(() => {
 
 <template>
   <div>
+    <!-- <Sence /> -->
     <section id="hero">
       <h1 class="tagline">
         My

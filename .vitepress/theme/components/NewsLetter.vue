@@ -42,7 +42,7 @@ import { VTLink } from '../lib/core'
         或者可以关注本网址来获取最新的笔记
         <VTLink
           class="link"
-          href="https://news.vuejs.org/"
+          href="https://www.tigerzh.com/"
           no-icon
         >tigerzh.com</VTLink>.
       </p>

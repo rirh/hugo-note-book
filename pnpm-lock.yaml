@@ -24,6 +24,7 @@ specifiers:
   normalize.css: ^8.0.1
   release-it: ^14.12.5
   shiki: ^0.10.1
+  three: ^0.138.0
   vitepress: ^0.22.2
   vue: ^3.2.26
 
@@ -43,6 +44,7 @@ dependencies:
   localforage: 1.10.0
   normalize.css: 8.0.1
   shiki: 0.10.1
+  three: 0.138.0
   vitepress: 0.22.2
   vue: 3.2.31
 
@@ -3748,6 +3750,10 @@ packages:
   /text-extensions/1.9.0:
     resolution: {integrity: sha512-wiBrwC1EhBelW12Zy26JeOUkQ5mRu+5o8rpsJk5+2t+Y5vE7e842qtZDQ2g1NpX/29HdyFeJ4nSIhI47ENSxlQ==}
     engines: {node: '>=0.10'}
+
+  /three/0.138.0:
+    resolution: {integrity: sha512-xM/WwUd53ClkbHFrftW29aIzMVvyhj4rSZmIVgn6hZ/kYB7aMjDD8FFy4VJamygXSrldJuOgEJuaI+E+8mt/KA==}
+    dev: false
 
   /through/2.3.8:
     resolution: {integrity: sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=}
