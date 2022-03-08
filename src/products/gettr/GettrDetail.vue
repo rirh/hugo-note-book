@@ -17,12 +17,11 @@ const props = defineProps({
         </p>
         <p class="description">
           这个项目也是我从头开始参与的一个项目，经历了三个版本的迭代。 除了传统的
-          Web 开发，还涉及 LiveStream集成、Grpc实践，多语言应用、Dark
-          mode，非常感谢，这也是让我成长最多的项目
+          Web 开发，还涉及Dark mode、LiveStream集成、Grpc实践，多语言应用、，非常感谢此项目，这也是让我受益成长最多的项目！
         </p>
         <p class="description">
-          项目的管理严格遵循gitflow流程，每一次MR都会安排同事互相review
-          code。保证了代码质量。
+          项目的管理严格遵循gitflow流程，每一次MR都会安排互相review
+          code。提高代码质量。
         </p>
         <br />
         <h1 class="title">周期</h1>

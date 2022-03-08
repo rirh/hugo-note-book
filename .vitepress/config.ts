@@ -11,9 +11,9 @@ const nav = [
     text: '卷集',
     activeMatch: `^/(guide|style-guide|cookbook|examples|cryptocurrency)/`,
     items: [
-      { text: '加密货币', link: '/cryptocurrency/money' },
-      { text: '工具使用', link: '/tools/emulator' },
-      { text: '编码日志', link: '/log/敏捷项目管理' },
+      { text: '💰  加密货币', link: '/cryptocurrency/money' },
+      { text: '🚚  工具使用', link: '/tools/emulator' },
+      { text: '💡  Idea日志 ', link: '/log/敏捷项目管理' },
     ]
   },
   {
@@ -96,6 +96,21 @@ export const sidebar = {
       {
         text: '比特币十年回顾',
         link: '/cryptocurrency/bitcoin-ten-years'
+      }, {
+        text: '流动性',
+        link: '/cryptocurrency/流动性'
+      }, {
+        text: '稳定币',
+        link: '/cryptocurrency/稳定币'
+      }, {
+        text: '做市',
+        link: '/cryptocurrency/做市'
+      }, {
+        text: 'ETF',
+        link: '/cryptocurrency/ETF'
+      }, {
+        text: 'Uniswap',
+        link: '/cryptocurrency/Uniswap'
       }
     ]
   },

@@ -3,7 +3,7 @@ page: true
 ---
 
 <script setup>
-import Doctor from './doctor/DoctorPage.vue'
+import Coupon from './coupon/Page.vue'
 </script>
 
-<Doctor />
+<Coupon />

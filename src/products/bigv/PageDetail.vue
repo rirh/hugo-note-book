@@ -16,7 +16,7 @@ const props = defineProps({
           基金大V具有一定的影响力，留住粉丝并增长就成了硬需求。大V支持小程序提供基金数据相关服务，为大V镀金吸引分析提供了平台。
         </p>
         <p class="description">
-          项目是我负责，因为金融股票相关业务微信审核有阻力，并且每个大V的功能可定制性高，采用小程序嵌套webview的方式进行开发，考虑到一致性技术成本，webview的页面采用vuejs+vite+ts进行架构，保证项目质量
+          独立开发项目，因为金融股票相关业务微信审核有阻力，并且每个大V的功能可定制性高，采用小程序嵌套webview的方式进行架构，考虑到一致性技术成本，webview的页面采用vuejs+vite+ts进行架构，保证项目质量，这样每次更新内部的webview便可以实现绕过审核机制动态更新页面
         </p>
         <br />
         <h1 class="title">周期</h1>
@@ -41,9 +41,10 @@ const props = defineProps({
             <br />
             <h1 class="title">项目截图</h1>
             <div class="screenshot">
-              <img src="../../public/images/bigv-1.png" alt="" />
-              <img src="../../public/images/bigv-2.png" alt="" />
-              <img src="../../public/images/bigv-3.png" alt="" />
+              <img src="../../public/images/coupon-1.png" alt="" />
+              <img src="../../public/images/coupon-2.png" alt="" />
+              <img src="../../public/images/coupon-3.png" alt="" />
+              <img src="../../public/images/coupon-4.png" alt="" />
             </div>
           </ul>
         </section>

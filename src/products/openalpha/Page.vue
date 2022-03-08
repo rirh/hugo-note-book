@@ -9,13 +9,16 @@ import PageDetail from './PageDetail.vue'
     <PageHero>
       <template #logo>
         <img
-          style="height: 40px"
+          style="height: 64px"
           src="../../public/images/openalpha-logo.ico"
           alt=""
       /></template>
-      <template #title>Open Alpha</template>
+      <template #title>基金研究开放平台</template>
       <template #lead>
-        OpenAlpha开放平台提供基金指标入驻，支持接口单个或套餐销售，会员销售，服务对象投顾，自媒体，机构，个人，量化。
+        <VTLink href="https://datumwealth.com/" no-icon>
+          OpenAlpha开放平台
+        </VTLink>
+        销售基金指标API，支持定制API和深度数据合作，支持会员充值调用和套餐两种模式。包含会员销售，大V入驻支持。主要服务人群：投顾，自媒体，机构，个人，量化。
       </template>
     </PageHero>
     <PageDetail />

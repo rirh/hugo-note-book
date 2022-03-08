@@ -9,13 +9,13 @@ import PageDetail from './PageDetail.vue'
     <PageHero>
       <template #logo
         ><img
-          style="height: 64px"
-          src="../../public/images/wallpaper-logo.png"
+          style="height: 100px"
+          src="../../public/images/coupon-logo.jpg"
           alt=""
       /></template>
-      <template #title>WALL PAPER</template>
+      <template #title>优惠券小程序</template>
       <template #lead>
-        超清无水印壁纸 美好事物尽收眼底
+        <!-- 微信搜索"COUPON ORG+" -->
       </template>
     </PageHero>
     <PageDetail />

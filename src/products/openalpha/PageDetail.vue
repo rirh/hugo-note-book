@@ -17,9 +17,8 @@ const props = defineProps({
           UI框架基于Element-plus。
         </p>
         <p class="description">
-          我主要负责订单模块以及账号管理模块，动态引入阿里iconfont资源，实现设计到开发添加到页面动态显示。
+          我主要负责订单模块以及账号管理模块，动态引入阿里iconfont资源，实现动态添加到页面显示。
         </p>
-
         <br />
         <h1 class="title">周期</h1>
         <p class="description">2021-09 ～ 2021-12</p>
