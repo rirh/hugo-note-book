@@ -52,7 +52,7 @@ Uniswap首先解决的问题是任何交易员都是在与链上的合约程序�
 
 每次Swap交易都会改变交易池里两种资产的数量，从而引起价格的变动。那么，影响滑点大小的因素有哪些呢？由Uniswap价格公式可知，如果做Swap交易的数量较少，则滑点较小。如果流动性池子的资产数量越多，则滑点越小。因此，注入到池子里的资产数量至关重要，Uniswap用总锁仓量TVL：Total Value Locked表示池子的大小，可以从Uniswap交易页看到TVL排名靠前的交易池：
 
-![图片](/Users/zh/Documents/workspace/web/NoteBook/src/public/images/1111.png)
+![图片](../public/images/1111.png)
 
 如果交易员想要交易UNI/WBTC，但是Uniswap没有这个交易池，或者交易池太小，怎么办？可以找两个较大的交易池，例如UNI/ETH和WBTC/ETH，做两次Swap，完成UNI和WBTC的交易：
 

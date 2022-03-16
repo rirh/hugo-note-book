@@ -22,7 +22,7 @@ function scrollToTop() {
       @click="$emit('open-menu')"
       >
       <VTIconAlignLeft class="menu-icon" />
-      <span class="menu-text">Menu</span>
+      <span class="menu-text">菜单</span>
     </button>
 
     <a
@@ -30,7 +30,7 @@ function scrollToTop() {
       class="top-link"
       href="#"
       @click="scrollToTop"
-      >Return to top</a
+      >返回顶部</a
     >
   </div>
 </template>
