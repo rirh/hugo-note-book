@@ -5,27 +5,42 @@
  * 2. uncomment and update BANNER_ID in ../../inlined-scripts/restorePreferences.ts
  * 3. update --vt-banner-height if necessary
  */
+import { useRoute } from 'vitepress'
+import { onMounted, watchEffect } from 'vue'
 
+const location = useRoute()
 let open = $ref(true)
 
 /**
  * Call this if the banner is dismissible
  */
 function dismiss() {
-  open = false
-  document.documentElement.classList.add('banner-dismissed')
-  localStorage.setItem(`vue-docs-banner-${__VUE_BANNER_ID__}`, 'true')
+  // console.log(location.value.pathname)
+  if (location.path !== '/') {
+    open = false
+    window.document.documentElement.classList.add('banner-dismissed')
+    window.__VUE_BANNER_ID__ = 'wip'
+    localStorage.setItem(`vue-docs-banner-${__VUE_BANNER_ID__}`, 'true')
+  } else {
+    open = true
+    window.document.documentElement.classList.remove('banner-dismissed')
+    window.__VUE_BANNER_ID__ = 'wip'
+    localStorage.setItem(`vue-docs-banner-${__VUE_BANNER_ID__}`, 'false')
+  }
+  return location.value
 }
+onMounted(() => {
+  watchEffect(dismiss)
+})
 </script>
 
 <template>
   <div class="banner" v-if="open">
-    Vue 3 is now the new default version!
+    我既不支持俄罗斯，也不支持乌克兰！！！
     <a
       href="https://blog.vuejs.org/posts/vue-3-as-the-new-default.html"
       target="_blank"
-      >Learn more</a
-    >
+    ></a>
   </div>
 </template>
 

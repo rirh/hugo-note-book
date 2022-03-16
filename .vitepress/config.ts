@@ -84,6 +84,14 @@ const nav = [
 
 export const sidebar = {
   '/log/': [{
+    text: '开发日志',
+    items: [
+      { text: '西筹开放平台', link: '/log/西筹开放平台' },
+      { text: '西筹数据平台', link: '/log/西筹数据平台' },
+      { text: '周六特色大排档小程序', link: '/log/周六特色大排档小程序' },
+
+    ]
+  }, {
     text: 'PMP',
     items: [
       { text: '敏捷项目管理', link: '/log/敏捷项目管理' },
@@ -94,9 +102,6 @@ export const sidebar = {
     items: [
       { text: '钱', link: '/cryptocurrency/money' },
       {
-        text: '比特币十年回顾',
-        link: '/cryptocurrency/bitcoin-ten-years'
-      }, {
         text: '流动性',
         link: '/cryptocurrency/流动性'
       }, {
@@ -112,11 +117,31 @@ export const sidebar = {
         text: 'Uniswap',
         link: '/cryptocurrency/Uniswap'
       }
+      , {
+        text: '期货',
+        link: '/cryptocurrency/期货'
+      }
+      , {
+        text: '混合保证金',
+        link: '/cryptocurrency/混合保证金'
+      }
+      , {
+        text: '反向合约',
+        link: '/cryptocurrency/反向合约'
+      }
+      , {
+        text: '永续合约',
+        link: '/cryptocurrency/永续合约'
+      }
     ]
   },
   {
     text: '杂谈',
     items: [
+      {
+        text: '比特币十年回顾',
+        link: '/cryptocurrency/bitcoin-ten-years'
+      },
       { text: '价值千万的炒币经验', link: '/cryptocurrency/sell-buy-express' },
       {
         text: '奶的底层逻辑就是奶',
@@ -146,7 +171,8 @@ export const sidebar = {
     {
       text: '📚 代码规范',
       items: [
-        { text: 'JS不优雅教程', link: '/note/low-code' },
+        { text: 'JS不优雅教程', link: '/note/js不优雅教程' },
+        { text: 'JS优雅教程', link: '/note/js优雅教程' },
         // { text: 'MacOS 自带VPN链接公司网络', link: '/note/vpn' },
         // { text: 'MacOS 邮箱教程', link: '/note/mac-bind-email' },
         // { text: 'MacOS 定时任务指南', link: '/note/mac-launchctl-task' },

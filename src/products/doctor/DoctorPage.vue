@@ -22,7 +22,6 @@ import PagePatient from './PagePatient.vue'
       </template>
     </PageHero>
     <PageDetail />
-    <br />
     <PagePatient />
   </div>
 </template>

@@ -37,14 +37,16 @@ const props = defineProps({
               >
                 线上地址
               </VTLink>
+              <VTLink class="data-link proficiency-item" href="#" no-icon>
+                微信搜索“苯嘴财经”
+              </VTLink>
             </li>
             <br />
             <h1 class="title">项目截图</h1>
             <div class="screenshot">
-              <img src="../../public/images/coupon-1.png" alt="" />
-              <img src="../../public/images/coupon-2.png" alt="" />
-              <img src="../../public/images/coupon-3.png" alt="" />
-              <img src="../../public/images/coupon-4.png" alt="" />
+              <img src="../../public/images/bigv-1.png" alt="" />
+              <img src="../../public/images/bigv-2.png" alt="" />
+              <img src="../../public/images/bigv-3.png" alt="" />
             </div>
           </ul>
         </section>

@@ -72,8 +72,8 @@ const props = defineProps({
 
 .ProductsItem {
   padding: 64px 24px;
-  background-color: var(--vt-c-bg-soft);
-  transition: background-color 0.5s;
+  /* background-color: var(--vt-c-bg-soft); */
+  /* transition: background-color 0.5s; */
 }
 
 @media (min-width: 768px) {
