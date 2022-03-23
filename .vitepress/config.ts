@@ -160,13 +160,13 @@ export const sidebar = {
     {
       text: '📚 使用指南',
       items: [
+        { text: 'liunx 指南', link: '/note/Liunx常用命令' },
+        { text: 'Https 配置指南', link: '/note/cert' },
+        { text: 'SSH  配置指南', link: '/note/ssh' },
         { text: 'git 指南', link: '/note/git' },
-        { text: 'liunx 指南', link: '/note/liunx' },
         { text: 'Nginx 指南', link: '/note/nginx' },
         { text: 'Docker 指南', link: '/note/Docker指南' },
         { text: 'uWSGI 指南', link: '/note/uWSGI指南' },
-        { text: 'Https配置指南', link: '/note/cert' },
-        { text: 'SSH  配置指南', link: '/note/ssh' },
         { text: 'MacOS 自带VPN链接公司网络', link: '/note/vpn' },
         { text: 'MacOS 邮箱教程', link: '/note/mac-bind-email' },
         { text: 'MacOS 定时任务指南', link: '/note/mac-launchctl-task' },

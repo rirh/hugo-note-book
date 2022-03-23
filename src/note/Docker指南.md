@@ -4,7 +4,7 @@
 
 学习本教程前首先我们要安装Docker。菜鸟教程上总结了Docker在各个平台和系统上的安装，大家可以参考。这里总结了下Docker在阿里云Ubuntu系统上的安装过程。步骤看似很多且复杂，但大家只需要一步一步copy和paste命令就行了，整个安装过程很流畅。
 
-```bash
+```shell
 # 以Ubuntu为例
 # Step 1: 移除之前docker版本并更新更新 apt 包索引
 sudo apt-get remove docker docker-engine docker.io
@@ -41,7 +41,7 @@ sudo systemctl restart docker
 
 ## Docker镜像操作
 
-```bash
+```shell
 # 搜索镜像：docker search + 镜像名字
 $ docker search nginx
 
@@ -81,7 +81,7 @@ $ docker commit
 
 ## Docker容器操作
 
-```bash
+```shell
 # 创建容器: docker create + 选项(-i, -t, -d, -p, -v, -e) + 镜像
 $ docker create --name mynginx_1 -it -p 8080:80 mynginx:1.0
 
@@ -195,7 +195,7 @@ Docker 的网络驱动程序默认情况下有四个：`bridge`、`host`、`over
 
 ### 创建一个network
 
-```bash
+```shell
 # mysite1-network是局域网的名字，可以自定义。默认bridge模式。
 $ docker network create mysite1-network 
 
@@ -212,7 +212,7 @@ $ docker network inspect mysite1-network
 
 ### 将容器连接到network
 
-```bash
+```shell
 # 运行新的容器，并加入到mysite1-network网络中
 # --network 表示这个容器要连接到的网络
 # --network-alias 表示这个容器在此网络中的名称，也可以使用--ip来指定容器的ip
@@ -230,14 +230,14 @@ $ docker network disconnet mysite1-network docker-web
 ```
 
 ### 删除network
-```bash
+```shell
 # 删除mysite1-network网络
 $ docker network rm mysite1-network
 ```
 
 ## Docker数据卷操作
 
-```bash
+```shell
 # 列出所有数据卷
 $ docker volume ls
 # 使用过滤，列出所有未使用的数据卷
@@ -251,7 +251,7 @@ $ docker volume rm <volume_name>
 
 安装docker-compose前必需先安装好docker。Docker-compose的下载和安装很简单，网上有很多教程，我就不再详述了。这里只记录下ubuntu系统下docker-compose的安装过程。
 
-```bash
+```shell
 # Step 1: 以ubuntu为例，下载docker-compose
 $ sudo curl -L https://github.com/docker/compose/releases/download/1.17.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 # Step 2: 给予docker-compose可执行权限
@@ -262,7 +262,7 @@ $ docker-compose --version
 
 ## Docker-compose.yml配置文件
 
-```yml
+```shell
 # 第一部分: Building(构建镜像)
 web:
   # 使用当前目录下的Dockerfile
@@ -353,7 +353,7 @@ web:
 
 ## Docker-compose指南
 
-```bash
+```shell
 # 默认使用docker-compose.yml构建镜像
 $ docker-compose build
 $ docker-compose build --no-cache # 不带缓存的构建
@@ -401,3 +401,4 @@ $ docker-compose rm web
 # 查看各个服务容器内运行的进程 
 $ docker-compose top                            
 ```
+

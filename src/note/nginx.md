@@ -3,6 +3,8 @@
 
 # Nginx
 
+
+
 ## **简介**
 
 轻量、开源、HTTP服务器软件！可以和apache配合使用。
@@ -43,7 +45,7 @@ sudo systemctl nginx restart
 
 如果你使用docker安装nginx，Dockerfile里可以设置将宿主机的当前目录下的`nginx.conf`复制一份到的容器内的`/etc/nginx/conf.d/`的目录下，如下所示：
 
-```
+```shell
 # nginx镜像Dockerfile
 FROM nginx:latest
 
@@ -67,9 +69,9 @@ CMD ["nginx", "-g", "daemon off;"]
 
 其中http块又可以进一步分成3块，http全局块里的配置对所有站点生效，server块配置仅对单个站点生效，而location块的配置仅对单个页面或url生效。
 
-### Nginx配置文件示例
+## Nginx配置文件示例
 
-```bash
+```nginx
 # 全局块
 user www-data;
 worker_processes  2;  ## 默认1，一般建议设成CPU核数1-2倍
@@ -162,7 +164,7 @@ http { # http全局块
 ## Nginx Location配置
 Nginx Location配置是Nginx的核心配置，它负责匹配请求的url, 并根据Location里定义的规则来处理这个请求，比如拒绝、转发、重定向或直接提供文件下载。
 
-### URL匹配方式及优先级
+## URL匹配方式及优先级
 
 Nginx的Location配置支持普通字符串匹配和正则匹配，不过url的各种匹配方式是有优先级的，如下所示：
 
@@ -212,7 +214,7 @@ location ~* .*\.(jpg|gif|png|jpeg)$ {
 }
 ```
 
-### 请求转发和重定向
+## 请求转发和重定向
 
 另一个我们在Location块里经常配置的就是转发请求或重定向，如下例所示：
 
@@ -273,7 +275,7 @@ if ($request_method !~ ^(GET|POST)$ ) { return 405; }
 
 Nginx可直接作为强大的静态文件服务器使用，支持对静态文件进行缓存还可以直接将Nginx作为文件下载服务器使用。
 
-### 静态文件缓存
+## 静态文件缓存
 缓存可以加快下次静态文件加载速度。我们很多与网站样式相关的文件比如css和js文件一般不怎么变化，缓存有效器可以通过`expires`选项设置得长一些。
 
 ```bash
@@ -284,7 +286,7 @@ Nginx可直接作为强大的静态文件服务器使用，支持对静态文件
     }
 ```
 
-### 静态文件压缩
+## 静态文件压缩
 
 Nginx可以对网站的css、js 、xml、html 文件在传输前进行压缩，大幅提高页面加载速度。经过Gzip压缩后页面大小可以变为原来的30%甚至更小。使用时仅需开启Gzip压缩功能即可。你可以在http全局块或server块增加这个配置。
 
@@ -310,7 +312,7 @@ http {
 } 
 ```
 
-### 文件下载服务器
+## 文件下载服务器
 
 Nginx也可直接做文件下载服务器使用，在location块设置`autoindex`相关选项即可。
 
@@ -343,7 +345,7 @@ server {
 ```
 ## Nginx配置HTTPS
 
-```
+```nginx
 # 负载均衡，设置HTTPS
 upstream backend_server {
     server APP_SERVER_1_IP;
@@ -427,7 +429,7 @@ location = /favicon.ico {
 
 Nginx提供了很多超时设置选项，目的是保护服务器资源，CPU，内存并控制连接数。你可以根据实际项目需求在全局块、Server块和Location块进行配置。
 
-### 请求超时设置
+## 请求超时设置
 
 ```bash
 # 客户端连接保持会话超时时间，超过这个时间，服务器断开这个链接。
@@ -466,7 +468,7 @@ open_file_cache_valid 30s;
 reset_timedout_connection on;
 ```
 
-### Proxy反向代理超时设置
+## Proxy反向代理超时设置
 
 ```bash
 # 该指令设置与upstream服务器的连接超时时间，这个超时建议不超过75秒。
@@ -492,11 +494,11 @@ upstream big_server_com {
 
 Nginx提供了多种负载均衡算法, 最常见的有5种。我们只需修改对应upstream模块即可。
 
-### 轮询(默认)
+## 轮询(默认)
 
 每个请求按时间顺序逐一分配到不同的后端服务器，如果后端服务器down掉，能自动剔除;
 
-```hash
+```nginx
 # 轮询，大家权重一样
 upstream backend_server {
    server 192.168.0.1:8000;
@@ -523,11 +525,11 @@ server {
    }
 ```
 
-### 权重(weight)
+## 权重(weight)
 
 通过weight指定轮询几率，访问比率与weight成正比，常用于后端服务器性能不均的情况。不怎么忙的服务器可以多承担些任务。
 
-```hash
+```nginx
 # 权重，weight越大，承担任务越多
 upstream backend_server {
    server 192.168.0.1:8000 weight=3;
@@ -535,11 +537,11 @@ upstream backend_server {
 }
 ```
 
-### ip_hash ###
+## ip_hash ##
 
 每个请求按访问ip的hash结果分配，这样每个访客固定访问一个后端服务器，可以解决session的问题。
 
-```bash
+```nginx
 # 权重，weight越大，承担任务越多
 upstream backend_server {
    ip_hash;
@@ -548,7 +550,7 @@ upstream backend_server {
 }
 ```
 
-### url_hash
+## url_hash
 
 按访问url的hash结果来分配请求，使每个url定向到同一个后端服务器，后端服务器为缓存时比较有效。 
 
@@ -561,7 +563,7 @@ upstream backend_server {
 }
 ```
 
-###  fair(第三方)
+##  fair(第三方)
 
 按后端服务器的响应时间来分配请求，响应时间短的优先分配。使用这个算法需要安装`nginx-upstream-fair`这个库。
 
@@ -735,7 +737,7 @@ http=0.0.0.0:8000
 
 **分别配置了接口转发和https代理**
 
-```
+```nginx
 # For more information on configuration, see:
 #   * Official English Documentation: http://nginx.org/en/docs/
 #   * Official Russian Documentation: http://nginx.org/ru/docs/
