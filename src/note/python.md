@@ -1,13 +1,119 @@
-
-
-
-##### python
-
-
+# Python
 
  构建一项软件设计有两种方式：一种是将软件设计得足够简单以至于明显找不到缺陷；另一种是软件设计得足够复杂以至于找不到明显的缺陷。
 
 ​                                                                                                  ——查尔斯·安东尼·理查德·霍尔爵士（C. A. R. Hoare）
+
+## QuickStart 
+
+```shell
+mkdir drf-getting-start && cd drf-getting-start && virtualenv env && source env/bin/activate && pip install django && pip install djangorestframework && django-admin.py startproject apps . &&  python manage.py migrate && python manage.py createsuperuser
+```
+
+
+
+## Setup
+
+```python
+# 安装虚拟环境
+pip install virtualenv
+pip install virtualenvwrapper
+# 进入django项目文件夹执行
+virtualenv .env
+# vscode选择刚刚设置的虚拟环境路径
+command+shift+p > python:select interpreter
+
+#进入虚拟环境
+cd .env/bin
+#激活虚拟环境
+source activate
+#退出虚拟环境Ï
+deactivate
+```
+
+
+
+## Django rest framework 
+
+```shell
+# 当有增量的model修改或者删除的时候 先删除编译缓存文件
+find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
+find . -path "*/migrations/*.pyc"  -delete
+#重新生成 makemigrations
+python manage.py makemigrations
+python manage.py migrate
+# 当已有数据添加字段时
+python manage.py migrate --fake
+
+# 创建超级管理员
+python manage.py createsuperuser
+# 后台部署 后台文件夹 /data/c18e/backend
+ps aux|grep uwsgi
+# 停止后台uwsgi服务
+sudo pkill -f uwsgi -9
+# 启动服务
+# 需要进入项目文件夹执行命令
+uwsgi -d --ini application/uwsgi.ini
+# 停止服务
+uwsgi --stop PIDFILE
+# 重启uwsgi
+sudo service uwsgi restart
+# 前端部署 
+yarn deploy
+```
+
+
+
+## Python多进程和多线程哪个快?
+
+## 进程(process)
+
+```python
+from multiprocessing import Process,Pool
+import time
+
+def p_task(i):
+    time.sleep(2)
+    
+if __name__=='__main__':
+    # 单个
+    p = Process(target=p_task, args=())
+    
+    p.start()
+    p.join()
+    
+    # 多个
+    pools = Pool(4)
+    pools.apply_async(p_task, args=())
+    pools.apply_async(p_task, args=())
+    pools.close()
+    pools.join()
+```
+
+## 线程(process)
+
+```python
+import threading
+import time
+
+def t_task(i):
+    time.sleep(2)
+
+
+if __name__=='__main__':
+    t1 = threading.Thread(target=t_task, args=(1,))
+    t2 = threading.Thread(target=t_task, args=(2,))
+    t1.start()
+    t2.start()
+
+```
+
+
+
+- 对CPU密集型代码(比如循环计算) - 多进程效率更高
+- 对IO密集型代码(比如文件操作，网络爬虫) - 多线程效率更高
+
+对于IO密集型操作，大部分消耗时间其实是等待时间，在等待时间中CPU是不需要工作的，那你在此期间提供双CPU资源也是利用不上的，相反对于CPU密集型代码，2个CPU干活肯定比一个CPU快很多。那么为什么多线程会对IO密集型代码有用呢？这时因为python碰到等待会释放GIL供新的线程使用，实现了线程间的切换。
 
 
 
@@ -350,7 +456,7 @@ print ("相加后的值为 : ", sum( 20, 20 ))
 
 
 - 模块
-模块的概念是非常核心的，如果想对python了如指掌，运筹帷幄。信手捏来。模块的思维和掌握必不可少。
+  模块的概念是非常核心的，如果想对python了如指掌，运筹帷幄。信手捏来。模块的思维和掌握必不可少。
   
   ```python
   # 系统自带的模块导入
@@ -383,7 +489,7 @@ print ("相加后的值为 : ", sum( 20, 20 ))
   
   mymodule.say_hi()
   print('Version', mymodule.__version__)
-__init__ __main__
+  __init__ __main__
   # 函数是程序中的可重用部分那般，模块是一种可重用的程序。包是用以组织模块的另一种层次结构
   ```
   
@@ -623,7 +729,7 @@ __init__ __main__
 
 - 
 
-- 
+
 
 
 
