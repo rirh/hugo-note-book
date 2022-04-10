@@ -36,11 +36,11 @@ onMounted(() => {
 
 <template>
   <div class="banner" v-if="open">
-    我既不支持俄罗斯，也不支持乌克兰！！！
+    欢迎访问
     <a
-      href="https://blog.vuejs.org/posts/vue-3-as-the-new-default.html"
+      href="https://www.tigerzh.com"
       target="_blank"
-    ></a>
+    >主站</a>
   </div>
 </template>
 
