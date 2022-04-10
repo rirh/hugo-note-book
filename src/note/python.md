@@ -10,6 +10,74 @@
 mkdir drf-getting-start && cd drf-getting-start && virtualenv env && source env/bin/activate && pip install django && pip install djangorestframework && django-admin.py startproject apps . &&  python manage.py migrate && python manage.py createsuperuser
 ```
 
+## deploy
+
+```javascript
+#!/usr/bin/env node
+var exec = require("child_process").exec;
+// 此脚本仅适用个人
+var ora = require("ora");
+const inquirer = require("inquirer");
+const dayjs = require("dayjs");
+const _package = require("../package.json");
+// 当前版本
+const version = _package.version;
+// 当前时间
+const now = dayjs().format("YYYYMMDDHHmmss");
+// 项目目录
+const dir_path = `/Users/tigerzh/Documents/workspace/shopify/c18e/front/dist`;
+// 服务器nginx部署前端地址
+const target_path = `/data/admin`;
+// 版本目录
+const version_path = `${dir_path}-${version}-${now}`;
+
+
+const params = [
+  {
+    type: "rawlist",
+    name: "commit",
+    message: "请选择部署环境：",
+    default: "stage",
+    choices: [
+      "stage: https://form.tigerzh.com",
+      "production: https://form.tigerzh.com/",
+    ],
+  },
+];
+const commendStage = `
+  yarn build:stage;
+  cp -r ${dir_path} ${version_path};
+  scp -r ${dir_path} c18e:${target_path};
+  scp -r ${version_path} c18e:${target_path};
+  rm -rf ${version_path};
+
+  `;
+
+const commendProduction = `
+  yarn build:prod;
+  cp -r ${dir_path} ${version_path};
+  scp -r ${dir_path} c18e:${target_path};
+  scp -r ${version_path} c18e:${target_path};
+  rm -rf ${version_path};
+`;
+
+inquirer.prompt(params).then(async (answers) => {
+  const commit = answers.commit;
+  const spinner = ora({
+    text: `[${commit}]：部署中...`,
+  }).start();
+  const commend = commit.startsWith("production")
+    ? commendProduction
+    : commendStage;
+  exec(commend, function (err) {
+    if (err) throw err;
+    spinner.succeed("部署完成");
+    spinner.succeed(Date());
+  });
+});
+
+```
+
 
 
 ## Setup
