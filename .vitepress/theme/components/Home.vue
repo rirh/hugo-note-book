@@ -74,7 +74,7 @@ onUnmounted(() => {
             />
           </svg>
         </a>
-        <a class="setup" href="/note/cert.html">开始阅读 ✍️</a>
+        <a class="setup" href="/note/cert.html">开始阅读 📒</a>
       </p>
     </section>
 

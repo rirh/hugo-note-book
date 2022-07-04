@@ -6,7 +6,7 @@
 
 想要理解加密货币，就必须先理解钱。
 
-![image-20191121155840214](../public/images/image-20191121155840214.png)
+![image-20191121155840214](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/image-20191121155840214.png)
 
 人们交换价值最简单的方法就是直接交换，以物易物。但它只适合没有充分社会分工的小经济体，比如几十个人的原始社会，大家互相交换生活必需品。
 
@@ -120,7 +120,7 @@ IT行业的发展非常好地展示了某些标准会很自然地统治整个市
 
 
 
-![image-20191122153159772](../public/images/image-20191122153159772.png)
+![image-20191122153159772](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/image-20191122153159772.png)
 
 
 
@@ -132,7 +132,7 @@ IT行业的发展非常好地展示了某些标准会很自然地统治整个市
 
 和现在国内的猪肉的情况不尽相同，巧了不是么？
 
-![image-20191122154320890](../public/images/image-20191122154320890.png)
+![image-20191122154320890](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/image-20191122154320890.png)
 
 
 

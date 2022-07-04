@@ -5,21 +5,21 @@
 }
 
 body {
-  width: 100%;
-  min-width: 320px;
-  min-height: 100vh;
-  font-family: var(--vt-font-family-base);
-  letter-spacing: .2px;
-  line-height: 24px;
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--vt-c-text-1);
-  background-color: var(--vt-c-bg);
-  direction: ltr;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  transition: color .5s, background-color .5s;
-  -webkit-font-smoothing: antialiased;
+  width                  : 100%;
+  min-width              : 320px;
+  min-height             : 100vh;
+  font-family            : var(--vt-font-family-base);
+  letter-spacing         : .2px;
+  line-height            : 24px;
+  font-size              : 16px;
+  font-weight            : 400;
+  color                  : var(--vt-c-text-1);
+  background-color       : var(--vt-c-bg);
+  direction              : ltr;
+  font-synthesis         : none;
+  text-rendering         : optimizeLegibility;
+  transition             : color .5s, background-color .5s;
+  -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -45,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: inherit;
+  font-size  : inherit;
   font-weight: inherit;
 }
 
@@ -77,15 +77,15 @@ textarea {
 }
 
 a {
-  color: inherit;
+  color          : inherit;
   text-decoration: inherit;
 }
 
 ol,
 ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin    : 0;
+  padding   : 0;
 }
 
 pre,
@@ -103,14 +103,14 @@ audio,
 iframe,
 embed,
 object {
-  display: block;
+  display       : block;
   vertical-align: middle;
 }
 
 img,
 video {
   max-width: 100%;
-  height: auto;
+  height   : auto;
 }
 
 button,
@@ -118,14 +118,14 @@ input,
 optgroup,
 select,
 textarea {
-  border: 0;
-  padding: 0;
+  border     : 0;
+  padding    : 0;
   line-height: inherit;
-  color: inherit;
+  color      : inherit;
 }
 
 button {
-  padding: 0;
+  padding         : 0;
   background-color: transparent;
   background-image: none;
 }
@@ -135,10 +135,12 @@ button,
   cursor: pointer;
 }
 
-button:focus, button:focus-visible {
+button:focus,
+button:focus-visible {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
+
 button:focus:not(:focus-visible) {
   outline: none !important;
 }
@@ -175,7 +177,7 @@ textarea::placeholder {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  margin: 0;
+  margin            : 0;
 }
 
 input[type="number"] {
@@ -191,16 +193,16 @@ select {
 }
 
 fieldset {
-  margin: 0;
+  margin : 0;
   padding: 0;
 }
 
 .visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
+  clip       : rect(0 0 0 0);
+  clip-path  : inset(50%);
+  height     : 1px;
+  overflow   : hidden;
+  position   : absolute;
   white-space: nowrap;
-  width: 1px;
+  width      : 1px;
 }

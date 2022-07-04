@@ -7,7 +7,9 @@
 ## QuickStart 
 
 ```shell
-mkdir drf-getting-start && cd drf-getting-start && virtualenv env && source env/bin/activate && pip install django && pip install djangorestframework && django-admin.py startproject apps . &&  python manage.py migrate && python manage.py createsuperuser
+mkdir drf-getting-start && cd drf-getting-start && virtualenv env && source env/bin/activate && pip3 install django && pi3p install djangorestframework && pip3 install pipreqs && pipreqs  --force && django-admin.py startproject apps . &&  python3 manage.py migrate && python manage.py createsuperuser
+
+
 ```
 
 ## Setup
@@ -58,6 +60,17 @@ uwsgi --stop PIDFILE
 sudo service uwsgi restart
 # 前端部署 
 yarn deploy
+```
+
+- 模型的增删改查
+- 了解redis的使用
+- 了解定时任务的使用
+
+## 生产requirement.txt
+
+```
+pip3 install pipreqs
+pipreqs
 ```
 
 
@@ -724,8 +737,6 @@ print ("相加后的值为 : ", sum( 20, 20 ))
   ```
 
   
-
-- 
 
 
 
