@@ -2,7 +2,7 @@
 
 ## 背景
 
-TableAu投研系统，旨在减轻研究部门文章制作压力，减轻重复工作量。高效提升工作质量。
+1. TableAu投研系统，旨在减轻研究部门文章制作压力，减轻重复工作量。高效提升工作质量。
 
 ## 修改速记
 
@@ -28,11 +28,14 @@ TableAu投研系统，旨在减轻研究部门文章制作压力，减轻重复�
 
 ## 看板
 
-[冲刺看板](https://table-au.atlassian.net/jira/software/c/projects/TAB/boards/1/backlog?selectedIssue=TAB-1&issueLimit=100&atlOrigin=eyJpIjoiNzg4ZjBjYzRiMTg4NDIzYzllN2YxOTRkOGIwMDk4ZjQiLCJwIjoiaiJ9)
+- [冲刺看板](https://table-au.atlassian.net/jira/software/c/projects/TAB/boards/1/backlog?selectedIssue=TAB-1&issueLimit=100&atlOrigin=eyJpIjoiNzg4ZjBjYzRiMTg4NDIzYzllN2YxOTRkOGIwMDk4ZjQiLCJwIjoiaiJ9)
 
-## 组织过程资产输入
+## 组织过程资产
 
 - [模版库](https://docs.qq.com/doc/DV3pNcW5OSnhjS3h1)
+- [蓝湖](https://lanhuapp.com/web/#/item/project/stage?tid=8e328edc-d935-4d57-9cbe-d9b1811457f6&pid=851e8897-2d68-45e1-a2a0-7b648f12c531)
+- [figma](https://www.figma.com/file/orVQj1y3YQyWeGDFffDGDt/Untitled?node-id=0%3A1)
+- [需求文档](https://docs.qq.com/doc/DV1RNVHpJQVZqeUN1)
 
 ## 产品输出
 
@@ -42,5 +45,6 @@ TableAu投研系统，旨在减轻研究部门文章制作压力，减轻重复�
 
 ## 架构布局
 
-根据几百种研报图表风格，抽离出若干种使用频率高，覆盖范围广的模版
+- 根据几百种研报图表风格，抽离出若干种使用频率高，覆盖范围广的模版
+
 
