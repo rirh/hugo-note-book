@@ -12,7 +12,7 @@ const nav = [
     activeMatch: `^/(guide|style-guide|cookbook|examples|cryptocurrency)/`,
     items: [
       { text: '💰  加密货币', link: '/cryptocurrency/money' },
-      { text: '🚚  工具使用', link: '/tools/emulator' },
+      { text: '🚚  工具使用', link: '/tools/echarts' },
       { text: '💡  Idea日志 ', link: '/log/敏捷项目管理' },
     ]
   },
@@ -202,15 +202,12 @@ export default defineConfigWithTheme<ThemeConfig>({
   extends: baseConfig,
   lang: 'en-US',
   title: '笔记本 📚',
-  description: '三人行，必有我师焉',
+  description: '笔记本 📚',
   srcDir: 'src',
   srcExclude: ['tutorial/**/description.md'],
   scrollOffset: 'header',
   head: [
-
-
   ],
-
   themeConfig: {
     nav,
     sidebar,
@@ -283,7 +280,6 @@ export default defineConfigWithTheme<ThemeConfig>({
       stringify: true
     }
   },
-
   vue: {
     reactivityTransform: true
   }
