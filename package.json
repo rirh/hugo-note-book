@@ -1,11 +1,11 @@
 {
   "scripts": {
-    "dev": "vitepress",
+    "dev": "vitepress --port 3006",
     "build": "vitepress build",
     "serve": "vitepress serve",
     "preinstall": "npx only-allow pnpm",
     "log": "conventional-changelog -p vue -i CHANGELOG.md -s -r 0",
-    "cz": "npm run log && git add .",
+    "cz": "git add . && git cz && git push",
     "release": "npm run build && gh-pages -d .vitepress/dist"
   },
   "dependencies": {
@@ -25,12 +25,12 @@
     "normalize.css": "^8.0.1",
     "shiki": "^0.10.1",
     "three": "^0.138.0",
-    "vitepress": "^0.22.2",
+    "vitepress": "0.22.2",
     "vue": "^3.2.26"
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/vue-cli-plugin-commitlint/lib/cz"
+      "path": "node_modules/cz-conventional-changelog"
     }
   },
   "husky": {

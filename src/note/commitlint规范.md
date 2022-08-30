@@ -12,6 +12,7 @@ pnpm i cz-conventional-changelog
     }
 }
 
+#
+"cz": "git add . && git cz && git push"
 
 ```
-

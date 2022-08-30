@@ -12,13 +12,14 @@
 
  ## 1. **进入阿里云后台 进入`管理控制台`>`域名`**
  ## 2. **点击`蓝色域名`进入下面页面**
-![在这里插入图片描述](../public/images/20190415095220405.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2g3NzQxNDA5MTM=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/20190415095220405.png)
  ## 3. **`免费开启SSL证书`>`选择证书`>填写要申请的前缀(例如: api 证书:api.XXX.com)**
 
-![在这里插入图片描述](../public/images/20190415095926933.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2g3NzQxNDA5MTM=,size_16,color_FFFFFF,t_70)
-![在这里插入图片描述](../public/images/20190415100205440.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2g3NzQxNDA5MTM=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/20190415095926933.png)
+![在这里插入图片描述](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/20190415100205440.png)
+
 ## 4. **下载证书**
-![在这里插入图片描述](../public/images/20190415100326713.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2g3NzQxNDA5MTM=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/20190415100326713.png)
 **选择服务器类型下载完是zip文件 文件名的三段代表 `id_域名_服务器 重命名文件和文件夹为方便记忆的`** 
 
 > **有很多方式可以把证书放入服务器 
@@ -55,7 +56,7 @@
 
 > **`nginx -t`**
 
-> **如果出现下面的字样说明配置可用**![在这里插入图片描述](../public/images/20190415102446978.png)
+> **如果出现下面的字样说明配置可用**![在这里插入图片描述](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/20190415102446978.png)
 
 
  - **重载配置(重启nginx)**
@@ -116,9 +117,3 @@
 `systemctl stop firewalld.service` #停止firewall
 `systemctl disable firewalld.service` #禁止firewall开机启动
 `firewall-cmd --state` #查看默认防火墙状态（关闭》notrunning，开启》running
-
-
-
-
-
-

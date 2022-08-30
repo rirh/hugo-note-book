@@ -27,7 +27,7 @@
 
 
 
-![img](../public/images/code1.png)
+![img](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/code1.png)
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-![img](../public/images/code2.png)
+![img](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/code2.png)
 
 
 ##  第三条：**不要写注释**
@@ -49,7 +49,7 @@
 
 
 
-![img](../public/images/code3.png)
+![img](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/code3.png)
 
 
 
@@ -61,7 +61,7 @@
 
 
 
-![img](../public/images/code4.png)
+![img](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/code4.png)
 
 
 
@@ -73,7 +73,7 @@
 
 
 
-![img](../public/images/code5.png)
+![img](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/code5.png)
 
 
 
@@ -85,7 +85,7 @@
 
 
 
-![img](../public/images/code6.png)
+![img](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/code6.png)
 
 
 
@@ -97,7 +97,7 @@
 
 
 
-![img](../public/images/code7.png)
+![img](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/code7.png)
 
 
 
@@ -109,7 +109,7 @@
 
 
 
-![img](../public/images/code9.png)
+![img](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/code9.png)
 
 
 
@@ -121,7 +121,7 @@
 
 
 
-![img](../public/images/code10.png)
+![img](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/code10.png)
 
 
 
@@ -133,7 +133,7 @@
 
 
 
-![img](../public/images/code11.png)
+![img](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/code11.png)
 
 
 
@@ -181,7 +181,7 @@
 
 
 
-![img](../public/images/code13.png)
+![img](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/code13.png)
 
 
 
@@ -226,5 +226,4 @@
 
 
 在写代码的过程中，经常会产生很多测试代码。这些代码也是非常重要的资料，因此不能删除掉，最多只能注释掉。
-
 

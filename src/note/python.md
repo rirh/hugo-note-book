@@ -7,8 +7,41 @@
 ## QuickStart 
 
 ```shell
-mkdir drf-getting-start && cd drf-getting-start && virtualenv env && source env/bin/activate && pip install django && pip install djangorestframework && django-admin.py startproject apps . &&  python manage.py migrate && python manage.py createsuperuser
+mkdir z-movie && cd z-movie && virtualenv .env && source .env/bin/activate &&  pip3 install django djangorestframework mysqlclient pipreqs autopep8 django-filter django_redis && django-admin.py startproject apps . 
 ```
+
+## DateBase
+
+```python
+# 配置数据库
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': '127.0.0.1',
+        'PORT': 3306,
+        'USER': 'root',
+        'PASSWORD': 'ctleryes',
+        'NAME': 'z-movie',
+        'OPTIONS': {
+            'charset': 'utf8mb4'
+        }
+    }
+}
+# 配置redis
+CACHES = {
+    'default': {
+        'BACKEND': 'django_redis.cache.RedisCache',
+         # redis://:密码@ip:端口/项目
+        'LOCATION': 'redis://:q1w2e3r4T%Y^U&@127.0.0.1:6379/1',
+        'OPTIONS': {
+            'CLIENT_CLASS': 'django_redis.client.DefaultClient'
+        }
+    }
+}
+python3 manage.py migrate && python manage.py createsuperuser
+```
+
+
 
 ## Setup
 
@@ -58,6 +91,17 @@ uwsgi --stop PIDFILE
 sudo service uwsgi restart
 # 前端部署 
 yarn deploy
+```
+
+- 模型的增删改查
+- 了解redis的使用
+- 了解定时任务的使用
+
+## 生产requirement.txt
+
+```
+pip3 install pipreqs
+pipreqs
 ```
 
 
@@ -724,8 +768,6 @@ print ("相加后的值为 : ", sum( 20, 20 ))
   ```
 
   
-
-- 
 
 
 

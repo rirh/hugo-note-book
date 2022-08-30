@@ -19,7 +19,6 @@ import { ipcRenderer } from 'electron';
 ipcRenderer.send('ipc-to-main', 'TigerZH');
 
 
-
 // IPCMain
 import { ipcMain } from 'electron';
 ipcMain.on('ipc-to-main', (event, data) => {
@@ -132,5 +131,4 @@ ipcRenderer.on('main-to-b', (event, arg) => {
 //A页面发送消息时通过 remote.getCurrentWindow().id 获取当前页面的ID传入携带的参数中
 //B页面发送
 ```
-
 

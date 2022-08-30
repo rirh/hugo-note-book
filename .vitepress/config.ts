@@ -12,7 +12,7 @@ const nav = [
     activeMatch: `^/(guide|style-guide|cookbook|examples|cryptocurrency)/`,
     items: [
       { text: '💰  加密货币', link: '/cryptocurrency/money' },
-      { text: '🚚  工具使用', link: '/tools/emulator' },
+      { text: '🚚  工具使用', link: '/tools/echarts' },
       { text: '💡  Idea日志 ', link: '/log/敏捷项目管理' },
     ]
   },
@@ -86,10 +86,10 @@ export const sidebar = {
   '/log/': [{
     text: '开发日志',
     items: [
-      { text: '西筹开放平台', link: '/log/西筹开放平台' },
+      { text: '西筹FAS平台', link: '/log/西筹FAS平台' },
       { text: '西筹数据平台', link: '/log/西筹数据平台' },
       { text: '周六特色大排档小程序', link: '/log/周六特色大排档小程序' },
-
+      { text: '投研系统数据可视化', link: '/log/tableAU项目' },
     ]
   }, {
     text: 'PMP',
@@ -148,11 +148,25 @@ export const sidebar = {
         link: '/cryptocurrency/up'
       }
     ]
+  }, {
+    text: '公链可视化',
+    items: [
+      {
+        text: '应用案例',
+        link: '/cryptocurrency/web3应用'
+      },
+    ]
   }],
   '/tools/': [{
-    text: 'Phone',
+    text: '图表类',
     items: [
-      { text: 'emulator', link: '/tools/emulator' },
+      { text: 'echarts', link: '/tools/echarts' },
+    ]
+  },
+  {
+    text: 'APP',
+    items: [
+      { text: '模拟器', link: '/tools/emulator' },
     ]
   },
   ],
@@ -188,15 +202,12 @@ export default defineConfigWithTheme<ThemeConfig>({
   extends: baseConfig,
   lang: 'en-US',
   title: '笔记本 📚',
-  description: '三人行，必有我师焉',
+  description: '笔记本 📚',
   srcDir: 'src',
   srcExclude: ['tutorial/**/description.md'],
   scrollOffset: 'header',
   head: [
-
-
   ],
-
   themeConfig: {
     nav,
     sidebar,
@@ -269,7 +280,6 @@ export default defineConfigWithTheme<ThemeConfig>({
       stringify: true
     }
   },
-
   vue: {
     reactivityTransform: true
   }

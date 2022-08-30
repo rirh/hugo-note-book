@@ -5,7 +5,7 @@
 
 # websocket
 
-![image-20191112122246655](../public/images/image-20191112122246655.png)
+![image-20191112122246655](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/image-20191112122246655.png)
 
 
 
@@ -134,5 +134,4 @@ wss.on("connection", function connection(ws, req) {
 
 </html>
 ```
-
 

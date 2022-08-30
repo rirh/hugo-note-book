@@ -5,42 +5,41 @@
  * 2. uncomment and update BANNER_ID in ../../inlined-scripts/restorePreferences.ts
  * 3. update --vt-banner-height if necessary
  */
-import { useRoute } from 'vitepress'
-import { onMounted, watchEffect } from 'vue'
+import { useRoute } from "vitepress";
+import { onMounted, watchEffect } from "vue";
 
-const location = useRoute()
-let open = $ref(true)
+const location = useRoute();
+let open = $ref(true);
 
 /**
  * Call this if the banner is dismissible
  */
 function dismiss() {
   // console.log(location.value.pathname)
-  if (location.path !== '/') {
-    open = false
-    window.document.documentElement.classList.add('banner-dismissed')
-    window.__VUE_BANNER_ID__ = 'wip'
-    localStorage.setItem(`vue-docs-banner-${__VUE_BANNER_ID__}`, 'true')
+  if (location.path !== "/") {
+    open = false;
+    window.document.documentElement.classList.add("banner-dismissed");
+    window.__VUE_BANNER_ID__ = "wip";
+    localStorage.setItem(`vue-docs-banner-${__VUE_BANNER_ID__}`, "true");
   } else {
-    open = true
-    window.document.documentElement.classList.remove('banner-dismissed')
-    window.__VUE_BANNER_ID__ = 'wip'
-    localStorage.setItem(`vue-docs-banner-${__VUE_BANNER_ID__}`, 'false')
+    open = true;
+    window.document.documentElement.classList.remove("banner-dismissed");
+    window.__VUE_BANNER_ID__ = "wip";
+    localStorage.setItem(`vue-docs-banner-${__VUE_BANNER_ID__}`, "false");
   }
-  return location.value
+  return location.value;
 }
 onMounted(() => {
-  watchEffect(dismiss)
-})
+  watchEffect(dismiss);
+});
 </script>
 
 <template>
   <div class="banner" v-if="open">
-    欢迎访问
-    <a
-      href="https://www.tigerzh.com"
-      target="_blank"
-    >主站</a>
+    这里放有两个网址，一个是
+    <a href="https://www.tigerzh.com" target="_blank">卷集</a>
+    ，还有一个也是
+    <a href="https://www.tigerzh.com" target="_blank">卷集</a>
   </div>
 </template>
 

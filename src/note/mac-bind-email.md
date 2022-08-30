@@ -13,7 +13,7 @@
 2.打开邮件选择邮箱类型绑定账户完成
 ```
 
-![image-20191114105443682](../public/images/image-20191114105443682.png)
+![image-20191114105443682](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/image-20191114105443682.png)
 
 ## 绑定QQ邮箱指南
 
@@ -22,15 +22,15 @@
 3. 邮箱输入QQ邮箱
 4. 密码输入[授权码](https://service.mail.qq.com/cgi-bin/help?subtype=1&id=28&no=1001256)
 
-![image-20191114110301185](../public/images/image-20191114110301185.png)
+![image-20191114110301185](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/image-20191114110301185.png)
 
 
 
-![image-20191114114509794](../public/images/image-20191114114509794.png)
+![image-20191114114509794](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/image-20191114114509794.png)
 
 获取授权码都需要的邮箱端开启服务验证用户才能获得
 
-![image-20191114115404764](../public/images/image-20191114115404764.png)
+![image-20191114115404764](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/image-20191114115404764.png)
 
 用授权码登陆就可以了
 
@@ -39,7 +39,6 @@
 大部分邮箱也是同理
 
 很可惜，很多人因为搞不懂授权码而损失了很好用的一款软件 🤪
-
 
 
 
