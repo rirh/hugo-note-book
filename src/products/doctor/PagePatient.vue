@@ -46,6 +46,20 @@ const props = defineProps({
               >
                 线上地址（微信）
               </VTLink>
+              <VTLink
+                class="data-link proficiency-item"
+                href="https://docs.qq.com/sheet/DQVhoUXF5TmZ6cUZ1?tab=BB08J2"
+                no-icon
+              >
+                新里程&智康二期改版联调问题汇总
+              </VTLink>
+              <VTLink
+                class="data-link proficiency-item"
+                href="https://docs.qq.com/sheet/DQVVab05SZ3VVZ0xJ?tab=BB08J2"
+                no-icon
+              >
+              一期优化需求问题汇总
+              </VTLink>
             </li>
             <br />
             <h1 class="title">项目截图</h1>
