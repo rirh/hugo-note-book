@@ -1,5 +1,18 @@
 # 西筹FAS平台
 
+
+
+## 组织过程资产
+
+- [基金分析BUG列表](https://docs.qq.com/sheet/DQVR0dldldkh5eklP?tab=BB08J2)
+
+- [FAS进度跟踪表](https://docs.qq.com/sheet/DQUpjTlNiY3NTSFht?tab=wrx9ur)
+
+  
+  
+
+## changelog
+
 1. 任务列表
    - 开放平台=>后台管理系统
    - 开放平台=>前台订单模块
