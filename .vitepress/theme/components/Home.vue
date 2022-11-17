@@ -27,6 +27,7 @@ const fetchepic = () => {
     fetchepic()
   }, 12000)
 }
+
 onMounted(() => {
   appearance.value = localStorage.getItem(storageKey) || 'auto'
   fetchepic()
@@ -38,6 +39,7 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('storage', () => {})
 })
+
 </script>
 
 <template>
