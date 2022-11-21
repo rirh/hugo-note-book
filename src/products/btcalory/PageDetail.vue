@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { VTLink, VTIconLink } from '../../../.vitepress/theme/lib/core'
+import VTLink from '../../../.vitepress/theme/components/VTLink.vue'
+import VTIconLink from '../../../.vitepress/theme/components/VTIconLink.vue'
 
 const props = defineProps({
   partner: { type: Object, required: true }

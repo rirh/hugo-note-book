@@ -1,26 +1,29 @@
 import fs from 'fs'
 import path from 'path'
-import { defineConfigWithTheme } from 'vitepress'
-import type { Config as ThemeConfig } from './theme/lib'
-import baseConfig from './theme/lib/vitepress/config/baseConfig'
+import { defineConfig } from 'vitepress'
 import { headerPlugin } from './headerMdPlugin'
+import head from './head'
 import nav from './nav'
 import sidebar from './sidebar'
+// Placeholder of the i18n config for @vuejs-translations.
+// const i18n: ThemeConfig['i18n'] = {
+// }
 
-export default defineConfigWithTheme<ThemeConfig>({
-  extends: baseConfig,
+export default defineConfig({
   lang: 'en-US',
-  title: '笔记本 📚',
+  title: '🏠',
   description: '笔记本 📚',
   srcDir: 'src',
   srcExclude: ['tutorial/**/description.md'],
   scrollOffset: 'header',
-  head: [
-  ],
+  head,
   themeConfig: {
     nav,
     sidebar,
-
+    // Placeholder of the i18n config for @vuejs-translations.
+    // i18n,
+    outline: 'deep',
+    outlineTitle:'目录',
     algolia: {
       indexName: 'Notebook',
       appId: '3II0BF621L',
@@ -29,7 +32,6 @@ export default defineConfigWithTheme<ThemeConfig>({
         facetFilters: ['version:v3']
       }
     },
-
     // carbonAds: {
     //   code: 'CEBDT27Y',
     //   placement: 'vuejsorg'
@@ -43,18 +45,15 @@ export default defineConfigWithTheme<ThemeConfig>({
     ],
 
     editLink: {
-      repo: 'vuejs/docs',
+      pattern: 'https://github.com/AliMales/NoteBook/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
     },
 
     footer: {
-      license: {
-        text: 'MIT License',
-        link: 'https://opensource.org/licenses/MIT'
-      },
       copyright: `Copyright © 2018-${new Date().getFullYear()} TigerZH`
     }
   },
+
   markdown: {
     config(md) {
       md.use(headerPlugin)
@@ -88,6 +87,7 @@ export default defineConfigWithTheme<ThemeConfig>({
       stringify: true
     }
   },
+
   vue: {
     reactivityTransform: true
   }

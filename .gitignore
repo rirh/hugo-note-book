@@ -96,7 +96,7 @@ pnpm-global
 dist/
 
 # vuepress build output
-.vitepress/dist
+.vuepress/dist
 
 # Serverless directories
 .serverless/

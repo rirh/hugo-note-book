@@ -12,7 +12,7 @@ export default [
     {
       text: '笔记',
       activeMatch: `^/note/`,
-      link: '/note/cert'
+      link: '/note/前端工程化'
     },
     {
       text: '作品集',

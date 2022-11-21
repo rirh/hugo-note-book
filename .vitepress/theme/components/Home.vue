@@ -5,9 +5,9 @@ import { ref, onMounted, onUnmounted } from 'vue'
 
 import axios from 'axios'
 
-import NewsLetter from './NewsLetter.vue'
-import SponsorsGroup from './SponsorsGroup.vue'
-import Sence from './Sence.vue'
+// import NewsLetter from './NewsLetter.vue'
+// import SponsorsGroup from './SponsorsGroup.vue'
+// import Sence from './Sence.vue'
 
 const url =
   'https://42541d62-1eb3-4f4a-b656-cc98d4542086.bspapp.com/http/epic'
@@ -37,7 +37,7 @@ onMounted(() => {
 })
 
 onUnmounted(() => {
-  window.removeEventListener('storage', () => {})
+  window.removeEventListener('storage', () => { })
 })
 
 </script>
@@ -52,10 +52,8 @@ onUnmounted(() => {
         <br />Getting Better
         {{ appearance === 'auto' ? '☀️' : '🌙' }}
       </h1>
-      <transition
-        enter-active-class="animate__animated animate__lightSpeedInLeft"
-        leave-active-class="animate__animated animate__lightSpeedOutRight"
-      >
+      <transition enter-active-class="animate__animated animate__lightSpeedInLeft"
+        leave-active-class="animate__animated animate__lightSpeedOutRight">
         <p class="description" v-if="epic">
           {{ epic }}
         </p>
@@ -64,16 +62,8 @@ onUnmounted(() => {
       <p class="actions">
         <a class="get-started" href="/cryptocurrency/money.html">
           立即探索
-          <svg
-            class="icon"
-            xmlns="http://www.w3.org/2000/svg"
-            width="10"
-            height="10"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"
-            />
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
+            <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z" />
           </svg>
         </a>
         <a class="setup" href="/note/cert.html">开始阅读 📒</a>
@@ -130,11 +120,15 @@ onUnmounted(() => {
     <SponsorsGroup tier="gold" placement="landing" />
   </section> -->
 
-    <NewsLetter />
+    <!-- <NewsLetter /> -->
   </div>
 </template>
 
 <style scoped>
+.aside {
+  display: none !important;
+}
+
 section {
   padding: 42px 32px;
 }
@@ -179,6 +173,7 @@ html:not(.dark) .accent,
   border-radius: 8px;
   transition: background-color 0.5s, color 0.5s, scale 0.5s;
 }
+
 .actions a:active {
   transform: scale(0.96);
 }
@@ -298,6 +293,7 @@ html:not(.dark) .accent,
     font-size: 64px;
     letter-spacing: -0.5px;
   }
+
   .description {
     font-size: 18px;
     margin-bottom: 48px;
@@ -315,17 +311,21 @@ html:not(.dark) .accent,
   #hero {
     padding: 64px 32px;
   }
+
   .description {
     font-size: 16px;
     margin: 18px 0 30px;
   }
+
   #special-sponsor img {
     display: block;
     margin: 2px auto 1px;
   }
+
   #highlights h3 {
     margin-bottom: 0.6em;
   }
+
   #highlights .vt-box {
     padding: 20px 36px;
   }
