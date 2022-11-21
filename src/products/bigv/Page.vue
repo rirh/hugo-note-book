@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import VTLink from '../../../.vitepress/theme/components/VTLink.vue'
-import VTIconLink from '../../../.vitepress/theme/components/VTIconLink.vue'import PageHero from './PageHero.vue'
+import VTIconLink from '../../../.vitepress/theme/components/VTIconLink.vue'
+import PageHero from './PageHero.vue'
 import PageDetail from './PageDetail.vue'
 </script>
 

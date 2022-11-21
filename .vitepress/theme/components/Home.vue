@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import 'animate.css'
+import { useData } from 'vitepress'
 
 import { ref, onMounted, onUnmounted } from 'vue'
 
@@ -8,13 +9,11 @@ import axios from 'axios'
 // import NewsLetter from './NewsLetter.vue'
 // import SponsorsGroup from './SponsorsGroup.vue'
 // import Sence from './Sence.vue'
+const { isDark } = useData()
 
 const url =
   'https://42541d62-1eb3-4f4a-b656-cc98d4542086.bspapp.com/http/epic'
-const storageKey = 'theme-appearance'
-let userPreference = 'auto'
 const epic = ref(' 世界上有10类人：一类是懂计算机的，一类是不懂的。')
-const appearance = ref(userPreference)
 
 const fetchepic = () => {
   setTimeout(async () => {
@@ -29,16 +28,10 @@ const fetchepic = () => {
 }
 
 onMounted(() => {
-  appearance.value = localStorage.getItem(storageKey) || 'auto'
   fetchepic()
-  window.addEventListener('storage', (e) => {
-    appearance.value = `${localStorage.getItem(storageKey)}`
-  })
 })
 
-onUnmounted(() => {
-  window.removeEventListener('storage', () => { })
-})
+
 
 </script>
 
@@ -50,7 +43,7 @@ onUnmounted(() => {
         My
         <span class="accent">Life</span>
         <br />Getting Better
-        {{ appearance === 'auto' ? '☀️' : '🌙' }}
+        {{ isDark ? '🌙' : '☀️' }}
       </h1>
       <transition enter-active-class="animate__animated animate__lightSpeedInLeft"
         leave-active-class="animate__animated animate__lightSpeedOutRight">
