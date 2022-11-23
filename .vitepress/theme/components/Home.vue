@@ -3,20 +3,21 @@ import 'animate.css'
 import { useData } from 'vitepress'
 
 import { ref, onMounted, onUnmounted } from 'vue'
-
+import { useTitle } from '@vueuse/core'
 import axios from 'axios'
 
 // import NewsLetter from './NewsLetter.vue'
 // import SponsorsGroup from './SponsorsGroup.vue'
 // import Sence from './Sence.vue'
 const { isDark } = useData()
+const title = useTitle()
 
 const url =
   'https://42541d62-1eb3-4f4a-b656-cc98d4542086.bspapp.com/http/epic'
 const epic = ref(' 世界上有10类人：一类是懂计算机的，一类是不懂的。')
-
+const timer = ref()
 const fetchepic = () => {
-  setTimeout(async () => {
+  timer.value = setTimeout(async () => {
     const response = await axios.get(url)
     const [_epic] = response.data.data
     epic.value = ''
@@ -24,13 +25,17 @@ const fetchepic = () => {
       epic.value = _epic.contant
     }, 700)
     fetchepic()
-  }, 12000)
+  }, 5000)
 }
 
 onMounted(() => {
   fetchepic()
+  title.value = ''
 })
 
+onUnmounted(() => {
+  clearTimeout(timer.value)
+})
 
 
 </script>
@@ -59,7 +64,7 @@ onMounted(() => {
             <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z" />
           </svg>
         </a>
-        <a class="setup" href="/note/cert.html">开始阅读 📒</a>
+        <a class="setup" href="/note/工程化指南.html">开始阅读 📒</a>
       </p>
     </section>
 

@@ -2,22 +2,29 @@ import fs from 'fs'
 import path from 'path'
 
 export default [
+    [
+        'link',
+        {
+          rel: 'icon',
+          href: 'https://image-host-1257416358.cos.accelerate.myqcloud.com/image/32x32.png',
+        },
+      ],
     ['meta', { name: 'theme-color', content: '#3c8772' }],
-    ['meta', { name: 'twitter:site', content: '@vuejs' }],
+    ['meta', { name: 'twitter:site', content: '@zh_tiger' }],
     ['meta', { name: 'twitter:card', content: 'summary' }],
     
     [
         'meta',
         {
             name: 'twitter:image',
-            content: 'https://vuejs.org/images/logo.png'
+            content: 'https://image-host-1257416358.cos.accelerate.myqcloud.com/image/32x32.png'
         }
     ],
     [
         'link',
         {
             rel: 'preconnect',
-            href: 'https://sponsors.vuejs.org'
+            href: 'https://doc.tigerzh.com'
         }
     ],
     [

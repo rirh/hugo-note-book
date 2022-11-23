@@ -10,7 +10,7 @@ import sidebar from './sidebar'
 // }
 
 export default defineConfig({
-  lang: 'en-US',
+  lang: 'zh-CN',
   title: '🏠',
   description: '笔记本 📚',
   srcDir: 'src',
