@@ -31,7 +31,7 @@ export default [
         'script',
         {},
         fs.readFileSync(
-            path.resolve(__dirname, './inlined-scripts/restorePreference.js'),
+            path.resolve(__dirname, './scripts/index.js'),
             'utf-8'
         )
     ]

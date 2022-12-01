@@ -39,7 +39,7 @@ export default defineConfig({
 
     socialLinks: [
       // { icon: 'languages', link: '/translations/' },
-      { icon: 'github', link: 'https://github.com/AliMales/NoteBook' },
+      { icon: 'github', link: 'https://github.com/AliMales' },
       // { icon: 'twitter', link: 'https://twitter.com/vuejs' },
       // { icon: 'discord', link: 'https://discord.com/invite/HBherRA' }
     ],

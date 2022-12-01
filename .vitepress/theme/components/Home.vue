@@ -5,7 +5,7 @@ import { useData } from 'vitepress'
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useTitle } from '@vueuse/core'
 import axios from 'axios'
-
+import pkg from '../../../package.json'
 // import NewsLetter from './NewsLetter.vue'
 // import SponsorsGroup from './SponsorsGroup.vue'
 // import Sence from './Sence.vue'
@@ -27,8 +27,20 @@ const fetchepic = () => {
     fetchepic()
   }, 5000)
 }
+const print = (key: string, value: string) =>
+  console.log(
+    `%c ${key} %c ${value} %c `,
+    'background:#20232a ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
+    'background:#61dafb ;padding: 1px; border-radius: 0 3px 3px 0;  color: #20232a; font-weight: bold;',
+    'background:transparent'
+  )
 
 onMounted(() => {
+  print(pkg.name, pkg.version)
+  console.log(import.meta.env)
+  
+  print('build time', `${import.meta.env}`)
+
   fetchepic()
   title.value = ''
 })
