@@ -1,0 +1,58 @@
+# [1.0.0](https://github.com/AliMales/NoteBook/compare/v1.0.1...v1.0.0) (2022-12-22)
+
+
+### Bug Fixes
+
+* 解决地址错误的问题 ([0d70911](https://github.com/AliMales/NoteBook/commit/0d70911ab800fb5320a13518bb072e80f66f8f34))
+* 解决地址错误的问题 ([f794d4a](https://github.com/AliMales/NoteBook/commit/f794d4afeb34bd6d959407dbf3acc086d3f5103f))
+* 解决地址错误的问题 ([3830821](https://github.com/AliMales/NoteBook/commit/3830821833e835022ff2481f321c2565017c01ba))
+* 解决地址错误的问题 ([36fd70b](https://github.com/AliMales/NoteBook/commit/36fd70b79cc5dd446dc650362d1cda6eb68afed2))
+* fix build error ([711a3d0](https://github.com/AliMales/NoteBook/commit/711a3d06fb992b719db7140aa139c72dbecf7f15))
+
+
+### Features
+
+* 0924 update ([fc0c4d3](https://github.com/AliMales/NoteBook/commit/fc0c4d3d3b52b5c39e104e32a081d9d82659f0a6))
+* 调整blog样式 ([8b2af07](https://github.com/AliMales/NoteBook/commit/8b2af07d2b72bef91a99c05b9a549e47478510f1))
+* 更新工作日志& 添加python构建 ([2e77f32](https://github.com/AliMales/NoteBook/commit/2e77f32a7773fa49ca2490f2c3a9fdbc9296bd4e))
+* 更新跨境电商日志& 更新python文档 ([cf9d6e1](https://github.com/AliMales/NoteBook/commit/cf9d6e1e9ce33da0ab7712026f56696b3f37ef6f))
+* 更新配置 ([8ff1693](https://github.com/AliMales/NoteBook/commit/8ff169384700d7dd46e7839f7edbb43b5abfe8e5))
+* 升级至最新版本&添加多级导航 ([91187b1](https://github.com/AliMales/NoteBook/commit/91187b1cd0e90f40e247c90cba656f69bb251661))
+* 添加笔记 ([ac2618f](https://github.com/AliMales/NoteBook/commit/ac2618f5f7f06df5cce95e723c379daf985c150b))
+* **添加变更:** 添加变更 ([181392a](https://github.com/AliMales/NoteBook/commit/181392a0e3324433867f3bd0a571e5d046f4cf1e))
+* 添加规范 ([a460bd6](https://github.com/AliMales/NoteBook/commit/a460bd6fdcc20219a0eabd69ef3ff8d3266048a5))
+* 添加金融相关文章 ([1e97a14](https://github.com/AliMales/NoteBook/commit/1e97a14aa6e093eaf364412cb9d71d9fcc81e229))
+* 添加前端工程化详情文章 ([3e91cd9](https://github.com/AliMales/NoteBook/commit/3e91cd9026d97d59df0d9f76ca531247a13fd69e))
+* 添加文件 ([9dd20ce](https://github.com/AliMales/NoteBook/commit/9dd20ce0cb224fab9351c5857cc98733c84dbd25))
+* 添加组织过程资产 ([e5330c3](https://github.com/AliMales/NoteBook/commit/e5330c39fd39ad6a5195d31a18ec971dd102bbf3))
+* 添加algolia配置 ([641deec](https://github.com/AliMales/NoteBook/commit/641deec84fa0736f0ffcf9b6feb26c2d769a7a10))
+* 添加js优雅指南 & 期货 & 混合保证金 & 合约 & 调整文档结构 & 展示提示 ([269753d](https://github.com/AliMales/NoteBook/commit/269753ddccbbea1fac83772a4fcb2636a9a631bd))
+* 添加web3应用 & 项目管理 & tableau进度计算任务 & 项目架构整理 ([8986c25](https://github.com/AliMales/NoteBook/commit/8986c259487052344c1ea58c49d18556f250d828))
+* 新增python 笔记 ([79d953d](https://github.com/AliMales/NoteBook/commit/79d953dea509b9e9ef163dd43b5692d3b194b315))
+* 修改端口 添加日志 ([df157c7](https://github.com/AliMales/NoteBook/commit/df157c739730f155e6ed8146ff391ef5f4ec3674))
+* 修改需求文档地址 ([4580e78](https://github.com/AliMales/NoteBook/commit/4580e78e4d9fca9d91a9b70a0a621ac7067cc5cd))
+* 修改组织过程资产 ([9132391](https://github.com/AliMales/NoteBook/commit/91323914c9ad770408c59c5355b562ba05dc0bf0))
+* add commitlint ([d3d124f](https://github.com/AliMales/NoteBook/commit/d3d124f9f2d13d2796fa198367e335abbb3ef223))
+* add daliy update ([a2fdb16](https://github.com/AliMales/NoteBook/commit/a2fdb16393f0653200202a692f7a071c8cea5678))
+* add l3u3 ([46ec6db](https://github.com/AliMales/NoteBook/commit/46ec6db43eef2e46d31074467bf748daabf82b1f))
+* add note ([7cb5a13](https://github.com/AliMales/NoteBook/commit/7cb5a1321f6a59e4230c04cb347337e32c411db2))
+* add pmp ([42bd258](https://github.com/AliMales/NoteBook/commit/42bd258fb6bf141bff5b4f54b9f67fe6cc2f2a7c))
+* add pmp note ([0f014f0](https://github.com/AliMales/NoteBook/commit/0f014f00232bdc67a790c3b51cf574e9a8219e7c))
+* add pmpm ([397f6ce](https://github.com/AliMales/NoteBook/commit/397f6ced5c4585af2f618382bfd7ccc28e18d06a))
+* add products ([5d334c5](https://github.com/AliMales/NoteBook/commit/5d334c5bd860d42d8b4bacaa0ea15877bcce68d0))
+* add update ([a3aab97](https://github.com/AliMales/NoteBook/commit/a3aab97f79de38aca424fda146bf598f17daf341))
+* add update ([757084e](https://github.com/AliMales/NoteBook/commit/757084e3b3e5e21f904fc0d0fc6470d537410764))
+* add update ([3e07340](https://github.com/AliMales/NoteBook/commit/3e07340634dbede3a960c67bf4b550dfec024f74))
+* add vite press version ([9a8b7e2](https://github.com/AliMales/NoteBook/commit/9a8b7e20e066d3e526bb0aacf22401cbabb621a3))
+* datuwealth ([16bf688](https://github.com/AliMales/NoteBook/commit/16bf688eaf96d21e710338498ceffa1a174489b8))
+* docker 指南 & uWSGI 指南 & git 指南更新 ([bf74534](https://github.com/AliMales/NoteBook/commit/bf74534f1b62c050711e6ecb8179033a71dc7b70))
+* **fetch:** 添加提交脚本 ([67bdf7b](https://github.com/AliMales/NoteBook/commit/67bdf7b2e06273a6c24f78654188945a542127e2))
+* love ([97644f6](https://github.com/AliMales/NoteBook/commit/97644f66dc33d7ef5746078cb3d054720c92fccf))
+* pmp ([a632878](https://github.com/AliMales/NoteBook/commit/a6328786d2278c57d8ded4ebe9dc72eb0242e2e1))
+* update banner ([56d0175](https://github.com/AliMales/NoteBook/commit/56d0175a367777d0eda79158cdeac7cdfa0aa62c))
+* update change log ([b745e84](https://github.com/AliMales/NoteBook/commit/b745e8494063563c174dc987e235e597cb12c432))
+* update doc theme ([d93f57e](https://github.com/AliMales/NoteBook/commit/d93f57e731e67aaa79677ce937dd582cdcb240c7))
+* update open ([d1bb0c8](https://github.com/AliMales/NoteBook/commit/d1bb0c80bc937b89d1956c4e1230b1d20a2b5d45))
+
+
+
