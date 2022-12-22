@@ -9,7 +9,7 @@
     "dev": "vitepress",
     "build": "vitepress build",
     "serve": "vitepress serve",
-    "cz": "git add . && git cz && git push",
+    "cz": "git add . && git cz && git push && npm run changelog",
     "preinstall": "npx only-allow pnpm",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
