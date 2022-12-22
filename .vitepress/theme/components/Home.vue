@@ -37,10 +37,7 @@ const print = (key: string, value: string) =>
 
 onMounted(() => {
   print(pkg.name, pkg.version)
-  console.log(import.meta.env)
-  
-  print('build time', `${import.meta.env}`)
-
+  print('build time', `${import.meta.env.VITE_APP_BUILD_TIME}`)
   fetchepic()
   title.value = ''
 })

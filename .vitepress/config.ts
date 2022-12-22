@@ -5,9 +5,11 @@ import { headerPlugin } from './headerMdPlugin'
 import head from './head'
 import nav from './nav'
 import sidebar from './sidebar'
+import dayjs from 'dayjs'
 // Placeholder of the i18n config for @vuejs-translations.
 // const i18n: ThemeConfig['i18n'] = {
 // }
+process.env.VITE_APP_BUILD_TIME = dayjs().format('YYYY-MM-DD HH:mm:ss')
 
 export default defineConfig({
   lang: 'zh-CN',
@@ -23,7 +25,7 @@ export default defineConfig({
     // Placeholder of the i18n config for @vuejs-translations.
     // i18n,
     outline: 'deep',
-    outlineTitle:'目录',
+    outlineTitle: '目录',
     algolia: {
       indexName: 'com.tigerzh.doc',
       appId: 'MDH54K1FJG',
@@ -39,7 +41,7 @@ export default defineConfig({
 
     socialLinks: [
       // { icon: 'languages', link: '/translations/' },
-      { icon: 'github', link: 'https://github.com/AliMales' },
+      { icon: 'github', link: 'https://github.com/AliMales' }
       // { icon: 'twitter', link: 'https://twitter.com/vuejs' },
       // { icon: 'discord', link: 'https://discord.com/invite/HBherRA' }
     ],

@@ -8,6 +8,7 @@ specifiers:
   animate.css: ^4.1.1
   axios: ^1.1.3
   cz-conventional-changelog: ^3.3.0
+  dayjs: ^1.11.7
   dynamics.js: ^1.1.5
   gsap: ^3.9.0
   terser: ^5.14.2
@@ -20,6 +21,7 @@ dependencies:
   animate.css: 4.1.1
   axios: 1.1.3
   cz-conventional-changelog: 3.3.0
+  dayjs: 1.11.7
   dynamics.js: 1.1.5
   gsap: 3.9.0
   vitepress: 1.0.0-alpha.29_svno5mexjalzzlm4w6lhjlrqwe
@@ -948,6 +950,10 @@ packages:
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
+    dev: false
+
+  /dayjs/1.11.7:
+    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
     dev: false
 
   /dedent/0.7.0:
