@@ -27,12 +27,9 @@ export default defineConfig({
     outline: 'deep',
     outlineTitle: '目录',
     algolia: {
-      indexName: 'com.tigerzh.doc',
+      indexName: 'article',
       appId: 'MDH54K1FJG',
       apiKey: '2651a6fb85dcb86beafa3e76ba3dcf99',
-      searchParameters: {
-        facetFilters: ['version:v3']
-      }
     },
     // carbonAds: {
     //   code: 'CEBDT27Y',

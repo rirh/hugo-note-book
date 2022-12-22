@@ -20,6 +20,7 @@
 * 更新配置 ([8ff1693](https://github.com/AliMales/NoteBook/commit/8ff169384700d7dd46e7839f7edbb43b5abfe8e5))
 * 升级至最新版本&添加多级导航 ([91187b1](https://github.com/AliMales/NoteBook/commit/91187b1cd0e90f40e247c90cba656f69bb251661))
 * 添加笔记 ([ac2618f](https://github.com/AliMales/NoteBook/commit/ac2618f5f7f06df5cce95e723c379daf985c150b))
+* 添加编辑时间 ([ee74543](https://github.com/AliMales/NoteBook/commit/ee745434bff9af954fa5012633fd1386dafe1815))
 * **添加变更:** 添加变更 ([181392a](https://github.com/AliMales/NoteBook/commit/181392a0e3324433867f3bd0a571e5d046f4cf1e))
 * 添加规范 ([a460bd6](https://github.com/AliMales/NoteBook/commit/a460bd6fdcc20219a0eabd69ef3ff8d3266048a5))
 * 添加金融相关文章 ([1e97a14](https://github.com/AliMales/NoteBook/commit/1e97a14aa6e093eaf364412cb9d71d9fcc81e229))
