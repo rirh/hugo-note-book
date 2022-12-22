@@ -12,6 +12,6 @@ const config = JSON.parse(fs.readFileSync('config.json', 'utf-8'))
 config.start_urls = urls
 fs.writeFileSync('config.json', JSON.stringify(config))
 console.log(
-  '请启动docker执行命令',
-  `docker run -it --env-file=${envPath} -e "CONFIG=$(cat ${configPath})" algolia/docsearch-scraper`
+  'algolia 爬虫命令执行完毕，请启动docker执行以下命令',
 )
+console.log(`docker run -it --env-file=${envPath} -e "CONFIG=$(cat ${configPath})" algolia/docsearch-scraper`)

@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "vitepress",
-    "build": "vitepress build",
+    "build": "vitepress build && npm run cz",
     "serve": "vitepress serve",
     "cz": "git add . && git cz && git push && npm run changelog && npm run crawler",
     "preinstall": "npx only-allow pnpm",
