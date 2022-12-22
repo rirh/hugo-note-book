@@ -25,9 +25,9 @@ export default defineConfig({
     outline: 'deep',
     outlineTitle:'目录',
     algolia: {
-      indexName: 'Notebook',
-      appId: '3II0BF621L',
-      apiKey: 'f0f82443dd1e3bb2738c4e904221fc97',
+      indexName: 'com.tigerzh.doc',
+      appId: 'MDH54K1FJG',
+      apiKey: '2651a6fb85dcb86beafa3e76ba3dcf99',
       searchParameters: {
         facetFilters: ['version:v3']
       }
