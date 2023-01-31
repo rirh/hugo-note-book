@@ -8,6 +8,7 @@
 * 解决地址错误的问题 ([3830821](https://github.com/AliMales/NoteBook/commit/3830821833e835022ff2481f321c2565017c01ba))
 * 解决地址错误的问题 ([36fd70b](https://github.com/AliMales/NoteBook/commit/36fd70b79cc5dd446dc650362d1cda6eb68afed2))
 * 解决生产changelog重复问题 ([5aaea13](https://github.com/AliMales/NoteBook/commit/5aaea13f19ec1e7ad44e15547c03894f6f306484))
+* 修复无法搜索的问题 ([ebbc13c](https://github.com/AliMales/NoteBook/commit/ebbc13cc8e4a92106cd029f74da7e12e731ea6e1))
 * fix build error ([711a3d0](https://github.com/AliMales/NoteBook/commit/711a3d06fb992b719db7140aa139c72dbecf7f15))
 
 

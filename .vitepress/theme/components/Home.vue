@@ -9,7 +9,7 @@ import pkg from '../../../package.json'
 // import NewsLetter from './NewsLetter.vue'
 // import SponsorsGroup from './SponsorsGroup.vue'
 // import Sence from './Sence.vue'
-const { isDark } = useData()
+const { isDark, localePath } = useData()
 const title = useTitle()
 
 const url =
@@ -27,6 +27,7 @@ const fetchepic = () => {
     fetchepic()
   }, 5000)
 }
+const base = ref()
 const print = (key: string, value: string) =>
   console.log(
     `%c ${key} %c ${value} %c `,
@@ -57,7 +58,7 @@ onUnmounted(() => {
         My
         <span class="accent">Life</span>
         <br />Getting Better
-        {{ isDark ? '🌙' : '☀️' }}
+        {{ isDark? '🌙': '☀️' }}
       </h1>
       <transition enter-active-class="animate__animated animate__lightSpeedInLeft"
         leave-active-class="animate__animated animate__lightSpeedOutRight">
@@ -67,13 +68,13 @@ onUnmounted(() => {
       </transition>
 
       <p class="actions">
-        <a class="get-started" href="/cryptocurrency/money.html">
+        <a class="get-started" :href="`${localePath}cryptocurrency/money.html`">
           立即探索
           <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
             <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z" />
           </svg>
         </a>
-        <a class="setup" href="/note/工程化指南.html">开始阅读 📒</a>
+        <a class="setup" :href="`${localePath}note/前端工程化.html`">开始阅读 📒</a>
       </p>
     </section>
 

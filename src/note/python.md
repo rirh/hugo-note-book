@@ -72,7 +72,7 @@ find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
 find . -path "*/migrations/*.pyc"  -delete
 #重新生成 makemigrations
 python manage.py makemigrations
-python manage.py migrate
+
 # 当已有数据添加字段时
 python manage.py migrate --fake
 

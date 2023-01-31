@@ -12,6 +12,7 @@ import dayjs from 'dayjs'
 process.env.VITE_APP_BUILD_TIME = dayjs().format('YYYY-MM-DD HH:mm:ss')
 
 export default defineConfig({
+  base: '/document/',
   lang: 'zh-CN',
   title: '🏠',
   description: '笔记本 📚',
@@ -29,7 +30,7 @@ export default defineConfig({
     algolia: {
       indexName: 'article',
       appId: 'MDH54K1FJG',
-      apiKey: '2651a6fb85dcb86beafa3e76ba3dcf99',
+      apiKey: '2651a6fb85dcb86beafa3e76ba3dcf99'
     },
     // carbonAds: {
     //   code: 'CEBDT27Y',
