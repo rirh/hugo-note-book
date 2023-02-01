@@ -8,14 +8,10 @@ import PageDetail from './PageDetail.vue'
 <template>
   <div class="GettrPage">
     <PageHero>
-      <template #logo
-        ><img
-          style="height: 64px"
-          src="https://6372-crypto2server-576164-1302901174.tcb.qcloud.la/z-org-logos/64x64.png"
-          alt=""
-      /></template>
-      <template #title>Note Music</template>
-      <template #lead> 音乐播放器 </template>
+      <template #logo><img style="height: 64px;border-radius: 12px;"
+          src="https://image-host-1257416358.cos.accelerate.myqcloud.com/image/64x64.png" alt="" /></template>
+      <template #title>MUSIC ZORG</template>
+      <template #lead> 一款在线高颜值音乐播放器 </template>
     </PageHero>
     <PageDetail />
   </div>

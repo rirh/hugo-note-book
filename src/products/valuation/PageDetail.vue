@@ -3,7 +3,7 @@ import VTLink from '../../../.vitepress/theme/components/VTLink.vue'
 import VTIconLink from '../../../.vitepress/theme/components/VTIconLink.vue'
 
 const props = defineProps({
-  partner: { type: Object}
+  partner: { type: Object }
 
 })
 </script>
@@ -14,7 +14,7 @@ const props = defineProps({
       <div class="content">
         <h1 class="title">项目简介</h1>
         <p class="description">
-          净值预估最大的难点是和蚂蚁、天天、聚源比算法准确性，我们每天跑多个模版进行算法对比。进行基金试试数据对比
+          净值预估最大难点是和蚂蚁、天天、聚源对比算法准确性，我们每天跑多个模版进行算法对比。进行大量基金数据模型训练，从而选出最优最准确的算法
         </p>
         <p class="description">
           我在项目负责前端展示，提供算法测试对比数据，react搭建项目，基于antv/f2渲染图
@@ -31,11 +31,7 @@ const props = defineProps({
                 <VTIconLink class="data-icon-svg" />
               </div>
 
-              <VTLink
-                class="data-link proficiency-item"
-                href="https://tools.datumwealth.com/valuation/"
-                no-icon
-              >
+              <VTLink class="data-link proficiency-item" href="https://tools.datumwealth.com/valuation/" no-icon>
                 线上地址
               </VTLink>
             </li>
@@ -60,9 +56,17 @@ const props = defineProps({
   display: block;
   box-sizing: border-box;
 }
+
 .screenshot img {
   width: 100%;
   margin-bottom: 10px;
+}
+
+img {
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px,
+    rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+
 }
 
 .ProductsItem {
@@ -75,10 +79,12 @@ const props = defineProps({
   .ProductsItem {
     padding: 64px 32px;
   }
+
   .screenshot {
     display: flex;
     box-sizing: border-box;
   }
+
   .screenshot img {
     width: 33%;
     margin-right: 10px;
@@ -171,7 +177,7 @@ const props = defineProps({
   font-size: 14px;
 }
 
-.description + .description {
+.description+.description {
   padding-top: 12px;
 }
 
@@ -210,9 +216,11 @@ const props = defineProps({
 .proficiency-link {
   color: var(--vt-c-brand);
 }
+
 .proficiency-link:hover {
   color: var(--vt-c-brand-dark);
 }
+
 .proficiency-text {
   color: var(--vt-c-text-1);
 }
@@ -225,7 +233,7 @@ const props = defineProps({
   display: flex;
 }
 
-.data-item + .data-item {
+.data-item+.data-item {
   padding-top: 12px;
 }
 

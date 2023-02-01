@@ -1,7 +1,7 @@
 {
   "name": "z-doc",
   "private": true,
-  "version": "1.0.2",
+  "version": "1.0.5",
   "engines": {
     "node": ">=14.0.0"
   },

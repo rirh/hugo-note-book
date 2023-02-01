@@ -13,6 +13,7 @@ FOF PRO（基金投研投顾平台）。在疫情前期公司一度陷入破产�
 - [笔记文档](https://docs.qq.com/doc/DQW5KSVpxaWd1bGNm)
 - [原型](https://modao.cc/app/y6rNkZSqriuiqkwQagXU7#screen=sl9doc9xotavt0h)
 - [UI](https://lanhuapp.com/web/#/item/project/detailDetach?pid=13ad84e7-9739-4cbc-a4f7-413130ad2f91&project_id=13ad84e7-9739-4cbc-a4f7-413130ad2f91&image_id=2b5b6b51-702c-4a4c-94cb-87b45868f4b3&fromEditor=true)
+- [机构圈公募投研自选模块](https://www.apifox.cn/apidoc/shared-21c27ceb-4485-4241-af9b-618473d9ce4f)
 
 
 
@@ -34,6 +35,8 @@ FOF PRO（基金投研投顾平台）。在疫情前期公司一度陷入破产�
 
 - 基准研究-测试账号(daoy) 密码(123456)
 
+  
+  
   
 
 ## 产品输出

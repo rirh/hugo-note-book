@@ -3,7 +3,7 @@ import VTLink from '../../../.vitepress/theme/components/VTLink.vue'
 import VTIconLink from '../../../.vitepress/theme/components/VTIconLink.vue'
 
 const props = defineProps({
-  partner: { type: Object}
+  partner: { type: Object }
 
 })
 </script>
@@ -33,63 +33,36 @@ const props = defineProps({
                 <VTIconLink class="data-icon-svg" />
               </div>
 
-              <VTLink
-                class="data-link proficiency-item"
-                href="https://paper.tigerzh.com/"
-                no-icon
-              >
+              <VTLink class="data-link proficiency-item" href="https://paper.tigerzh.com/" no-icon>
                 线上地址
               </VTLink>
-              <VTLink
-                class="data-link proficiency-item"
+              <VTLink class="data-link proficiency-item"
                 href="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f794c6c4-6af8-4d74-b405-d93ed7968c0f/8fc4e89f-c72e-4ab2-b462-f6217a3cbca3.dmg"
-                no-icon
-              >
+                no-icon>
                 MAC 下载地址
               </VTLink>
-              <VTLink
-                class="data-link proficiency-item"
+              <VTLink class="data-link proficiency-item"
                 href="https://6372-crypto2server-576164-1302901174.tcb.qcloud.la/will-paper-app/WillPaper%20Setup%201.0.5.exe"
-                no-icon
-              >
+                no-icon>
                 WIN 下载地址
               </VTLink>
             </li>
             <br />
             <h1 class="title">项目截图</h1>
+            <img style="width: 100%" src="../../public/images/paper-5.jpg" alt="" />
+            <br />
             <h1 class="title">MacOS</h1>
             <div class="screenshot">
-              <img
-                style="width: 400px"
-                src="../../public/images/paper-1.png"
-                alt=""
-              />
-              <img
-                style="width: 400px"
-                src="../../public/images/paper-2.png"
-                alt=""
-              />
+              <img style="width: 400px" src="../../public/images/paper-1.png" alt="" />
+              <img style="width: 400px" src="../../public/images/paper-2.png" alt="" />
             </div>
             <h1 class="title">Windows</h1>
             <div class="screenshot">
-              <img
-                style="width: 400px"
-                src="../../public/images/paper-4.jpg"
-                alt=""
-              />
-              <img
-                style="width: 400px"
-                src="../../public/images/paper-3.jpg"
-                alt=""
-              />
+              <img style="width: 400px" src="../../public/images/paper-4.jpg" alt="" />
+              <img style="width: 400px" src="../../public/images/paper-3.jpg" alt="" />
             </div>
 
-            <br />
-            <img
-              style="width: 100%"
-              src="../../public/images/paper-5.jpg"
-              alt=""
-            />
+
           </ul>
         </section>
       </div>
@@ -102,11 +75,19 @@ const props = defineProps({
   display: block;
   box-sizing: border-box;
 }
+
 .screenshot img {
   width: 100%;
   margin-bottom: 10px;
   box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px,
     rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+}
+
+img {
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px,
+    rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+
 }
 
 .ProductsItem {
@@ -119,10 +100,12 @@ const props = defineProps({
   .ProductsItem {
     padding: 64px 32px;
   }
+
   .screenshot {
     display: flex;
     box-sizing: border-box;
   }
+
   .screenshot img {
     width: 33%;
     margin-right: 10px;
@@ -217,7 +200,7 @@ const props = defineProps({
   font-size: 14px;
 }
 
-.description + .description {
+.description+.description {
   padding-top: 12px;
 }
 
@@ -256,9 +239,11 @@ const props = defineProps({
 .proficiency-link {
   color: var(--vt-c-brand);
 }
+
 .proficiency-link:hover {
   color: var(--vt-c-brand-dark);
 }
+
 .proficiency-text {
   color: var(--vt-c-text-1);
 }
@@ -271,7 +256,7 @@ const props = defineProps({
   display: flex;
 }
 
-.data-item + .data-item {
+.data-item+.data-item {
   padding-top: 12px;
 }
 

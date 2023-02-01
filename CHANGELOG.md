@@ -1,4 +1,4 @@
-# [1.0.0](https://github.com/AliMales/NoteBook/compare/v1.0.1...v1.0.0) (2022-12-22)
+## [1.0.2](https://github.com/AliMales/NoteBook/compare/v1.0.1...v1.0.2) (2023-01-31)
 
 
 ### Bug Fixes
@@ -8,6 +8,7 @@
 * 解决地址错误的问题 ([3830821](https://github.com/AliMales/NoteBook/commit/3830821833e835022ff2481f321c2565017c01ba))
 * 解决地址错误的问题 ([36fd70b](https://github.com/AliMales/NoteBook/commit/36fd70b79cc5dd446dc650362d1cda6eb68afed2))
 * 解决生产changelog重复问题 ([5aaea13](https://github.com/AliMales/NoteBook/commit/5aaea13f19ec1e7ad44e15547c03894f6f306484))
+* 迁移到服务器 ([095a3f4](https://github.com/AliMales/NoteBook/commit/095a3f48125e142142ded7c51489a9b2b660724a))
 * 修复无法搜索的问题 ([ebbc13c](https://github.com/AliMales/NoteBook/commit/ebbc13cc8e4a92106cd029f74da7e12e731ea6e1))
 * fix build error ([711a3d0](https://github.com/AliMales/NoteBook/commit/711a3d06fb992b719db7140aa139c72dbecf7f15))
 

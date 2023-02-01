@@ -158,4 +158,8 @@ body {
     flex         : 0 100%;
     margin-bottom: 20px;
   }
+
+  .VPNav {
+    border-bottom: none !important
+  }
 }
