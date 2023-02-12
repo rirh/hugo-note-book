@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import { VTLink, VTIconLink } from '../../../.vitepress/theme/lib/core'
+import VTLink from '../../../.vitepress/theme/components/VTLink.vue'
+import VTIconLink from '../../../.vitepress/theme/components/VTIconLink.vue'
 
 const props = defineProps({
-  partner: { type: Object, required: true }
+  partner: { type: Object}
+
 })
 </script>
 
@@ -62,7 +64,12 @@ const props = defineProps({
   width: 100%;
   margin-bottom: 10px;
 }
+img {
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px,
+    rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
 
+}
 .ProductsItem {
   padding: 64px 24px;
   background-color: var(--vt-c-bg-soft);

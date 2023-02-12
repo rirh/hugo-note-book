@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import { VTLink, VTIconLink } from '../../../.vitepress/theme/lib/core'
+import VTLink from '../../../.vitepress/theme/components/VTLink.vue'
+import VTIconLink from '../../../.vitepress/theme/components/VTIconLink.vue'
 
 const props = defineProps({
-  partner: { type: Object, required: true }
+  partner: { type: Object }
+
 })
 </script>
 
@@ -34,34 +36,23 @@ const props = defineProps({
               <div class="data-icon">
                 <VTIconLink class="data-icon-svg" />
               </div>
-              <VTLink
-                class="data-link proficiency-item"
-                href="https://www.gettr.com"
-                no-icon
-              >
+              <VTLink class="data-link proficiency-item" href="https://www.gettr.com" no-icon>
                 线上地址
               </VTLink>
 
-              <VTLink
-                class="data-link proficiency-item"
-                href="https://apps.apple.com/app/id1571619156"
-                no-icon
-              >
+              <VTLink class="data-link proficiency-item" href="https://apps.apple.com/app/id1571619156" no-icon>
                 苹果客户端
               </VTLink>
-              <VTLink
-                class="data-link proficiency-item"
-                href="https://play.google.com/store/apps/details?id=com.gettr.gettr&showAllReviews=true"
-                no-icon
-              >
+              <VTLink class="data-link proficiency-item"
+                href="https://play.google.com/store/apps/details?id=com.gettr.gettr&showAllReviews=true" no-icon>
                 安卓客户端
               </VTLink>
             </li>
             <br />
             <h1 class="title">项目截图</h1>
-            <img src="../../public/images/gettr-1.png" alt="" />
+            <img class="img" src="../../public/images/gettr-1.png" alt="" />
             <br />
-            <img src="../../public/images/gettr-2.png" alt="" />
+            <img class="img" src="../../public/images/gettr-2.png" alt="" />
           </ul>
         </section>
       </div>
@@ -74,6 +65,13 @@ const props = defineProps({
   padding: 64px 24px;
   background-color: var(--vt-c-bg-soft);
   transition: background-color 0.5s;
+}
+
+img {
+  border-radius: 12px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px,
+    rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+
 }
 
 @media (min-width: 768px) {
@@ -168,7 +166,7 @@ const props = defineProps({
   font-size: 14px;
 }
 
-.description + .description {
+.description+.description {
   padding-top: 12px;
 }
 
@@ -207,9 +205,11 @@ const props = defineProps({
 .proficiency-link {
   color: var(--vt-c-brand);
 }
+
 .proficiency-link:hover {
   color: var(--vt-c-brand-dark);
 }
+
 .proficiency-text {
   color: var(--vt-c-text-1);
 }
@@ -222,7 +222,7 @@ const props = defineProps({
   display: flex;
 }
 
-.data-item + .data-item {
+.data-item+.data-item {
   padding-top: 12px;
 }
 

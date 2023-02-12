@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { VTLink } from '../../../.vitepress/theme/lib/core'
+import VTLink from '../../../.vitepress/theme/components/VTLink.vue'
 import GettrHero from './GettrHero.vue'
 import GettrDetail from './GettrDetail.vue'
 </script>

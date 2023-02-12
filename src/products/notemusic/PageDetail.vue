@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import { VTLink, VTIconLink } from '../../../.vitepress/theme/lib/core'
+import VTLink from '../../../.vitepress/theme/components/VTLink.vue'
+import VTIconLink from '../../../.vitepress/theme/components/VTIconLink.vue'
 
 const props = defineProps({
-  partner: { type: Object, required: true }
+  partner: { type: Object }
+
 })
 </script>
 
@@ -17,7 +19,7 @@ const props = defineProps({
         <h1 class="title">周期</h1>
         <p class="description">2020-07 ～ 至今</p>
 
-        <section class="data">
+        <section class="data ">
           <ul class="data-list">
             <h1 class="title">相关链接</h1>
             <li class="data-item">
@@ -25,11 +27,7 @@ const props = defineProps({
                 <VTIconLink class="data-icon-svg" />
               </div>
 
-              <VTLink
-                class="data-link proficiency-item"
-                href="https://music.tigerzh.com/"
-                no-icon
-              >
+              <VTLink class="data-link proficiency-item" href="https://www.tigerzh.com/music" no-icon>
                 线上地址
               </VTLink>
             </li>
@@ -53,11 +51,19 @@ const props = defineProps({
   display: block;
   box-sizing: border-box;
 }
+
 .screenshot img {
   width: 100%;
   margin-bottom: 10px;
   box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px,
     rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+}
+
+img {
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px,
+    rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+
 }
 
 .ProductsItem {
@@ -70,10 +76,12 @@ const props = defineProps({
   .ProductsItem {
     padding: 64px 32px;
   }
+
   .screenshot {
     display: flex;
     box-sizing: border-box;
   }
+
   .screenshot img {
     width: 33%;
     margin-right: 10px;
@@ -168,7 +176,7 @@ const props = defineProps({
   font-size: 14px;
 }
 
-.description + .description {
+.description+.description {
   padding-top: 12px;
 }
 
@@ -207,9 +215,11 @@ const props = defineProps({
 .proficiency-link {
   color: var(--vt-c-brand);
 }
+
 .proficiency-link:hover {
   color: var(--vt-c-brand-dark);
 }
+
 .proficiency-text {
   color: var(--vt-c-text-1);
 }
@@ -222,7 +232,7 @@ const props = defineProps({
   display: flex;
 }
 
-.data-item + .data-item {
+.data-item+.data-item {
   padding-top: 12px;
 }
 

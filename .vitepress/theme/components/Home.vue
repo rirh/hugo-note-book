@@ -1,23 +1,23 @@
 <script setup lang="ts">
 import 'animate.css'
+import { useData } from 'vitepress'
 
 import { ref, onMounted, onUnmounted } from 'vue'
-
+import { useTitle } from '@vueuse/core'
 import axios from 'axios'
-
-import NewsLetter from './NewsLetter.vue'
-import SponsorsGroup from './SponsorsGroup.vue'
-import Sence from './Sence.vue'
+import pkg from '../../../package.json'
+// import NewsLetter from './NewsLetter.vue'
+// import SponsorsGroup from './SponsorsGroup.vue'
+// import Sence from './Sence.vue'
+const { isDark, localePath } = useData()
+const title = useTitle()
 
 const url =
   'https://42541d62-1eb3-4f4a-b656-cc98d4542086.bspapp.com/http/epic'
-const storageKey = 'theme-appearance'
-let userPreference = 'auto'
 const epic = ref(' 世界上有10类人：一类是懂计算机的，一类是不懂的。')
-const appearance = ref(userPreference)
-
+const timer = ref()
 const fetchepic = () => {
-  setTimeout(async () => {
+  timer.value = setTimeout(async () => {
     const response = await axios.get(url)
     const [_epic] = response.data.data
     epic.value = ''
@@ -25,19 +25,29 @@ const fetchepic = () => {
       epic.value = _epic.contant
     }, 700)
     fetchepic()
-  }, 12000)
+  }, 5000)
 }
+const base = ref()
+const print = (key: string, value: string) =>
+  console.log(
+    `%c ${key} %c ${value} %c `,
+    'background:#20232a ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
+    'background:#61dafb ;padding: 1px; border-radius: 0 3px 3px 0;  color: #20232a; font-weight: bold;',
+    'background:transparent'
+  )
+
 onMounted(() => {
-  appearance.value = localStorage.getItem(storageKey) || 'auto'
+  print(pkg.name, pkg.version)
+  print('build time', `${import.meta.env.VITE_APP_BUILD_TIME}`)
   fetchepic()
-  window.addEventListener('storage', (e) => {
-    appearance.value = `${localStorage.getItem(storageKey)}`
-  })
+  title.value = ''
 })
 
 onUnmounted(() => {
-  window.removeEventListener('storage', () => {})
+  clearTimeout(timer.value)
 })
+
+
 </script>
 
 <template>
@@ -48,33 +58,23 @@ onUnmounted(() => {
         My
         <span class="accent">Life</span>
         <br />Getting Better
-        {{ appearance === 'auto' ? '☀️' : '🌙' }}
+        {{ isDark? '🌙': '☀️' }}
       </h1>
-      <transition
-        enter-active-class="animate__animated animate__lightSpeedInLeft"
-        leave-active-class="animate__animated animate__lightSpeedOutRight"
-      >
+      <transition enter-active-class="animate__animated animate__lightSpeedInLeft"
+        leave-active-class="animate__animated animate__lightSpeedOutRight">
         <p class="description" v-if="epic">
           {{ epic }}
         </p>
       </transition>
 
       <p class="actions">
-        <a class="get-started" href="/cryptocurrency/money.html">
+        <a class="get-started" :href="`${localePath}cryptocurrency/money.html`">
           立即探索
-          <svg
-            class="icon"
-            xmlns="http://www.w3.org/2000/svg"
-            width="10"
-            height="10"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"
-            />
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
+            <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z" />
           </svg>
         </a>
-        <a class="setup" href="/note/cert.html">开始阅读 📒</a>
+        <a class="setup" :href="`${localePath}note/前端工程化.html`">开始阅读 📒</a>
       </p>
     </section>
 
@@ -128,11 +128,15 @@ onUnmounted(() => {
     <SponsorsGroup tier="gold" placement="landing" />
   </section> -->
 
-    <NewsLetter />
+    <!-- <NewsLetter /> -->
   </div>
 </template>
 
 <style scoped>
+.aside {
+  display: none !important;
+}
+
 section {
   padding: 42px 32px;
 }
@@ -177,6 +181,7 @@ html:not(.dark) .accent,
   border-radius: 8px;
   transition: background-color 0.5s, color 0.5s, scale 0.5s;
 }
+
 .actions a:active {
   transform: scale(0.96);
 }
@@ -296,6 +301,7 @@ html:not(.dark) .accent,
     font-size: 64px;
     letter-spacing: -0.5px;
   }
+
   .description {
     font-size: 18px;
     margin-bottom: 48px;
@@ -313,17 +319,21 @@ html:not(.dark) .accent,
   #hero {
     padding: 64px 32px;
   }
+
   .description {
     font-size: 16px;
     margin: 18px 0 30px;
   }
+
   #special-sponsor img {
     display: block;
     margin: 2px auto 1px;
   }
+
   #highlights h3 {
     margin-bottom: 0.6em;
   }
+
   #highlights .vt-box {
     padding: 20px 36px;
   }
