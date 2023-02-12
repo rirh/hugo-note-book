@@ -207,6 +207,9 @@ export default defineConfigWithTheme<ThemeConfig>({
   srcExclude: ['tutorial/**/description.md'],
   scrollOffset: 'header',
   head: [
+    ['meta', { name: 'theme-color', content: '#3c8772' }],
+    ['meta', { name: 'twitter:site', content: '@tigerzh' }],
+    ['meta', { name: 'twitter:card', content: 'summary' }]
   ],
   themeConfig: {
     nav,

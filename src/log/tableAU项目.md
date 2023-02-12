@@ -28,6 +28,8 @@
 
 - 相关性保留四位小数·
 
+- ProfitProbabilityTable未使用
+
   
 
 ## 看板
@@ -57,4 +59,23 @@
 - 抽离公共的store
 
   
+
+```
+基金模版1009更新：
+
+待修复29 
+待验证33
+
+进度更新：
+@123重仓股票信息表 缺少第一行表头
+@130基金股票风格适应性图与股票风格适应性指标表数据存在显著矛盾
+@125行业配置全景图没有标识（圆点代表什么）
+
+Buggers文档地址
+https://docs.qq.com/sheet/DZFN1VVNUcVBIVnp0?tab=BB08J2
+正式环境
+https://mp.datumwealth.com/table-au
+测试环境
+https://test.datumwealth.com/table-au
+```
 

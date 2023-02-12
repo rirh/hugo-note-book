@@ -102,6 +102,7 @@ yarn deploy
 ```
 pip3 install pipreqs
 pipreqs
+pipreqs . --encoding=utf8 --force
 ```
 
 
