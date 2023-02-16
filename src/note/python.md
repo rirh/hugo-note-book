@@ -99,10 +99,12 @@ yarn deploy
 
 ## 生产requirement.txt
 
-```
+```shell
 pip3 install pipreqs
 pipreqs
 pipreqs . --encoding=utf8 --force
+// or
+pip3 freeze >> requirements.txt
 ```
 
 

@@ -41,6 +41,18 @@ typeof "hello world" // string
 提供了 instanceof 检测数据的引用类型
 
 [] instanceof Array   // true
+
+// 对于更为细致的类型 使用以下hack更为准确
+Object.prototype.toString.call()
+
+// 应用场景
+typeof(new Array())  // "object"
+typeof(new Date())   // "object"
+typeof(new RegExp()) // "object"
+
+Object.prototype.toString.call(new Array()).slice(8, -1)  // "Array";
+Object.prototype.toString.call(new Date()).slice(8, -1)   // "Date";
+Object.prototype.toString.call(new RegExp()).slice(8, -1) // "RegExp";
 ```
 
 **在js中原本是没有class关键字的 因为使用引用类型就能够实现class**
@@ -128,5 +140,4 @@ console.log(p.name);
 console.log(p.age);
 console.log(p.skin);
 ```
-
 
