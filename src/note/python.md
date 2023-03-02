@@ -4,6 +4,48 @@
 
 ​                                                                                                  ——查尔斯·安东尼·理查德·霍尔爵士（C. A. R. Hoare）
 
+## Python 版本管理工具
+
+**pyenv通过在PATH头部插入shims路径来实现对python版本的控制.**
+
+```shell
+# macOs
+brew install pyenv 
+# .zshrc
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH=$PYENV_ROOT/shims:$PATH
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# 查看当前版本
+pyenv version
+
+# 查看所有版本
+pyenv versions
+
+# 查看所有可安装的版本
+pyenv install --list
+
+# 安装指定版本
+pyenv install 3.6.5
+# 安装新版本后rehash一下
+pyenv rehash
+
+# 删除指定版本
+pyenv uninstall 3.5.2
+
+# 指定全局版本
+pyenv global 3.6.5
+
+# 指定多个全局版本, 3版本优先
+pyenv global 3.6.5 2.7.14
+
+# 实际上当你切换版本后, 相应的pip和包仓库都是会自动切换过去的
+=
+```
+
+
+
 ## QuickStart 
 
 ```shell
@@ -60,6 +102,8 @@ cd .env/bin
 source activate
 #退出虚拟环境Ï
 deactivate
+##
+pip3 freeze | sort | uniq > requirements.txt
 ```
 
 
