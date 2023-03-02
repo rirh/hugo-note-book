@@ -1,4 +1,4 @@
-## [1.0.6](https://github.com/AliMales/NoteBook/compare/v1.0.1...v1.0.6) (2023-02-16)
+## [1.0.7](https://github.com/AliMales/NoteBook/compare/v1.0.1...v1.0.7) (2023-03-02)
 
 
 ### Bug Fixes
@@ -30,6 +30,7 @@
 * 添加前端工程化详情文章 ([3e91cd9](https://github.com/AliMales/NoteBook/commit/3e91cd9026d97d59df0d9f76ca531247a13fd69e))
 * 添加日志 ([33fa026](https://github.com/AliMales/NoteBook/commit/33fa02606d6305316872f7822c0b711d7489eeeb))
 * 添加文件 ([9dd20ce](https://github.com/AliMales/NoteBook/commit/9dd20ce0cb224fab9351c5857cc98733c84dbd25))
+* 添加文章 ([e3e04c8](https://github.com/AliMales/NoteBook/commit/e3e04c8924f85f75815a4363c47df5fda3922fa9))
 * 添加组织过程资产 ([e5330c3](https://github.com/AliMales/NoteBook/commit/e5330c39fd39ad6a5195d31a18ec971dd102bbf3))
 * 添加algolia配置 ([641deec](https://github.com/AliMales/NoteBook/commit/641deec84fa0736f0ffcf9b6feb26c2d769a7a10))
 * 添加js优雅指南 & 期货 & 混合保证金 & 合约 & 调整文档结构 & 展示提示 ([269753d](https://github.com/AliMales/NoteBook/commit/269753ddccbbea1fac83772a4fcb2636a9a631bd))
