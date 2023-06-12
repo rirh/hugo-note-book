@@ -147,8 +147,13 @@ yarn deploy
 pip3 install pipreqs
 pipreqs
 pipreqs . --encoding=utf8 --force
+<<<<<<< HEAD
+或者
+pip freeze > requirements.txt
+=======
 // or
 pip3 freeze >> requirements.txt
+>>>>>>> 2ab96a363e106c980cb330f70c8c905aa05ac3fd
 ```
 
 
