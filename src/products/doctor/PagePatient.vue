@@ -4,7 +4,6 @@ import VTIconLink from '../../../.vitepress/theme/components/VTIconLink.vue'
 
 const props = defineProps({
   partner: { type: Object }
-
 })
 </script>
 
@@ -16,18 +15,18 @@ const props = defineProps({
         <br />
         <h1 class="title">项目简介</h1>
         <p class="description">
-          患者端服务是 Web App，设计用于微信端，可通过该 App
-          进行电话咨询，快速获取医生的咨询建议，主要针对群体为一二线城市的白领关怀父母的领域。
+          患者端服务是一个面向微信端的Web
+          App，旨在提供电话咨询服务，让用户能够快速获得医生的建议和咨询。主要面向一二线城市的白领人群，他们关心并关怀自己的父母的健康。
         </p>
         <p class="description">
-          基于 Vue 2.x 开发的 SPA，基于 Axios 封装了 HTTP 客户端，使用 SCSS
-          + PostCSS 编写样式，使用 Karma + Mocha 进行单元测试，使用 Webpack
-          进行构建，使用 ESLint 统一代码风格。
+          该项目使用Vue
+          2.x进行开发，是一个单页面应用（SPA）。我们基于Axios对HTTP客户端进行了封装，使用SCSS
+          + PostCSS编写样式，并使用Karma +
+          Mocha进行单元测试。在构建过程中，我们使用Webpack进行打包，并使用ESLint来统一代码风格。
         </p>
         <p class="description">
-          项目整体量级较轻，交互也不复杂。这个项目我参与架构利用 transition
-          组件实现路由切换时的动效，模拟了原生 App 的页面切换逻辑。利用
-          Webpack 的 Code Split 特性实现了组件的异步加载，优化加载时间。
+          整个项目的规模较小，交互设计也相对简单。作为该项目的一部分，我负责架构方面的工作，利用transition组件实现了在路由切换时的动画效果，使页面切换有原生应用的感觉。另外，我还利用Webpack的Code
+          Split特性实现了组件的异步加载，以优化页面加载时间。
         </p>
         <br />
         <h1 class="title">周期</h1>
@@ -41,23 +40,33 @@ const props = defineProps({
                 <VTIconLink class="data-icon-svg" />
               </div>
 
-              <VTLink class="data-link proficiency-item" href="https://h5.51dling.com/h5" no-icon>
+              <VTLink
+                class="data-link proficiency-item"
+                href="https://h5.51dling.com/h5"
+                no-icon
+              >
                 线上地址（微信）
               </VTLink>
-              <VTLink class="data-link proficiency-item" href="https://docs.qq.com/sheet/DQVhoUXF5TmZ6cUZ1?tab=BB08J2"
-                no-icon>
+              <VTLink
+                class="data-link proficiency-item"
+                href="https://docs.qq.com/sheet/DQVhoUXF5TmZ6cUZ1?tab=BB08J2"
+                no-icon
+              >
                 新里程&智康二期改版联调问题汇总
               </VTLink>
-              <VTLink class="data-link proficiency-item" href="https://docs.qq.com/sheet/DQVVab05SZ3VVZ0xJ?tab=BB08J2"
-                no-icon>
+              <VTLink
+                class="data-link proficiency-item"
+                href="https://docs.qq.com/sheet/DQVVab05SZ3VVZ0xJ?tab=BB08J2"
+                no-icon
+              >
                 一期优化需求问题汇总
               </VTLink>
             </li>
             <br />
             <h1 class="title">项目截图</h1>
             <div class="screenshot">
-              <img src="../../public/images/patient-1.png" alt="" />
-              <img src="../../public/images/patient-2.png" alt="" />
+              <img src="/public/images/patient-1.png" alt="" />
+              <img src="/public/images/patient-2.png" alt="" />
             </div>
           </ul>
         </section>
@@ -81,7 +90,6 @@ img {
   border-radius: 10px;
   box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px,
     rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
-
 }
 
 .ProductsItem {
@@ -192,7 +200,7 @@ img {
   font-size: 14px;
 }
 
-.description+.description {
+.description + .description {
   padding-top: 12px;
 }
 
@@ -248,7 +256,7 @@ img {
   display: flex;
 }
 
-.data-item+.data-item {
+.data-item + .data-item {
   padding-top: 12px;
 }
 

@@ -1,5 +1,7 @@
 ---
 layout: page
+title: Note music
+
 ---
 
 <script setup>

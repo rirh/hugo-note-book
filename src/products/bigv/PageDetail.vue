@@ -4,8 +4,10 @@ import VTIconLink from '../../../.vitepress/theme/components/VTIconLink.vue'
 
 const props = defineProps({
   partner: { type: Object }
-
 })
+const handlePrview = (url: string) => {
+  window.open(url, '_blank')
+}
 </script>
 
 <template>
@@ -13,12 +15,27 @@ const props = defineProps({
     <div class="container">
       <div class="content">
         <h1 class="title">项目简介</h1>
-        <p class="description">BIGV是支持大V入驻吸粉的小程序。</p>
         <p class="description">
-          基金大V具有一定的影响力，留住粉丝并增长就成了硬需求。大V支持小程序提供基金数据相关服务，为大V镀金吸引分析提供了平台。
+          考虑到金融行业系统审核困难、国家监管严格且审核流程时间较长，为了确保企业能够灵活控制页面内容并保障用户的使用体验，本项目采用了以下整体架构：
         </p>
         <p class="description">
-          独立开发项目，因为金融股票相关业务微信审核有阻力，并且每个大V的功能可定制性高，采用小程序嵌套webview的方式进行架构，考虑到一致性技术成本，webview的页面采用vuejs+vite+ts进行架构，保证项目质量，这样每次更新内部的webview便可以实现绕过审核机制动态更新页面
+          1、在小程序中，使用原生API支持用户授权相关功能，以确保用户在使用过程中的安全和便利性。
+        </p>
+        <p class="description">
+          2、页面工具内容采用Webview展示的方式，使得能够灵活地发布、部署、更新和回滚页面内容。通过这种方式，能够在不影响整体应用的情况下，快速调整和优化页面内容。
+        </p>
+        <p class="description">
+          3、将Webview模块拆分为单一工具微服务，以便同时进行开发和部署。这种模块化的设计使得能够更加高效地开发和维护各个工具模块。
+        </p>
+        <p class="description">
+          4、在单一工具模块的页面开发中，统一采用了Vue 3 + TypeScript +
+          Pinia的技术栈。这样的选择不仅能够提供良好的开发体验和代码可维护性，还能够保证页面的性能和稳定性
+        </p>
+        <p class="description">
+          5、为了实现灵活的数据通信，统一使用URL参数和持久化储存的方式来进行数据传递和存储。这样的设计使得页面之间的数据交互更加方便，同时也能够保证数据的安全性和一致性。
+        </p>
+        <p class="description">
+          通过以上架构和设计，能够在审核页面时发布符合审核要求的相关页面。一旦小程序上线，就可以替换审核页面，完成审核流程。根据本模式，的项目在两个月内已经进行了21次迭代，而小程序只需要经历了一次审核过程。同时，还接入了20多家大V合作伙伴，其中包括知名的笨嘴神器等。在合作中，的项目取得了显著的成绩，日收益峰值达到了10万元，月收益更是达到了100万元。
         </p>
         <br />
         <h1 class="title">周期</h1>
@@ -32,7 +49,11 @@ const props = defineProps({
                 <VTIconLink class="data-icon-svg" />
               </div>
 
-              <VTLink class="data-link proficiency-item" href="https://bigv.openalpha.cn/" no-icon>
+              <VTLink
+                class="data-link proficiency-item"
+                href="https://bigv.openalpha.cn/"
+                no-icon
+              >
                 线上地址
               </VTLink>
               <VTLink class="data-link proficiency-item" href="#" no-icon>
@@ -42,9 +63,10 @@ const props = defineProps({
             <br />
             <h1 class="title">项目截图</h1>
             <div class="screenshot">
-              <img src="../../public/images/bigv-1.png" alt="" />
-              <img src="../../public/images/bigv-2.png" alt="" />
-              <img src="../../public/images/bigv-3.png" alt="" />
+              <img src="/public/images/bigv-1.png" alt="" />
+              <img src="/public/images/bigv-2.png" alt="" />
+              <img src="/public/images/bigv-3.png" alt="" />
+              <img src="/public/images/bigv-4.png" alt="" />
             </div>
           </ul>
         </section>
@@ -54,7 +76,8 @@ const props = defineProps({
 </template>
 
 <style scoped>
-.screenshot {
+.screenshot,
+a {
   display: block;
   box-sizing: border-box;
 }
@@ -68,7 +91,6 @@ img {
   border-radius: 10px;
   box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px,
     rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
-
 }
 
 .ProductsItem {
@@ -179,7 +201,7 @@ img {
   font-size: 14px;
 }
 
-.description+.description {
+.description + .description {
   padding-top: 12px;
 }
 
@@ -235,7 +257,7 @@ img {
   display: flex;
 }
 
-.data-item+.data-item {
+.data-item + .data-item {
   padding-top: 12px;
 }
 

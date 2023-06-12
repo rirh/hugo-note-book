@@ -11,7 +11,7 @@ import PageDetail from './PageDetail.vue'
       <template #logo
         ><img
           style="height: 64px"
-          src="../../public/images/valuation-logo.svg"
+          src="/public/images/valuation-logo.svg"
           alt=""
       /></template>
       <template #title>净值预估</template>

@@ -43,11 +43,11 @@ const props = defineProps({
             </li>
             <br />
             <h1 class="title">项目截图</h1>
-            <img src="../../public/images/openalpha-1.png" alt="" />
+            <img src="/public/images/openalpha-1.png" alt="" />
             <br />
-            <img src="../../public/images/openalpha-2.png" alt="" />
+            <img src="/public/images/openalpha-2.png" alt="" />
             <br />
-            <img src="../../public/images/openalpha-3.png" alt="" />
+            <img src="/public/images/openalpha-3.png" alt="" />
           </ul>
         </section>
       </div>

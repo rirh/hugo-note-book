@@ -4,7 +4,6 @@ import VTIconLink from '../../../.vitepress/theme/components/VTIconLink.vue'
 
 const props = defineProps({
   partner: { type: Object }
-
 })
 </script>
 
@@ -15,15 +14,29 @@ const props = defineProps({
         <h1 class="title">项目简介</h1>
         <p class="description">币傲-是可以同时支持三大交易所的“外挂”</p>
         <p class="description">
-          项目基于 React 16 开发，并已全面迁移至新版生命周期、Ref
-          API，并应用了 ErrorBoundary、Fragment、memo
-          等新特性，后期新组件改用 Hooks + TypeScript 实现。项目整体使用 ES
-          Next + SCSS 进行开发，使用 TradingView 绘制了 K 线图，使用
-          ECharts 绘制了深度图、影响力指数雷达图等，通过 WebSocket
-          实现交易数据的实时更新，并通过 WebWorker
-          进行性能优化。项目严格遵循 Standard 风格的代码规范，使用 ESLint
-          和 Stylelint 约束团队编码风格，使用 Jest 进行单元测试，Git
-          的使用严格遵循 Git Workflow 以及 Conventional 规范。
+          币傲项目基于 React 16 开发，并已全面迁移至新版生命周期和 Ref
+          API。同时，还应用了 ErrorBoundary、Fragment、memo
+          等新特性，以提升项目的性能和可靠性。在后续开发中，采用了
+          Hooks + TypeScript 来实现新组件，进一步提升了开发效率和代码质量。
+        </p>
+        <p class="description">
+          整个项目使用了现代化的开发工具和技术。使用 ES Next + SCSS
+          进行开发，让代码更具可读性和可维护性。在绘制交易图表方面，采用了
+          TradingView 来绘制 K 线图，使用 ECharts
+          绘制深度图和影响力指数雷达图等。通过使用 WebSocket
+          技术，能够实时更新交易数据，确保用户获取最新的市场动态。此外，还运用
+          WebWorker 技术进行性能优化，提升用户体验。
+        </p>
+        <p class="description">
+          为了保证代码质量和团队协作的高效性，严格遵循了 Standard
+          风格的代码规范，并使用 ESLint 和 Stylelint
+          对团队的编码风格进行约束和规范化。此外，还采用了 Jest
+          进行单元测试，以确保代码的可靠性和稳定性。在版本控制方面，严格遵循
+          Git Workflow 和 Conventional
+          规范，以确保团队成员之间的协作顺畅和代码版本的管理清晰。
+        </p>
+        <p class="description">
+          通过以上的工具和技术的运用，币傲项目能够以高效、可靠的方式为用户提供优质的交易体验。持续关注最新的技术发展和用户需求，并不断优化和改进项目，以满足用户的期待和需求。
         </p>
 
         <br />
@@ -38,19 +51,23 @@ const props = defineProps({
                 <VTIconLink class="data-icon-svg" />
               </div>
 
-              <VTLink class="data-link proficiency-item" href="https://www.btcalory.com/" no-icon>
+              <VTLink
+                class="data-link proficiency-item"
+                href="https://www.btcalory.com/"
+                no-icon
+              >
                 已下线
               </VTLink>
             </li>
             <br />
             <h1 class="title">项目截图</h1>
-            <img src="../../public/images/btcalory-1.png" alt="" />
+            <img src="/public/images/btcalory-1.png" alt="" />
             <br />
-            <img src="../../public/images/btcalory-2.gif" alt="" />
+            <img src="/public/images/btcalory-2.gif" alt="" />
             <br />
-            <img src="../../public/images/btcalory-3.gif" alt="" />
+            <img src="/public/images/btcalory-3.gif" alt="" />
             <br />
-            <img src="../../public/images/btcalory-4.png" alt="" />
+            <img src="/public/images/btcalory-4.png" alt="" />
           </ul>
         </section>
       </div>
@@ -73,7 +90,6 @@ img {
   border-radius: 10px;
   box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px,
     rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
-
 }
 
 .ProductsItem {
@@ -184,7 +200,7 @@ img {
   font-size: 14px;
 }
 
-.description+.description {
+.description + .description {
   padding-top: 12px;
 }
 
@@ -240,7 +256,7 @@ img {
   display: flex;
 }
 
-.data-item+.data-item {
+.data-item + .data-item {
   padding-top: 12px;
 }
 

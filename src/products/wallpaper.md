@@ -1,5 +1,7 @@
 ---
 layout: page
+title: WallPaper
+
 ---
 
 <script setup>

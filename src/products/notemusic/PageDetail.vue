@@ -33,11 +33,11 @@ const props = defineProps({
             </li>
             <br />
             <h1 class="title">项目截图</h1>
-            <img src="../../public/images/notemusic-1.jpg" alt="" />
+            <img src="/public/images/notemusic-1.jpg" alt="" />
             <br />
-            <img src="../../public/images/notemusic-2.png" alt="" />
+            <img src="/public/images/notemusic-2.png" alt="" />
             <br />
-            <img src="../../public/images/notemusic-3.png" alt="" />
+            <img src="/public/images/notemusic-3.png" alt="" />
             <br />
           </ul>
         </section>

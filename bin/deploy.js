@@ -20,47 +20,47 @@
 // import dayjs from "dayjs";
 // 此脚本仅适用个人
 const { exec } = require('child_process')
-const ora = require("ora");
-const inquirer = require("inquirer");
-const _package = require("../package.json");
+const ora = require('ora')
+const inquirer = require('inquirer')
+const _package = require('../package.json')
 // const { outputDir } = require("../vue.config");
-const envs = require("./env.json");
+const envs = require('./env.json')
 // 当前版本
-const version = _package.version;
+const version = _package.version
 // 项目目录
-const dirPath = `${process.cwd()}/.vitepress/dist`;
+const dirPath = `${process.cwd()}/.vitepress/dist`
 // 版本目录
-const versionPath = `${dirPath}-${version}`;
-const dayjs = require("dayjs");
+const versionPath = `${dirPath}-${version}`
+const dayjs = require('dayjs')
 
 inquirer
   .prompt({
-    type: "rawlist",
-    name: "commit",
-    message: "请选择部署环境：",
-    default: "stage",
-    choices: envs.map((it) => `${it.name}: ${it.website}`),
+    type: 'rawlist',
+    name: 'commit',
+    message: '请选择部署环境：',
+    default: 'stage',
+    choices: envs.map((it) => `${it.name}: ${it.website}`)
   })
   .then(async (answers) => {
-    const [name] = answers.commit.split(":");
-    const index = envs.findIndex((it) => it.name === name);
+    const [name] = answers.commit.split(':')
+    const index = envs.findIndex((it) => it.name === name)
     if (index > -1) {
-      const it = envs[index];
+      const it = envs[index]
       const spinner = ora({
-        text: `${answers.commit}：部署中...`,
-      }).start();
-      exec(
-        `pnpm build;
-        cp -r ${dirPath} ${versionPath};
-        scp -r ${dirPath} ${it.sshNmae}:${it.targetPath};
-        scp -r ${versionPath} ${it.sshNmae}:${it.targetPath};
-        rm -rf ${versionPath};
-        `,
-        function (err) {
-          if (err) throw err;
-          spinner.succeed("部署完成");
-          spinner.succeed(dayjs().format("YYYY-MM-DD HH:mm:ss"));
-        }
-      );
+        text: `${answers.commit}：部署中...`
+      }).start()
+      const command = `pnpm build;
+      cp -r ${dirPath} ${versionPath};
+      scp -r ${dirPath} ${it.sshNmae}:${it.targetPath};
+      scp -r ${versionPath} ${it.sshNmae}:${it.targetPath};
+      rm -rf ${versionPath};
+      `
+      console.log(command)
+
+      exec(command, function (err) {
+        if (err) throw err
+        spinner.succeed('部署完成')
+        spinner.succeed(dayjs().format('YYYY-MM-DD HH:mm:ss'))
+      })
     }
-  });
+  })

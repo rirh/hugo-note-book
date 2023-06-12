@@ -11,7 +11,7 @@ import PageDetail from './PageDetail.vue'
       <template #logo
         ><img
           style="height: 64px"
-          src="../../public/images/wallpaper-logo.png"
+          src="/public/images/wallpaper-logo.png"
           alt=""
       /></template>
       <template #title>WALL PAPER</template>

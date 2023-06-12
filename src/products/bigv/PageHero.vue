@@ -13,7 +13,7 @@
       </p>
     </div>
   </div>
-  <!-- <img class="GettrImg" src="../../public/images/gettr.jpg" alt="gettr" /> -->
+  <!-- <img class="GettrImg" src="/public/images/gettr.jpg" alt="gettr" /> -->
 </template>
 
 <style scoped>

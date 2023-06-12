@@ -4,7 +4,6 @@ import VTIconLink from '../../../.vitepress/theme/components/VTIconLink.vue'
 
 const props = defineProps({
   partner: { type: Object }
-
 })
 </script>
 
@@ -16,21 +15,18 @@ const props = defineProps({
         <br />
         <h1 class="title">项目简介</h1>
         <p class="description">
-          医生端是给医护人员使用的APP，帮助那些有需求没时间来医院的人提供线上就医服务。
+          医生端是专为医护人员设计的应用程序，旨在帮助那些有需求但没有时间亲自前往医院的人们提供在线就医服务。
         </p>
         <p class="description">
-          全新的医生端我作为App
-          Owner，负责android和ios端的研发、APP上架、证书管理、版本管理的工作。结合团队现有技术栈和公司时间预期，使用uniapp开发。
-          由于android和ios的新特性和政策的持续更新，
-          应用被动保持同步更新。期间也遇上了很多条款协议上的问题，值得一提的是：第一版在医院发布上线通知的头天晚上12点通过审核：）
+          作为医生端的App
+          Owner，我负责医生端的Android和iOS端的开发、应用上架、证书管理和版本控制等工作。根据团队现有技术栈和公司的时间预期，我们选择了使用UniApp进行开发。由于Android和iOS平台的新特性和政策不断更新，我们需要不断进行应用程序的同步更新。在开发过程中，我们也遇到了许多与条款和协议相关的问题。令人值得一提的是，我们的第一版应用在医院发布上线通知的前一天晚上12点成功通过了审核！
         </p>
         <p class="description">
-          项目集成腾讯（TIM）进行在线问诊、基于个推推送、历史聊天手机端本地数据库缓存策略，配置 sensors.js，简化埋点使用
+          在项目中，我们集成了腾讯（TIM）以实现在线问诊功能，利用个推进行推送服务，采用手机端本地数据库缓存策略来存储历史聊天记录，并配置了sensors.js来简化埋点使用。
         </p>
-
         <br />
         <h1 class="title">周期</h1>
-        <p class="description">2020-01 ～ 2021-03</p>
+        <p class="description">2020-01 ～ 至今</p>
 
         <section class="data">
           <ul class="data-list">
@@ -40,21 +36,28 @@ const props = defineProps({
                 <VTIconLink class="data-icon-svg" />
               </div>
 
-              <VTLink class="data-link proficiency-item" href="https://apps.apple.com/cn/app/叮铃医生-医生版/id1475864364?l=nl"
-                no-icon>
+              <VTLink
+                class="data-link proficiency-item"
+                href="https://apps.apple.com/cn/app/叮铃医生-医生版/id1475864364?l=nl"
+                no-icon
+              >
                 苹果客户端
               </VTLink>
-              <VTLink class="data-link proficiency-item" href="http://www.pc6.com/az/813185.html" no-icon>
+              <VTLink
+                class="data-link proficiency-item"
+                href="http://www.pc6.com/az/813185.html"
+                no-icon
+              >
                 安卓客户端
               </VTLink>
             </li>
             <br />
             <h1 class="title">项目截图</h1>
             <div class="screenshot">
-              <img src="../../public/images/doctor1.png" alt="" />
-              <img src="../../public/images/doctor2.png" alt="" />
-              <img src="../../public/images/doctor3.png" alt="" />
-              <img src="../../public/images/doctor4.png" alt="" />
+              <img src="/public/images/doctor1.png" alt="" />
+              <img src="/public/images/doctor2.png" alt="" />
+              <img src="/public/images/doctor3.png" alt="" />
+              <img src="/public/images/doctor4.png" alt="" />
             </div>
           </ul>
         </section>
@@ -78,7 +81,6 @@ img {
   border-radius: 10px;
   box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px,
     rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
-
 }
 
 .ProductsItem {
@@ -189,7 +191,7 @@ img {
   font-size: 14px;
 }
 
-.description+.description {
+.description + .description {
   padding-top: 12px;
 }
 
@@ -245,7 +247,7 @@ img {
   display: flex;
 }
 
-.data-item+.data-item {
+.data-item + .data-item {
   padding-top: 12px;
 }
 

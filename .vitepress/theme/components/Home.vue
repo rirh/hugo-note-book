@@ -1,19 +1,19 @@
 <script setup lang="ts">
 import 'animate.css'
-import { useData, useRoute } from 'vitepress'
+import { useData, useRoute, useRouter } from 'vitepress'
 
 import { ref, onMounted, onUnmounted } from 'vue'
-import { useTitle } from '@vueuse/core'
+import { useTitle, useBrowserLocation } from '@vueuse/core'
 import axios from 'axios'
 import pkg from '../../../package.json'
 // import NewsLetter from './NewsLetter.vue'
 // import SponsorsGroup from './SponsorsGroup.vue'
 // import Sence from './Sence.vue'
 const { isDark } = useData()
-const { path } = useRoute()
+const localtion = useBrowserLocation()
+
 const title = useTitle()
 
-const base = ref()
 const print = (key: string, value: string) =>
   console.log(
     `%c ${key} %c ${value} %c `,
@@ -40,7 +40,10 @@ onMounted(() => {
         {{ isDark ? '🌙' : '☀️' }}
       </h1>
       <p class="actions">
-        <a class="get-started" :href="`${path}cryptocurrency/money.html`">
+        <a
+          class="get-started"
+          :href="`/cryptocurrency/money.html`"
+        >
           立即探索
           <svg
             class="icon"
@@ -54,7 +57,7 @@ onMounted(() => {
             />
           </svg>
         </a>
-        <a class="setup" :href="`${path}note/前端工程化.html`"
+        <a class="setup" :href="`/note/前端工程化.html`"
           >开始阅读 📒
         </a>
       </p>

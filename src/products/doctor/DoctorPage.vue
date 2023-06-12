@@ -10,15 +10,20 @@ import PagePatient from './PagePatient.vue'
     <PageHero>
       <template #logo
         ><img
-          style="height: 64px"
-          src="../../public/images/dling.png"
+          style="height: 120px"
+          src="/public/images/dling.png"
           alt=""
       /></template>
       <template #title>叮铃医生</template>
-      <template #lead
-        ><VTLink href="https://www.51dling.com/" no-icon> 叮铃医生</VTLink>
-        是通过PPP合作模式，通过智能自助终端+云平台+服务的产品形态，立杆见影的改善病人就医体验，推动分级诊疗，让医疗资源充分下沉，结合慢病的家庭医生计划，让广大市民在家里或家门口就可以高质量的看病。
-        医疗卫生信息化体系的基本架构，实现跨机构、跨部门的卫生信息互联互通、数据共享，让数据在健康管理中真正流动起来为医疗所用，创新构建大健康生态圈。加快各级各类医疗卫生服务业务协同，促进区域协调，提高医疗卫生服务效率，为各级政府及部门提供全面、准确及时的信息，为病人高质量的智慧医疗卫生服务。
+      <template #lead>
+        <p>
+          <VTLink href="https://www.51dling.com/" no-icon> 叮铃医生</VTLink
+          >采用PPP合作模式，通过智能自助终端、云平台和服务的产品形态，迅速改善了病人的就医体验，推动了分级诊疗，实现了医疗资源的充分下沉。结合慢病的家庭医生计划，广大市民可以在家里或家门口获得高质量的医疗服务。
+        </p>
+        <br />
+        <p>
+          叮铃医生还为各级政府及部门提供全面、准确、及时的信息，为病人提供高质量的智慧医疗卫生服务。我们对原文进行了润色和修正，以提高表达的准确性和语法的正确性，并强调了叮铃医生在医疗领域的贡献
+        </p>
       </template>
     </PageHero>
     <PageDetail />

@@ -104,7 +104,7 @@ var require_gitalk = __commonJS({
                   console.warn("Starting with v2.0.0-beta.1 date-fns doesn't accept strings as date arguments. Please use `parseISO` to parse strings. See: https://git.io/fjule");
                   console.warn(new Error().stack);
                 }
-                return new Date(NaN);
+                return /* @__PURE__ */ new Date(NaN);
               }
             }
           },
@@ -1359,7 +1359,7 @@ var require_gitalk = __commonJS({
                 /* default */
               ](dirtyAmount);
               if (isNaN(amount)) {
-                return new Date(NaN);
+                return /* @__PURE__ */ new Date(NaN);
               }
               if (!amount) {
                 return date;
@@ -1625,14 +1625,14 @@ var require_gitalk = __commonJS({
                 /* default */
               ](dirtyDate);
               var year = date.getFullYear();
-              var fourthOfJanuaryOfNextYear = new Date(0);
+              var fourthOfJanuaryOfNextYear = /* @__PURE__ */ new Date(0);
               fourthOfJanuaryOfNextYear.setFullYear(year + 1, 0, 4);
               fourthOfJanuaryOfNextYear.setHours(0, 0, 0, 0);
               var startOfNextYear = __WEBPACK_IMPORTED_MODULE_1__startOfISOWeek_index_js__[
                 "a"
                 /* default */
               ](fourthOfJanuaryOfNextYear);
-              var fourthOfJanuaryOfThisYear = new Date(0);
+              var fourthOfJanuaryOfThisYear = /* @__PURE__ */ new Date(0);
               fourthOfJanuaryOfThisYear.setFullYear(year, 0, 4);
               fourthOfJanuaryOfThisYear.setHours(0, 0, 0, 0);
               var startOfThisYear = __WEBPACK_IMPORTED_MODULE_1__startOfISOWeek_index_js__[
@@ -2029,7 +2029,7 @@ var require_gitalk = __commonJS({
                 /* default */
               ](dirtyAmount);
               if (isNaN(amount)) {
-                return new Date(NaN);
+                return /* @__PURE__ */ new Date(NaN);
               }
               if (!amount) {
                 return date;
@@ -2087,7 +2087,7 @@ var require_gitalk = __commonJS({
                 "a"
                 /* default */
               ](dirtyDate);
-              var fourthOfJanuary = new Date(0);
+              var fourthOfJanuary = /* @__PURE__ */ new Date(0);
               fourthOfJanuary.setFullYear(year, 0, 4);
               fourthOfJanuary.setHours(0, 0, 0, 0);
               var date = __WEBPACK_IMPORTED_MODULE_1__startOfISOWeek_index_js__[
@@ -3015,7 +3015,7 @@ var require_gitalk = __commonJS({
                 "a"
                 /* default */
               ](dirtyDate);
-              var date = new Date(0);
+              var date = /* @__PURE__ */ new Date(0);
               date.setFullYear(cleanDate.getFullYear(), 0, 1);
               date.setHours(0, 0, 0, 0);
               return date;
@@ -3074,14 +3074,14 @@ var require_gitalk = __commonJS({
               if (!(firstWeekContainsDate >= 1 && firstWeekContainsDate <= 7)) {
                 throw new RangeError("firstWeekContainsDate must be between 1 and 7 inclusively");
               }
-              var firstWeekOfNextYear = new Date(0);
+              var firstWeekOfNextYear = /* @__PURE__ */ new Date(0);
               firstWeekOfNextYear.setUTCFullYear(year + 1, 0, firstWeekContainsDate);
               firstWeekOfNextYear.setUTCHours(0, 0, 0, 0);
               var startOfNextYear = __WEBPACK_IMPORTED_MODULE_2__startOfUTCWeek_index_js__[
                 "a"
                 /* default */
               ](firstWeekOfNextYear, dirtyOptions);
-              var firstWeekOfThisYear = new Date(0);
+              var firstWeekOfThisYear = /* @__PURE__ */ new Date(0);
               firstWeekOfThisYear.setUTCFullYear(year, 0, firstWeekContainsDate);
               firstWeekOfThisYear.setUTCHours(0, 0, 0, 0);
               var startOfThisYear = __WEBPACK_IMPORTED_MODULE_2__startOfUTCWeek_index_js__[
@@ -3126,7 +3126,7 @@ var require_gitalk = __commonJS({
                 "a"
                 /* default */
               ](dirtyDate, dirtyOptions);
-              var firstWeek = new Date(0);
+              var firstWeek = /* @__PURE__ */ new Date(0);
               firstWeek.setFullYear(year, 0, firstWeekContainsDate);
               firstWeek.setHours(0, 0, 0, 0);
               var date = __WEBPACK_IMPORTED_MODULE_1__startOfWeek_index_js__[
@@ -3206,7 +3206,7 @@ var require_gitalk = __commonJS({
               ](dirtyMonth);
               var year = date.getFullYear();
               var day = date.getDate();
-              var dateWithDesiredMonth = new Date(0);
+              var dateWithDesiredMonth = /* @__PURE__ */ new Date(0);
               dateWithDesiredMonth.setFullYear(year, month, 15);
               dateWithDesiredMonth.setHours(0, 0, 0, 0);
               var daysInMonth = __WEBPACK_IMPORTED_MODULE_2__getDaysInMonth_index_js__[
@@ -4408,7 +4408,7 @@ var require_gitalk = __commonJS({
                 /* default */
               ](dirtyAmount);
               if (isNaN(amount))
-                return new Date(NaN);
+                return /* @__PURE__ */ new Date(NaN);
               var hours = date.getHours();
               var sign = amount < 0 ? -1 : 1;
               var fullWeeks = __WEBPACK_IMPORTED_MODULE_2__lib_toInteger_index_js__[
@@ -4519,7 +4519,7 @@ var require_gitalk = __commonJS({
                 "a"
                 /* default */
               ](date));
-              var fourthOfJanuary = new Date(0);
+              var fourthOfJanuary = /* @__PURE__ */ new Date(0);
               fourthOfJanuary.setFullYear(isoWeekYear, 0, 4);
               fourthOfJanuary.setHours(0, 0, 0, 0);
               date = __WEBPACK_IMPORTED_MODULE_2__startOfISOWeekYear_index_js__[
@@ -5199,14 +5199,14 @@ var require_gitalk = __commonJS({
                 /* default */
               ](dirtyDate);
               var year = date.getUTCFullYear();
-              var fourthOfJanuaryOfNextYear = new Date(0);
+              var fourthOfJanuaryOfNextYear = /* @__PURE__ */ new Date(0);
               fourthOfJanuaryOfNextYear.setUTCFullYear(year + 1, 0, 4);
               fourthOfJanuaryOfNextYear.setUTCHours(0, 0, 0, 0);
               var startOfNextYear = __WEBPACK_IMPORTED_MODULE_1__startOfUTCISOWeek_index_js__[
                 "a"
                 /* default */
               ](fourthOfJanuaryOfNextYear);
-              var fourthOfJanuaryOfThisYear = new Date(0);
+              var fourthOfJanuaryOfThisYear = /* @__PURE__ */ new Date(0);
               fourthOfJanuaryOfThisYear.setUTCFullYear(year, 0, 4);
               fourthOfJanuaryOfThisYear.setUTCHours(0, 0, 0, 0);
               var startOfThisYear = __WEBPACK_IMPORTED_MODULE_1__startOfUTCISOWeek_index_js__[
@@ -5710,7 +5710,7 @@ var require_gitalk = __commonJS({
               ](dirtyDate);
               var year = date.getFullYear();
               var monthIndex = date.getMonth();
-              var lastDayOfMonth = new Date(0);
+              var lastDayOfMonth = /* @__PURE__ */ new Date(0);
               lastDayOfMonth.setFullYear(year, monthIndex + 1, 0);
               lastDayOfMonth.setHours(0, 0, 0, 0);
               return lastDayOfMonth.getDate();
@@ -5870,14 +5870,14 @@ var require_gitalk = __commonJS({
               if (!(firstWeekContainsDate >= 1 && firstWeekContainsDate <= 7)) {
                 throw new RangeError("firstWeekContainsDate must be between 1 and 7 inclusively");
               }
-              var firstWeekOfNextYear = new Date(0);
+              var firstWeekOfNextYear = /* @__PURE__ */ new Date(0);
               firstWeekOfNextYear.setFullYear(year + 1, 0, firstWeekContainsDate);
               firstWeekOfNextYear.setHours(0, 0, 0, 0);
               var startOfNextYear = __WEBPACK_IMPORTED_MODULE_0__startOfWeek_index_js__[
                 "a"
                 /* default */
               ](firstWeekOfNextYear, dirtyOptions);
-              var firstWeekOfThisYear = new Date(0);
+              var firstWeekOfThisYear = /* @__PURE__ */ new Date(0);
               firstWeekOfThisYear.setFullYear(year, 0, firstWeekContainsDate);
               firstWeekOfThisYear.setHours(0, 0, 0, 0);
               var startOfThisYear = __WEBPACK_IMPORTED_MODULE_0__startOfWeek_index_js__[
@@ -5931,7 +5931,7 @@ var require_gitalk = __commonJS({
                 /* default */
               ](2, arguments);
               if (!duration || typeof duration !== "object")
-                return new Date(NaN);
+                return /* @__PURE__ */ new Date(NaN);
               var years = "years" in duration ? __WEBPACK_IMPORTED_MODULE_4__lib_toInteger_index_js__[
                 "a"
                 /* default */
@@ -6069,7 +6069,7 @@ var require_gitalk = __commonJS({
                     /* default */
                   ](dirtyReferenceDate);
                 } else {
-                  return new Date(NaN);
+                  return /* @__PURE__ */ new Date(NaN);
                 }
               }
               var subFnOptions = {
@@ -6145,7 +6145,7 @@ var require_gitalk = __commonJS({
                   });
                   var parseResult = parser.parse(dateString, token, locale.match, subFnOptions);
                   if (!parseResult) {
-                    return new Date(NaN);
+                    return /* @__PURE__ */ new Date(NaN);
                   }
                   setters.push({
                     priority: parser.priority,
@@ -6168,12 +6168,12 @@ var require_gitalk = __commonJS({
                   if (dateString.indexOf(token) === 0) {
                     dateString = dateString.slice(token.length);
                   } else {
-                    return new Date(NaN);
+                    return /* @__PURE__ */ new Date(NaN);
                   }
                 }
               }
               if (dateString.length > 0 && notWhitespaceRegExp.test(dateString)) {
-                return new Date(NaN);
+                return /* @__PURE__ */ new Date(NaN);
               }
               var uniquePrioritySetters = setters.map(function(setter2) {
                 return setter2.priority;
@@ -6195,7 +6195,7 @@ var require_gitalk = __commonJS({
                 /* default */
               ](dirtyReferenceDate);
               if (isNaN(date)) {
-                return new Date(NaN);
+                return /* @__PURE__ */ new Date(NaN);
               }
               var utcDate = __WEBPACK_IMPORTED_MODULE_1__subMilliseconds_index_js__[
                 "a"
@@ -6208,7 +6208,7 @@ var require_gitalk = __commonJS({
               for (i = 0; i < uniquePrioritySetters.length; i++) {
                 var setter = uniquePrioritySetters[i];
                 if (setter.validate && !setter.validate(utcDate, setter.value, subFnOptions)) {
-                  return new Date(NaN);
+                  return /* @__PURE__ */ new Date(NaN);
                 }
                 var result = setter.set(utcDate, flags, setter.value, subFnOptions);
                 if (result[0]) {
@@ -6227,7 +6227,7 @@ var require_gitalk = __commonJS({
               if (flags.timestampIsSet) {
                 return date;
               }
-              var convertedDate = new Date(0);
+              var convertedDate = /* @__PURE__ */ new Date(0);
               convertedDate.setFullYear(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate());
               convertedDate.setHours(date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds(), date.getUTCMilliseconds());
               return convertedDate;
@@ -14636,7 +14636,7 @@ var require_gitalk = __commonJS({
                 /* default */
               ](2, arguments);
               if (!duration || typeof duration !== "object")
-                return new Date(NaN);
+                return /* @__PURE__ */ new Date(NaN);
               var years = "years" in duration ? __WEBPACK_IMPORTED_MODULE_4__lib_toInteger_index_js__[
                 "a"
                 /* default */
@@ -14790,7 +14790,7 @@ var require_gitalk = __commonJS({
                 /* default */
               ](dirtyDateToCompare);
               if (isNaN(dateToCompare)) {
-                return new Date(NaN);
+                return /* @__PURE__ */ new Date(NaN);
               }
               var timeToCompare = dateToCompare.getTime();
               var datesArray;
@@ -14809,7 +14809,7 @@ var require_gitalk = __commonJS({
                   /* default */
                 ](dirtyDate);
                 if (isNaN(currentDate)) {
-                  result = new Date(NaN);
+                  result = /* @__PURE__ */ new Date(NaN);
                   minDistance = NaN;
                   return;
                 }
@@ -14885,7 +14885,7 @@ var require_gitalk = __commonJS({
                 "a"
                 /* default */
               ](dateRight))
-                return new Date(NaN);
+                return /* @__PURE__ */ new Date(NaN);
               var calendarDifference = __WEBPACK_IMPORTED_MODULE_3__differenceInCalendarDays_index_js__[
                 "a"
                 /* default */
@@ -15438,7 +15438,7 @@ var require_gitalk = __commonJS({
                 "a"
                 /* default */
               ](dirtyDate);
-              var fourthOfJanuaryOfNextYear = new Date(0);
+              var fourthOfJanuaryOfNextYear = /* @__PURE__ */ new Date(0);
               fourthOfJanuaryOfNextYear.setFullYear(year + 1, 0, 4);
               fourthOfJanuaryOfNextYear.setHours(0, 0, 0, 0);
               var date = __WEBPACK_IMPORTED_MODULE_1__startOfISOWeek_index_js__[
@@ -15531,11 +15531,11 @@ var require_gitalk = __commonJS({
             "use strict";
             __webpack_exports__["a"] = endOfTomorrow;
             function endOfTomorrow() {
-              var now = new Date();
+              var now = /* @__PURE__ */ new Date();
               var year = now.getFullYear();
               var month = now.getMonth();
               var day = now.getDate();
-              var date = new Date(0);
+              var date = /* @__PURE__ */ new Date(0);
               date.setFullYear(year, month, day + 1);
               date.setHours(23, 59, 59, 999);
               return date;
@@ -15547,11 +15547,11 @@ var require_gitalk = __commonJS({
             "use strict";
             __webpack_exports__["a"] = endOfYesterday;
             function endOfYesterday() {
-              var now = new Date();
+              var now = /* @__PURE__ */ new Date();
               var year = now.getFullYear();
               var month = now.getMonth();
               var day = now.getDate();
-              var date = new Date(0);
+              var date = /* @__PURE__ */ new Date(0);
               date.setFullYear(year, month, day - 1);
               date.setHours(23, 59, 59, 999);
               return date;
@@ -16436,7 +16436,7 @@ var require_gitalk = __commonJS({
                 "a"
                 /* default */
               ](dirtyDate);
-              var fourthOfJanuary = new Date(0);
+              var fourthOfJanuary = /* @__PURE__ */ new Date(0);
               fourthOfJanuary.setUTCFullYear(year, 0, 4);
               fourthOfJanuary.setUTCHours(0, 0, 0, 0);
               var date = __WEBPACK_IMPORTED_MODULE_1__startOfUTCISOWeek_index_js__[
@@ -16475,7 +16475,7 @@ var require_gitalk = __commonJS({
                 "a"
                 /* default */
               ](dirtyDate, dirtyOptions);
-              var firstWeek = new Date(0);
+              var firstWeek = /* @__PURE__ */ new Date(0);
               firstWeek.setUTCFullYear(year, 0, firstWeekContainsDate);
               firstWeek.setUTCHours(0, 0, 0, 0);
               var date = __WEBPACK_IMPORTED_MODULE_2__startOfUTCWeek_index_js__[
@@ -17634,7 +17634,7 @@ var require_gitalk = __commonJS({
               ](__WEBPACK_IMPORTED_MODULE_0__parse_index_js__[
                 "a"
                 /* default */
-              ](dateString, formatString, new Date(), dirtyOptions));
+              ](dateString, formatString, /* @__PURE__ */ new Date(), dirtyOptions));
             }
           },
           /* 381 */
@@ -17939,7 +17939,7 @@ var require_gitalk = __commonJS({
                   return parseNDigitsSigned(token.length, string);
                 },
                 set: function(_date, _flags, value, _options) {
-                  var firstWeekOfYear = new Date(0);
+                  var firstWeekOfYear = /* @__PURE__ */ new Date(0);
                   firstWeekOfYear.setUTCFullYear(value, 0, 4);
                   firstWeekOfYear.setUTCHours(0, 0, 0, 0);
                   return __WEBPACK_IMPORTED_MODULE_5__lib_startOfUTCISOWeek_index_js__[
@@ -19499,7 +19499,7 @@ var require_gitalk = __commonJS({
                 "a"
                 /* default */
               ](dirtyDate);
-              var fourthOfJanuary = new Date(0);
+              var fourthOfJanuary = /* @__PURE__ */ new Date(0);
               fourthOfJanuary.setFullYear(year + 1, 0, 4);
               fourthOfJanuary.setHours(0, 0, 0, 0);
               var date = __WEBPACK_IMPORTED_MODULE_1__startOfISOWeek_index_js__[
@@ -19638,7 +19638,7 @@ var require_gitalk = __commonJS({
               } else if (typeof dirtyDatesArray === "object" && dirtyDatesArray !== null) {
                 datesArray = Array.prototype.slice.call(dirtyDatesArray);
               } else {
-                return new Date(NaN);
+                return /* @__PURE__ */ new Date(NaN);
               }
               var result;
               datesArray.forEach(function(dirtyDate) {
@@ -19650,7 +19650,7 @@ var require_gitalk = __commonJS({
                   result = currentDate;
                 }
               });
-              return result || new Date(NaN);
+              return result || /* @__PURE__ */ new Date(NaN);
             }
           },
           /* 411 */
@@ -19671,7 +19671,7 @@ var require_gitalk = __commonJS({
               } else if (typeof dirtyDatesArray === "object" && dirtyDatesArray !== null) {
                 datesArray = Array.prototype.slice.call(dirtyDatesArray);
               } else {
-                return new Date(NaN);
+                return /* @__PURE__ */ new Date(NaN);
               }
               var result;
               datesArray.forEach(function(dirtyDate) {
@@ -19683,7 +19683,7 @@ var require_gitalk = __commonJS({
                   result = currentDate;
                 }
               });
-              return result || new Date(NaN);
+              return result || /* @__PURE__ */ new Date(NaN);
             }
           },
           /* 412 */
@@ -19718,7 +19718,7 @@ var require_gitalk = __commonJS({
                 throw new RangeError("additionalDigits must be 0, 1 or 2");
               }
               if (!(typeof argument === "string" || Object.prototype.toString.call(argument) === "[object String]")) {
-                return new Date(NaN);
+                return /* @__PURE__ */ new Date(NaN);
               }
               var dateStrings = splitDateString(argument);
               var date;
@@ -19727,7 +19727,7 @@ var require_gitalk = __commonJS({
                 date = parseDate(parseYearResult.restDateString, parseYearResult.year);
               }
               if (isNaN(date) || !date) {
-                return new Date(NaN);
+                return /* @__PURE__ */ new Date(NaN);
               }
               var timestamp = date.getTime();
               var time = 0;
@@ -19735,13 +19735,13 @@ var require_gitalk = __commonJS({
               if (dateStrings.time) {
                 time = parseTime(dateStrings.time);
                 if (isNaN(time) || time === null) {
-                  return new Date(NaN);
+                  return /* @__PURE__ */ new Date(NaN);
                 }
               }
               if (dateStrings.timezone) {
                 offset = parseTimezone(dateStrings.timezone);
                 if (isNaN(offset)) {
-                  return new Date(NaN);
+                  return /* @__PURE__ */ new Date(NaN);
                 }
               } else {
                 var dirtyDate = new Date(timestamp + time);
@@ -19808,13 +19808,13 @@ var require_gitalk = __commonJS({
               var dayOfWeek = parseDateUnit(captures[5]) - 1;
               if (isWeekDate) {
                 if (!validateWeekDate(year, week, dayOfWeek)) {
-                  return new Date(NaN);
+                  return /* @__PURE__ */ new Date(NaN);
                 }
                 return dayOfISOWeekYear(year, week, dayOfWeek);
               } else {
-                var date = new Date(0);
+                var date = /* @__PURE__ */ new Date(0);
                 if (!validateDate(year, month, day) || !validateDayOfYearDate(year, dayOfYear)) {
-                  return new Date(NaN);
+                  return /* @__PURE__ */ new Date(NaN);
                 }
                 date.setUTCFullYear(year, month, Math.max(dayOfYear, day));
                 return date;
@@ -19853,7 +19853,7 @@ var require_gitalk = __commonJS({
               return sign * (hours * MILLISECONDS_IN_HOUR + minutes * MILLISECONDS_IN_MINUTE);
             }
             function dayOfISOWeekYear(isoWeekYear, week, day) {
-              var date = new Date(0);
+              var date = /* @__PURE__ */ new Date(0);
               date.setUTCFullYear(isoWeekYear, 0, 4);
               var fourthOfJanuaryDay = date.getUTCDay() || 7;
               var diff = (week - 1) * 7 + day + 1 - fourthOfJanuaryDay;
@@ -19900,7 +19900,7 @@ var require_gitalk = __commonJS({
                 if (parts) {
                   return new Date(Date.UTC(+parts[1], parts[2] - 1, +parts[3], +parts[4], +parts[5], +parts[6], +((parts[7] || "0") + "00").substring(0, 3)));
                 }
-                return new Date(NaN);
+                return /* @__PURE__ */ new Date(NaN);
               }
               return __WEBPACK_IMPORTED_MODULE_0__toDate_index_js__[
                 "a"
@@ -19960,7 +19960,7 @@ var require_gitalk = __commonJS({
                 /* default */
               ](dirtyDate);
               if (isNaN(date)) {
-                return new Date(NaN);
+                return /* @__PURE__ */ new Date(NaN);
               }
               if (values.year != null) {
                 date.setFullYear(values.year);
@@ -20367,7 +20367,7 @@ var require_gitalk = __commonJS({
                 "a"
                 /* default */
               ](date, dirtyOptions));
-              var firstWeek = new Date(0);
+              var firstWeek = /* @__PURE__ */ new Date(0);
               firstWeek.setFullYear(weekYear, 0, firstWeekContainsDate);
               firstWeek.setHours(0, 0, 0, 0);
               date = __WEBPACK_IMPORTED_MODULE_1__startOfWeekYear_index_js__[
@@ -20400,7 +20400,7 @@ var require_gitalk = __commonJS({
                 /* default */
               ](dirtyYear);
               if (isNaN(date)) {
-                return new Date(NaN);
+                return /* @__PURE__ */ new Date(NaN);
               }
               date.setFullYear(year);
               return date;
@@ -20448,11 +20448,11 @@ var require_gitalk = __commonJS({
             "use strict";
             __webpack_exports__["a"] = startOfTomorrow;
             function startOfTomorrow() {
-              var now = new Date();
+              var now = /* @__PURE__ */ new Date();
               var year = now.getFullYear();
               var month = now.getMonth();
               var day = now.getDate();
-              var date = new Date(0);
+              var date = /* @__PURE__ */ new Date(0);
               date.setFullYear(year, month, day + 1);
               date.setHours(0, 0, 0, 0);
               return date;
@@ -20464,11 +20464,11 @@ var require_gitalk = __commonJS({
             "use strict";
             __webpack_exports__["a"] = startOfYesterday;
             function startOfYesterday() {
-              var now = new Date();
+              var now = /* @__PURE__ */ new Date();
               var year = now.getFullYear();
               var month = now.getMonth();
               var day = now.getDate();
-              var date = new Date(0);
+              var date = /* @__PURE__ */ new Date(0);
               date.setFullYear(year, month, day - 1);
               date.setHours(0, 0, 0, 0);
               return date;

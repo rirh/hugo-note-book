@@ -49,17 +49,17 @@ const props = defineProps({
             </li>
             <br />
             <h1 class="title">项目截图</h1>
-            <img style="width: 100%" src="../../public/images/paper-5.jpg" alt="" />
+            <img style="width: 100%" src="/public/images/paper-5.jpg" alt="" />
             <br />
             <h1 class="title">MacOS</h1>
             <div class="screenshot">
-              <img style="width: 400px" src="../../public/images/paper-1.png" alt="" />
-              <img style="width: 400px" src="../../public/images/paper-2.png" alt="" />
+              <img style="width: 400px" src="/public/images/paper-1.png" alt="" />
+              <img style="width: 400px" src="/public/images/paper-2.png" alt="" />
             </div>
             <h1 class="title">Windows</h1>
             <div class="screenshot">
-              <img style="width: 400px" src="../../public/images/paper-4.jpg" alt="" />
-              <img style="width: 400px" src="../../public/images/paper-3.jpg" alt="" />
+              <img style="width: 400px" src="/public/images/paper-4.jpg" alt="" />
+              <img style="width: 400px" src="/public/images/paper-3.jpg" alt="" />
             </div>
 
 

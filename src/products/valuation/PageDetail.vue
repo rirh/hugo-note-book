@@ -38,12 +38,12 @@ const props = defineProps({
             <br />
             <h1 class="title">项目截图</h1>
             <div class="screenshot">
-              <img src="../../public/images/valuation-1.png" alt="" />
-              <img src="../../public/images/valuation-2.png" alt="" />
-              <img src="../../public/images/valuation-3.png" alt="" />
+              <img src="/public/images/valuation-1.png" alt="" />
+              <img src="/public/images/valuation-2.png" alt="" />
+              <img src="/public/images/valuation-3.png" alt="" />
             </div>
             <br />
-            <img src="../../public/images/valuation-4.png" alt="" />
+            <img src="/public/images/valuation-4.png" alt="" />
           </ul>
         </section>
       </div>

@@ -4,7 +4,7 @@ export default [
     activeMatch: `^/(guide|style-guide|cookbook|examples|cryptocurrency)/`,
     items: [
       { text: '💰  加密货币', link: '/cryptocurrency/money' },
-      { text: '🚚  工具使用', link: '/tools/echarts' },
+      { text: '🚚  工具使用', link: '/tools/emulator' },
       { text: '💡  开发日志 ', link: '/log/敏捷项目管理' },
       { text: '❓  常见问题 ', link: '/Q&A/Ubuntu服务器常见问题' }
     ]
@@ -29,17 +29,16 @@ export default [
       {
         text: '商业作品',
         items: [
+          { text: '笨嘴神器', link: '/products/bigv' },
           {
-            text: 'Fas基金研究平台',
-            link: '/products/fas'
+            text: 'For Pro',
+            link: '/products/fof-pro'
           },
+          { text: '净值预估', link: '/products/valuation' },
           {
             text: 'Open Alpha',
             link: '/products/openalpha'
-          },
-          { text: '基金大V入驻小程序', link: '/products/bigv' },
-          { text: '投研模版', link: '/products/bigv' },
-          { text: '净值预估', link: '/products/valuation' }
+          }
         ]
       },
       {

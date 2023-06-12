@@ -106,7 +106,7 @@ export default defineConfig({
           ` * homepage: ${pkg.homepage}`,
           ` */`
         ].join('\n'),
-        outDir: resolve(__dirname, '../docs'),
+        outDir: resolve(__dirname, '../../dist'),
         debug: false
       })
     ]

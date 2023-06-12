@@ -16,13 +16,15 @@ export default {
         {
           text: '周六特色大排档小程序',
           link: '/log/周六特色大排档小程序'
-        },
+        }
       ]
     },
     {
       text: 'PMP',
-      items: [{ text: '敏捷项目管理', link: '/log/敏捷项目管理' },
-      { text: 'PMP题目复习', link: '/log/PMP题目复习' }]
+      items: [
+        { text: '敏捷项目管理', link: '/log/敏捷项目管理' },
+        { text: 'PMP题目复习', link: '/log/PMP题目复习' }
+      ]
     }
   ],
   '/cryptocurrency/': [
@@ -97,16 +99,16 @@ export default {
   ],
   '/tools/': [
     {
-      text: ' Frontend',
-      items: [{ text: '工具函数速查', link: '/tools/工具函数' }]
+      text: '📌 APP',
+      items: [{ text: '模拟器', link: '/tools/emulator' }]
     },
     {
       text: '📌 图表类',
       items: [{ text: 'echarts', link: '/tools/echarts' }]
     },
     {
-      text: '📌 APP',
-      items: [{ text: '模拟器', link: '/tools/emulator' }]
+      text: '📌 Frontend',
+      items: [{ text: '工具函数速查', link: '/tools/工具函数' }]
     }
   ],
   '/Q&A/': [
@@ -119,7 +121,7 @@ export default {
         },
         { text: '微信集成常见问题', link: '/Q&A/微信集成常见问题' },
         { text: 'ElementUI常见问题', link: '/Q&A/ElementUI常见问题' },
-        { text: 'VUE2常见问题', link: '/Q&A/VUE2常见问题' },
+        { text: 'VUE2常见问题', link: '/Q&A/VUE2常见问题' }
       ]
     }
   ],

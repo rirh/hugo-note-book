@@ -1,5 +1,6 @@
 ---
 layout: page
+title: 笨嘴神器
 ---
 
 <script setup>

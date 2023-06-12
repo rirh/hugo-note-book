@@ -3,7 +3,7 @@
 <template>
   <div class="PartnerHero">
     <div class="container">
-      <img style="text" src="../../public/images/logo64.png" alt="" />
+      <img style="text" src="/public/images/logo64.png" alt="" />
       <h1 class="title">
         <slot name="title" />
       </h1>
@@ -13,7 +13,7 @@
       </p>
     </div>
   </div>
-  <!-- <img class="GettrImg" src="../../public/images/gettr.jpg" alt="gettr" /> -->
+  <!-- <img class="GettrImg" src="/public/images/gettr.jpg" alt="gettr" /> -->
 </template>
 
 <style scoped>

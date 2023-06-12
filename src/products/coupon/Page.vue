@@ -11,7 +11,7 @@ import PageDetail from './PageDetail.vue'
       <template #logo
         ><img
           style="height: 100px"
-          src="../../public/images/coupon-logo.jpg"
+          src="/public/images/coupon-logo.jpg"
           alt=""
       /></template>
       <template #title>优惠券小程序</template>

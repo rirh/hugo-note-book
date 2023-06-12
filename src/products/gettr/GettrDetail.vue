@@ -1,10 +1,8 @@
 <script setup lang="ts">
 import VTLink from '../../../.vitepress/theme/components/VTLink.vue'
 import VTIconLink from '../../../.vitepress/theme/components/VTIconLink.vue'
-
 const props = defineProps({
   partner: { type: Object }
-
 })
 </script>
 
@@ -13,17 +11,22 @@ const props = defineProps({
     <div class="container">
       <div class="content">
         <h1 class="title">项目简介</h1>
+
         <p class="description">
-          GETTR是一个全新的社交媒体平台，建立在言论自由、独立思想、拒绝政治审查和“取消文化”的原则之上。
-          凭借一流的技术，我们的目标是创建一个思想市场，以便在世界范围内分享自由和民主。
+          这个项目是我从头开始参与的一个项目，项目标准参照了
+          Twitter，不仅涉及传统的 Web 开发，还包括 Dark Mode、LiveStream
+          集成、Grpc
+          实践、多语言应用等方面。对于这个项目，我个人非常感激，因为它让我在成长过程中受益匪浅！
+        </p>
+
+        <p class="description">
+          Gettr 使用了 React 16.3、Material-UI 和 Redux Toolkit
+          进行架构开发。由于 React
+          生态环境的丰富，这些技术的应用为项目扫清了后续项目的障碍。
         </p>
         <p class="description">
-          这个项目也是我从头开始参与的一个项目，经历了三个版本的迭代。 除了传统的
-          Web 开发，还涉及Dark mode、LiveStream集成、Grpc实践，多语言应用、，非常感谢此项目，这也是让我受益成长最多的项目！
-        </p>
-        <p class="description">
-          项目的管理严格遵循gitflow流程，每一次MR都会安排互相review
-          code。提高代码质量。
+          在项目管理方面，严格遵循 Gitflow
+          流程，每一次合并请求都会进行代码审查，以提高代码质量。
         </p>
         <br />
         <h1 class="title">周期</h1>
@@ -36,23 +39,55 @@ const props = defineProps({
               <div class="data-icon">
                 <VTIconLink class="data-icon-svg" />
               </div>
-              <VTLink class="data-link proficiency-item" href="https://www.gettr.com" no-icon>
+              <VTLink
+                class="data-link proficiency-item"
+                href="https://www.gettr.com"
+                no-icon
+              >
                 线上地址
               </VTLink>
 
-              <VTLink class="data-link proficiency-item" href="https://apps.apple.com/app/id1571619156" no-icon>
+              <VTLink
+                class="data-link proficiency-item"
+                href="https://apps.apple.com/app/id1571619156"
+                no-icon
+              >
                 苹果客户端
               </VTLink>
-              <VTLink class="data-link proficiency-item"
-                href="https://play.google.com/store/apps/details?id=com.gettr.gettr&showAllReviews=true" no-icon>
+              <VTLink
+                class="data-link proficiency-item"
+                href="https://play.google.com/store/apps/details?id=com.gettr.gettr&showAllReviews=true"
+                no-icon
+              >
                 安卓客户端
               </VTLink>
             </li>
             <br />
             <h1 class="title">项目截图</h1>
-            <img class="img" src="../../public/images/gettr-1.png" alt="" />
+            <img
+              class="img"
+              src="/public/images/gettr-1.png"
+              alt=""
+            />
             <br />
-            <img class="img" src="../../public/images/gettr-2.png" alt="" />
+            <img
+              class="img"
+              src="/public/images/gettr-2.jpg"
+              alt=""
+            />
+            <br />
+            <img
+              class="img"
+              src="/public/images/gettr-3.jpg"
+              alt=""
+            />
+            <br />
+            <img
+              class="img"
+              src="/public/images/gettr-4.jpg"
+              alt=""
+            />
+            <br />
           </ul>
         </section>
       </div>
@@ -71,7 +106,6 @@ img {
   border-radius: 12px;
   box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px,
     rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
-
 }
 
 @media (min-width: 768px) {
@@ -166,7 +200,7 @@ img {
   font-size: 14px;
 }
 
-.description+.description {
+.description + .description {
   padding-top: 12px;
 }
 
@@ -222,7 +256,7 @@ img {
   display: flex;
 }
 
-.data-item+.data-item {
+.data-item + .data-item {
   padding-top: 12px;
 }
 

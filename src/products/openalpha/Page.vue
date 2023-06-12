@@ -11,7 +11,7 @@ import PageDetail from './PageDetail.vue'
       <template #logo>
         <img
           style="height: 64px"
-          src="../../public/images/openalpha-logo.ico"
+          src="/public/images/openalpha-logo.ico"
           alt=""
       /></template>
       <template #title>基金研究开放平台</template>

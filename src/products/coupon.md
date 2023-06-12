@@ -1,5 +1,7 @@
 ---
 layout: page
+title: 优惠券小程序
+
 ---
 
 <script setup>
