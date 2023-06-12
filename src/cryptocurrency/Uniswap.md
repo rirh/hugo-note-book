@@ -52,13 +52,13 @@ Uniswap首先解决的问题是任何交易员都是在与链上的合约程序�
 
 每次Swap交易都会改变交易池里两种资产的数量，从而引起价格的变动。那么，影响滑点大小的因素有哪些呢？由Uniswap价格公式可知，如果做Swap交易的数量较少，则滑点较小。如果流动性池子的资产数量越多，则滑点越小。因此，注入到池子里的资产数量至关重要，Uniswap用总锁仓量TVL：Total Value Locked表示池子的大小，可以从Uniswap交易页看到TVL排名靠前的交易池：
 
-![图片](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/1111.png)
+![图片](https://c18e-1257416358.cos.accelerate.myqcloud.com/uPic/1111.png)
 
 如果交易员想要交易UNI/WBTC，但是Uniswap没有这个交易池，或者交易池太小，怎么办？可以找两个较大的交易池，例如UNI/ETH和WBTC/ETH，做两次Swap，完成UNI和WBTC的交易：
 
 
 
-![图片](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/open-2.png)
+![图片](https://c18e-1257416358.cos.accelerate.myqcloud.com/uPic/open-2.png)
 
 
 
@@ -66,17 +66,17 @@ Uniswap首先解决的问题是任何交易员都是在与链上的合约程序�
 
 由于流动性池子的大小对于滑点有重要影响，而通常价格只会在某个范围波动，为了更好地利用做市商的流动性池子，Uniswap的V3协议允许做市时指定价格区间，超过区间后该做市商的资金就不会被使用。这种改进的目的在于使用更少的资金提供相同的流动性：
 
-![图片](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/open-3.png)
+![图片](https://c18e-1257416358.cos.accelerate.myqcloud.com/uPic/open-3.png)
 
 除了Uniswap，还有其他基于链上Swap的DEX。
 
 Balancer允许多个资产在同一个池子中交易，它采用的公式如下：
 
-![图片](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/open-4.png)
+![图片](https://c18e-1257416358.cos.accelerate.myqcloud.com/uPic/open-4.png)
 
 Curve也允许多个资产在同一个池子中交易，它采用的公式如下：
 
-![图片](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/open-5.png)
+![图片](https://c18e-1257416358.cos.accelerate.myqcloud.com/uPic/open-5.png)
 
 数学功底过硬的同学可以自行推导价格变化曲线，这里我们就不展开细讲了。
 

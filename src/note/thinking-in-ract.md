@@ -17,7 +17,7 @@
 4. **`ProductCategoryRow` (天蓝色):** 为每一个*产品类别*展示标题
 5. **`ProductRow` (红色):** 每一行展示一个*产品*
 
-![image-20200215100353233](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/image-20200215100353233.png)
+![image-20200215100353233](https://c18e-1257416358.cos.accelerate.myqcloud.com/uPic/image-20200215100353233.png)
 
 **如何对UI进行合理的分割？**
 

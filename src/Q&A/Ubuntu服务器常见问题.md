@@ -71,7 +71,7 @@ Ubuntu近年来最热的操作系统。基于非常正统的Debian发行版，�
 2. #### 测试是否安装成功(下图为安装成功)
    
    `sudo netstat -tap | grep mysql`
-   ![image-20230302100512774](https://image-host-1257416358.cos.accelerate.myqcloud.com/image-20230302100512774.png)
+   ![image-20230302100512774](https://c18e-1257416358.cos.accelerate.myqcloud.com/image-20230302100512774.png)
    
 3. #### 配置远程可访问（**配置完记得去云控制台规则开放3306端口**）
 
@@ -100,7 +100,7 @@ Ubuntu近年来最热的操作系统。基于非常正统的Debian发行版，�
    
    `netstat -nlt|grep 3306`
    
-   ![image-20230302101335947](https://image-host-1257416358.cos.accelerate.myqcloud.com/image-20230302101335947.png)
+   ![image-20230302101335947](https://c18e-1257416358.cos.accelerate.myqcloud.com/image-20230302101335947.png)
    
 6. #### 使用navcat 或者mysql访问数据库
 
@@ -140,7 +140,9 @@ Ubuntu近年来最热的操作系统。基于非常正统的Debian发行版，�
 
 4. ##### [pyenv常用命令](python.md#Python 版本管理工具)
 
-## [Q:在服务器GIT配置ssh key？](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux)
+
+
+## [Q:服务器免密登录github配置](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux)
 
 1. ##### 生成新 SSH 密钥
 
@@ -159,9 +161,97 @@ Ubuntu近年来最热的操作系统。基于非常正统的Debian发行版，�
 
 3. ##### [打开github添加ssh-key](https://github.com/settings/keys)
 
+## Q：如何解决ubuntu环境下uwsgi启动报错问题？
+
+#### uwsgi成功访问返回502
+
+```shell
+apt-get install uwsgi-plugin-python
+```
 
 
-## 安装提示
+
+## Q:Ubantu 如何日志文件常用操作有哪些？
+
+1. 查看日志文件前50行
+
+   ```shell
+   head -n 50 FILENAME
+   ```
+
+2. 查看日志文件后50行
+
+   ```shell
+   tail -n 50 FILENAME
+   ```
+
+3. 查看文件信息（文件大小为M）
+
+   ```shell
+   ls -lh FILENAME
+   ```
+
+4. 清空日志文件
+
+   ```shell
+   :> FILENAME
+   ```
+
+   
+
+## Q: 如何申请免费证书
+
+服务器网站申请免费证书需要使用 [acme.sh](https://github.com/acmesh-official/acme.sh)
+
+##### [官方说明文档](https://github.com/acmesh-official/acme.sh/wiki/%E8%AF%B4%E6%98%8E)
+
+1. ##### 安装软件
+
+   ```shell
+   curl https://get.acme.sh | sh -s email=my@example.com
+   ```
+
+2. ##### 配置dns
+
+   ```shell
+   ~/.acme.sh/ # 文件夹地址
+   ~/.acme.sh/account.conf  # 账户配置地址
+   ```
+
+3. ##### 生成证书
+
+   ```shell
+   acme.sh   --issue   --dns dns_dp   -d bleoty.com -d *.bleoty.com
+   ```
+
+   ##### 阿里云签发证书  唯一不同点 [dns_ali](https://github.com/acmesh-official/acme.sh/wiki/dnsapi) 
+
+   ```
+   acme.sh   --issue   --dns dns_ali   -d shiniya.tigerzh.com 
+   ```
+
+   
+
+4. ##### nginx配置到具体目录并重启服务
+
+   ```shell
+   acme.sh --install-cert -d shiniya.cn \
+   --key-file       /etc/nginx/cert/shiniya.cn.key  \
+   --fullchain-file /etc/nginx/cert/shiniya.cn.pem \
+   --reloadcmd     "service nginx force-reload"
+   ```
+
+## Q: SSH一直超时 nginx 网址一直超时
+
+**不排除防火墙开启 未开启22端口的可能性**
+
+```
+
+```
+
+
+
+##### 安装提示
 
 ```
 // 保护MySQL服务器部署

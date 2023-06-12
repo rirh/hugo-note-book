@@ -4,7 +4,7 @@
 
 - 找到Passord
 
-  1. ![image-20230218170509429](https://image-host-1257416358.cos.accelerate.myqcloud.com/image-20230218170509429.png)
+  1. ![image-20230218170509429](https://c18e-1257416358.cos.accelerate.myqcloud.com/image-20230218170509429.png)
 
 - 使用脚本破解密码
 

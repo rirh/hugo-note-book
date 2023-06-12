@@ -100,7 +100,7 @@ $ pm2 logs --lines 200
  $ pm2 describe app
 ```
 
-![image-20200120104004429](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/image-20200120104004429.png)
+![image-20200120104004429](https://c18e-1257416358.cos.accelerate.myqcloud.com/uPic/image-20200120104004429.png)
 
 
 
@@ -110,7 +110,7 @@ $ pm2 logs --lines 200
  $ pm2 monit
 ```
 
-![image-20200120104246139](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/image-20200120104246139.png)
+![image-20200120104246139](https://c18e-1257416358.cos.accelerate.myqcloud.com/uPic/image-20200120104246139.png)
 
 **设置pm2开机自启**
 

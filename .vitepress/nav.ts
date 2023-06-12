@@ -21,6 +21,7 @@ export default [
       {
         text: '代表作',
         items: [
+          { text: '币傲交易所', link: '/products/btcalory' },
           { text: 'Gettr', link: '/products/gettr' },
           { text: '叮铃医生', link: '/products/doctor' }
         ]
@@ -32,7 +33,6 @@ export default [
             text: 'Fas基金研究平台',
             link: '/products/fas'
           },
-          { text: '币傲交易所', link: '/products/btcalory' },
           {
             text: 'Open Alpha',
             link: '/products/openalpha'

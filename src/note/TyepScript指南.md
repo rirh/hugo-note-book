@@ -6,7 +6,7 @@ TypeScript 简称 TS ，既是一门新语言，也是 JS 的一个超集，它�
 
 虽然带有类型系统的前端语言不止 TypeScript （例如 Facebook 推出的 [Flow.js](https://github.com/facebook/flow) ），但从目前整个 [开源社区的流行趋势](https://octoverse.github.com/#top-languages-over-the-years) 看， TypeScript 无疑是更好的选择。
 
-![TypeScript 的流行程度（来自 GitHub 年度统计报告）](https://image-host-1257416358.cos.accelerate.myqcloud.com/github-top-languages.jpg)
+![TypeScript 的流行程度（来自 GitHub 年度统计报告）](https://c18e-1257416358.cos.accelerate.myqcloud.com/github-top-languages.jpg)
 
 而且只要本身已经学会了 JS ，并且经历过很多协作类的项目，那么使用 TS 编程是一个很自然而然的过程。
 

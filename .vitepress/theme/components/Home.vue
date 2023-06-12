@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import 'animate.css'
-import { useData } from 'vitepress'
+import { useData, useRoute } from 'vitepress'
 
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useTitle } from '@vueuse/core'
@@ -9,7 +9,8 @@ import pkg from '../../../package.json'
 // import NewsLetter from './NewsLetter.vue'
 // import SponsorsGroup from './SponsorsGroup.vue'
 // import Sence from './Sence.vue'
-const { isDark, localePath } = useData()
+const { isDark } = useData()
+const { path } = useRoute()
 const title = useTitle()
 
 const base = ref()
@@ -24,32 +25,38 @@ const print = (key: string, value: string) =>
 onMounted(() => {
   print(pkg.name, pkg.version)
   print('build time', `${import.meta.env.VITE_APP_BUILD_TIME}`)
-  title.value = "笔记本"
+  title.value = '笔记本'
 })
-
-
-
-
 </script>
 
 <template>
   <div>
-  <!-- <Sence /> -->
-  <section id="hero">
-    <h1 class="tagline">
-      My
-      <span class="accent">Life</span>
-      <br />Getting Better
-      {{ isDark ? '🌙' : '☀️' }}
+    <!-- <Sence /> -->
+    <section id="hero">
+      <h1 class="tagline">
+        My
+        <span class="accent">Life</span>
+        <br />Getting Better
+        {{ isDark ? '🌙' : '☀️' }}
       </h1>
-      <p class="actions ">
-        <a class="get-started" :href="`${localePath}cryptocurrency/money.html`">
+      <p class="actions">
+        <a class="get-started" :href="`${path}cryptocurrency/money.html`">
           立即探索
-          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
-            <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z" />
+          <svg
+            class="icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="10"
+            height="10"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"
+            />
           </svg>
         </a>
-        <a class="setup" :href="`${localePath}note/前端工程化.html`">开始阅读 📒</a>
+        <a class="setup" :href="`${path}note/前端工程化.html`"
+          >开始阅读 📒
+        </a>
       </p>
     </section>
 

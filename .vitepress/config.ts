@@ -1,21 +1,26 @@
 import fs from 'fs'
 import path from 'path'
 import { defineConfig } from 'vitepress'
+import banner from 'vite-plugin-banner'
+
 import { headerPlugin } from './headerMdPlugin'
 import head from './head'
 import nav from './nav'
 import sidebar from './sidebar'
 import dayjs from 'dayjs'
+import pkg from '../package.json'
+
 // Placeholder of the i18n config for @vuejs-translations.
 // const i18n: ThemeConfig['i18n'] = {
 // }
 process.env.VITE_APP_BUILD_TIME = dayjs().format('YYYY-MM-DD HH:mm:ss')
 
 export default defineConfig({
-  base: '/document/',
+  base: '/',
   lang: 'zh-CN',
   title: '🏠',
-  description: '笔记本 📚',
+  description:
+    '笔记本 📚  世界上只有10类人：一类是懂二进制的，一类是不懂的。',
   srcDir: 'src',
   scrollOffset: 'header',
   head,
@@ -29,7 +34,8 @@ export default defineConfig({
     algolia: {
       indexName: 'article',
       appId: 'MDH54K1FJG',
-      apiKey: '2651a6fb85dcb86beafa3e76ba3dcf99'
+      apiKey: '2651a6fb85dcb86beafa3e76ba3dcf99',
+      placeholder: '请输入关键词'
     },
     // carbonAds: {
     //   code: 'CEBDT27Y',
@@ -47,9 +53,12 @@ export default defineConfig({
       pattern: 'https://github.com/AliMales/NoteBook/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
     },
-
+    docFooter: {
+      prev: '上一章',
+      next: '下一章'
+    },
     footer: {
-      copyright: `Copyright © 2018-${new Date().getFullYear()} TigerZH`
+      copyright: `Copyright © 2018-${new Date().getFullYear()} TigerZH 版权所有`
     }
   },
 
@@ -84,7 +93,21 @@ export default defineConfig({
     },
     json: {
       stringify: true
-    }
+    },
+    plugins: [
+      banner({
+        content: [
+          `/**`,
+          ` * name: ${pkg.name}`,
+          ` * version: v${pkg.version}`,
+          ` * description: ${pkg.description}`,
+          ` * author: ${pkg.author}`,
+          ` * homepage: ${pkg.homepage}`,
+          ` */`
+        ].join('\n'),
+        debug: false
+      })
+    ]
   },
 
   vue: {

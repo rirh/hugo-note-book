@@ -78,7 +78,7 @@ export default {
 
 **兼容性也是很友好了**
 
-![image-20191127120129214](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/image-20191127120129214.png)
+![image-20191127120129214](https://c18e-1257416358.cos.accelerate.myqcloud.com/uPic/image-20191127120129214.png)
 
 **核心代码**
 
@@ -97,7 +97,7 @@ const observer = new IntersectionObserver((entries: any) => {
 
 引入组件使用的是按需引入的方式
 
-![image-20191127121405103](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/image-20191127121405103.png)
+![image-20191127121405103](https://c18e-1257416358.cos.accelerate.myqcloud.com/uPic/image-20191127121405103.png)
 
 
 
@@ -175,7 +175,7 @@ export default class Avatars extends Vue {
 ```
 
 🎉 效果
-![image-20191127120129214](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/20191127-122628-HD.gif)
+![image-20191127120129214](https://c18e-1257416358.cos.accelerate.myqcloud.com/uPic/20191127-122628-HD.gif)
 
 
 

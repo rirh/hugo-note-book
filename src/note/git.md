@@ -19,7 +19,7 @@ git是世界上最先进的发布式版本控制系统
 | `git stash `                | 保存当前修改           |
 | `git stash pop`             | 拆包当前修改           |
 
-![image-20191216113953773](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/image-20191216113953773.png)
+![image-20191216113953773](https://c18e-1257416358.cos.accelerate.myqcloud.com/uPic/image-20191216113953773.png)
 
 ## **git强制拉取远程仓库覆盖本地**
 
@@ -37,7 +37,7 @@ git pull                       //开始更新
 
 多人协作（workflow）必须有一个规范流程，使得项目井井有条的进行。
 
-![image-20191115142922654](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/image-20191115142922654.png)
+![image-20191115142922654](https://c18e-1257416358.cos.accelerate.myqcloud.com/uPic/image-20191115142922654.png)
 
 可以把git抽象为仓库，当执行 git init 命令的时候，文件夹就初始化了一个.git文件夹仓库，
 文件夹里的文件以git自己的方式记录当前文件夹的变化，一般来说为了防止用户误操作文件夹破坏仓库完整性，文件夹默认是隐藏的。
@@ -117,7 +117,7 @@ git pull                       //开始更新
 
 下面是[ThoughtBot](https://github.com/thoughtbot/guides/tree/master/protocol/git) 的Git使用规范流程。我从中学到了很多，推荐你也这样使用Git。
 
-![img](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/bg2015080501.png)
+![img](https://c18e-1257416358.cos.accelerate.myqcloud.com/uPic/bg2015080501.png)
 
 ## 第一步：新建分支
 

@@ -1,0 +1,50 @@
+{
+  "hash": "cc260d55",
+  "browserHash": "3bcbfd5a",
+  "optimized": {
+    "gsap": {
+      "src": "../../../node_modules/.pnpm/gsap@3.9.0/node_modules/gsap/index.js",
+      "file": "gsap.js",
+      "fileHash": "6ad6fa74",
+      "needsInterop": false
+    },
+    "dynamics.js": {
+      "src": "../../../node_modules/.pnpm/dynamics.js@1.1.5/node_modules/dynamics.js/lib/dynamics.js",
+      "file": "dynamics__js.js",
+      "fileHash": "c3cf11cf",
+      "needsInterop": true
+    },
+    "vue": {
+      "src": "../../../node_modules/.pnpm/vue@3.2.38/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "e4ab63fc",
+      "needsInterop": false
+    },
+    "@withtypes/md5": {
+      "src": "../../../node_modules/.pnpm/@withtypes+md5@0.1.1/node_modules/@withtypes/md5/lib/index.mjs",
+      "file": "@withtypes_md5.js",
+      "fileHash": "1637d70c",
+      "needsInterop": false
+    },
+    "gitalk": {
+      "src": "../../../node_modules/.pnpm/gitalk@1.8.0/node_modules/gitalk/dist/gitalk.js",
+      "file": "gitalk.js",
+      "fileHash": "b4811415",
+      "needsInterop": true
+    },
+    "@vueuse/core": {
+      "src": "../../../node_modules/.pnpm/@vueuse+core@9.5.0_vue@3.2.38/node_modules/@vueuse/core/index.mjs",
+      "file": "@vueuse_core.js",
+      "fileHash": "94dd9eb1",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-LD6GWHL4": {
+      "file": "chunk-LD6GWHL4.js"
+    },
+    "chunk-DFKQJ226": {
+      "file": "chunk-DFKQJ226.js"
+    }
+  }
+}

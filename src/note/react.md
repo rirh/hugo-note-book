@@ -4,7 +4,7 @@
 
 ## 移动端
 
-![img](https://image-host-1257416358.cos.accelerate.myqcloud.com/e33dc5a9a9fb43bb984b2ce0917c4699~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp)
+![img](https://c18e-1257416358.cos.accelerate.myqcloud.com/e33dc5a9a9fb43bb984b2ce0917c4699~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp)
 
 ## React native
 

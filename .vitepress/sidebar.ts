@@ -97,11 +97,15 @@ export default {
   ],
   '/tools/': [
     {
-      text: '图表类',
+      text: ' Frontend',
+      items: [{ text: '工具函数速查', link: '/tools/工具函数' }]
+    },
+    {
+      text: '📌 图表类',
       items: [{ text: 'echarts', link: '/tools/echarts' }]
     },
     {
-      text: 'APP',
+      text: '📌 APP',
       items: [{ text: '模拟器', link: '/tools/emulator' }]
     }
   ],

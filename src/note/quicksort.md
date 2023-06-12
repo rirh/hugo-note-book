@@ -19,13 +19,13 @@
 
 
  1. ***第一步选择8作为中间值（选择任何值都行，中间比较容易明白）***
-![在这里插入图片描述](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/2019010310182524.png)
+![在这里插入图片描述](https://c18e-1257416358.cos.accelerate.myqcloud.com/uPic/2019010310182524.png)
  2. ***所有小于8的放在左侧，大于8的放在右侧***
-![在这里插入图片描述](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/2019010310205446.png)
+![在这里插入图片描述](https://c18e-1257416358.cos.accelerate.myqcloud.com/uPic/2019010310205446.png)
  3. ***左右两边分开的数据不断重复第一步、第二步，直到里面只有一个值为止***
-![在这里插入图片描述](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/20190103103146394.png)
+![在这里插入图片描述](https://c18e-1257416358.cos.accelerate.myqcloud.com/uPic/20190103103146394.png)
 
-![在这里插入图片描述](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/20190103103204593.png)
+![在这里插入图片描述](https://c18e-1257416358.cos.accelerate.myqcloud.com/uPic/20190103103204593.png)
 
 ##  使用javascript实现
 
@@ -73,11 +73,11 @@
 </html>
 ```
 **使用的时候直接调用就行了**
-![在这里插入图片描述](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/20190103103950652.png)
+![在这里插入图片描述](https://c18e-1257416358.cos.accelerate.myqcloud.com/uPic/20190103103950652.png)
 
 ## 1.9.4 快速排序思维导图
 
-![在这里插入图片描述](https://image-host-1257416358.cos.accelerate.myqcloud.com/uPic/20190103103740192.png)
+![在这里插入图片描述](https://c18e-1257416358.cos.accelerate.myqcloud.com/uPic/20190103103740192.png)
 
 小狗很快就拍好序了：）好吧，可能会受不了，可能会狗带，毕竟和电脑比不了，具体情况具体分析，当数据量很大的时候。对于计算机来说，这种方式是最为广泛也是最快的。
 

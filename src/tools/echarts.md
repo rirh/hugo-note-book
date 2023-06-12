@@ -1,11 +1,11 @@
 # Echarts
-
+Apache ECharts，一款基于JavaScript的数据可视化图表库，提供直观，生动，可交互，可个性化定制的数据可视化图表。
 ## 快速开始
 
 - [github](https://github.com/apache/echarts)
-- [issuse](https://github.com/apache/echarts/issues)
+- [issuse（常见的问题这里都能找到）](https://github.com/apache/echarts/issues)
 - [CDN(跳转网页复制最新版本地址)](https://www.jsdelivr.com/package/npm/echarts)
-- [定制包(减少包体积)](https://echarts.apache.org/zh/builder.html)
+- [定制包(减少包体积方案)](https://echarts.apache.org/zh/builder.html)
 
 ## 安装
 
@@ -58,4 +58,3 @@ position: function (point, params, dom, rect, size) {
       return [x, y];
     },
 ```
-
