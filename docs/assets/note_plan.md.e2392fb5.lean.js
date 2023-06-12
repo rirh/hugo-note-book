@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as a,a as l}from"./app.a5d386c5.js";const p=JSON.parse('{"title":"学习方向","description":"","frontmatter":{},"headers":[],"relativePath":"note/plan.md"}'),e={name:"note/plan.md"},o=[l("",12)];const i=s(e,[["render",function(s,l,p,e,i,t){return n(),a("div",null,o)}]]);export{p as __pageData,i as default};

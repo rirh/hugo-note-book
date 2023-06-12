@@ -1,0 +1,1 @@
+import{_ as a,o as e,c as i,a as h}from"./app.a5d386c5.js";const r=JSON.parse('{"title":"奶的底层逻辑就是奶","description":"","frontmatter":{},"headers":[],"relativePath":"stores/觉醒.md"}'),d={name:"stores/觉醒.md"},n=[h("",2)];const l=a(d,[["render",function(a,h,r,d,l,t){return e(),i("div",null,n)}]]);export{r as __pageData,l as default};

@@ -1,0 +1,1 @@
+import{_ as t,o as a,c as e}from"./app.a5d386c5.js";const r=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Q&A/Django常见问题.md"}');const n=t({name:"Q&A/Django常见问题.md"},[["render",function(t,r,n,o,s,d){return a(),e("div")}]]);export{r as __pageData,n as default};

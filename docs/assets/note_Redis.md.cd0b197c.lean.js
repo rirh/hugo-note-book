@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as n,a as e}from"./app.a5d386c5.js";const l=JSON.parse('{"title":"Redis","description":"","frontmatter":{},"headers":[],"relativePath":"note/Redis.md"}'),t={name:"note/Redis.md"},p=[e("",3)];const o=s(t,[["render",function(s,e,l,t,o,r){return a(),n("div",null,p)}]]);export{l as __pageData,o as default};

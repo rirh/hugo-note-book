@@ -1,0 +1,1 @@
+import{_ as e,o,c as t,a as r}from"./app.a5d386c5.js";const a=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"note/thinking-in-ract.md"}'),c={name:"note/thinking-in-ract.md"},i=[r("",13)];const l=e(c,[["render",function(e,r,a,c,l,n){return o(),t("div",null,i)}]]);export{a as __pageData,l as default};

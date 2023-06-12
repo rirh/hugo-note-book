@@ -1,0 +1,1 @@
+import{_ as a,o as s,c as n,a as l}from"./app.a5d386c5.js";const e=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"note/django.md"}'),t={name:"note/django.md"},p=[l("",13)];const o=a(t,[["render",function(a,l,e,t,o,i){return s(),n("div",null,p)}]]);export{e as __pageData,o as default};

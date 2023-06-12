@@ -1,0 +1,1 @@
+import{_ as i,o as l,c as e,a}from"./app.a5d386c5.js";const r=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"note/pass.md"}'),d={name:"note/pass.md"},s=[a("",9)];const t=i(d,[["render",function(i,a,r,d,t,h){return l(),e("div",null,s)}]]);export{r as __pageData,t as default};

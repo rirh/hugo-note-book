@@ -34,9 +34,9 @@ onMounted(() => {
     <!-- <Sence /> -->
     <section id="hero">
       <h1 class="tagline">
-        My
-        <span class="accent">Life</span>
-        <br />Getting Better
+        Bitcoin To The
+        <span class="accent">Moon</span>
+        <!-- <br />一类是懂二进制的，一类是不懂的 -->
         {{ isDark ? '🌙' : '☀️' }}
       </h1>
       <p class="actions">
@@ -129,7 +129,7 @@ section {
 }
 
 .tagline {
-  font-size: 76px;
+  font-size: 6vw;
   line-height: 1.25;
   font-weight: 900;
   letter-spacing: -1.5px;

@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as a,a as p}from"./app.a5d386c5.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"note/optimize.md"}'),o={name:"note/optimize.md"},e=[p("",8)];const c=s(o,[["render",function(s,p,l,o,c,t){return n(),a("div",null,e)}]]);export{l as __pageData,c as default};

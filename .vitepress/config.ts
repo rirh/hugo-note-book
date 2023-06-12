@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import { defineConfig } from 'vitepress'
 import banner from 'vite-plugin-banner'
+import { resolve } from 'path'
 
 import { headerPlugin } from './headerMdPlugin'
 import head from './head'
@@ -105,6 +106,7 @@ export default defineConfig({
           ` * homepage: ${pkg.homepage}`,
           ` */`
         ].join('\n'),
+        outDir: resolve(__dirname, '../docs'),
         debug: false
       })
     ]

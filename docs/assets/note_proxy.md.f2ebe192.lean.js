@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as r}from"./app.a5d386c5.js";const o=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"note/proxy.md"}');const a=t({name:"note/proxy.md"},[["render",function(t,o,a,n,s,p){return e(),r("div")}]]);export{o as __pageData,a as default};

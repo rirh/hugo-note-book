@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as n,a as l}from"./app.a5d386c5.js";const p=JSON.parse('{"title":"对象原型链指南","description":"","frontmatter":{},"headers":[],"relativePath":"note/对象原型链指南.md"}'),o={name:"note/对象原型链指南.md"},t=[l("",2)];const e=s(o,[["render",function(s,l,p,o,e,c){return a(),n("div",null,t)}]]);export{p as __pageData,e as default};

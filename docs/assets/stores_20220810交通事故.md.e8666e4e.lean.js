@@ -1,0 +1,1 @@
+import{_ as p,o as t,c as e,a as r}from"./app.a5d386c5.js";const s=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"stores/20220810交通事故.md"}'),a={name:"stores/20220810交通事故.md"},_=[r("",16)];const o=p(a,[["render",function(p,r,s,a,o,n){return t(),e("div",null,_)}]]);export{s as __pageData,o as default};

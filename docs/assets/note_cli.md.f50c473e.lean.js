@@ -1,0 +1,1 @@
+import{_ as a,o as s,c as e,a as n}from"./app.a5d386c5.js";const t=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"note/cli.md"}'),l={name:"note/cli.md"},i=[n("",10)];const p=a(l,[["render",function(a,n,t,l,p,r){return s(),e("div",null,i)}]]);export{t as __pageData,p as default};
