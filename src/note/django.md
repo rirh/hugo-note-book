@@ -47,4 +47,22 @@ from django.urls import path
 
 ```
 
+##### 安装mysqlclient报错
+
+```
+centos系统使用yum安装 mysql-devel
+
+yum install mysql-devel
+
+ubuntu 系统apt-get 安装libmysqlclient-dev
+
+apt-get update
+apt-get upgrade
+apt-get install libmysqlclient-dev
+
+debian 系统
+
+apt install -y libmariadbd18
+apt install -y libmariadbd-dev
+```
 

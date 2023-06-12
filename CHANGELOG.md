@@ -1,4 +1,4 @@
-## [1.0.2](https://github.com/AliMales/NoteBook/compare/v1.0.1...v1.0.2) (2023-01-31)
+## [1.0.7](https://github.com/AliMales/NoteBook/compare/v1.0.1...v1.0.7) (2023-03-02)
 
 
 ### Bug Fixes
@@ -8,6 +8,7 @@
 * 解决地址错误的问题 ([3830821](https://github.com/AliMales/NoteBook/commit/3830821833e835022ff2481f321c2565017c01ba))
 * 解决地址错误的问题 ([36fd70b](https://github.com/AliMales/NoteBook/commit/36fd70b79cc5dd446dc650362d1cda6eb68afed2))
 * 解决生产changelog重复问题 ([5aaea13](https://github.com/AliMales/NoteBook/commit/5aaea13f19ec1e7ad44e15547c03894f6f306484))
+* 净值预估文字错误 ([c081209](https://github.com/AliMales/NoteBook/commit/c081209efb997c6cf8e1f86dab1ee05d0ef5f5c6))
 * 迁移到服务器 ([095a3f4](https://github.com/AliMales/NoteBook/commit/095a3f48125e142142ded7c51489a9b2b660724a))
 * 修复无法搜索的问题 ([ebbc13c](https://github.com/AliMales/NoteBook/commit/ebbc13cc8e4a92106cd029f74da7e12e731ea6e1))
 * fix build error ([711a3d0](https://github.com/AliMales/NoteBook/commit/711a3d06fb992b719db7140aa139c72dbecf7f15))
@@ -27,10 +28,13 @@
 * 添加规范 ([a460bd6](https://github.com/AliMales/NoteBook/commit/a460bd6fdcc20219a0eabd69ef3ff8d3266048a5))
 * 添加金融相关文章 ([1e97a14](https://github.com/AliMales/NoteBook/commit/1e97a14aa6e093eaf364412cb9d71d9fcc81e229))
 * 添加前端工程化详情文章 ([3e91cd9](https://github.com/AliMales/NoteBook/commit/3e91cd9026d97d59df0d9f76ca531247a13fd69e))
+* 添加日志 ([33fa026](https://github.com/AliMales/NoteBook/commit/33fa02606d6305316872f7822c0b711d7489eeeb))
 * 添加文件 ([9dd20ce](https://github.com/AliMales/NoteBook/commit/9dd20ce0cb224fab9351c5857cc98733c84dbd25))
+* 添加文章 ([e3e04c8](https://github.com/AliMales/NoteBook/commit/e3e04c8924f85f75815a4363c47df5fda3922fa9))
 * 添加组织过程资产 ([e5330c3](https://github.com/AliMales/NoteBook/commit/e5330c39fd39ad6a5195d31a18ec971dd102bbf3))
 * 添加algolia配置 ([641deec](https://github.com/AliMales/NoteBook/commit/641deec84fa0736f0ffcf9b6feb26c2d769a7a10))
 * 添加js优雅指南 & 期货 & 混合保证金 & 合约 & 调整文档结构 & 展示提示 ([269753d](https://github.com/AliMales/NoteBook/commit/269753ddccbbea1fac83772a4fcb2636a9a631bd))
+* 添加python说明 ([c56c329](https://github.com/AliMales/NoteBook/commit/c56c3294c2f85c86205ce6bbaf1ea405f489d856))
 * 添加web3应用 & 项目管理 & tableau进度计算任务 & 项目架构整理 ([8986c25](https://github.com/AliMales/NoteBook/commit/8986c259487052344c1ea58c49d18556f250d828))
 * 新增python 笔记 ([79d953d](https://github.com/AliMales/NoteBook/commit/79d953dea509b9e9ef163dd43b5692d3b194b315))
 * 修改端口 添加日志 ([df157c7](https://github.com/AliMales/NoteBook/commit/df157c739730f155e6ed8146ff391ef5f4ec3674))

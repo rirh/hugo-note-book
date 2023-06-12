@@ -25,8 +25,6 @@ css是表现和语义分离的解决方案（通常作为单独的样式文件�
 css决定html如何显示
 ```
 
-
-
 **语法**
 
 ```
@@ -1039,6 +1037,159 @@ antiquewhite：值
 </html>
 ```
 
+### sass scss 
+
+```vue
+<template>
+    <div class="loading">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+</template>
+
+<script setup lang="ts">
+
+</script>
+
+<style scoped lang="scss">
+@use "sass:math";
+$wapperSize: 150px;
+$bollSize: 10px;
+$n: 36;
+$rotate: calc(360 / $n);
+$duration: 3500;
 
 
+.loading {
+    height: $wapperSize;
+    width: $wapperSize;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    perspective: 70px;
+    transform-style: preserve-3d;
 
+    .dot {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: $bollSize;
+        width: $bollSize;
+        margin-left: - calc($bollSize / 2);
+        margin-top: - calc($bollSize / 2);
+        // background-color: red;
+
+        &::before,
+        &::after {
+            content: ' ';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        &::before {
+            background-color: #03A66D;
+            top: -100%;
+            animation: moveBlack #{$duration}ms infinite;
+        }
+
+        &::after {
+            background-color: rgb(207, 48, 74);
+            top: 100%;
+            animation: moveWhite #{$duration}ms infinite;
+
+        }
+    }
+
+    @keyframes moveBlack {
+        0% {
+            animation-timing-function: ease-in;
+        }
+
+        25% {
+            transform: translate3d(0, 100%, $bollSize);
+            animation-timing-function: ease-out;
+        }
+
+        50% {
+            transform: translate3d(0, 200%, 0);
+            animation-timing-function: ease-in;
+        }
+
+        75% {
+            transform: translate3d(0, 100%, -$bollSize);
+            animation-timing-function: ease-out;
+        }
+    }
+
+    @keyframes moveWhite {
+        0% {
+            animation-timing-function: ease-in;
+        }
+
+        25% {
+            transform: translate3d(0, -100%, -$bollSize);
+            animation-timing-function: ease-out;
+        }
+
+        50% {
+            transform: translate3d(0, -200%, 0);
+            animation-timing-function: ease-in;
+        }
+
+        75% {
+            transform: translate3d(0, -100%, $bollSize);
+            animation-timing-function: ease-out;
+        }
+    }
+    @for $i from 1 to $n+1 {
+        .dot:nth-child(#{$i}) {
+            transform: rotate(calc(#{$rotate}deg * #{$i})) translateY(- calc($wapperSize / 2));
+            &::before,
+            &::after {
+                animation-delay:-#{math.div($duration , $n) * 6 * $i}ms;
+            }
+        }
+    }
+}
+</style>
+```
+
+##### CSS预处理器
+
+less

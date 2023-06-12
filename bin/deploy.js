@@ -44,8 +44,6 @@ inquirer
   .then(async (answers) => {
     const [name] = answers.commit.split(":");
     const index = envs.findIndex((it) => it.name === name);
-
-
     if (index > -1) {
       const it = envs[index];
       const spinner = ora({

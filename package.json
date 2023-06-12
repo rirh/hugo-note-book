@@ -1,7 +1,7 @@
 {
   "name": "z-doc",
   "private": true,
-  "version": "1.0.5",
+  "version": "1.0.7",
   "engines": {
     "node": ">=14.0.0"
   },
@@ -24,29 +24,19 @@
     "dayjs": "^1.11.7",
     "dynamics.js": "^1.1.5",
     "gsap": "^3.9.0",
-<<<<<<< HEAD
     "husky": "^7.0.4",
     "localStorage": "^1.0.4",
     "localforage": "^1.10.0",
     "normalize.css": "^8.0.1",
     "shiki": "^0.10.1",
     "three": "^0.138.0",
-    "vitepress": "1.0.0-alpha.13",
-    "vue": "^3.2.26"
-  },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
-    }
+    "vitepress": "1.0.0-alpha.29",
+    "vue": "^3.2.38"
   },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
-=======
-    "vitepress": "1.0.0-alpha.29",
-    "vue": "^3.2.38"
->>>>>>> c081209efb997c6cf8e1f86dab1ee05d0ef5f5c6
   },
   "devDependencies": {
     "@types/markdown-it": "^12.2.3",

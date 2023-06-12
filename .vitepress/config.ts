@@ -17,17 +17,8 @@ export default defineConfig({
   title: '🏠',
   description: '笔记本 📚',
   srcDir: 'src',
-  srcExclude: ['tutorial/**/description.md'],
   scrollOffset: 'header',
-<<<<<<< HEAD
-  head: [
-    ['meta', { name: 'theme-color', content: '#3c8772' }],
-    ['meta', { name: 'twitter:site', content: '@tigerzh' }],
-    ['meta', { name: 'twitter:card', content: 'summary' }]
-  ],
-=======
   head,
->>>>>>> c081209efb997c6cf8e1f86dab1ee05d0ef5f5c6
   themeConfig: {
     nav,
     sidebar,

@@ -12,21 +12,6 @@ import pkg from '../../../package.json'
 const { isDark, localePath } = useData()
 const title = useTitle()
 
-const url =
-  'https://42541d62-1eb3-4f4a-b656-cc98d4542086.bspapp.com/http/epic'
-const epic = ref(' 世界上有10类人：一类是懂计算机的，一类是不懂的。')
-const timer = ref()
-const fetchepic = () => {
-  timer.value = setTimeout(async () => {
-    const response = await axios.get(url)
-    const [_epic] = response.data.data
-    epic.value = ''
-    setTimeout(() => {
-      epic.value = _epic.contant
-    }, 700)
-    fetchepic()
-  }, 5000)
-}
 const base = ref()
 const print = (key: string, value: string) =>
   console.log(
@@ -39,35 +24,25 @@ const print = (key: string, value: string) =>
 onMounted(() => {
   print(pkg.name, pkg.version)
   print('build time', `${import.meta.env.VITE_APP_BUILD_TIME}`)
-  fetchepic()
-  title.value = ''
+  title.value = "笔记本"
 })
 
-onUnmounted(() => {
-  clearTimeout(timer.value)
-})
+
 
 
 </script>
 
 <template>
   <div>
-    <!-- <Sence /> -->
-    <section id="hero">
-      <h1 class="tagline">
-        My
-        <span class="accent">Life</span>
-        <br />Getting Better
-        {{ isDark? '🌙': '☀️' }}
+  <!-- <Sence /> -->
+  <section id="hero">
+    <h1 class="tagline">
+      My
+      <span class="accent">Life</span>
+      <br />Getting Better
+      {{ isDark ? '🌙' : '☀️' }}
       </h1>
-      <transition enter-active-class="animate__animated animate__lightSpeedInLeft"
-        leave-active-class="animate__animated animate__lightSpeedOutRight">
-        <p class="description" v-if="epic">
-          {{ epic }}
-        </p>
-      </transition>
-
-      <p class="actions">
+      <p class="actions ">
         <a class="get-started" :href="`${localePath}cryptocurrency/money.html`">
           立即探索
           <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
@@ -80,23 +55,23 @@ onUnmounted(() => {
 
     <!-- TODO make dynamic based on data -->
     <!-- <section id="special-sponsor">
-      <span>鸣谢</span>
-      <a href="https://www.tigerzh.com">
-        <picture>
-          <source
-            type="image/avif"
-            srcset="
-              https://6372-crypto2server-576164-1302901174.tcb.qcloud.la/z-org-logos/logo-512x160.png
-            "
+              <span>鸣谢</span>
+              <a href="https://www.tigerzh.com">
+                <picture>
+                  <source
+                    type="image/avif"
+                    srcset="
+                      https://6372-crypto2server-576164-1302901174.tcb.qcloud.la/z-org-logos/logo-512x160.png
+                    "
           />
           <img
             alt="hbuilder logo"
             src="https://6372-crypto2server-576164-1302901174.tcb.qcloud.la/z-org-logos/logo-512x160.png"
           />
-        </picture>
-      </a>
-      <span>特别支持</span>
-    </section> -->
+                </picture>
+              </a>
+              <span>特别支持</span>
+            </section> -->
 
     <section id="highlights" class="vt-box-container">
       <div class="vt-box">
@@ -122,11 +97,11 @@ onUnmounted(() => {
     </section>
 
     <!-- <section id="sponsors">
-    <h2>Platinum Sponsors</h2>
-    <SponsorsGroup tier="platinum" placement="landing" />
-    <h2>Gold Sponsors</h2>
-    <SponsorsGroup tier="gold" placement="landing" />
-  </section> -->
+            <h2>Platinum Sponsors</h2>
+            <SponsorsGroup tier="platinum" placement="landing" />
+            <h2>Gold Sponsors</h2>
+            <SponsorsGroup tier="gold" placement="landing" />
+          </section> -->
 
     <!-- <NewsLetter /> -->
   </div>
@@ -177,6 +152,7 @@ html:not(.dark) .accent,
   display: inline-block;
   background-color: var(--vt-c-bg-mute);
   padding: 8px 18px;
+  margin-top: 30px;
   font-weight: 500;
   border-radius: 8px;
   transition: background-color 0.5s, color 0.5s, scale 0.5s;
