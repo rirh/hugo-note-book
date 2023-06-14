@@ -154,6 +154,13 @@ export default {
         // { text: 'MacOS 邮箱教程', link: '/note/mac-bind-email' },
         // { text: 'MacOS 定时任务指南', link: '/note/mac-launchctl-task' },
       ]
+    },
+    {
+      text: '📚 高级进阶',
+      items: [
+        { text: '手写Promise', link: '/note/手写Promise' },
+        { text: '闭包的外挂', link: '/note/闭包的外挂' }
+      ]
     }
   ]
 }

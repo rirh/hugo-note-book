@@ -1,16 +1,12 @@
-
-
 <div id="top"></div>
 
 [![MIT License][license-shield]][license-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/AliMales/NoteBook">
-    <img src="https://6372-crypto2server-576164-1302901174.tcb.qcloud.la/z-org-logos/128x128.png" alt="Logo" width="80" height="80">
+    <img src="https://c18e-system-1257416358.cos.na-ashburn.myqcloud.com/image%2F128x128.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">📓 </h3>
@@ -21,15 +17,13 @@
     <a href="https://doc.tigerzh.com"><strong>探索文档 »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/AliMales/NoteBook">查看 Demo</a>
+    <a href="https://tigerzh.com">预览网址</a>
     ·
     <a href="https://github.com/AliMales/NoteBook/issues">反馈bug</a>
     ·
     <a href="https://github.com/AliMales/NoteBook/issues">提交需求</a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -57,13 +51,9 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## 关于项目
-
-
-
 
 ![Product Name Screen Shot][product-screenshot]
 
@@ -71,44 +61,37 @@
 
 <p align="right">(<a href="#top">返回顶部</a>)</p>
 
-
-
 ### 打包框架
 
-* [Vue.js](https://vuejs.org/)
-* [Vitejs](https://vitejs.dev/)
+- [Vue.js](https://vuejs.org/)
+- [Vitejs](https://vitejs.dev/)
 
 <p align="right">(<a href="#top">返回顶部</a>)</p>
 
-
-
 <!-- GETTING STARTED -->
+
 ## 快速开始
 
-安装node环境和包管理工具
+安装 node 环境和包管理工具
 
 ### 环境
- 
-* 
-  ```sh
+
+- ```sh
   npm install npm@latest -g
   ```
-* node>=12.0.0
-* npm>=6.0.0
+- node>=12.0.0
+- npm>=6.0.0
 
 ### 安装
 
-
 1. clone 当前仓库
-2. pnpm i  
-3. pnpm dev 
-
+2. pnpm i
+3. pnpm dev
 
 <p align="right">(<a href="#top">返回顶部</a>)</p>
 
-
-
 <!-- USAGE EXAMPLES -->
+
 ## 使用
 
 ## Vue 3 + Typescript + Vite
@@ -125,23 +108,21 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 
 <p align="right">(<a href="#top">返回顶部</a>)</p>
 
-
-
 <!-- ROADMAP -->
+
 ## 看板
 
-- [x] 修改日志 
+- [x] 修改日志
 - [x] 返回顶部按钮
 - [ ] 多语言
-    - [ ] 英文
+  - [ ] 英文
 
-查看 [open issues](https://github.com/AliMales/NoteBook/issues) 完整的issues列表
+查看 [open issues](https://github.com/AliMales/NoteBook/issues) 完整的 issues 列表
 
 <p align="right">(<a href="#top">返回顶部</a>)</p>
 
-
-
 <!-- CONTRIBUTING -->
+
 ## 贡献
 
 1. Fork the Project
@@ -152,18 +133,16 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 
 <p align="right">(<a href="#top">返回顶部</a>)</p>
 
-
-
 <!-- LICENSE -->
+
 ## License
 
- MIT License.
+MIT License.
 
 <p align="right">(<a href="#top">返回顶部</a>)</p>
 
-
-
 <!-- CONTACT -->
+
 ## 联系人
 
 only_tigerhu@163.com
@@ -172,18 +151,15 @@ Project Link: [https://github.com/AliMales/NoteBook](https://github.com/AliMales
 
 <p align="right">(<a href="#top">返回顶部</a>)</p>
 
-
-
 <!-- ACKNOWLEDGMENTS -->
-## 鸣谢
 
+## 鸣谢
 
 <p align="right">(<a href="#top">返回顶部</a>)</p>
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/AliMales/NoteBook/blob/master/README.md
 [product-screenshot]: ./src/assets/images/banner.png
