@@ -149,7 +149,9 @@ export default {
       text: '📚 代码规范',
       items: [
         { text: 'JS不优雅教程', link: '/note/js不优雅教程' },
-        { text: 'JS优雅教程', link: '/note/js优雅教程' }
+        { text: 'JS优雅教程', link: '/note/js优雅教程' },
+        { text: 'React优雅指南', link: '/note/React优雅指南' },
+        { text: 'Vue优雅指南', link: '/note/Vue优雅指南' }
         // { text: 'MacOS 自带VPN链接公司网络', link: '/note/vpn' },
         // { text: 'MacOS 邮箱教程', link: '/note/mac-bind-email' },
         // { text: 'MacOS 定时任务指南', link: '/note/mac-launchctl-task' },
