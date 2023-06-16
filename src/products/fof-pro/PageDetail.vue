@@ -1,10 +1,31 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import VTLink from '../../../.vitepress/theme/components/VTLink.vue'
 import VTIconLink from '../../../.vitepress/theme/components/VTIconLink.vue'
-
+import image1 from '../../public/images/fof-pro-1.png'
+import image2 from '../../public/images/fof-pro-2.png'
+import image3 from '../../public/images/fof-pro-3.png'
+import image4 from '../../public/images/fof-pro-4.png'
+import image5 from '../../public/images/fof-pro-shejitu.jpg'
+import image6 from '../../public/images/table-au.png'
 const props = defineProps({
   partner: { type: Object }
 })
+
+const data = ref([
+  {
+    image: image1
+  },
+  {
+    image: image2
+  },
+  {
+    image: image3
+  },
+  {
+    image: image4
+  }
+])
 </script>
 
 <template>
@@ -30,32 +51,25 @@ const props = defineProps({
         </p>
         <br />
         <h1 class="title">项目整体设计图</h1>
-        <a
-          href="/public/images/fof-pro-shejitu.jpg"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="/public/images/fof-pro-shejitu.jpg" alt="" />
+        <a :href="image5" target="_blank" rel="noopener noreferrer">
+          <img :src="image5" alt="" />
         </a>
         <br />
         <h1 class="title">投研模版架构设计</h1>
-        <a
-          href="/public/images/table-au.png"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="/public/images/table-au.png" alt="" />
+        <a :href="image6" target="_blank" rel="noopener noreferrer">
+          <img :src="image6" alt="" />
         </a>
         <br />
         <h1 class="title">技术选型</h1>
         <p class="description">
-          FOF PRO项目采用了先进的技术栈，包括React、TypeScript、Umi和Antd，充分利用了这些技术的优势。我们完全拥抱了React的最新特性，例如使用hooks进行开发,
+          FOF
+          PRO项目采用了先进的技术栈，包括React、TypeScript、Umi和Antd，充分利用了这些技术的优势。我们完全拥抱了React的最新特性，例如使用hooks进行开发,
           通过合理的架构和开发方式，为用户提供高质量、稳定可靠的应用。我们持续关注技术的发展和用户需求的变化，不断优化和改进FOF
           PRO，以提供更好的投资体验和服务
         </p>
         <br />
         <h1 class="title">周期</h1>
-        <p class="description">2021-06 ～  至今</p>
+        <p class="description">2021-06 ～ 至今</p>
 
         <section class="data">
           <ul class="data-list">
@@ -86,35 +100,14 @@ const props = defineProps({
             <br />
             <h1 class="title">项目截图</h1>
             <a
-              href="/public/images/fof-pro-1.png"
+              v-for="it in data"
+              :key="it.image"
+              :href="it.image"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/public/images/fof-pro-1.png" alt="" />
-            </a>
-            <br />
-            <a
-              href="/public/images/fof-pro-2.png"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="/public/images/fof-pro-2.png" alt="" />
-            </a>
-            <br />
-            <a
-              href="/public/images/fof-pro-3.png"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="/public/images/fof-pro-3.png" alt="" />
-            </a>
-            <br />
-            <a
-              href="/public/images/fof-pro-4.png"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="/public/images/fof-pro-4.png" alt="" />
+              <img :src="it.image" alt="" />
+              <br />
             </a>
           </ul>
         </section>

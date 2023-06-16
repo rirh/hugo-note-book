@@ -1,11 +1,25 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import VTLink from '../../../.vitepress/theme/components/VTLink.vue'
 import VTIconLink from '../../../.vitepress/theme/components/VTIconLink.vue'
-
+import image1 from '../../public/images/openalpha-1.png'
+import image2 from '../../public/images/openalpha-2.png'
+import image3 from '../../public/images/openalpha-3.png'
 const props = defineProps({
-  partner: { type: Object}
-
+  partner: { type: Object }
 })
+
+const data = ref([
+  {
+    image: image1
+  },
+  {
+    image: image2
+  },
+  {
+    image: image3
+  }
+])
 </script>
 
 <template>
@@ -43,11 +57,16 @@ const props = defineProps({
             </li>
             <br />
             <h1 class="title">项目截图</h1>
-            <img src="/public/images/openalpha-1.png" alt="" />
-            <br />
-            <img src="/public/images/openalpha-2.png" alt="" />
-            <br />
-            <img src="/public/images/openalpha-3.png" alt="" />
+            <a
+              v-for="it in data"
+              :key="it.image"
+              :href="it.image"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img :src="it.image" alt="" />
+              <br />
+            </a>
           </ul>
         </section>
       </div>
@@ -68,7 +87,6 @@ img {
   border-radius: 10px;
   box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px,
     rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
-
 }
 .ProductsItem {
   padding: 64px 24px;

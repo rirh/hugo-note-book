@@ -1,11 +1,25 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import VTLink from '../../../.vitepress/theme/components/VTLink.vue'
 import VTIconLink from '../../../.vitepress/theme/components/VTIconLink.vue'
-
+import image1 from '../../public/images/notemusic-1.jpg'
+import image2 from '../../public/images/notemusic-2.png'
+import image3 from '../../public/images/notemusic-3.png'
 const props = defineProps({
   partner: { type: Object }
-
 })
+
+const data = ref([
+  {
+    image: image1
+  },
+  {
+    image: image2
+  },
+  {
+    image: image3
+  }
+])
 </script>
 
 <template>
@@ -19,7 +33,7 @@ const props = defineProps({
         <h1 class="title">周期</h1>
         <p class="description">2020-07 ～ 至今</p>
 
-        <section class="data ">
+        <section class="data">
           <ul class="data-list">
             <h1 class="title">相关链接</h1>
             <li class="data-item">
@@ -27,18 +41,26 @@ const props = defineProps({
                 <VTIconLink class="data-icon-svg" />
               </div>
 
-              <VTLink class="data-link proficiency-item" href="https://www.tigerzh.com/music" no-icon>
+              <VTLink
+                class="data-link proficiency-item"
+                href="https://www.tigerzh.com/music"
+                no-icon
+              >
                 线上地址
               </VTLink>
             </li>
             <br />
             <h1 class="title">项目截图</h1>
-            <img src="/public/images/notemusic-1.jpg" alt="" />
-            <br />
-            <img src="/public/images/notemusic-2.png" alt="" />
-            <br />
-            <img src="/public/images/notemusic-3.png" alt="" />
-            <br />
+            <a
+              v-for="it in data"
+              :key="it.image"
+              :href="it.image"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img :src="it.image" alt="" />
+              <br />
+            </a>
           </ul>
         </section>
       </div>
@@ -63,7 +85,6 @@ img {
   border-radius: 10px;
   box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px,
     rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
-
 }
 
 .ProductsItem {
@@ -176,7 +197,7 @@ img {
   font-size: 14px;
 }
 
-.description+.description {
+.description + .description {
   padding-top: 12px;
 }
 
@@ -232,7 +253,7 @@ img {
   display: flex;
 }
 
-.data-item+.data-item {
+.data-item + .data-item {
   padding-top: 12px;
 }
 

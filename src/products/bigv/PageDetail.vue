@@ -1,13 +1,29 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import VTLink from '../../../.vitepress/theme/components/VTLink.vue'
 import VTIconLink from '../../../.vitepress/theme/components/VTIconLink.vue'
-
+import bigv1 from '../../public/images/bigv-1.png'
+import bigv2 from '../../public/images/bigv-2.png'
+import bigv3 from '../../public/images/bigv-3.png'
+import bigv4 from '../../public/images/bigv-4.png'
 const props = defineProps({
   partner: { type: Object }
 })
-const handlePrview = (url: string) => {
-  window.open(url, '_blank')
-}
+
+const data = ref([
+  {
+    image: bigv1
+  },
+  {
+    image: bigv2
+  },
+  {
+    image: bigv3
+  },
+  {
+    image: bigv4
+  }
+])
 </script>
 
 <template>
@@ -63,10 +79,15 @@ const handlePrview = (url: string) => {
             <br />
             <h1 class="title">项目截图</h1>
             <div class="screenshot">
-              <img src="/public/images/bigv-1.png" alt="" />
-              <img src="/public/images/bigv-2.png" alt="" />
-              <img src="/public/images/bigv-3.png" alt="" />
-              <img src="/public/images/bigv-4.png" alt="" />
+              <a
+                v-for="it in data"
+                :key="it.image"
+                :href="it.image"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img :src="it.image" alt="" />
+              </a>
             </div>
           </ul>
         </section>
@@ -108,9 +129,11 @@ img {
     display: flex;
     box-sizing: border-box;
   }
-
+  .screenshot a {
+    margin-right: 10px;
+  }
   .screenshot img {
-    width: 33%;
+    width: 100%;
     margin-right: 10px;
   }
 }

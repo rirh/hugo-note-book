@@ -1,10 +1,29 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import VTLink from '../../../.vitepress/theme/components/VTLink.vue'
 import VTIconLink from '../../../.vitepress/theme/components/VTIconLink.vue'
-
+import image1 from '../../public/images/doctor1.png'
+import image2 from '../../public/images/doctor2.png'
+import image3 from '../../public/images/doctor3.png'
+import image4 from '../../public/images/doctor4.png'
 const props = defineProps({
   partner: { type: Object }
 })
+
+const data = ref([
+  {
+    image: image1
+  },
+  {
+    image: image2
+  },
+  {
+    image: image3
+  },
+  {
+    image: image4
+  }
+])
 </script>
 
 <template>
@@ -54,10 +73,15 @@ const props = defineProps({
             <br />
             <h1 class="title">项目截图</h1>
             <div class="screenshot">
-              <img src="/public/images/doctor1.png" alt="" />
-              <img src="/public/images/doctor2.png" alt="" />
-              <img src="/public/images/doctor3.png" alt="" />
-              <img src="/public/images/doctor4.png" alt="" />
+              <a
+                v-for="it in data"
+                :key="it.image"
+                :href="it.image"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img :src="it.image" alt="" />
+              </a>
             </div>
           </ul>
         </section>
@@ -98,9 +122,11 @@ img {
     display: flex;
     box-sizing: border-box;
   }
-
+  .screenshot a {
+    margin-right: 10px;
+  }
   .screenshot img {
-    width: 25%;
+    /* width: 25%; */
     margin-right: 10px;
   }
 }

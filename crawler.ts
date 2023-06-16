@@ -6,7 +6,7 @@ const configPath = `${__dirname}/config.json`
 
 const urls = Object.keys(data).map((key) => {
   const url = key.split('_').join('/').split('md').join('html')
-  return `https://www.tigerzh.com/document/${url}`
+  return `https://tigerzh.com/${url}`
 })
 const config = JSON.parse(fs.readFileSync('config.json', 'utf-8'))
 config.start_urls = urls

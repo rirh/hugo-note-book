@@ -1,11 +1,26 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import VTLink from '../../../.vitepress/theme/components/VTLink.vue'
 import VTIconLink from '../../../.vitepress/theme/components/VTIconLink.vue'
-
+import image1 from '../../public/images/valuation-1.png'
+import image2 from '../../public/images/valuation-2.png'
+import image3 from '../../public/images/valuation-3.png'
+import image4 from '../../public/images/valuation-4.png'
 const props = defineProps({
   partner: { type: Object }
-
 })
+
+const data = ref([
+  {
+    image: image1
+  },
+  {
+    image: image2
+  },
+  {
+    image: image3
+  }
+])
 </script>
 
 <template>
@@ -31,19 +46,33 @@ const props = defineProps({
                 <VTIconLink class="data-icon-svg" />
               </div>
 
-              <VTLink class="data-link proficiency-item" href="https://tools.datumwealth.com/valuation/" no-icon>
+              <VTLink
+                class="data-link proficiency-item"
+                href="https://tools.datumwealth.com/valuation/"
+                no-icon
+              >
                 线上地址
               </VTLink>
             </li>
             <br />
             <h1 class="title">项目截图</h1>
             <div class="screenshot">
-              <img src="/public/images/valuation-1.png" alt="" />
-              <img src="/public/images/valuation-2.png" alt="" />
-              <img src="/public/images/valuation-3.png" alt="" />
+              <a
+                v-for="it in data"
+                :key="it.image"
+                :href="it.image"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img :src="it.image" alt="" />
+                <br />
+              </a>
             </div>
             <br />
-            <img src="/public/images/valuation-4.png" alt="" />
+            <a :href="image4" target="_blank" rel="noopener noreferrer">
+              <img :src="image4" alt="" />
+              <br />
+            </a>
           </ul>
         </section>
       </div>
@@ -66,7 +95,6 @@ img {
   border-radius: 10px;
   box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px,
     rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
-
 }
 
 .ProductsItem {
@@ -85,7 +113,7 @@ img {
     box-sizing: border-box;
   }
 
-  .screenshot img {
+  .screenshot a {
     width: 33%;
     margin-right: 10px;
   }
@@ -177,7 +205,7 @@ img {
   font-size: 14px;
 }
 
-.description+.description {
+.description + .description {
   padding-top: 12px;
 }
 
@@ -233,7 +261,7 @@ img {
   display: flex;
 }
 
-.data-item+.data-item {
+.data-item + .data-item {
   padding-top: 12px;
 }
 

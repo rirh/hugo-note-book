@@ -1,10 +1,28 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import VTLink from '../../../.vitepress/theme/components/VTLink.vue'
 import VTIconLink from '../../../.vitepress/theme/components/VTIconLink.vue'
-
+import btcalory1 from '../../public/images/btcalory-1.png'
+import btcalory2 from '../../public/images/btcalory-2.gif'
+import btcalory3 from '../../public/images/btcalory-3.gif'
+import btcalory4 from '../../public/images/btcalory-4.png'
 const props = defineProps({
   partner: { type: Object }
 })
+const data = ref([
+  {
+    image: btcalory1
+  },
+  {
+    image: btcalory2
+  },
+  {
+    image: btcalory3
+  },
+  {
+    image: btcalory4
+  }
+])
 </script>
 
 <template>
@@ -16,8 +34,8 @@ const props = defineProps({
         <p class="description">
           币傲项目基于 React 16 开发，并已全面迁移至新版生命周期和 Ref
           API。同时，还应用了 ErrorBoundary、Fragment、memo
-          等新特性，以提升项目的性能和可靠性。在后续开发中，采用了
-          Hooks + TypeScript 来实现新组件，进一步提升了开发效率和代码质量。
+          等新特性，以提升项目的性能和可靠性。在后续开发中，采用了 Hooks +
+          TypeScript 来实现新组件，进一步提升了开发效率和代码质量。
         </p>
         <p class="description">
           整个项目使用了现代化的开发工具和技术。使用 ES Next + SCSS
@@ -58,16 +76,27 @@ const props = defineProps({
               >
                 已下线
               </VTLink>
+              <VTLink
+                class="data-link proficiency-item"
+                href="https://docs.qq.com/sheet/DQVZzSnNXSXVwclJu?tab=BB08J2"
+                no-icon
+              >
+                BUG 列表
+              </VTLink>
             </li>
             <br />
             <h1 class="title">项目截图</h1>
-            <img src="/public/images/btcalory-1.png" alt="" />
-            <br />
-            <img src="/public/images/btcalory-2.gif" alt="" />
-            <br />
-            <img src="/public/images/btcalory-3.gif" alt="" />
-            <br />
-            <img src="/public/images/btcalory-4.png" alt="" />
+
+            <a
+              v-for="it in data"
+              :key="it.image"
+              :href="it.image"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img :src="it.image" alt="" />
+              <br />
+            </a>
           </ul>
         </section>
       </div>

@@ -3,7 +3,7 @@
 <template>
   <div class="PartnerHero">
     <div class="container">
-      <img style="text" src="/public/images/logo64.png" alt="" />
+      <img src="/public/images/logo64.png" alt="" />
       <h1 class="title">
         <slot name="title" />
       </h1>

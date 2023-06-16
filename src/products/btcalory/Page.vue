@@ -10,7 +10,7 @@ import PageDetail from './PageDetail.vue'
     <PageHero>
       <template #logo
         ><img
-          style="height: 64px"
+          style="height: 100px"
           src="/public/images/btcalory.ico"
           alt=""
       /></template>

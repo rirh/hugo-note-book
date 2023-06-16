@@ -1,9 +1,29 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import VTLink from '../../../.vitepress/theme/components/VTLink.vue'
 import VTIconLink from '../../../.vitepress/theme/components/VTIconLink.vue'
+import image1 from '../../public/images/gettr-1.png'
+import image2 from '../../public/images/gettr-2.jpg'
+import image3 from '../../public/images/gettr-3.jpg'
+import image4 from '../../public/images/gettr-4.jpg'
 const props = defineProps({
   partner: { type: Object }
 })
+
+const data = ref([
+  {
+    image: image1
+  },
+  {
+    image: image2
+  },
+  {
+    image: image3
+  },
+  {
+    image: image4
+  }
+])
 </script>
 
 <template>
@@ -64,30 +84,16 @@ const props = defineProps({
             </li>
             <br />
             <h1 class="title">项目截图</h1>
-            <img
-              class="img"
-              src="/public/images/gettr-1.png"
-              alt=""
-            />
-            <br />
-            <img
-              class="img"
-              src="/public/images/gettr-2.jpg"
-              alt=""
-            />
-            <br />
-            <img
-              class="img"
-              src="/public/images/gettr-3.jpg"
-              alt=""
-            />
-            <br />
-            <img
-              class="img"
-              src="/public/images/gettr-4.jpg"
-              alt=""
-            />
-            <br />
+            <a
+              v-for="it in data"
+              :key="it.image"
+              :href="it.image"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img :src="it.image" alt="" />
+              <br />
+            </a>
           </ul>
         </section>
       </div>

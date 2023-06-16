@@ -14,7 +14,7 @@ import PageDetail from './PageDetail.vue'
           src="/public/images/coupon-logo.jpg"
           alt=""
       /></template>
-      <template #title>优惠券小程序</template>
+      <template #title>饰你呀生活</template>
       <template #lead>
         <!-- 微信搜索"COUPON ORG+" -->
       </template>

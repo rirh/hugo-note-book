@@ -13,7 +13,6 @@ const { isDark } = useData()
 const localtion = useBrowserLocation()
 
 const title = useTitle()
-
 const print = (key: string, value: string) =>
   console.log(
     `%c ${key} %c ${value} %c `,

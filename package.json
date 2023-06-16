@@ -4,7 +4,7 @@
   "author": "Alimales <only_tigerhu@163.com>",
   "homepage": "https://www.tigerzh.com",
   "private": true,
-  "version": "1.0.13",
+  "version": "1.0.14",
   "engines": {
     "node": ">=14.0.0"
   },
