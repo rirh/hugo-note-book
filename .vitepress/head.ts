@@ -9,6 +9,13 @@ export default [
       href: 'https://c18e-1257416358.cos.accelerate.myqcloud.com/image/32x32.png'
     }
   ],
+  [
+    'link',
+    {
+      rel: 'stylesheet',
+      href: 'https://embed.trydyno.com/embedder.css'
+    }
+  ],
   ['meta', { name: 'theme-color', content: '#fff' }],
   ['meta', { name: 'twitter:site', content: '@zh_tiger' }],
   ['meta', { name: 'twitter:card', content: 'summary' }],
@@ -37,6 +44,13 @@ export default [
     {
       async: true,
       src: 'https://www.googletagmanager.com/gtag/js?id=G-YBC8HCMM3X'
+    }
+  ],
+  [
+    'script',
+    {
+      defer: true,
+      src: 'https://embed.trydyno.com/embedder.js'
     }
   ]
 ] as any

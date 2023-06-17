@@ -158,7 +158,7 @@ export default {
         { text: 'JS不优雅教程', link: '/note/js不优雅教程' },
         { text: 'JS优雅教程', link: '/note/js优雅教程' },
         { text: 'React优雅教程', link: '/note/React优雅教程' },
-        { text: 'Vue优雅教程', link: '/note/React优雅教程' }
+        { text: 'Vue优雅教程', link: '/note/Vue优雅教程' }
       ]
     },
     {

@@ -53,7 +53,7 @@ onMounted(() => {
             />
           </svg>
         </a>
-        <a class="setup" :href="`/note/前端工程化.html`">开始阅读 📒 </a>
+        <a class="setup" :href="`/note/工程化入门指南.html`">开始阅读 📒 </a>
       </p>
     </section>
 
