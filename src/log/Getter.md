@@ -1,5 +1,7 @@
 
 
+# Gettr
+
 ## 背景
 
 [GETTR](https://www.gettr.com/) （中文名为盖特）是源于美国的社群网络服务及社会化媒体网站，总部位于美国纽约州，由前美国总统唐纳德·特朗普的助手和发言人杰森·米勒创建。
@@ -124,7 +126,6 @@ eb端和APP端。有所不同，但是账号基本上都是通用的。
   [Grafana Enterprise](https://grafana.com/products/enterprise/)
 
   Why organizations choose Grafana Enterprise: Enhanced collaboration and usage analytics for teams. Advanced security and reporting requirements. Visibility …
-
 
 
 

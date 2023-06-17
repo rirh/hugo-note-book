@@ -93,7 +93,10 @@ const data = ref([
                 投研模版文档
               </VTLink>
               <VTLink class="data-link proficiency-item" href="#" no-icon>
-                微信关注“FOF PRP”公众号
+                微信关注“FOF PRP”
+              </VTLink>
+              <VTLink class="data-link proficiency-item" href="/log/FOF-PRO.html" no-icon>
+                开发日志
               </VTLink>
             </li>
 

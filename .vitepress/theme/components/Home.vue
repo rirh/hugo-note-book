@@ -16,8 +16,8 @@ const title = useTitle()
 const print = (key: string, value: string) =>
   console.log(
     `%c ${key} %c ${value} %c `,
-    'background:#20232a ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
-    'background:#61dafb ;padding: 1px; border-radius: 0 3px 3px 0;  color: #20232a; font-weight: bold;',
+    'background:#20232a ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff;text-transform: uppercase;',
+    'background:rgb(8, 126, 164) ;padding: 1px; border-radius: 0 3px 3px 0;  color: #20232a; font-weight: bold;color: #fff;',
     'background:transparent'
   )
 
@@ -39,10 +39,7 @@ onMounted(() => {
         {{ isDark ? '🌙' : '☀️' }}
       </h1>
       <p class="actions">
-        <a
-          class="get-started"
-          :href="`/cryptocurrency/money.html`"
-        >
+        <a class="get-started" :href="`/cryptocurrency/money.html`">
           立即探索
           <svg
             class="icon"
@@ -56,9 +53,7 @@ onMounted(() => {
             />
           </svg>
         </a>
-        <a class="setup" :href="`/note/前端工程化.html`"
-          >开始阅读 📒
-        </a>
+        <a class="setup" :href="`/note/前端工程化.html`">开始阅读 📒 </a>
       </p>
     </section>
 
@@ -141,7 +136,11 @@ section {
 
 html:not(.dark) .accent,
 .dark .tagline {
-  background: -webkit-linear-gradient(315deg, #61dafb 25%, #647eff);
+  background: -webkit-linear-gradient(
+    315deg,
+    rgb(8, 126, 164) 25%,
+    #647eff
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -12,7 +12,7 @@ export default [
   {
     text: '笔记',
     activeMatch: `^/note/`,
-    link: '/note/前端工程化'
+    link: '/note/工程化入门指南'
   },
   {
     text: '作品集',
@@ -53,7 +53,7 @@ export default [
         ]
       }
     ]
-  }
+  },
   // {
   //   text: '我',
   //   activeMatch: `^/about/`,

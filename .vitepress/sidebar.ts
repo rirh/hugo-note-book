@@ -1,7 +1,7 @@
 export default {
   '/log/': [
     {
-      text: '开发日志',
+      text: '👨‍💻 开发日志',
       items: [
         { text: 'fof超级应用模块简明记录', link: '/log/超级应用' },
         { text: '定力科技页面简明记录', link: '/log/定力科技' },
@@ -20,7 +20,7 @@ export default {
       ]
     },
     {
-      text: 'PMP',
+      text: '📔 PMP',
       items: [
         { text: '敏捷项目管理', link: '/log/敏捷项目管理' },
         { text: 'PMP题目复习', link: '/log/PMP题目复习' }
@@ -29,7 +29,7 @@ export default {
   ],
   '/cryptocurrency/': [
     {
-      text: '基础',
+      text: '📙 基础',
       items: [
         { text: '钱', link: '/cryptocurrency/money' },
         {
@@ -71,7 +71,7 @@ export default {
       ]
     },
     {
-      text: '杂谈',
+      text: '📗 杂谈',
       items: [
         {
           text: '比特币十年回顾',
@@ -88,7 +88,7 @@ export default {
       ]
     },
     {
-      text: '公链可视化',
+      text: '📕 公链可视化',
       items: [
         {
           text: '应用案例',
@@ -129,8 +129,8 @@ export default {
     {
       text: '📚 使用指南',
       items: [
-        { text: '前端工程化', link: '/note/前端工程化' },
-        { text: '工程化指南', link: '/note/工程化指南' },
+        { text: '工程化入门指南', link: '/note/工程化入门指南' },
+        { text: '前端工程化指南', link: '/note/前端工程化指南' },
         { text: 'npm 插件开发指南', link: '/note/插件开发指南' },
         { text: 'TyepScript指南', link: '/note/TyepScript指南' },
         { text: 'liunx 指南', link: '/note/Liunx常用命令' },
@@ -142,7 +142,8 @@ export default {
         { text: 'uWSGI 指南', link: '/note/uWSGI指南' },
         { text: 'MacOS 自带VPN链接公司网络', link: '/note/vpn' },
         { text: 'MacOS 邮箱教程', link: '/note/mac-bind-email' },
-        { text: 'MacOS 定时任务指南', link: '/note/mac-launchctl-task' }
+        { text: 'MacOS 定时任务指南', link: '/note/mac-launchctl-task' },
+        { text: '取色器API', link: '/note/取色器' }
       ]
     },
     {
@@ -150,8 +151,8 @@ export default {
       items: [
         { text: 'JS不优雅教程', link: '/note/js不优雅教程' },
         { text: 'JS优雅教程', link: '/note/js优雅教程' },
-        { text: 'React优雅指南', link: '/note/React优雅指南' },
-        { text: 'Vue优雅指南', link: '/note/Vue优雅指南' }
+        { text: 'React优雅教程', link: '/note/React优雅教程' },
+        { text: 'Vue优雅教程', link: '/note/React优雅教程' }
         // { text: 'MacOS 自带VPN链接公司网络', link: '/note/vpn' },
         // { text: 'MacOS 邮箱教程', link: '/note/mac-bind-email' },
         // { text: 'MacOS 定时任务指南', link: '/note/mac-launchctl-task' },
