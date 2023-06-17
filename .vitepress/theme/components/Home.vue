@@ -132,6 +132,7 @@ section {
   letter-spacing: -1.5px;
   max-width: 960px;
   margin: 0px auto;
+  user-select: none;
 }
 
 html:not(.dark) .accent,

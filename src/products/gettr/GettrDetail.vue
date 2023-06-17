@@ -81,6 +81,13 @@ const data = ref([
               >
                 安卓客户端
               </VTLink>
+              <VTLink
+                class="data-link proficiency-item"
+                href="/log/Gettr"
+                no-icon
+              >
+                开发日志
+              </VTLink>
             </li>
             <br />
             <h1 class="title">项目截图</h1>

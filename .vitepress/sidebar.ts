@@ -3,16 +3,17 @@ export default {
     {
       text: '👨‍💻 开发日志',
       items: [
-        { text: 'fof超级应用模块简明记录', link: '/log/超级应用' },
-        { text: '定力科技页面简明记录', link: '/log/定力科技' },
-        { text: 'FOF-PRO系统', link: '/log/FOF-PRO系统' },
+        { text: 'Gettr', link: '/log/Gettr' },
+        { text: '叮铃医生', link: '/log/叮铃医生' },
+        { text: 'FOF-PRO', link: '/log/FOF-PRO' },
+        { text: 'FOF-PRO-超级应用', link: '/log/超级应用' },
+        { text: 'FOF-PRO-投研模版', link: '/log/投研模版' },
         { text: '西筹FAS平台', link: '/log/西筹FAS平台' },
         { text: '西筹数据平台', link: '/log/西筹数据平台' },
         { text: '返利平台', link: '/log/返利平台' },
-        { text: '投研模版项目', link: '/log/投研模版项目' },
         { text: '西筹官网', link: '/log/西筹官网' },
         { text: '西筹基金筛选', link: '/log/西筹基金筛选' },
-        { text: '西筹投研模版', link: '/log/投研模版' },
+        { text: '估值红绿灯股债性价比', link: '/log/定力科技' },
         {
           text: '周六特色大排档小程序',
           link: '/log/周六特色大排档小程序'
@@ -109,6 +110,10 @@ export default {
     {
       text: '📌 Frontend',
       items: [{ text: '工具函数速查', link: '/tools/工具函数' }]
+    },
+    {
+      text: '📌 大语言模型',
+      items: [{ text: 'ChatGP指令', link: '/tools/ChatGP指令' }]
     }
   ],
   '/Q&A/': [
@@ -136,13 +141,14 @@ export default {
         { text: 'liunx 指南', link: '/note/Liunx常用命令' },
         { text: 'Https 配置指南', link: '/note/cert' },
         { text: 'SSH  配置指南', link: '/note/ssh' },
-        { text: 'git 指南', link: '/note/git' },
+        { text: 'git & github 指南', link: '/note/git & github 指南' },
         { text: 'Nginx 指南', link: '/note/nginx' },
         { text: 'Docker 指南', link: '/note/Docker指南' },
         { text: 'uWSGI 指南', link: '/note/uWSGI指南' },
         { text: 'MacOS 自带VPN链接公司网络', link: '/note/vpn' },
         { text: 'MacOS 邮箱教程', link: '/note/mac-bind-email' },
         { text: 'MacOS 定时任务指南', link: '/note/mac-launchctl-task' },
+        { text: 'MacOS mysql 入门指南', link: '/note/mysql入门教程' },
         { text: '取色器API', link: '/note/取色器' }
       ]
     },
@@ -153,9 +159,6 @@ export default {
         { text: 'JS优雅教程', link: '/note/js优雅教程' },
         { text: 'React优雅教程', link: '/note/React优雅教程' },
         { text: 'Vue优雅教程', link: '/note/React优雅教程' }
-        // { text: 'MacOS 自带VPN链接公司网络', link: '/note/vpn' },
-        // { text: 'MacOS 邮箱教程', link: '/note/mac-bind-email' },
-        // { text: 'MacOS 定时任务指南', link: '/note/mac-launchctl-task' },
       ]
     },
     {

@@ -161,3 +161,11 @@ body {
     border-bottom: none !important;
   }
 }
+@media (min-width: 960px) {
+  .VPNavBarTitle.has-sidebar .title {
+    /* border-bottom: none; */
+  }
+}
+.VPNav {
+  /* border-bottom: none!important; */
+}

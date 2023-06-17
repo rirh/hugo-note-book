@@ -1,8 +1,76 @@
 # Docker指南
 
-## Docker的安装
+1. ### 安装 Docker：
+   
+   - ##### 在 Linux 上：
+     
+     - ##### 执行以下命令以安装 Docker：
+       
+       ```
+       sudo apt-get update
+       sudo apt-get install docker-ce docker-ce-cli containerd.io
+       ```
+     - ##### 验证 Docker 是否已正确安装：
+       
+       ```
+       docker --version
+       ```
+   - ##### 在 macOS 上：
+     
+     - ##### 下载 Docker Desktop for Mac 安装包，并双击运行安装程序。
+     - ##### 安装完成后，在 Launchpad 中找到 Docker 图标并启动。
+   - ##### 在 Windows 上：
+     
+     - ##### 下载 Docker Desktop for Windows 安装程序，并双击运行安装程序。
+     - ##### 安装完成后，在开始菜单中找到 Docker 图标并启动。
+   
+2. ### 验证 Docker 安装：
+   
+   - ##### 在终端或命令提示符中运行以下命令以验证 Docker 是否正确安装并正在运行：
+     
+     ```
+     docker run hello-world
+     ```
+   
+3. ### 使用 Docker Hub：
+   
+   - ##### Docker Hub 是一个容器镜像的注册表，您可以在其中找到各种公共镜像。
+   - ##### 访问 Docker Hub 网站：https://hub.docker.com/
+   - ##### 搜索并选择您需要的镜像。例如，我们选择 `nginx` 镜像。
+   
+4. ### 下载和运行镜像：
+   
+   - ##### 执行以下命令以从 Docker Hub 下载并运行 `nginx` 镜像：
+     
+     ```
+     docker run -d -p 8080:80 nginx
+     ```
+      - `-d` 参数表示容器在后台运行。
+      - `-p` 参数指定端口映射，将容器的端口 80 映射到主机的端口 8080。
+   
+5. ### 验证镜像是否正在运行：
+   
+   - ##### 执行以下命令以查看正在运行的容器：
+     
+     ```
+     docker ps
+     ```
+   
+6. ### 访问应用程序：
+   
+   - ##### 在浏览器中访问 `http://localhost:8080`，您应该能够看到 Nginx 的默认欢迎页面。
+   
+7. ### 停止和删除容器：
+   
+   - ##### 执行以下命令以停止并删除容器：
+     
+     ```
+     docker stop CONTAINER_ID
+     docker rm CONTAINER_ID
+     ```
+     其中，`CONTAINER_ID` 是您在第 5 步中获得的容器 ID。
 
-学习本教程前首先我们要安装Docker。菜鸟教程上总结了Docker在各个平台和系统上的安装，大家可以参考。这里总结了下Docker在阿里云Ubuntu系统上的安装过程。步骤看似很多且复杂，但大家只需要一步一步copy和paste命令就行了，整个安装过程很流畅。
+### Docker常用命令
 
 ```shell
 # 以Ubuntu为例

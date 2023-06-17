@@ -5,7 +5,7 @@ export default [
     items: [
       { text: '💰  加密货币', link: '/cryptocurrency/money' },
       { text: '🚚  工具使用', link: '/tools/emulator' },
-      { text: '💡  开发日志 ', link: '/log/敏捷项目管理' },
+      { text: '💡  开发日志 ', link: '/log/Gettr' },
       { text: '❓  常见问题 ', link: '/Q&A/Ubuntu服务器常见问题' }
     ]
   },
@@ -53,23 +53,5 @@ export default [
         ]
       }
     ]
-  },
-  // {
-  //   text: '我',
-  //   activeMatch: `^/about/`,
-  //   items: [
-  //     { text: 'FAQ', link: '/about/faq' },
-  //     { text: 'Team', link: '/about/team' },
-  //     { text: 'Releases', link: '/about/releases' },
-  //     {
-  //       text: 'Community Guide',
-  //       link: '/about/community-guide'
-  //     },
-  //     { text: 'Code of Conduct', link: '/about/coc' },
-  //     {
-  //       text: 'The Documentary',
-  //       link: 'https://www.youtube.com/watch?v=OrxmtDw4pVI'
-  //     }
-  //   ]
-  // },
+  }
 ]

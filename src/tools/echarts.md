@@ -1,5 +1,6 @@
 # Echarts
-Apache ECharts，一款基于JavaScript的数据可视化图表库，提供直观，生动，可交互，可个性化定制的数据可视化图表。
+ECharts 是一个由百度开源的数据可视化库，它可以帮助开发者通过 JavaScript 实现各种交互式的图表和可视化效果，包括折线图、柱状图、散点图、热力图、地图等等。ECharts 具有良好的兼容性、易于使用和高度的自定义性。
+
 ## 快速开始
 
 - [github](https://github.com/apache/echarts)
@@ -12,6 +13,43 @@ Apache ECharts，一款基于JavaScript的数据可视化图表库，提供直�
 ```
 npm install echarts --save
 ```
+
+## 简单实用
+
+### 举例使用方法：
+
+1. ##### 嵌入 ECharts 的 JavaScript 代码到 HTML 页面中；
+
+2. ##### 通过 JavaScript API 构建数据模型，如：
+
+```javascript
+var myChart = echarts.init(document.getElementById('chart'));
+
+var option = {
+    title: {
+        text: 'ECharts 示例'
+    },
+    tooltip: {},
+    legend: {
+        data:['销量']
+    },
+    xAxis: {
+        data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+    },
+    yAxis: {},
+    series: [{
+        name: '销量',
+        type: 'bar',
+        data: [5, 20, 36, 10, 10, 20]
+    }]
+};
+
+myChart.setOption(option);
+```
+
+3. ##### 渲染图表并展示在页面上。
+
+以上代码创建了一个柱状图，包括标题、提示框、图例、坐标轴以及系列数据。当鼠标悬浮在柱子上时，会显示对应的数值。这只是 ECharts 提供的众多功能之一，开发者还可以自由添加各种效果和交互方式，以满足不同的需求。
 
 ## FAQ
 
