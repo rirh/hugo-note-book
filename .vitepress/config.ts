@@ -45,13 +45,13 @@ export default defineConfig({
 
     socialLinks: [
       // { icon: 'languages', link: '/translations/' },
-      { icon: 'github', link: 'https://github.com/AliMales' }
+      { icon: 'github', link: 'https://github.com/hugozach' }
       // { icon: 'twitter', link: 'https://twitter.com/vuejs' },
       // { icon: 'discord', link: 'https://discord.com/invite/HBherRA' }
     ],
 
     editLink: {
-      pattern: 'https://github.com/AliMales/NoteBook/edit/main/docs/:path',
+      pattern: 'https://github.com/hugozach/NoteBook/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
     },
     docFooter: {

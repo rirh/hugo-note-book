@@ -24,8 +24,8 @@ function init() {
     clientID: '5374d68865c38ddcd9f1',
     clientSecret: '312bf7b3a00bf03e1dcd1b20cdc642326d34372e',
     repo: 'NoteBook',
-    owner: 'AliMales',
-    admin: ['AliMales'],
+    owner: 'hugozach',
+    admin: ['hugozach'],
     id: md5(title.value),
     number: props.issueId,
   })
