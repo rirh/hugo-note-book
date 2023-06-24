@@ -4,7 +4,7 @@
   "author": "hugozach <only_tigerhu@163.com>",
   "homepage": "https://www.tigerzh.com",
   "private": true,
-  "version": "1.0.18",
+  "version": "1.0.19",
   "engines": {
     "node": ">=14.0.0"
   },
