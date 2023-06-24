@@ -5,7 +5,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/AliMales/NoteBook">
+  <a href="https://github.com/hugozach/NoteBook">
     <img src="https://c18e-system-1257416358.cos.na-ashburn.myqcloud.com/image%2F128x128.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -19,9 +19,9 @@
     <br />
     <a href="https://tigerzh.com">预览网址</a>
     ·
-    <a href="https://github.com/AliMales/NoteBook/issues">反馈bug</a>
+    <a href="https://github.com/hugozach/NoteBook/issues">反馈bug</a>
     ·
-    <a href="https://github.com/AliMales/NoteBook/issues">提交需求</a>
+    <a href="https://github.com/hugozach/NoteBook/issues">提交需求</a>
   </p>
 </div>
 
@@ -117,7 +117,7 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 - [ ] 多语言
   - [ ] 英文
 
-查看 [open issues](https://github.com/AliMales/NoteBook/issues) 完整的 issues 列表
+查看 [open issues](https://github.com/hugozach/NoteBook/issues) 完整的 issues 列表
 
 <p align="right">(<a href="#top">返回顶部</a>)</p>
 
@@ -147,7 +147,7 @@ MIT License.
 
 only_tigerhu@163.com
 
-Project Link: [https://github.com/AliMales/NoteBook](https://github.com/AliMales/NoteBook)
+Project Link: [https://github.com/hugozach/NoteBook](https://github.com/hugozach/NoteBook)
 
 <p align="right">(<a href="#top">返回顶部</a>)</p>
 
@@ -161,5 +161,5 @@ Project Link: [https://github.com/AliMales/NoteBook](https://github.com/AliMales
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/AliMales/NoteBook/blob/master/README.md
+[license-url]: https://github.com/hugozach/NoteBook/blob/master/README.md
 [product-screenshot]: ./src/assets/images/banner.png
