@@ -45,21 +45,23 @@ export default defineConfig({
 
     socialLinks: [
       // { icon: 'languages', link: '/translations/' },
-      { icon: 'github', link: 'https://github.com/hugozach' }
-      // { icon: 'twitter', link: 'https://twitter.com/vuejs' },
+      { icon: 'github', link: 'https://github.com/hugozach' },
+      { icon: 'twitter', link: 'https://twitter.com/hugoozach' },
       // { icon: 'discord', link: 'https://discord.com/invite/HBherRA' }
     ],
-
     editLink: {
-      pattern: 'https://github.com/hugozach/NoteBook/edit/main/docs/:path',
-      text: 'Edit this page on GitHub'
+      pattern: 'https://github.com/hugozach/hugo-note-book/edit/main/docs/:path',
+      text: '编辑页面'
     },
     docFooter: {
       prev: '上一章',
       next: '下一章'
     },
+    darkModeSwitchLabel:'主题',
+    sidebarMenuLabel:'菜单',
+    returnToTopLabel:'返回顶部',
     footer: {
-      copyright: `Copyright © 2018-${new Date().getFullYear()} TigerZH 版权所有`
+      copyright: `Copyright © 2018-${new Date().getFullYear()} TigerZH 版权所有 v${pkg.version} `
     }
   },
 

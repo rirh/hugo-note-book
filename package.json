@@ -4,7 +4,7 @@
   "author": "hugozach <only_tigerhu@163.com>",
   "homepage": "https://www.tigerzh.com",
   "private": true,
-  "version": "1.0.19",
+  "version": "1.0.21",
   "engines": {
     "node": ">=14.0.0"
   },
@@ -45,6 +45,7 @@
     }
   },
   "devDependencies": {
+    "@octokit/core": "^4.2.4",
     "@types/markdown-it": "^12.2.3",
     "@types/node": "^20.3.0",
     "terser": "^5.17.7"
