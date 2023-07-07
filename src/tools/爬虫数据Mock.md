@@ -1,6 +1,12 @@
-# Python常用方法
+# 爬虫数据Mock
 
+- 随机生成中国境内地址（node）[chinese-address-generator](https://github.com/moonrailgun/chinese-address-generator)
 
+- 生成伪数据的库（python）[faker](https://github.com/joke2k/faker)
+
+  它可以生成各种类型的随机数据，包括姓名、地址、电子邮件、电话号码、日期、时间和文本等。Faker可以用于测试、数据分析、学习和演示等多个场景。Faker还支持多语言的伪数据生成，包括英语、中文、日语、西班牙语等多种语言。
+
+- 生成userAgent[fake_useragent](https://github.com/fake-useragent/fake-useragent)
 
 ## 如何随机生成电话号码？
 
@@ -71,8 +77,6 @@ print("header: ", header)
 print("paragraph: ", paragraph)
 print("link: ", link)
 ```
-
-
 
 ## 如何下载图片？
 

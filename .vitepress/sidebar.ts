@@ -14,9 +14,10 @@ export default {
         { text: '西筹官网', link: '/log/西筹官网' },
         { text: '西筹基金筛选', link: '/log/西筹基金筛选' },
         { text: '估值红绿灯股债性价比', link: '/log/定力科技' },
+        { text: '估值红绿灯股债性价比', link: '/log/定力科技' },
         {
-          text: '周六特色大排档小程序',
-          link: '/log/周六特色大排档小程序'
+          text: '基金样板间',
+          link: '/log/基金样板间'
         }
       ]
     },
@@ -100,20 +101,23 @@ export default {
   ],
   '/tools/': [
     {
-      text: '📌 APP',
-      items: [{ text: '模拟器', link: '/tools/emulator' }]
-    },
-    {
-      text: '📌 图表类',
-      items: [{ text: 'echarts', link: '/tools/echarts' }]
-    },
-    {
-      text: '📌 Frontend',
-      items: [{ text: '工具函数速查', link: '/tools/工具函数' }]
-    },
-    {
       text: '📌 大语言模型',
       items: [{ text: 'ChatGP指令', link: '/tools/ChatGP指令' }]
+    },
+    {
+      text: '📌 Development',
+      items: [
+        { text: '工具函数速查', link: '/tools/工具函数' },
+        { text: 'echarts', link: '/tools/echarts' }
+      ]
+    },
+    {
+      text: '📌 爬虫',
+      items: [{ text: '爬虫数据Mock', link: '/tools/爬虫Faker数据' }]
+    },
+    {
+      text: '📌 APP',
+      items: [{ text: '模拟器', link: '/tools/emulator' }]
     }
   ],
   '/Q&A/': [
@@ -126,7 +130,8 @@ export default {
         },
         { text: '微信集成常见问题', link: '/Q&A/微信集成常见问题' },
         { text: 'ElementUI常见问题', link: '/Q&A/ElementUI常见问题' },
-        { text: 'VUE2常见问题', link: '/Q&A/VUE2常见问题' }
+        { text: 'VUE2常见问题', link: '/Q&A/VUE2常见问题' },
+        { text: 'CSS常见问题', link: '/Q&A/CSS常见问题' }
       ]
     }
   ],
@@ -149,7 +154,10 @@ export default {
         { text: 'MacOS 邮箱教程', link: '/note/mac-bind-email' },
         { text: 'MacOS 定时任务指南', link: '/note/mac-launchctl-task' },
         { text: 'MacOS mysql 入门指南', link: '/note/mysql入门教程' },
-        { text: '取色器API', link: '/note/取色器' }
+        { text: '响应式布局指南', link: '/note/响应式布局指南' },
+        { text: '深色模式指南', link: '/note/深色模式指南' },
+        { text: '取色器API', link: '/note/取色器' },
+        { text: 'InquirerJS', link: '/note/InquirerJS' }
       ]
     },
     {

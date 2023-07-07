@@ -243,11 +243,101 @@ apt-get install uwsgi-plugin-python
 
 ## Q: SSH一直超时 nginx 网址一直超时
 
-**不排除防火墙开启 未开启22端口的可能性**
+**不排除防火墙开启 未开启22端口的可能性** 
+
+## Q:SSH终端自动断开连接？
+
+SSH终端自动断开的问题可能是由于以下几个原因造成：
+
+1. 服务器端设置的超时时间过短导致连接被断开；
+2. 客户端设置的KeepAlive时间过长或过短；
+3. 防火墙或网络设备断开了连接；
+4. SSH客户端和服务器端版本不兼容；
+5. 系统休眠或断电等原因导致SSH连接断开。
+
+解决此问题的方法如下：
+
+1. ##### 在服务端将SSH连接超时的时间设置为较长时间（例如3600秒）：
 
 ```
+sudo nano /etc/ssh/sshd_config
+```
+
+修改以下两行：
+```
+ClientAliveInterval 300
+ClientAliveCountMax 3
+```
+
+变成：
 
 ```
+ClientAliveInterval 3600
+ClientAliveCountMax 0
+```
+
+2. ##### 在客户端的SSH配置文件`~/.ssh/config`中添加以下内容：
+
+```
+Host *
+  ServerAliveInterval 60
+```
+
+3. ##### 检查防火墙或网络设备有没有限制SSH连接的时间，尝试关闭限制。
+
+4. ##### 确保SSH客户端和服务器端版本兼容。
+
+5. ##### 避免系统休眠或断电等情况，尽量保持连接的稳定。
+
+## Q:服务器如何判文本全部上传完成？
+
+可以通过一些方法来判断3个文件是否已经全部上传完毕：
+
+1. 检查服务器文件系统中是否已经出现了这3个文件，可以使用命令`ls`来检查这些文件是否已经存在。
+
+2. 检查上传的3个文件的大小是否和本地文件大小一致，可以使用命令`ls -l`来查看文件大小。
+
+3. 检查3个文件的MD5值是否与本地文件的MD5值相同，在本地计算出这3个文件的MD5值并与上传到服务器后的文件进行比较，如果相同则说明文件已经上传完毕。
+
+4. 可以在上传完3个文件后，在服务器端创建一个标志文件，并在执行其他脚本之前检查该标志文件是否存在，如果存在则说明3个文件已经全部上传完毕，可以开始执行其他脚本。
+
+以上是几个常见的判断文件上传完毕的方法，可以根据实际需求选择一种或多种方法来实现。
+
+python脚本举例一种可行的方法是使用文件锁。在上传每个文件之前，创建一个空的锁文件。上传完成后，将相应的锁文件更新为所需的内容。当所有的锁文件都被更新时，就可以确定所有的文件都已上传完成。可以使用Python的os模块中的open()和write()函数来创建并更新锁文件。以下是一个示例：
+
+```python
+import os
+
+# 创建锁文件
+with open('file1.lock', 'w'):
+    pass
+
+with open('file2.lock', 'w'):
+    pass
+
+with open('file3.lock', 'w'):
+    pass
+
+# 更新锁文件
+with open('file1.lock', 'w') as f:
+    f.write('File 1 uploaded')
+
+with open('file2.lock', 'w') as f:
+    f.write('File 2 uploaded')
+
+with open('file3.lock', 'w') as f:
+    f.write('File 3 uploaded')
+
+# 检查所有锁文件是否都已更新
+if all(os.stat(lockfile).st_size > 0 for lockfile in ['file1.lock', 'file2.lock', 'file3.lock']):
+    print('All files uploaded')
+else:
+    print('Not all files uploaded')
+```
+
+在上传文件时，可以使用此类代码对每个文件进行锁定和解锁，以确保在上传过程中其他进程或线程不会修改文件。
+
+
 
 
 

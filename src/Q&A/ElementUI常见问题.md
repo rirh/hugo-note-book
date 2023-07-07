@@ -2,9 +2,9 @@
 
 # [ElementUI常见问题](https://github.com/ElemeFE/element/issues)
 
-1. ## VUE2中如何使用国际化？
+1. ### VUE2中如何使用国际化？
 
-   #### 在Vue 2中使用国际化通常需要以下步骤：
+   ##### 在Vue 2中使用国际化通常需要以下步骤：
 
    1. ##### 安装 `vue-i18n` 库，可以通过npm或yarn进行安装。
 
@@ -60,5 +60,14 @@
 
    这是一个基本的使用国际化的示例。您可以根据您的需要进行调整和扩展。
 
-2. 
+2. ### El-Table配合flex布局时不缩小?
 
+   原因是EL-Table的父容器设置了`flex:1`
+
+   ```
+   设置flex:1的元素 overflow:auto
+   或者
+   min-width:0
+   ```
+
+   
