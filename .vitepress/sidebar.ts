@@ -114,8 +114,9 @@ export default {
     {
       text: '📌 爬虫',
       items: [
-        { text: '爬虫数据Mock', link: '/tools/爬虫数据Mock' },
-        { text: 'Curl', link: '/tools/curl' }
+        { text: 'Curl', link: '/tools/curl' },
+        { text: 'Mock', link: '/tools/Mock' },
+        { text: '秒速爬100张原创插画', link: '/tools/秒速爬100张原创插画' },
       ]
     },
     {
