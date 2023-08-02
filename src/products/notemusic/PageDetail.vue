@@ -43,7 +43,7 @@ const data = ref([
 
               <VTLink
                 class="data-link proficiency-item"
-                href="https://www.tigerzh.com/music"
+                href="https://tigerzh.com/music/"
                 no-icon
               >
                 线上地址

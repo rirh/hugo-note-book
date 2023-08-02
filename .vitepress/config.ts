@@ -20,8 +20,7 @@ export default defineConfig({
   base: '/',
   lang: 'zh-CN',
   title: '🏠',
-  description:
-    '笔记本 📚  世界上只有10类人：一类是懂二进制的，一类是不懂的。',
+  description: '世界上只有10类人：一类是懂二进制的，一类是不懂的。',
   srcDir: 'src',
   scrollOffset: 'header',
   head,
@@ -46,22 +45,25 @@ export default defineConfig({
     socialLinks: [
       // { icon: 'languages', link: '/translations/' },
       { icon: 'github', link: 'https://github.com/hugozach' },
-      { icon: 'twitter', link: 'https://twitter.com/hugoozach' },
+      { icon: 'twitter', link: 'https://twitter.com/hugoozach' }
       // { icon: 'discord', link: 'https://discord.com/invite/HBherRA' }
     ],
     editLink: {
-      pattern: 'https://github.com/hugozach/hugo-note-book/edit/main/docs/:path',
+      pattern:
+        'https://github.com/hugozach/hugo-note-book/edit/main/docs/:path',
       text: '编辑页面'
     },
     docFooter: {
       prev: '上一章',
       next: '下一章'
     },
-    darkModeSwitchLabel:'主题',
-    sidebarMenuLabel:'菜单',
-    returnToTopLabel:'返回顶部',
+    darkModeSwitchLabel: '主题',
+    sidebarMenuLabel: '菜单',
+    returnToTopLabel: '返回顶部',
     footer: {
-      copyright: `Copyright © 2018-${new Date().getFullYear()} TigerZH 版权所有 v${pkg.version} `
+      copyright: `Copyright © 2018-${new Date().getFullYear()} Hugo Zach版权所有 v${
+        pkg.version
+      } `
     }
   },
 

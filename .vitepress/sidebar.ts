@@ -116,7 +116,7 @@ export default {
       items: [
         { text: 'Curl', link: '/tools/curl' },
         { text: 'Mock', link: '/tools/Mock' },
-        { text: '秒速爬100张原创插画', link: '/tools/秒速爬100张原创插画' },
+        { text: '秒速爬100张原创插画', link: '/tools/秒速爬100张原创插画' }
       ]
     },
     {
@@ -137,6 +137,10 @@ export default {
         {
           text: '服务器(Ubuntu)常见问题',
           link: '/Q&A/服务器(Ubuntu)常见问题'
+        },
+        {
+          text: '小白入职常见问题',
+          link: '/Q&A/小白入职常见问题'
         }
       ]
     }

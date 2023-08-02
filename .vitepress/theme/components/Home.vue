@@ -12,6 +12,7 @@ import pkg from '../../../package.json'
 const { isDark } = useData()
 const localtion = useBrowserLocation()
 
+
 const title = useTitle()
 const print = (key: string, value: string) =>
   console.log(

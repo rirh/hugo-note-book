@@ -66,7 +66,7 @@ Ubuntu近年来最热的操作系统。基于非常正统的Debian发行版，�
    mysql_secure_installation
    ```
 
-   [安装提示](Ubuntu服务器常见问题#安装提示)
+   [安装提示](服务器(Ubuntu)常见问题.html#安装提示)
 
 2. #### 测试是否安装成功(下图为安装成功)
 
