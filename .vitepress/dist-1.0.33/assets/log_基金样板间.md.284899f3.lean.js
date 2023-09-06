@@ -1,0 +1,1 @@
+import{_ as a,j as e,k as l,S as t}from"./chunks/framework.2ff57350.js";const r=JSON.parse('{"title":"基金样板间","description":"","frontmatter":{},"headers":[],"relativePath":"log/基金样板间.md","filePath":"log/基金样板间.md"}'),i={name:"log/基金样板间.md"},o=[t("",21)];const h=a(i,[["render",function(a,t,r,i,h,d){return e(),l("div",null,o)}]]);export{r as __pageData,h as default};

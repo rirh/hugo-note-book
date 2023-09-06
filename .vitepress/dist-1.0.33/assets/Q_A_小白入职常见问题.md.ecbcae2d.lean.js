@@ -1,0 +1,1 @@
+import{_ as a,j as e,k as r,S as t}from"./chunks/framework.2ff57350.js";const o=JSON.parse('{"title":"小白入职常见问题","description":"","frontmatter":{},"headers":[],"relativePath":"Q&A/小白入职常见问题.md","filePath":"Q&A/小白入职常见问题.md"}'),p={name:"Q&A/小白入职常见问题.md"},h=[t("",18)];const i=a(p,[["render",function(a,t,o,p,i,l){return e(),r("div",null,h)}]]);export{o as __pageData,i as default};

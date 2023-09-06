@@ -24,6 +24,24 @@ const data = ref([
     image: image4
   }
 ])
+const mpImgs = ref([
+  {
+    image:
+      'https://c18e-1257416358.cos.accelerate.myqcloud.com/IMG_4487.PNG'
+  },
+  {
+    image:
+      'https://c18e-1257416358.cos.accelerate.myqcloud.com/IMG_4491.PNG'
+  },
+  {
+    image:
+      'https://c18e-1257416358.cos.accelerate.myqcloud.com/IMG_4489.PNG'
+  },
+  {
+    image:
+      'https://c18e-1257416358.cos.accelerate.myqcloud.com/IMG_4488.PNG'
+  }
+])
 </script>
 
 <template>
@@ -59,6 +77,46 @@ const data = ref([
             <div class="screenshot">
               <a
                 v-for="it in data"
+                :key="it.image"
+                :href="it.image"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img :src="it.image" alt="" />
+              </a>
+            </div>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </article>
+  <article class="ProductsItem">
+    <div class="container">
+      <div class="content">
+        <h1 class="title" style="font-size: 22px">FOF PRO 小程序</h1>
+        <br />
+        <h1 class="title">项目简介</h1>
+        <p class="description"></p>
+        <p class="description">APP使用数字天堂uni-app进行开发</p>
+        <br />
+        <h1 class="title">周期</h1>
+        <p class="description">2020-01 ～ 至今</p>
+
+        <section class="data">
+          <ul class="data-list">
+            <h1 class="title">相关链接</h1>
+            <li class="data-item">
+              <img
+                style="height: 150px; padding: 10px"
+                src="https://c18e-1257416358.cos.accelerate.myqcloud.com/IMG_4486.JPG"
+                alt=""
+              />
+            </li>
+            <br />
+            <h1 class="title">项目截图</h1>
+            <div class="screenshot">
+              <a
+                v-for="it in mpImgs"
                 :key="it.image"
                 :href="it.image"
                 target="_blank"

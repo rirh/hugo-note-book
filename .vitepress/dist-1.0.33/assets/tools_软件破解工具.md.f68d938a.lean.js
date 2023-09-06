@@ -1,0 +1,1 @@
+import{_ as s,j as n,k as a,S as l}from"./chunks/framework.2ff57350.js";const p=JSON.parse('{"title":"软件破解工具","description":"","frontmatter":{},"headers":[],"relativePath":"tools/软件破解工具.md","filePath":"tools/软件破解工具.md"}'),o={name:"tools/软件破解工具.md"},e=[l("",2)];const t=s(o,[["render",function(s,l,p,o,t,c){return n(),a("div",null,e)}]]);export{p as __pageData,t as default};

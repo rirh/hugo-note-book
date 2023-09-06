@@ -1,0 +1,1 @@
+import{_ as s,j as a,k as n,S as l}from"./chunks/framework.2ff57350.js";const p=JSON.parse('{"title":"EyeDropper","description":"","frontmatter":{},"headers":[],"relativePath":"note/取色器.md","filePath":"note/取色器.md"}'),o={name:"note/取色器.md"},e=[l("",9)];const t=s(o,[["render",function(s,l,p,o,t,r){return a(),n("div",null,e)}]]);export{p as __pageData,t as default};

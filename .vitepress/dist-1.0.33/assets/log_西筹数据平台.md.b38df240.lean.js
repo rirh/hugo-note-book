@@ -1,0 +1,1 @@
+import{_ as e,j as a,k as i,S as t}from"./chunks/framework.2ff57350.js";const r=JSON.parse('{"title":"西筹数据平台","description":"","frontmatter":{},"headers":[],"relativePath":"log/西筹数据平台.md","filePath":"log/西筹数据平台.md"}'),c={name:"log/西筹数据平台.md"},o=[t("",124)];const n=e(c,[["render",function(e,t,r,c,n,l){return a(),i("div",null,o)}]]);export{r as __pageData,n as default};

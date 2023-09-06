@@ -61,20 +61,12 @@ const data = ref([
           <ul class="data-list">
             <h1 class="title">相关链接</h1>
             <li class="data-item">
-              <div class="data-icon">
-                <VTIconLink class="data-icon-svg" />
-              </div>
+              <img
+                style="height: 150px; padding: 10px"
+                src="https://c18e-1257416358.cos.accelerate.myqcloud.com/IMG_4492.JPG"
+                alt=""
+              />
 
-              <VTLink
-                class="data-link proficiency-item"
-                href="https://bigv.openalpha.cn/"
-                no-icon
-              >
-                线上地址
-              </VTLink>
-              <VTLink class="data-link proficiency-item" href="#" no-icon>
-                微信搜索“苯嘴财经”
-              </VTLink>
             </li>
             <br />
             <h1 class="title">项目截图</h1>

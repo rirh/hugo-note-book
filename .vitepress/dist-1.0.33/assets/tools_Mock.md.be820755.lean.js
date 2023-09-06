@@ -1,0 +1,1 @@
+import{_ as s,j as a,k as n,S as l}from"./chunks/framework.2ff57350.js";const p=JSON.parse('{"title":"爬虫数据Mock","description":"","frontmatter":{},"headers":[],"relativePath":"tools/Mock.md","filePath":"tools/Mock.md"}'),o={name:"tools/Mock.md"},e=[l("",14)];const t=s(o,[["render",function(s,l,p,o,t,r){return a(),n("div",null,e)}]]);export{p as __pageData,t as default};

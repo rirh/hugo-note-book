@@ -1,0 +1,1 @@
+import{_ as s,j as n,k as a,S as l}from"./chunks/framework.2ff57350.js";const p=JSON.parse('{"title":"学习方向","description":"","frontmatter":{},"headers":[],"relativePath":"note/plan.md","filePath":"note/plan.md"}'),e={name:"note/plan.md"},o=[l("",12)];const t=s(e,[["render",function(s,l,p,e,t,i){return n(),a("div",null,o)}]]);export{p as __pageData,t as default};

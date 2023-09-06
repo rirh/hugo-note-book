@@ -1,0 +1,1 @@
+import{_ as a,j as l,k as s,S as n}from"./chunks/framework.2ff57350.js";const e=JSON.parse('{"title":"智灵助手","description":"","frontmatter":{},"headers":[],"relativePath":"log/智灵助手.md","filePath":"log/智灵助手.md"}'),i={name:"log/智灵助手.md"},o=[n("",69)];const t=a(i,[["render",function(a,n,e,i,t,r){return l(),s("div",null,o)}]]);export{e as __pageData,t as default};

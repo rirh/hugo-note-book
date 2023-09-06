@@ -1,0 +1,1 @@
+import{_ as e,j as a,k as l,S as i}from"./chunks/framework.2ff57350.js";const u=JSON.parse('{"title":"VUE2常见问题","description":"","frontmatter":{},"headers":[],"relativePath":"Q&A/VUE2常见问题.md","filePath":"Q&A/VUE2常见问题.md"}'),o={name:"Q&A/VUE2常见问题.md"},r=[i("",2)];const d=e(o,[["render",function(e,i,u,o,d,t){return a(),l("div",null,r)}]]);export{u as __pageData,d as default};

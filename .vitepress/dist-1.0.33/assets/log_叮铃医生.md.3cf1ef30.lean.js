@@ -1,0 +1,1 @@
+import{_ as e,j as t,k as r}from"./chunks/framework.2ff57350.js";const a=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"log/叮铃医生.md","filePath":"log/叮铃医生.md"}');const o=e({name:"log/叮铃医生.md"},[["render",function(e,a,o,s,n,d){return t(),r("div")}]]);export{a as __pageData,o as default};

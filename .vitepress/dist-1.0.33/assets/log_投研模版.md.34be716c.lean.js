@@ -1,0 +1,1 @@
+import{_ as l,j as a,k as e,S as i}from"./chunks/framework.2ff57350.js";const s=JSON.parse('{"title":"TableAU","description":"","frontmatter":{},"headers":[],"relativePath":"log/投研模版.md","filePath":"log/投研模版.md"}'),n={name:"log/投研模版.md"},p=[i("",36)];const t=l(n,[["render",function(l,i,s,n,t,r){return a(),e("div",null,p)}]]);export{s as __pageData,t as default};

@@ -1,0 +1,1 @@
+import{_ as s,j as a,k as n,S as l}from"./chunks/framework.2ff57350.js";const o=JSON.parse('{"title":"前端提升幸福指数编程指南","description":"","frontmatter":{},"headers":[],"relativePath":"note/js优雅教程.md","filePath":"note/js优雅教程.md"}'),p={name:"note/js优雅教程.md"},t=[l("",150)];const e=s(p,[["render",function(s,l,o,p,e,c){return a(),n("div",null,t)}]]);export{o as __pageData,e as default};

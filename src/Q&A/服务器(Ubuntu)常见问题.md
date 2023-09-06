@@ -241,6 +241,9 @@ apt-get install uwsgi-plugin-python
    --key-file       /etc/nginx/cert/shiniya.cn.key  \
    --fullchain-file /etc/nginx/cert/shiniya.cn.pem \
    --reloadcmd     "service nginx force-reload"
+   acme.sh --install-cert -d tigerzh.com \
+   --key-file       /etc/nginx/cert/tigerzh.com.key  \
+   --fullchain-file /etc/nginx/cert/tigerzh.com.pem 
    ```
 
 ## Q: SSH一直超时 nginx 网址一直超时

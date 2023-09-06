@@ -1,0 +1,1 @@
+import{_ as s,j as a,k as l,S as n}from"./chunks/framework.2ff57350.js";const p=JSON.parse('{"title":"响应式布局","description":"","frontmatter":{},"headers":[],"relativePath":"note/响应式布局指南.md","filePath":"note/响应式布局指南.md"}'),o={name:"note/响应式布局指南.md"},e=[n("",6)];const t=s(o,[["render",function(s,n,p,o,t,c){return a(),l("div",null,e)}]]);export{p as __pageData,t as default};

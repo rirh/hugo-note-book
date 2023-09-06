@@ -6,7 +6,7 @@ export default [
       { text: '💰  加密货币', link: '/cryptocurrency/money' },
       { text: '🚚  工具使用', link: '/tools/ChatGP指令' },
       { text: '💡  开发日志 ', link: '/log/Gettr' },
-      { text: '❓  常见问题 ', link: '/Q&A/服务器(Ubuntu)常见问题' }
+      { text: '❓  常见问题 ', link: '/Q&A/小白入职常见问题' }
     ]
   },
   {

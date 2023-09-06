@@ -1,0 +1,1 @@
+import{_ as s,j as n,k as a,S as l}from"./chunks/framework.2ff57350.js";const p=JSON.parse('{"title":"JS事件流简述","description":"","frontmatter":{},"headers":[],"relativePath":"note/jsevent.md","filePath":"note/jsevent.md"}'),o={name:"note/jsevent.md"},e=[l("",15)];const t=s(o,[["render",function(s,l,p,o,t,c){return n(),a("div",null,e)}]]);export{p as __pageData,t as default};

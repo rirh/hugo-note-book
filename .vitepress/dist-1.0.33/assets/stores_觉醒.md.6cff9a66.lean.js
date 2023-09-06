@@ -1,0 +1,1 @@
+import{_ as a,j as e,k as i,S as l}from"./chunks/framework.2ff57350.js";const r=JSON.parse('{"title":"奶的底层逻辑就是奶","description":"","frontmatter":{},"headers":[],"relativePath":"stores/觉醒.md","filePath":"stores/觉醒.md"}'),t={name:"stores/觉醒.md"},h=[l("",2)];const o=a(t,[["render",function(a,l,r,t,o,n){return e(),i("div",null,h)}]]);export{r as __pageData,o as default};

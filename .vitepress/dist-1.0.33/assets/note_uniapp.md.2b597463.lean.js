@@ -1,0 +1,1 @@
+import{_ as s,j as a,k as n,S as p}from"./chunks/framework.2ff57350.js";const l=JSON.parse('{"title":"uniapp","description":"","frontmatter":{},"headers":[],"relativePath":"note/uniapp.md","filePath":"note/uniapp.md"}'),e={name:"note/uniapp.md"},o=[p("",6)];const t=s(e,[["render",function(s,p,l,e,t,c){return a(),n("div",null,o)}]]);export{l as __pageData,t as default};
