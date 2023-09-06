@@ -1,1 +1,0 @@
-import{_ as e,j as a,k as r,S as l}from"./chunks/framework.2ff57350.js";const i=JSON.parse('{"title":"Gettr","description":"","frontmatter":{},"headers":[],"relativePath":"log/Gettr.md","filePath":"log/Gettr.md"}'),t={name:"log/Gettr.md"},o=[l("",21)];const n=e(t,[["render",function(e,l,i,t,n,h){return a(),r("div",null,o)}]]);export{i as __pageData,n as default};

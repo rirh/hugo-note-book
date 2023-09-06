@@ -1,1 +1,0 @@
-import{_ as s,j as n,k as a,S as l}from"./chunks/framework.2ff57350.js";const p=JSON.parse('{"title":"数据绑定实例","description":"","frontmatter":{},"headers":[],"relativePath":"note/model.md","filePath":"note/model.md"}'),o={name:"note/model.md"},t=[l("",6)];const e=s(o,[["render",function(s,l,p,o,e,c){return n(),a("div",null,t)}]]);export{p as __pageData,e as default};

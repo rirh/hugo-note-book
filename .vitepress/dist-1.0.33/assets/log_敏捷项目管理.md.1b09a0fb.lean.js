@@ -1,1 +1,0 @@
-import{_ as e,j as i,k as a,S as l}from"./chunks/framework.2ff57350.js";const r=JSON.parse('{"title":"敏捷备考指南","description":"","frontmatter":{},"headers":[],"relativePath":"log/敏捷项目管理.md","filePath":"log/敏捷项目管理.md"}'),o={name:"log/敏捷项目管理.md"},s=[l("",42)];const I=e(o,[["render",function(e,l,r,o,I,t){return i(),a("div",null,s)}]]);export{r as __pageData,I as default};

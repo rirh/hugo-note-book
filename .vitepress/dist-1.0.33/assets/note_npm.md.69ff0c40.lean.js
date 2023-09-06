@@ -1,1 +1,0 @@
-import{_ as s,j as a,k as n,S as l}from"./chunks/framework.2ff57350.js";const t=JSON.parse('{"title":"包管理工具","description":"","frontmatter":{},"headers":[],"relativePath":"note/npm.md","filePath":"note/npm.md"}'),e={name:"note/npm.md"},p=[l("",37)];const o=s(e,[["render",function(s,l,t,e,o,c){return a(),n("div",null,p)}]]);export{t as __pageData,o as default};

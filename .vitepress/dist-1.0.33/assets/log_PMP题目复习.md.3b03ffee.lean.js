@@ -1,1 +1,0 @@
-import{_ as t,j as d,k as r,S as o}from"./chunks/framework.2ff57350.js";const n=JSON.parse('{"title":"模拟考试","description":"","frontmatter":{},"headers":[],"relativePath":"log/PMP题目复习.md","filePath":"log/PMP题目复习.md"}'),s={name:"log/PMP题目复习.md"},g=[o("",3)];const b=t(s,[["render",function(t,o,n,s,b,e){return d(),r("div",null,g)}]]);export{n as __pageData,b as default};

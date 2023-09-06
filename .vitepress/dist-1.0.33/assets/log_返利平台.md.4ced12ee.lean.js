@@ -1,1 +1,0 @@
-import{_ as t,j as r,k as e,S as a}from"./chunks/framework.2ff57350.js";const l=JSON.parse('{"title":"返利平台","description":"","frontmatter":{},"headers":[],"relativePath":"log/返利平台.md","filePath":"log/返利平台.md"}'),o={name:"log/返利平台.md"},d=[a("",11)];const i=t(o,[["render",function(t,a,l,o,i,n){return r(),e("div",null,d)}]]);export{l as __pageData,i as default};

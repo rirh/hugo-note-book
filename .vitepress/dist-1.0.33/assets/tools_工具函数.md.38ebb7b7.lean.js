@@ -1,1 +1,0 @@
-import{_ as a,j as e,k as t,S as h}from"./chunks/framework.2ff57350.js";const r=JSON.parse('{"title":"常用工具函数速查","description":"","frontmatter":{},"headers":[],"relativePath":"tools/工具函数.md","filePath":"tools/工具函数.md"}'),i={name:"tools/工具函数.md"},c=[h("",3)];const o=a(i,[["render",function(a,h,r,i,o,b){return e(),t("div",null,c)}]]);export{r as __pageData,o as default};

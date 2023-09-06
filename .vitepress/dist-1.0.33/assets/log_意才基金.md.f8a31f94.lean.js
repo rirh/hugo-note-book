@@ -1,1 +1,0 @@
-import{_ as l,j as a,k as s,S as e}from"./chunks/framework.2ff57350.js";const n=JSON.parse('{"title":"意才基金","description":"","frontmatter":{},"headers":[],"relativePath":"log/意才基金.md","filePath":"log/意才基金.md"}'),i={name:"log/意才基金.md"},t=[e("",24)];const r=l(i,[["render",function(l,e,n,i,r,p){return a(),s("div",null,t)}]]);export{n as __pageData,r as default};

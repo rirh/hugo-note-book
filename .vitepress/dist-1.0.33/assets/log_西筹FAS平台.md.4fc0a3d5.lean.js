@@ -1,1 +1,0 @@
-import{_ as l,j as i,k as a,S as e}from"./chunks/framework.2ff57350.js";const r=JSON.parse('{"title":"西筹FAS平台","description":"","frontmatter":{},"headers":[],"relativePath":"log/西筹FAS平台.md","filePath":"log/西筹FAS平台.md"}'),h={name:"log/西筹FAS平台.md"},o=[e("",69)];const t=l(h,[["render",function(l,e,r,h,t,u){return i(),a("div",null,o)}]]);export{r as __pageData,t as default};

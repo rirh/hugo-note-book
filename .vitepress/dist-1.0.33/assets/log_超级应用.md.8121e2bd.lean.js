@@ -1,1 +1,0 @@
-import{_ as e,j as a,k as r,S as t}from"./chunks/framework.2ff57350.js";const l=JSON.parse('{"title":"超级应用","description":"","frontmatter":{},"headers":[],"relativePath":"log/超级应用.md","filePath":"log/超级应用.md"}'),o={name:"log/超级应用.md"},n=[t("",12)];const i=e(o,[["render",function(e,t,l,o,i,h){return a(),r("div",null,n)}]]);export{l as __pageData,i as default};

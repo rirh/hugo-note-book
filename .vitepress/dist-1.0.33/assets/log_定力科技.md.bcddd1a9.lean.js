@@ -1,1 +1,0 @@
-import{_ as s,j as a,k as n,S as o}from"./chunks/framework.2ff57350.js";const l=JSON.parse('{"title":"定力科技","description":"","frontmatter":{},"headers":[],"relativePath":"log/定力科技.md","filePath":"log/定力科技.md"}'),p={name:"log/定力科技.md"},t=[o("",11)];const e=s(p,[["render",function(s,o,l,p,e,D){return a(),n("div",null,t)}]]);export{l as __pageData,e as default};

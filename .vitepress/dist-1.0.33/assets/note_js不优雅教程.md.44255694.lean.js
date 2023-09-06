@@ -1,1 +1,0 @@
-import{_ as a,j as e,k as t,S as r}from"./chunks/framework.2ff57350.js";const o=JSON.parse('{"title":"不优雅代码指南","description":"","frontmatter":{},"headers":[],"relativePath":"note/js不优雅教程.md","filePath":"note/js不优雅教程.md"}'),c={name:"note/js不优雅教程.md"},i=[r("",59)];const s=a(c,[["render",function(a,r,o,c,s,h){return e(),t("div",null,i)}]]);export{o as __pageData,s as default};

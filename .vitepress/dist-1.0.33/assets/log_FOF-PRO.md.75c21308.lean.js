@@ -1,1 +1,0 @@
-import{_ as e,j as r,k as a,S as t}from"./chunks/framework.2ff57350.js";const l=JSON.parse('{"title":"FOF PRO","description":"","frontmatter":{},"headers":[],"relativePath":"log/FOF-PRO.md","filePath":"log/FOF-PRO.md"}'),o={name:"log/FOF-PRO.md"},i=[t("",16)];const n=e(o,[["render",function(e,t,l,o,n,f){return r(),a("div",null,i)}]]);export{l as __pageData,n as default};

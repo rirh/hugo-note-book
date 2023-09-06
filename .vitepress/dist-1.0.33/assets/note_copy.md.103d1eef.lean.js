@@ -1,1 +1,0 @@
-import{_ as s,j as a,k as n,S as l}from"./chunks/framework.2ff57350.js";const p=JSON.parse('{"title":"拷贝","description":"","frontmatter":{},"headers":[],"relativePath":"note/copy.md","filePath":"note/copy.md"}'),o={name:"note/copy.md"},t=[l("",13)];const e=s(o,[["render",function(s,l,p,o,e,c){return a(),n("div",null,t)}]]);export{p as __pageData,e as default};

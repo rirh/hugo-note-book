@@ -1,1 +1,0 @@
-import{_ as s,j as a,k as n,S as l}from"./chunks/framework.2ff57350.js";const p=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Q&A/监听页面中的请求.md","filePath":"Q&A/监听页面中的请求.md"}'),o={name:"Q&A/监听页面中的请求.md"},e=[l("",2)];const t=s(o,[["render",function(s,l,p,o,t,r){return a(),n("div",null,e)}]]);export{p as __pageData,t as default};

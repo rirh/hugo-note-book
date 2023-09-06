@@ -1,1 +1,0 @@
-import{_ as a,j as s,k as n,S as e}from"./chunks/framework.2ff57350.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"note/error.md","filePath":"note/error.md"}'),p={name:"note/error.md"},o=[e("",5)];const t=a(p,[["render",function(a,e,l,p,t,r){return s(),n("div",null,o)}]]);export{l as __pageData,t as default};

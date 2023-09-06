@@ -1,1 +1,0 @@
-import{_ as a,j as e,k as o,S as r}from"./chunks/framework.2ff57350.js";const l=JSON.parse('{"title":"微信集成常见问题","description":"","frontmatter":{},"headers":[],"relativePath":"Q&A/微信集成常见问题.md","filePath":"Q&A/微信集成常见问题.md"}'),t={name:"Q&A/微信集成常见问题.md"},p=[r("",4)];const i=a(t,[["render",function(a,r,l,t,i,c){return e(),o("div",null,p)}]]);export{l as __pageData,i as default};

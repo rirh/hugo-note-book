@@ -1,1 +1,0 @@
-import{_ as s,j as a,k as e,S as t}from"./chunks/framework.2ff57350.js";const n=JSON.parse('{"title":"脚手架搭建","description":"","frontmatter":{},"headers":[],"relativePath":"note/template.md","filePath":"note/template.md"}'),l={name:"note/template.md"},p=[t("",13)];const i=s(l,[["render",function(s,t,n,l,i,o){return a(),e("div",null,p)}]]);export{n as __pageData,i as default};

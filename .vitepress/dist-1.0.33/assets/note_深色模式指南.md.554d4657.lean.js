@@ -1,1 +1,0 @@
-import{_ as s,j as a,k as n,S as l}from"./chunks/framework.2ff57350.js";const o=JSON.parse('{"title":"深色模式指南","description":"","frontmatter":{},"headers":[],"relativePath":"note/深色模式指南.md","filePath":"note/深色模式指南.md"}'),p={name:"note/深色模式指南.md"},e=[l("",4)];const c=s(p,[["render",function(s,l,o,p,c,t){return a(),n("div",null,e)}]]);export{o as __pageData,c as default};

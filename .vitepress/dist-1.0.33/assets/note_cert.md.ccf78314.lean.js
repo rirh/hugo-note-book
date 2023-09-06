@@ -1,1 +1,0 @@
-import{_ as e,j as s,k as o,S as n}from"./chunks/framework.2ff57350.js";const a=JSON.parse('{"title":"HTTPS 配置示例","description":"","frontmatter":{},"headers":[],"relativePath":"note/cert.md","filePath":"note/cert.md"}'),t={name:"note/cert.md"},l=[n("",42)];const c=e(t,[["render",function(e,n,a,t,c,r){return s(),o("div",null,l)}]]);export{a as __pageData,c as default};

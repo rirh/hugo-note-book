@@ -1,1 +1,0 @@
-import{_ as a,j as s,k as l,S as o}from"./chunks/framework.2ff57350.js";const n=JSON.parse('{"title":"MacOS连接公司自带vpn","description":"","frontmatter":{},"headers":[],"relativePath":"note/vpn.md","filePath":"note/vpn.md"}'),e={name:"note/vpn.md"},p=[o("",25)];const c=a(e,[["render",function(a,o,n,e,c,t){return s(),l("div",null,p)}]]);export{n as __pageData,c as default};

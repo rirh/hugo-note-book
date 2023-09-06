@@ -1,1 +1,0 @@
-import{_ as s,j as a,k as n,S as l}from"./chunks/framework.2ff57350.js";const p=JSON.parse('{"title":"闭包的外挂","description":"","frontmatter":{},"headers":[],"relativePath":"note/闭包的外挂.md","filePath":"note/闭包的外挂.md"}'),o={name:"note/闭包的外挂.md"},e=[l("",42)];const t=s(o,[["render",function(s,l,p,o,t,c){return a(),n("div",null,e)}]]);export{p as __pageData,t as default};
