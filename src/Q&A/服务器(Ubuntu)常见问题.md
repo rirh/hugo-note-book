@@ -224,12 +224,16 @@ apt-get install uwsgi-plugin-python
 
    ```shell
    acme.sh   --issue   --dns dns_dp   -d bleoty.com -d *.bleoty.com
+   acme.sh   --issue   --dns dns_dp   -d fereowth.com 
    ```
 
-   ##### 阿里云签发证书  唯一不同点 [dns_ali](https://github.com/acmesh-official/acme.sh/wiki/dnsapi) 
+   ##### 阿里云签发证书  唯一不同点 dns下划线后面的[名字](https://github.com/acmesh-official/acme.sh/wiki/dnsapi) 
 
    ```
+   # 阿里云
    acme.sh   --issue   --dns dns_ali   -d shiniya.tigerzh.com 
+   # cloudflare
+   acme.sh   --issue   --dns dns_cf   -d chat.aicbe.com 
    ```
 
    
@@ -241,9 +245,6 @@ apt-get install uwsgi-plugin-python
    --key-file       /etc/nginx/cert/shiniya.cn.key  \
    --fullchain-file /etc/nginx/cert/shiniya.cn.pem \
    --reloadcmd     "service nginx force-reload"
-   acme.sh --install-cert -d tigerzh.com \
-   --key-file       /etc/nginx/cert/tigerzh.com.key  \
-   --fullchain-file /etc/nginx/cert/tigerzh.com.pem 
    ```
 
 ## Q: SSH一直超时 nginx 网址一直超时

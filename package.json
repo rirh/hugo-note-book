@@ -4,7 +4,7 @@
   "author": "hugozach <only_tigerhu@163.com>",
   "homepage": "https://www.tigerzh.com",
   "private": true,
-  "version": "1.0.35",
+  "version": "1.0.40",
   "engines": {
     "node": ">=14.0.0"
   },
@@ -12,7 +12,7 @@
     "dev": "vitepress",
     "build": "vitepress build",
     "serve": "vitepress serve",
-    "cz": "git add . && git cz && git push && npm run changelog && npm run crawler",
+    "git": "git add . && git cz && git push && npm run changelog && npm run crawler",
     "preinstall": "npx only-allow pnpm",
     "changelog": "rm -rf CHANGELOG.md && conventional-changelog -p angular -i CHANGELOG.md -s",
     "crawler": "node crawler.ts",
@@ -36,7 +36,7 @@
     "shiki": "^0.14.2",
     "three": "^0.153.0",
     "vite-plugin-banner": "^0.7.0",
-    "vitepress": "1.0.0-beta.2",
+    "vitepress": "1.0.0-rc.22",
     "vue": "^3.3.4"
   },
   "husky": {

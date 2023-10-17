@@ -162,4 +162,3 @@ Project Link: [https://github.com/hugozach/NoteBook](https://github.com/hugozach
 
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/hugozach/NoteBook/blob/master/README.md
-[product-screenshot]: ./src/assets/images/banner.png
