@@ -168,7 +168,8 @@ export default {
         { text: 'MacOS mysql 入门指南', link: '/note/mysql入门教程' },
         { text: '响应式布局指南', link: '/note/响应式布局指南' },
         { text: '深色模式指南', link: '/note/深色模式指南' },
-        { text: '取色器API', link: '/note/取色器' }
+        { text: '取色器API', link: '/note/取色器' },
+        { text: 'Vue CLI 打包优化指南', link: '/note/vue-cli打包体积优化' }
       ]
     },
     {

@@ -12,7 +12,17 @@
 
 前端基于 [ChatGPT-Next-Web](https://github.com/Yidadaa/ChatGPT-Next-Web)（A well-designed cross-platform ChatGPT UI (Web / PWA / Linux / Win / MacOS). 一键拥有你自己的跨平台 ChatGPT 应用。）
 
+
+
 [ETF投顾问题及答案20230907](https://yohegptwuf.feishu.cn/docx/QojrdDabcoXHdZxjhzkcsZVcn1c?from=from_copylink)
+
+[ETF投顾Agent产品文档](https://v1z34hcxct.feishu.cn/docx/ImcZd3Z9Go5YsXx42BacQtMandd)
+
+[ETF投顾问题设计](https://docs.qq.com/sheet/DRFFNSUVzdFlnR3pt?tab=000001)
+
+[ETF BUG 列表](https://docs.qq.com/sheet/DRFFNSUVzdFlnR3pt?tab=e01l6t)
+
+
 
 
 
@@ -21,6 +31,8 @@
 [测试环境](http://aigle-dev.qutke.cn/etf-agent//)
 
 [正式环境](https://pro.fofinvesting.com/etf-agent/)
+
+
 
 
 
