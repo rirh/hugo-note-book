@@ -10,6 +10,30 @@ Ubuntu近年来最热的操作系统。基于非常正统的Debian发行版，�
 
 
 
+## Q:如何服务器初始化？
+
+1. 更新系统软件包：首先打开终端，然后输入以下命令来更新您的系统软件包：
+
+   ```shell
+   # 添加公钥匙并重启sshd
+   echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJAGDmWcbssk5mCEbAyljKDjuHlnoogUWiCLJGvX8BGL only_tierhu@163.com' >> ~/.ssh/authorized_keys && systemctl restart sshd;
+   
+   # 更新软件
+   sudo apt update 
+   sudo apt upgrade 
+   # 安装更新软件
+   apt-get install software-properties-common
+   # 获取源
+   sudo add-apt-repository 'deb http://archive.ubuntu.com/ubuntu trusty universe'
+   echo 'deb http://cz.archive.ubuntu.com/ubuntu xenial main' >> /etc/apt/sources.list
+   # 安装mysql
+   sudo apt-get update
+   sudo apt install mysql-server-5.6
+   sudo apt install mysql-client-5.6
+   ```
+
+
+
 ## Q:如何快速登录服务器？
 
 - #### 默认端口登录
@@ -78,7 +102,7 @@ Ubuntu近年来最热的操作系统。基于非常正统的Debian发行版，�
 3. #### 配置远程可访问（**配置完记得去云控制台规则开放3306端口**）
 
    ```
-   # 注意：不同 mysql 版本此配置文件位置和名字可能不同
+   # 注意：不同 mysql 版本此配置文件位置和名字可能不同（找有内容的配置文件）
    sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
    # 修改bind-address 和 mysqlx-bind-address
    bind-address            = 0.0.0.0
@@ -90,7 +114,7 @@ Ubuntu近年来最热的操作系统。基于非常正统的Debian发行版，�
    ```
    sudo /etc/init.d/mysql restart
    # mysql 添加用户并赋予远程访问权限
-   mysql -uroot -p;
+   mysql -u root -p;
    use mysql;
    create user 'USER'@'%' identified by 'PASSWORD';
    grant all on *.* to 'USER'@'%';
@@ -224,7 +248,7 @@ apt-get install uwsgi-plugin-python
 
    ```shell
    acme.sh   --issue   --dns dns_dp   -d bleoty.com -d *.bleoty.com
-   acme.sh   --issue   --dns dns_dp   -d fereowth.com 
+   acme.sh   --issue   --dns dns_dp   -d api.aicbe.com 
    ```
 
    ##### 阿里云签发证书  唯一不同点 dns下划线后面的[名字](https://github.com/acmesh-official/acme.sh/wiki/dnsapi) 
@@ -233,7 +257,7 @@ apt-get install uwsgi-plugin-python
    # 阿里云
    acme.sh   --issue   --dns dns_ali   -d shiniya.tigerzh.com 
    # cloudflare
-   acme.sh   --issue   --dns dns_cf   -d chat.aicbe.com 
+   acme.sh   --issue   --dns dns_cf   -d api.aicbe.com 
    ```
 
    
@@ -241,9 +265,14 @@ apt-get install uwsgi-plugin-python
 4. ##### nginx配置到具体目录并重启服务
 
    ```shell
-   acme.sh --install-cert -d shiniya.cn \
-   --key-file       /etc/nginx/cert/shiniya.cn.key  \
-   --fullchain-file /etc/nginx/cert/shiniya.cn.pem \
+   acme.sh --install-cert -d chat.aicbe.com \
+   --key-file       /etc/nginx/cert/chat.aicbe.com.key  \
+   --fullchain-file /etc/nginx/cert/chat.aicbe.com.pem \
+   --reloadcmd     "service nginx force-reload"
+   
+   acme.sh --install-cert -d www.sunshine-sparks.com \
+   --key-file       /etc/nginx/cert/www.sunshine-sparks.com.key  \
+   --fullchain-file /etc/nginx/cert/www.sunshine-sparks.com.pem \
    --reloadcmd     "service nginx force-reload"
    ```
 

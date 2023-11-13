@@ -28,7 +28,7 @@ const envs = require('./env.json')
 // 当前版本
 const version = _package.version
 // 项目目录
-const dirPath = `${process.cwd()}/.vitepress/dist`
+const dirPath = `${process.cwd()}/.vitepress/dist/`
 // 版本目录
 const versionPath = `${dirPath}-${version}`
 const dayjs = require('dayjs')
