@@ -36,6 +36,11 @@ jobs:
         with:
           name: dist
           path: dist
+      - name: Upload additional file as attachment
+        uses: actions/upload-artifact@v3
+        with:
+          name: additional-file
+          path: attachment
 
   # Deployment job
   deploy:
@@ -52,5 +57,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-
