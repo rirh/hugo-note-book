@@ -40,7 +40,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: additional-file
-          path: attachment
+          path: dist
 
   # Deployment job
   deploy:
