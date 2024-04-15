@@ -48,9 +48,9 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: dist
-          path: dist
+          path: .vitepress/dist # 确保路径正确
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          target-folder: dist
+          target-folder: .vitepress/dist # 确保路径正确
