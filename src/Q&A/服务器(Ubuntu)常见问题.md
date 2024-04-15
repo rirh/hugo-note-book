@@ -116,8 +116,8 @@ Ubuntu近年来最热的操作系统。基于非常正统的Debian发行版，�
    # mysql 添加用户并赋予远程访问权限
    mysql -u root -p;
    use mysql;
-   create user 'USER'@'%' identified by 'PASSWORD';
-   grant all on *.* to 'USER'@'%';
+   create user 'v2board'@'%' identified by 'v2board';
+   grant all on *.* to 'v2board'@'%';
    flush privileges;
    exit;
    ```
@@ -247,8 +247,9 @@ apt-get install uwsgi-plugin-python
 3. ##### 生成证书
 
    ```shell
-   acme.sh   --issue   --dns dns_dp   -d bleoty.com -d *.bleoty.com
-   acme.sh   --issue   --dns dns_dp   -d api.aicbe.com 
+   acme.sh   --issue   --dns dns_dp   -d aicbe.com -d *.bleoty.com
+   acme.sh   --issue   --dns dns_dp   -d chat.aicbe.com 
+   
    ```
 
    ##### 阿里云签发证书  唯一不同点 dns下划线后面的[名字](https://github.com/acmesh-official/acme.sh/wiki/dnsapi) 
@@ -265,14 +266,14 @@ apt-get install uwsgi-plugin-python
 4. ##### nginx配置到具体目录并重启服务
 
    ```shell
-   acme.sh --install-cert -d chat.aicbe.com \
-   --key-file       /etc/nginx/cert/chat.aicbe.com.key  \
-   --fullchain-file /etc/nginx/cert/chat.aicbe.com.pem \
+   acme.sh --install-cert -d hugsin.pp.ua \
+   --key-file       /etc/nginx/cert/hugsin.pp.ua.key  \
+   --fullchain-file /etc/nginx/cert/hugsin.pp.ua.pem \
    --reloadcmd     "service nginx force-reload"
    
-   acme.sh --install-cert -d www.sunshine-sparks.com \
-   --key-file       /etc/nginx/cert/www.sunshine-sparks.com.key  \
-   --fullchain-file /etc/nginx/cert/www.sunshine-sparks.com.pem \
+   acme.sh --install-cert -d aicbe.com \
+   --key-file       /etc/nginx/cert/aicbe.com.key  \
+   --fullchain-file /etc/nginx/cert/aicbe.com.pem \
    --reloadcmd     "service nginx force-reload"
    ```
 
