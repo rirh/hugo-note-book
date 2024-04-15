@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build with VitePress
-        run: npm run deploy
+        run: npm run build
       - name: Prepare deployment artifacts
         run: mv .vitepress/dist dist
         working-directory: .
