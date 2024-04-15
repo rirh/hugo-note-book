@@ -1,4 +1,4 @@
-name: Deploy VitePress Site to GitHub Pages
+name: github page
 
 on:
   # Runs on pushes targeting the default branch
@@ -45,9 +45,10 @@ jobs:
     needs: build
     steps:
       - name: Download artifact
-        uses: actions/download-pages-artifact@v3
+        uses: actions/download-artifact@v3
         with:
           name: dist
+          path: dist
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
