@@ -114,9 +114,5 @@ export default defineConfig({
         debug: false
       })
     ]
-  },
-
-  vue: {
-    reactivityTransform: true
   }
 })

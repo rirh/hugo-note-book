@@ -4,7 +4,7 @@
   "author": "hugozach <only_tigerhu@163.com>",
   "homepage": "https://www.tigerzh.com",
   "private": true,
-  "version": "1.0.41",
+  "version": "1.0.42",
   "engines": {
     "node": ">=14.0.0"
   },
@@ -13,31 +13,30 @@
     "build": "vitepress build",
     "serve": "vitepress serve",
     "git": "git add . && git cz && git push && npm run changelog && npm run crawler",
-    "preinstall": "npx only-allow pnpm",
     "changelog": "rm -rf CHANGELOG.md && conventional-changelog -p angular -i CHANGELOG.md -s",
     "crawler": "node crawler.ts",
     "deploy": "npm --no-git-tag-version version patch && node ./bin/deploy"
   },
   "dependencies": {
-    "@vue/repl": "^1.4.1",
-    "@vueuse/core": "^10.1.2",
+    "@vue/repl": "^4.1.1",
+    "@vueuse/core": "^10.9.0",
     "@withtypes/md5": "^0.1.1",
     "animate.css": "^4.1.1",
-    "axios": "^1.4.0",
+    "axios": "^1.6.8",
     "cz-conventional-changelog": "^3.3.0",
-    "dayjs": "^1.11.8",
+    "dayjs": "^1.11.10",
     "dynamics.js": "^1.1.5",
     "gitalk": "^1.8.0",
-    "gsap": "^3.12.1",
-    "husky": "^8.0.3",
+    "gsap": "^3.12.5",
+    "husky": "^9.0.11",
     "localStorage": "^1.0.4",
     "localforage": "^1.10.0",
     "normalize.css": "^8.0.1",
-    "shiki": "^0.14.2",
-    "three": "^0.153.0",
-    "vite-plugin-banner": "^0.7.0",
-    "vitepress": "1.0.0-rc.22",
-    "vue": "^3.3.4"
+    "shiki": "^1.3.0",
+    "three": "^0.163.0",
+    "vite-plugin-banner": "^0.7.1",
+    "vitepress": "1.1.0",
+    "vue": "^3.4.21"
   },
   "husky": {
     "hooks": {
@@ -45,10 +44,10 @@
     }
   },
   "devDependencies": {
-    "@octokit/core": "^4.2.4",
-    "@types/markdown-it": "^12.2.3",
-    "@types/node": "^20.3.0",
-    "terser": "^5.17.7"
+    "@octokit/core": "^6.1.2",
+    "@types/markdown-it": "^14.0.1",
+    "@types/node": "^20.12.7",
+    "terser": "^5.30.3"
   },
   "pnpm": {
     "peerDependencyRules": {
