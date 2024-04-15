@@ -36,11 +36,6 @@ jobs:
         with:
           name: dist
           path: dist
-      - name: Upload additional file as attachment
-        uses: actions/upload-artifact@v3
-        with:
-          name: additional-file
-          path: dist
 
   # Deployment job
   deploy:
