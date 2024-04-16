@@ -31,7 +31,7 @@ jobs:
           publish_dir: ./dist
 
       - name: Deploy to SSH server
-        uses: appleboy/ssh-action
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
