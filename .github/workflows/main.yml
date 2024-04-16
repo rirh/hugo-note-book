@@ -1,41 +1,41 @@
-name: github page
+name: Deploy VitePress
 
 on:
-  # Runs on pushes targeting the default branch
   push:
-    branches: ['master']
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: 'pages'
-  cancel-in-progress: false
+    branches:
+      - master # Replace with your desired branch to trigger the deployment
 
 jobs:
-  # Build job
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # Adjust as needed
+
       - name: Install dependencies
         run: npm ci
-      - name: Build with VitePress
-        run: npm run build
-      - name: Prepare deployment artifacts
-        run: mv .vitepress/dist dist
-        working-directory: .
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          name: my-artifact
-          path: dist
+
+      - name: Build VitePress site
+        run: npx vitepress build
+
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+
+      - name: Deploy to SSH server
+        uses: appleboy/ssh-action
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            cp -r ./dist /home/app/document/
