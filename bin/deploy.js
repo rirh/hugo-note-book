@@ -50,10 +50,7 @@ inquirer
         text: `${answers.commit}：部署中...`
       }).start()
       const command = `npm run build;
-      cp -r ${dirPath} ${versionPath};
       scp -r ${dirPath} ${it.sshNmae}:${it.targetPath};
-      scp -r ${versionPath} ${it.sshNmae}:${it.targetPath};
-      rm -rf ${versionPath};
       `
       console.log(command)
 
