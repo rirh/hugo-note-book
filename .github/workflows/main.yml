@@ -31,7 +31,7 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           source: "./.vitepress/dist"
           target: /var/www/html/z-doc
-          strip_components: 1
+          debug: true
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
