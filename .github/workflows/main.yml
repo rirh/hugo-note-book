@@ -29,8 +29,8 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
-          source: "./.vitepress/dist"
-          target: /var/www/html/z-doc
+          source: "./.vitepress/dist/"
+          target: /var/www/html/z-doc/dist/
           debug: true
 
       - name: Deploy to GitHub Pages
