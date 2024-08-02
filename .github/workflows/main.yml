@@ -39,4 +39,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            cp -r ./.vitepress/dist /var/www/html/z-doc/dist
+           ls -a .;
+           sudo cp -r ./.vitepress/dist /var/www/html/z-doc/dist;
