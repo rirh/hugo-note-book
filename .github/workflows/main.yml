@@ -24,7 +24,7 @@ jobs:
       - name: Build VitePress site
         run: |
           npx vitepress build
-          ls -a ./vitepress;
+          ls -a .;
           ls -a ./vitepress/dist;
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > private_key && chmod 600 private_key;
           scp -r -i ./private_key -o StrictHostKeyChecking=no ./vitepress/dist ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/var/www/html/z-doc;
