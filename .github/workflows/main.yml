@@ -27,6 +27,7 @@ jobs:
       - name: Upload to server via SCP
         run: |
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > private_key && chmod 600 private_key;
+          ls -a ./vitepress;
           ls -a ./vitepress/dist;
           scp -r -i ./private_key -o StrictHostKeyChecking=no ./vitepress/dist ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/var/www/html/z-doc;
           rm -f ./private_key;
