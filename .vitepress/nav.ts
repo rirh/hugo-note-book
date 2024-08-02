@@ -53,5 +53,10 @@ export default [
         ]
       }
     ]
-  }
+  },
+  {
+    text: 'idea💡',
+    activeMatch: `^/idea/`,
+    link: '/idea/totp'
+  },
 ]

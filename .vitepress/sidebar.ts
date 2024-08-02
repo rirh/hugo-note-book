@@ -1,4 +1,14 @@
 export default {
+  '/idea/': [
+    {
+      text: '想法 💡',
+      items: [
+        { text: '命令行工具文档化', link: '/idea/command' },
+        { text: 'TOTP 在线生成器', link: '/idea/totp' },
+        { text: 'Excel可视化工具', link: '/idea/excelchart' }
+      ]
+    }
+  ],
   '/log/': [
     {
       text: '👨‍💻 开发日志',
@@ -142,8 +152,7 @@ export default {
         {
           text: '服务器(Ubuntu)常见问题',
           link: '/Q&A/服务器(Ubuntu)常见问题'
-        },
-
+        }
       ]
     }
   ],
