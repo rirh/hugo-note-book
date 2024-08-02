@@ -38,4 +38,4 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            cp -r ./dist /home/app/document/
+            cp -r ./.vitepress/dist /var/www/html/z-doc/dist
