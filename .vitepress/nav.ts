@@ -55,7 +55,7 @@ export default [
     ]
   },
   {
-    text: 'idea💡',
+    text: '灵感',
     activeMatch: `^/idea/`,
     link: '/idea/totp'
   },
