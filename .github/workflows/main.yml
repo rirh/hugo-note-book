@@ -25,14 +25,8 @@ jobs:
         run: npx vitepress build && ls -a .vitepress
 
       - name: Upload to server via SCP
-        uses: appleboy/scp-action@master
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: ${{ secrets.SSH_PORT }}
-          source: './vitepress/dist'
-          target: '/var/www/html/z-doc/dist' # Replace with the path on your server where you want to upload the files
+        run: |
+          scp -r -i ${{ secrets.SSH_PRIVATE_KEY }} -o StrictHostKeyChecking=no ./vitepress/dist ${{ secrets.SCP_USERNAME }}@${{ secrets.SCP_HOST }}:/var/www/html/z-doc
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
