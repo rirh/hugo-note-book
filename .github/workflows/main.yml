@@ -24,12 +24,15 @@ jobs:
         run: npm run build
 
       - name: Deploy to server
-        env:
-          HOST: ${{ secrets.SSH_HOST }}
-          USERNAME: ${{ secrets.SSH_USERNAME }}
-          KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        run: |
-          scp -r ./.vitepress/dist $USERNAME@$HOST:/var/www/html/z-doc
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          source: "./.vitepress/dist"
+          target: /var/www/html/z-doc
+          strip_components: 1
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
