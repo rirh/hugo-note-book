@@ -1,37 +1,36 @@
-name: Deploy VitePress
+name: Build and Deploy
 
 on:
   push:
     branches:
-      - master # Replace with your desired branch to trigger the deployment
+      - main # 你可以根据需要更改分支名称
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - name: Check out the repository
+        uses: actions/checkout@v3
 
-      - name: Setup Node.js environment
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16' # Adjust as needed
+          node-version: '18' # 请根据你的项目需求选择 Node.js 版本
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
-      - name: Build VitePress site
+      - name: Build the project
+        run: npm run build
+
+      - name: Deploy to server
+        env:
+          HOST: ${{ secrets.SSH_HOST }}
+          USERNAME: ${{ secrets.SSH_USERNAME }}
+          KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         run: |
-          npx vitepress build
-
-
-
-      - name: Upload to server via SCP
-        run: |
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > private_key && chmod 600 private_key;
-          scp -r -i ./private_key -o StrictHostKeyChecking=no ./.vitepress/dist ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/var/www/html/z-doc;
-          rm -f ./private_key;
+          scp -r ./.vitepress/dist $USERNAME@$HOST:/var/www/html/z-doc
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
