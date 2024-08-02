@@ -8,6 +8,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Set timezone to Shanghai
+        run: |
+          sudo timedatectl set-timezone Asia/Shanghai
       - name: Check out the repository
         uses: actions/checkout@v3
 
@@ -29,7 +32,7 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
-          source: "./.vitepress/dist/"
+          source: './.vitepress/dist/'
           target: /var/www/html/z-doc
           debug: true
 
