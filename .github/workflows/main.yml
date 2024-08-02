@@ -22,7 +22,7 @@ jobs:
         run: npm ci
 
       - name: Build VitePress site
-        run: npx vitepress build
+        run: npx vitepress build && ls -a
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
